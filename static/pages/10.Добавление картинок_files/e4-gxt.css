@@ -1,0 +1,425 @@
+/* Стили, скопированные из ext-all.css (увеличиваем все размеры шрифта на 1px) */
+.x-date-picker, .x-date-picker a {
+    font-size: 12px !important;
+}
+.x-date-days td {
+    font-size: 11px !important;
+}
+
+.x-date-left {
+    font-size: 12px !important;
+}
+.x-form-label {
+    font-size: 13px !important;
+    font-family: Arial, Tahoma, sans-serif;
+    padding: 2px 3px 1px 0;
+}
+
+.x-form-group-label, .x-form-cb-label {
+    font-size: 13px !important;
+}
+.x-grid3-row-body {
+    font-size: 12px !important;
+}
+
+.x-grid3-footer-row td {
+    font-size: 12px !important;
+}
+
+.my-tree {
+    font-size: 12px !important;
+}
+
+.my-tree-item, .my-tree-item table, .my-tree-item table td {
+    font-size: 12px !important;
+}
+
+.my-tree-item-text span {
+    font-size: 13px !important;
+}
+
+.x-ftree-text {
+    font-size: 12px !important;
+}
+
+.x-ftree2-text span {
+    font-size: 12px !important;
+}
+
+.x-date-mp td {
+    font-size: 12px !important;
+}
+
+.x-date-picker, .x-date-picker a {
+    font-size: 12px !important;
+}
+
+.x-date-days td {
+    font-size: 11px !important;
+}
+
+.x-date-left {
+    font-size: 12px !important;
+}
+
+.x-menu-text {
+    font-size: 11px !important;
+}
+
+.x-menubar-item {
+    font-size: 13px !important;
+}
+
+.x-info-header {
+    font-size: 14px !important;
+}
+
+.x-info-tl .x-info-header {
+    font-size: 14px !important;
+}
+
+.x-info-mc {
+    font-size: 12px !important;
+}
+
+.x-info-body {
+    font-size: 13px !important;
+}
+
+.my-list-item-text {
+    font-size: 12px !important;
+}
+
+.x-view-item {
+    font-size: 13px !important;
+}
+
+.x-view-item-check td {
+    font-size: 13px !important;
+}
+
+.my-tbl {
+    font-size: 12px !important;
+}
+
+.my-tbl-col-text {
+    font-size: 12px !important;
+}
+
+.my-tbl-data .my-tbl-item-cell-text {
+    font-size: 12px !important;
+}
+
+.my-treetbl-item-text span {
+    font-size: 13px !important;
+}
+
+.my-treetbl-col-text {
+    font-size: 13px !important;
+}
+
+.my-treetbl-data .my-treetbl-cell-text {
+    font-size: 13px !important;
+}
+
+.x-grid3-td-numberer div {
+    font-size: 12px !important;
+}
+
+.ext-el-mask-msg div {
+    font-size: 12px !important;
+}
+
+.loading-indicator {
+    font-size: 12px !important;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+    font-size: 12px !important;
+}
+
+.x-form-field {
+    font-size: 13px !important;
+}
+
+.ext-gecko3 table .x-form-field-wrap .x-form-trigger,
+.ext-gecko.win-xp table .x-form-field-wrap .x-form-trigger,
+.ext-gecko .trigger-fix table .x-form-field-wrap .x-form-trigger
+{
+    margin-top: 1px; /* bugfix for combobox trigger button bug in Chrome, FF3.6, FF on WinXP */
+}
+
+.ext-chrome .cancel-trigger-fix .x-form-field-wrap .x-form-trigger,
+.ext-gecko.win-xp .cancel-trigger-fix .x-form-field-wrap .x-form-trigger
+{
+    margin-top: 0; /* cancel trigger bugfix for selected combos */
+}
+
+.ext-chrome .x-small-editor table .x-form-field-wrap .x-form-trigger,
+.ext-chrome .x-window table .x-form-field-wrap .x-form-trigger,
+.ext-gecko3 .x-small-editor table .x-form-field-wrap .x-form-trigger,
+.ext-gecko3 .x-window table .x-form-field-wrap .x-form-trigger,
+.ext-gecko.win-xp .x-small-editor table .x-form-field-wrap .x-form-trigger,
+.ext-gecko.win-xp .x-window table .x-form-field-wrap .x-form-trigger
+{
+    margin-top: 0; /* cancel previous bugfix for small editors and forms with top labels */
+}
+
+.x-form-grow-sizer {
+    font-size: 13px !important;
+}
+
+.x-form-item label {
+    font-size: 13px !important;
+}
+
+.x-form-invalid-msg {
+    font-size: 12px !important;
+}
+
+.x-small-editor .x-form-field {
+    font-size: 12px !important;
+}
+
+.ext-safari .x-small-editor .x-form-field {
+    font-size: 13px !important;
+}
+
+.x-fieldset legend {
+    font-size: 12px !important;
+}
+
+.x-btn {
+    font-size: 12px !important;
+}
+
+.x-btn button {
+    font-size: 12px !important;
+}
+
+.x-toolbar td, .x-toolbar span, .x-toolbar input, .x-toolbar div, .x-toolbar select, .x-toolbar label {
+    font-size: 12px !important;
+}
+
+.x-grid3-hd-row .x-grid3-hd, .x-grid3-row .x-grid3-cell, .x-grid3-summary-row .x-grid3-cell {
+    font-size: 12px !important;
+}
+
+.x-grid3-topbar, .x-grid3-bottombar {
+    font-size: 12px !important;
+}
+
+.x-grid-group-hd div {
+    font-size: 12px !important;
+}
+
+.x-grid-empty {
+    font-size: 12px !important;
+}
+
+.x-dd-drag-ghost {
+    font-size: 12px !important;
+}
+
+.x-tree3-node-text {
+    font-size: 12px !important;
+}
+
+.x-date-middle, .x-date-left, .x-date-right {
+    font-size: 12px !important;
+}
+
+.x-date-inner th {
+    font-size: 11px !important;
+}
+
+.x-date-inner a {
+    font-size: 11px !important;
+}
+
+.x-date-mmenu .x-menu-item {
+    font-size: 11px !important;
+}
+
+.x-date-mp td {
+    font-size: 12px !important;
+}
+
+.x-date-mp-btns button {
+    font-size: 12px !important;
+}
+
+.x-tip .x-tip-mc {
+    font-size: 12px !important;
+}
+
+.x-tip .x-tip-header-text {
+    font-size: 12px !important;
+}
+
+.x-tip .x-tip-body {
+    font-size: 12px !important;
+}
+
+.x-menu-list-item {
+    font-size: 12px !important;
+}
+
+.x-box-mc {
+    font-size: 13px !important;
+}
+
+.x-box-mc h3 {
+    font-size: 15px !important;
+}
+
+.x-combo-list {
+    font-size: 13px !important;
+}
+
+.x-combo-list-hd {
+    font-size: 12px !important;
+}
+
+.x-combo-list-small {
+    font-size: 12px !important;
+}
+
+.x-combo-list-item {
+    overflow:visible !important;
+}
+
+.x-panel-header {
+    font-size: 12px !important;
+}
+
+.x-panel-tl .x-panel-header {
+    font-size: 12px !important;
+}
+
+.x-panel-mc {
+    font-size: 12px !important;
+}
+
+.x-panel-fbar td, .x-panel-fbar span, .x-panel-fbar input, .x-panel-fbar div, .x-panel-fbar select, .x-panel-fbar label {
+    font-size: 12px !important;
+}
+
+.x-window-tl .x-window-header {
+    font-size: 12px !important;
+}
+
+.x-window-mc {
+    font-size: 12px !important;
+}
+
+.x-progress-text {
+    font-size: 12px !important;
+}
+
+.x-window-dlg .ext-mb-text,
+.x-window-dlg .x-window-header-text {
+    font-size: 13px !important;
+}
+
+.x-window-dlg .ext-mb-textarea {
+    font-size: 13px !important;
+}
+
+/* Увеличение размера кнопок, чтобы не обрезались иконки */
+.x-btn-noicon .x-btn-small .x-btn-text{
+	height: 18px !important;
+}
+
+.x-btn-icon .x-btn-small .x-btn-text{
+    height: 18px !important;
+}
+
+.x-btn-text-icon .x-btn-icon-small-left .x-btn-text{
+    height: 18px !important;
+}
+
+.x-btn-text-icon .x-btn-icon-small-right .x-btn-text{
+    height: 18px !important;
+}
+
+.x-toolbar-more .x-btn-small .x-btn-text{
+    height: 18px !important;
+}
+
+.x-toolbar .xtb-sep {
+    height: 18px !important;
+}
+
+/*
+   Исправление бага в Redmine: http://edumain/redmine/issues/show/268
+   Обсуждение данной проблемы на сайте gxt: http://www.extjs.com/forum/showthread.php?t=81094&highlight=TextField%26lt%3BString%26gt%3B
+*/
+.ext-ie .x-form-text {
+    margin-bottom: 1px !important;
+}
+
+#wraplistview .x-view-item {
+    white-space: normal !important;
+    border-bottom: 1px solid #99BBE8 !important;
+}
+
+.task-list-panel-label-style {
+    white-space: normal!important;
+}
+
+.link-button {
+    cursor: pointer !important;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.link-button.x-item-disabled {
+    color: #888;
+}
+
+.x-toolbar-mimic {
+    border-style: solid;
+    border-color: #a9bfd3;
+    border-width: 0 0 1px 0;
+    background: #d0def0 url(../../gxt/images/default/toolbar/bg.gif) repeat-x top left;
+    display: block;
+    padding: 0;
+    position: relative;
+    left:0;
+    top:0;
+    zoom:1;
+    overflow:hidden;
+}
+
+.light-gray-row {
+    background-color: #f3f3f3;
+}
+
+.x-btn-text-icon .x-btn-icon-large-left .x-btn-text {
+    padding-left: 28px;
+}
+
+.ext-ie .x-btn-text-icon .x-btn-icon-large-left .x-btn-text {
+    padding-left: 32px;
+}
+
+.transparent-tabs .x-tab-panel-body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lesson-option-label {
+    margin-top: -2px;
+}
+
+.x-toolbar .x-btn-text {
+    color: #15428B;
+}
+
+.right-border .x-panel-body {
+    border-right: 1px solid #99BBE8;
+}
+
+.left-tool-buttons .x-panel-toolbar {
+    float: left;
+}

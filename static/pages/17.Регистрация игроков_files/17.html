@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>17</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts10
+{
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps7
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps12
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps15
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps16
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps17
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps18
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps19
+{
+ text-indent: -1px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps20
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319208"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 17.<br><br>  </span></span><br><span class="rvts0"><span class="rvts1">Регистрация</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">игроков</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> создание механизма регистрации новых пользователей. </span></p>
+<p class="rvps2"><span class="rvts4">В рамках этого занятия нам предстоит выполнить 3 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать и настроить форму регистрации</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Описать алгоритм регистрации пользователей</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="3" style="margin-left: 0px" class="rvps6"><span class="rvts5">Проверка и доработка финального варианта игры. </span></li>
+</ol>
+<h2 class="rvps7"><a name="_Toc121319209"></a>
+<span class="rvts0"><span class="rvts7">Настройка прикладного решения. Создание формы регистрации. </span></span></h2>
+<p class="rvps8"><span class="rvts4">Если пользователь заходит в игру не
+ под своим аккаунтом и не под аккаунтом администратора, то ему 
+необходимо зарегистрироваться. Для этого потребуется создать форму для 
+регистрации новых пользователей, в которой игрок будет указывать свой 
+логин. После ввода логина система перезапустится, и в списке 
+пользователей появится новый игрок.</span></p>
+<p class="rvps8"><span class="rvts4">В рамках </span><span class="rvts3">первой задачи</span><span class="rvts4"> добавим новую общую форму, которую назовем "ФормаРегистрации" и нажмем "Готово" (рис. 17.1).</span></p>
+<p class="rvps9"><img 301="" 227="" alt="" style="padding : 1px;" src="17_data/img1.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.1. Добавление общей формы</span></p>
+<p class="rvps8"><span class="rvts4">В форме регистрации необходимо создать два поля: "Имя" и "Логин"</span><span class="rvts9">.</span><span class="rvts4"> Создадим для них реквизиты с соответствующими названиями и с типом данных "строка" (рис. 17.2 </span>–<span class="rvts4"> 17.3).</span></p>
+<p class="rvps9"><img 417="" 134="" alt="" style="padding : 1px;" src="17_data/img2.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.2. Добавление реквизита "Имя"</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps9"><img 402="" 137="" alt="" style="padding : 1px;" src="17_data/img3.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.3. Добавление реквизита "Логин"</span></p>
+<p class="rvps2"><span class="rvts4">Добавим эти реквизиты на форму (рис. 17.4).</span></p>
+<p class="rvps9"><img 397="" 105="" alt="" style="padding : 1px;" src="17_data/img4.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.4. Добавление реквизитов на форму</span></p>
+<p class="rvps8"><span class="rvts4">Данные поля будут отображаться без 
+заголовка. Для этого выделим оба элемента и у свойства 
+"ПоложениеЗаголовка" укажем значение "Нет" (рис. 17.5). </span></p>
+<p class="rvps10"><img 366="" 126="" alt="" style="padding : 1px;" src="17_data/img5.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.5. Изменение положения заголовка</span></p>
+<p class="rvps8"><span class="rvts4">Вместо заголовков в каждом поле 
+будет отображаться подсказка ввода. Сделаем данную настройку для поля 
+"Логин". В палитре свойств перейдем на вкладку "Использование" и в поле 
+"ПодсказкаВвода" напишем "Придумайте логин". Также укажем, что 
+"ОтображениеПодсказки" будет "Всплавающая", а сама подсказка будет 
+содержать текст "Логин игрока" (рис. 17.6). </span></p>
+<p class="rvps10"><img 474="" 191="" alt="" style="padding : 1px;" src="17_data/img6.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.6. Настройка подсказки для поля "Логин"</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">Аналогичную настройку выполним для 
+элемента "Имя". В качестве подсказки ввода укажем текст "Укажите имя", 
+"Отображение подсказки" </span>–<span class="rvts4"> "Всплывающая", "Подсказка" </span>–<span class="rvts4"> "Имя игрока" (рис. 17.7). </span></p>
+<p class="rvps10"><img 483="" 198="" alt="" style="padding : 1px;" src="17_data/img7.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.7. Настройка подсказки для поля "Имя"</span></p>
+<p class="rvps8"><span class="rvts4">Чтобы пользователь понимал, что за 
+форма перед ним открылась, добавим декорацию надписи с текстом "Добро 
+пожаловать! Зарегистрируйтесь для начала игры!". </span></p>
+<p class="rvps8"><span class="rvts4">Добавим новый элемент на форму. Тип элемента </span>–<span class="rvts4"> "Декорация </span>–<span class="rvts4"> надпись" (рис. 17.8). </span></p>
+<p class="rvps10"><img 308="" 186="" alt="" style="padding : 1px;" src="17_data/img8.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.8. Добавление декорации на форму</span></p>
+<p class="rvps8"><span class="rvts4">Переместим декорацию в верхнюю часть формы, а также укажем для нее имя </span>–<span class="rvts4"> "ШапкаФормы" (рис. 17.9). </span></p>
+<p class="rvps10"><img 512="" 230="" alt="" style="padding : 1px;" src="17_data/img9.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.9. Изменение имени декорации</span></p>
+<p class="rvps8"><span class="rvts4">Заголовок сформируем через кнопку "Открыть". Вид заголовка </span>–<span class="rvts4"> форматированная строка. Текст заголовка </span>–<span class="rvts4"> "Добро пожаловать! Зарегистрируйтесь для начала игры!". Также можно поэкспериментировать с размером текста (рис. 17.10). </span></p>
+<p class="rvps10"><img 410="" 148="" alt="" style="padding : 1px;" src="17_data/img10.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.10. Заголовок декорации</span></p>
+<p class="rvps8"><span class="rvts4">Далее необходимо расположить 
+декорацию по центру, чтобы форма выглядела симпатичнее. Перейдем на 
+вкладку "Расположение" и укажем в свойстве "ГоризонтальноеПоложение" </span>–<span class="rvts4"> "Центр" (рис. 17.11). </span></p>
+<p class="rvps10"><img 407="" 131="" alt="" style="padding : 1px;" src="17_data/img11.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.11. Изменение положения декорации</span></p>
+<p class="rvps8"><span class="rvts4">Осталось добавить кнопку "Зарегистрироваться"</span><span class="rvts9">.</span><span class="rvts4"> Для этого добавим команду на форму (рис. 17.12).</span></p>
+<p class="rvps9"><img 394="" 117="" alt="" style="padding : 1px;" src="17_data/img12.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.12. Добавление команды формы</span></p>
+<p class="rvps2"><span class="rvts4">Перенесем команду на форму (рис. 17.13).</span></p>
+<p class="rvps9"><img 387="" 148="" alt="" style="padding : 1px;" src="17_data/img13.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.13. Добавление команды на форму</span></p>
+<p class="rvps8"><span class="rvts4">В палитре свойств укажем, что это </span>–<span class="rvts4"> кнопка по умолчанию, перейдем на вкладку "Расположение" (рис. 17.14).</span></p>
+<p class="rvps9"><img 320="" 180="" alt="" style="padding : 1px;" src="17_data/img14.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.14. Настройка кнопки</span></p>
+<p class="rvps8"><span class="rvts4">Изменим параметр "ГоризонтальноеПоложениеВГруппе" на "Центр" (рис. 17.15).</span></p>
+<p class="rvps9"><img 385="" 169="" alt="" style="padding : 1px;" src="17_data/img15.png"></p>
+<p class="rvps11"><span class="rvts8">Рис. 17.15. Настройка кнопки</span></p>
+<h2 class="rvps12"><a name="_Toc121319210"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Регистрация новых игроков</span></span></h2>
+<p class="rvps8"><span class="rvts4">Перейдем ко </span><span class="rvts3">второй задаче</span><span class="rvts4">.
+ Теперь необходимо настроить программную логику данной кнопки. Для этого
+ выберем команду "Зарегистрироваться" и в палитре свойств нажмем на 
+кнопку выбора у параметра "Действие". Выбираем "Создать на клиенте" 
+(рис. 17.16). </span></p>
+<p class="rvps9"><img 469="" 165="" alt="" style="padding : 1px;" src="17_data/img16.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.16. Добавление действия команды</span></p>
+<p class="rvps8"><span class="rvts4">В процессе регистрации система 
+считает с формы имя и логин пользователя, создаст нового пользователя и 
+добавит запись в справочник "Игроки". Для подобной реализации необходимо
+ перейти на контекст сервера, но для начала необходимо проверить, ввел 
+ли игрок логин и имя в форме регистрации.</span></p>
+<p><img 434="" 107="" alt="" style="padding : 1px;" src="17_data/img17.png"></p>
+<p class="rvps8"><span class="rvts4">Теперь можем перейти на контекст сервера. Для этого вызовем процедуру "ЗарегистрироватьсяНаСервере", которую создадим позже.</span></p>
+<p><img 491="" 111="" alt="" style="padding : 1px;" src="17_data/img18.png"></p>
+<p class="rvps8"><span class="rvts4">После создания нового пользователя и
+ записи в справочнике "Игроки" необходимо перезапустить пользовательский
+ режим, чтобы пользователь мог зайти в только что зарегистрированный 
+аккаунт. Воспользуемся методом "ЗавершитьРаботуСистемы", пропустим 
+первый параметр данного метода и укажем значение второго параметра 
+"Истина", с помощью третьего параметра укажем пользователю, что ему 
+необходимо войти в систему.</span></p>
+<p><img 458="" 138="" alt="" style="padding : 1px;" src="17_data/img19.png"></p>
+<p class="rvps8"><span class="rvts4">Теперь определим процедуру "ЗарегистрироватьсяНаСервере"</span><span class="rvts9">.</span></p>
+<p><img 265="" 104="" alt="" style="padding : 1px;" src="17_data/img20.png"></p>
+<p class="rvps8"><span class="rvts4">Процесс регистрации не должен 
+зависеть от прав текущего пользователя. Для регистрации будет создан 
+технический пользователь "Новая игра", у которого не будет прав на 
+внесение изменений в систему. Установим привилегированный режим в 
+положение "Истина", чтобы система не проверяла права текущего 
+пользователя.</span></p>
+<p><img 321="" 80="" alt="" style="padding : 1px;" src="17_data/img21.png"></p>
+<p class="rvps8"><span class="rvts4">Создадим пользователя при помощи логина и пароля из формы, а затем выключим привилегированный режим.</span></p>
+<p><img 414="" 154="" alt="" style="padding : 1px;" src="17_data/img22.png"></p>
+<p class="rvps8"><span class="rvts4">После того, как пользователь был создан, необходимо наделить его правами. </span></p>
+<p><img 477="" 143="" alt="" style="padding : 1px;" src="17_data/img23.png"></p>
+<p class="rvps8"><span class="rvts4">Теперь нужно обратиться к ролям, чтобы наделить пользователя правами, но здесь есть особенность. Роль </span>–<span class="rvts4">
+ это частица режима пользователя, поскольку именно там пребывают все 
+полномочия, которые может и не может использовать игрок. Чтобы 
+обратиться к роли, нужно обратиться к альтернативной структуре 
+конфигурации. Их всего две: режим разработчика и режим пользователя. 
+Роль, которая была создана в режиме разработчика, также появляется в 
+структуре базы данных. И для того, чтобы обратиться к ней именно со 
+стороны базы данных, необходимо использовать ключевое слово 
+"Метаданные". </span></p>
+<p><img 552="" 153="" alt="" style="padding : 1px;" src="17_data/img24.png"></p>
+<p class="rvps8"><span class="rvts4">Также реализуем настройку, чтобы 
+созданный пользователь не отображался в окне авторизации. В таком случае
+ игрок сможет войти в систему, только зная логин для авторизации. 
+Установим свойство "ПоказыватьВСпискеВыбора" в положение "Ложь" до 
+отключения привилегированного режима.</span></p>
+<p><img 527="" 163="" alt="" style="padding : 1px;" src="17_data/img25.png"></p>
+<p class="rvps8"><span class="rvts4">Последний шаг, который нужно выполнить, </span>–<span class="rvts4"> это запись нового пользователя в систему. Укажем соответствующую строчку до отключения привилегированного режима. </span></p>
+<p><img 562="" 180="" alt="" style="padding : 1px;" src="17_data/img26.png"></p>
+<p class="rvps8"><span class="rvts4">Помимо автоматического создания 
+пользователя также необходимо программно создавать запись в справочнике 
+"Игроки" с информацией об этом пользователе. </span></p>
+<p><img 484="" 248="" alt="" style="padding : 1px;" src="17_data/img27.png"></p>
+<p class="rvps2"><span class="rvts4">Игроку, который зарегистрировался в системе, необходимо выдать стартовый капитал для начала игры. </span></p>
+<p><img 468="" 298="" alt="" style="padding : 1px;" src="17_data/img28.png"></p>
+<p class="rvps8"><span class="rvts4">Форму регистрации необходимо 
+отобразить на начальном экране, но видеть ее будет только технический 
+пользователь, который будет называться "Новая игра". </span></p>
+<p class="rvps8"><span class="rvts4">Перед созданием такого пользователя создадим соответствующую роль. Имя роли </span>–<span class="rvts4"> "НоваяИгра" (рис. 17.17). </span></p>
+<p class="rvps10"><img 396="" 125="" alt="" style="padding : 1px;" src="17_data/img29.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.17. Добавление новой роли</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">Эта роль будет включать в себя только право на просмотр общей формы "ФормаРегистрации" (рис. 17.18). </span></p>
+<p class="rvps10"><img 287="" 228="" alt="" style="padding : 1px;" src="17_data/img30.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.18. Настройка прав для роли "НоваяИгра"</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps13"><span class="rvts4">Обновим конфигурацию базы данных, чтобы сохранить все внесенные изменения. </span></p>
+<h2 class="rvps12"><a name="_Toc121319211"></a>
+<span class="rvts0"><span class="rvts7">Усложнения в логике игры. Финальная доработка и проверка игры </span></span></h2>
+<p class="rvps8"><span class="rvts4">Перейдем к </span><span class="rvts3">третьей задаче</span><span class="rvts4">.
+ Теперь можно вынести форму регистрации на начальный экран и сделать 
+настройку: если игру запустил технический пользователь для регистрации, 
+то будет выводиться форма регистрации, если же в систему вошел реальный 
+игрок, то должна отображаться форма начальной страницы. </span></p>
+<p class="rvps8"><span class="rvts4">Откроем рабочую область начальной страницы, чтобы сделать такую настройку (рис. 17.19). </span></p>
+<p class="rvps10"><img 221="" 120="" alt="" style="padding : 1px;" src="17_data/img31.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.19. Переход к рабочей области начальной страницы</span></p>
+<p class="rvps2"><span class="rvts4">Добавим форму регистрации на начальный экран (рис. 17.20). </span></p>
+<p class="rvps10"><img 231="" 151="" alt="" style="padding : 1px;" src="17_data/img32.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.20. Добавление формы регистрации на начальный экран</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">Чтобы разделить отображение форм по пользователям, необходимо изменить видимость.</span></p>
+<p class="rvps8"><span class="rvts4">Форма регистрации должна выводиться
+ только для пользователя с ролью "НоваяИгра" (рис. 17.21). 
+"НачальнаяСтраница", напротив, должна быть видна всем, кроме 
+пользователей с ролью "НоваяИгра" (рис. 17.22). </span></p>
+<p class="rvps8"><span class="rvts9"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 304="" 200="" alt="" style="padding : 1px;" src="17_data/img33.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 303="" 199="" alt="" style="padding : 1px;" src="17_data/img34.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.21. Настройка видимости формы регистрации</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.22. Настройка видимости формы "НачальнаяСтраница"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts4">Следующий шаг </span>–<span class="rvts4"> создание технического пользователя. Нажмем на вкладку "Администрирование" и откроем список пользователей (рис. 17.23). </span></p>
+<p class="rvps10"><img 542="" 83="" alt="" style="padding : 1px;" src="17_data/img35.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.23. Переход к списку пользователей</span></p>
+<p class="rvps8"><span class="rvts4">Здесь уже есть пользователь "Тест".
+ Изменим его имя и полное имя на "НоваяИгра" (рис. 17.24). Перейдем на 
+вкладку "Прочее" и укажем, что данный пользователь будет наделен ролью 
+"НоваяИгра" (рис. 17.25). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 186="" 234="" alt="" style="padding : 1px;" src="17_data/img36.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 186="" 234="" alt="" style="padding : 1px;" src="17_data/img37.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.24. Изменение пользователя "Тест"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.25. Изменение роли пользователя "НоваяИгра"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts9"><br></span></p>
+<p><span class="rvts4">Таким образом, в системе будет два заранее заготовленных пользователя: "Администратор" и "Новая игра". </span></p>
+<p class="rvps8"><span class="rvts4">Чтобы при запуске из конфигуратора 
+можно было каждый раз выбирать пользователя, под которым нужно войти в 
+систему, необходимо обратиться к вкладке "Сервис" и открыть "Параметры" 
+(рис. 17.26). </span></p>
+<p class="rvps10"><img 361="" 119="" alt="" style="padding : 1px;" src="17_data/img38.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.26. Переход к параметрам </span></p>
+<p class="rvps8"><span class="rvts4">В открывшемся окне переходим на вкладку "Запуск "1С:Предприятия" и в пункте "Пользователи" указываем "Имя" (рис. 17.27). </span></p>
+<p class="rvps10"><img 256="" 301="" alt="" style="padding : 1px;" src="17_data/img39.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.27. Настройка запуска программы</span></p>
+<p class="rvps8"><span class="rvts4">Если в данном поле не указать конкретного пользователя, то система каждый раз будет спрашивать, под кем зайти в систему. </span></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под пользователем "НоваяИгра". </span></p>
+<p class="rvps8"><span class="rvts4">В результате открылась форма 
+регистрации. Но сейчас все элементы формы находятся в левом верхнем 
+углу, что выглядит не очень красиво (рис. 17.28). </span></p>
+<p class="rvps10"><img 389="" 193="" alt="" style="padding : 1px;" src="17_data/img40.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.28. Запуск игры под пользователем "НоваяИгра"</span></p>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts4">Откроем общую форму 
+"ФормаРегистрации" и в свойствах всей формы на вкладке "Расположение" 
+укажем для свойств "ГоризонтальноеПоложениеПодчиненных" и 
+"ВертикальноеПоложениеПодчиненных" значения "Центр" (рис. 17.29). </span></p>
+<p class="rvps10"><img 400="" 80="" alt="" style="padding : 1px;" src="17_data/img41.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.29. Настройка положения подчиненных элементов на форме регистрации</span></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под пользователем "НоваяИгра". </span></p>
+<p class="rvps8"><span class="rvts4">Зарегистрируем нового пользователя. Логин и имя можно указать на свое усмотрение (рис. 17.30). </span></p>
+<p class="rvps10"><img 276="" 187="" alt="" style="padding : 1px;" src="17_data/img42.png"></p>
+<p class="rvps11"><span class="rvts8">Рис. 17.30. Регистрация нового пользователя</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 68="" alt="" style="padding : 1px;" src="17_data/img43.png"></p>
+</td>
+<td 533="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts10">Если ввести логин уже существующего пользователя, система выдаст ошибку.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts4">После нажатия на кнопку 
+"Зарегистрироваться" программа перезапустится, и откроется 
+пользовательский режим только что созданного игрока (рис. 17.31). </span></p>
+<p class="rvps10"><img 399="" 256="" alt="" style="padding : 1px;" src="17_data/img44.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.31. Начальная страница нового игрока</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">Можно начать игру, покупать товары или апгрейды и продавать их покупателю!</span></p>
+<p class="rvps8"><span class="rvts4">Если сейчас перезапустить систему, 
+то вновь придется выбрать пользователя, но так как при создании 
+пользователя было указано, что он не должен отображаться в списке, его 
+логин потребуется ввести вручную (рис. 17.32). </span></p>
+<p class="rvps10"><img 280="" 151="" alt="" style="padding : 1px;" src="17_data/img45.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.32. Авторизация в системе</span></p>
+<p class="rvps8"><span class="rvts4">Если какой-то пользователь был 
+создан случайно, либо просто требуется удалить одного из пользователей, 
+необходимо вновь обратиться к вкладке "Администрирование" и открыть 
+список пользователей. </span></p>
+<p class="rvps8"><span class="rvts4">Чтобы удалить пользователя, необходимо сфокусироваться на его записи и нажать на крестик (рис. 17.33). </span></p>
+<p class="rvps10"><img 273="" 176="" alt="" style="padding : 1px;" src="17_data/img46.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.33. Удаление пользователя</span></p>
+<p class="rvps8"><span class="rvts4">Если пользователь был удален из 
+системы, то его также необходимо удалить и в пользовательском режиме в 
+справочнике "Игроки". Для этого необходимо запустить игру под 
+пользователем "Администратор" и, выбрав справочник "Игроки" в разделе 
+"Для администратора", удалить лишнюю запись через "Еще" </span>–<span class="rvts4"> "Удалить". Или можно использовать сочетание клавиш Shift+Del (рис. 17.34).</span></p>
+<p class="rvps10"><img 477="" 240="" alt="" style="padding : 1px;" src="17_data/img47.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.34. Список пользователей</span></p>
+<p class="rvps8"><span class="rvts4">Последнее, что осталось сделать в этой программе, </span>–<span class="rvts4">
+ это настроить списки. На начальном экране есть кнопки для быстрого 
+перехода к списку заказов, этапам заказов, а также к покупкам товаров. 
+Сейчас в них отображаются все записи по всем игрокам. Было бы удобнее, 
+если бы каждый игрок видел только свой список. </span></p>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts4">Данную настройку можно будет 
+реализовать с помощью реквизита "Игрок". Текущая задача сводится к тому,
+ чтобы создать для документов, к которым игрок имеет доступ, формы 
+списка и сделать в них отбор данных по текущему игроку. </span></p>
+<p class="rvps8"><span class="rvts4">Начнем с документа "Покупка 
+товаров". Откроем окно редактирования этого документа и на вкладке 
+"Формы" добавим новую форму списка. Чтобы сразу определить структуру 
+списка, нажмем на кнопку "Далее" (рис. 17.35). </span></p>
+<p class="rvps10"><img 457="" 214="" alt="" style="padding : 1px;" src="17_data/img48.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.35. Добавление формы списка </span></p>
+<p class="rvps8"><span class="rvts4">На форме списка необходимо выводить информацию о дате, номере и итоговой сумме документа (рис. 17.36). </span></p>
+<p class="rvps10"><img 242="" 227="" alt="" style="padding : 1px;" src="17_data/img49.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.36. Определение структуры списка</span></p>
+<p class="rvps8"><span class="rvts4">Для данных, которые будут отображаться на этой форме, необходимо установить отбор по текущему игроку.</span></p>
+<p class="rvps8"><span class="rvts4">Данные формируются в разделе "Реквизиты", поэтому работать нужно с реквизитом "Список". </span></p>
+<p class="rvps8"><span class="rvts4">Откроем палитру свойств реквизита 
+"Игрок" и на вкладке "Объект" установим галочку напротив свойства 
+"Произвольный запрос". Далее нажмем на кнопку "Открыть" (рис. 17.37). </span></p>
+<p class="rvps10"><img 365="" 106="" alt="" style="padding : 1px;" src="17_data/img50.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.37. Переход к настройке списка</span></p>
+<p class="rvps8"><span class="rvts4">Нужно реализовать следующую настройку: если список просматривает Администратор, то нужно отображать все записи, а если игрок, </span>–<span class="rvts4"> то только те, которые были созданы им. </span></p>
+<p class="rvps8"><span class="rvts4">Чтобы сделать такую настройку, перейдем в конструктор запроса (рис. 17.38).</span></p>
+<p class="rvps10"><img 387="" 245="" alt="" style="padding : 1px;" src="17_data/img51.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.38. Переход в конструктор запроса </span></p>
+<p class="rvps8"><span class="rvts4">В конструкторе запроса перейдем в раздел "Компоновка данных", далее </span>–<span class="rvts4">
+ на вкладку "Условия". Данный раздел позволяет сделать необязательные 
+условия: если данные заполнены, то отбор будет работать, в противном 
+случае отбор не сработает. </span></p>
+<p class="rvps8"><span class="rvts4">Отбор будет выполняться по полю 
+"Игрок". После добавления поля нажмем по нему правой кнопкой мыши и в 
+списке выберем "Изменить" (рис. 17.39). </span></p>
+<p class="rvps10"><img 402="" 145="" alt="" style="padding : 1px;" src="17_data/img52.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.39. Добавление условия отбора</span></p>
+<p class="rvps8"><span class="rvts4">В открывшемся окне укажем, что поле "Игрок" должно быть равно переменному значению. </span></p>
+<p class="rvps8"><span class="rvts4">Чтобы обозначить динамическое значение, то есть параметр, необходимо указать </span><span class="rvts3">амперсант (&amp;)</span><span class="rvts4"> перед названием этого параметра (рис. 17.40).</span></p>
+<p class="rvps10"><img 360="" 194="" alt="" style="padding : 1px;" src="17_data/img53.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.40. Настройка параметра отбора </span></p>
+<p class="rvps8"><span class="rvts4">В результате будет получен запрос, в
+ котором ветка "Условие" заключена в фигурные скобки. Это означает, что 
+данный параметр не обязателен к заполнению (рис. 17.41). </span></p>
+<p class="rvps10"><img 350="" 282="" alt="" style="padding : 1px;" src="17_data/img54.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.41. Итоговый вариант запроса</span></p>
+<p class="rvps8"><span class="rvts4">Но на этом настройка формы списка 
+еще не окончена. Параметр "Игрок" необходимо заполнять. Заполнение 
+должно происходить на стороне сервера, чтобы была возможность 
+анализировать информацию о том, какой игрок запустил систему для 
+генерации соответствующей формы. </span></p>
+<p class="rvps8"><span class="rvts4">Для реализации заполнения параметра подойдет обработчик события формы "ПриСозданииНасервере" (рис. 17.42). </span></p>
+<p class="rvps10"><img 398="" 137="" alt="" style="padding : 1px;" src="17_data/img55.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.42. Добавление обработчика "ПриСозданииНаСервере"</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">В этом обработчике нужно определить
+ следующую логику: если игру запустил не Администратор, тогда необходимо
+ заполнить параметр "Игрок". </span></p>
+<p><img 619="" 102="" alt="" style="padding : 1px;" src="17_data/img56.png"></p>
+<p class="rvps8"><span class="rvts4">Скопируем на будущее получившийся обработчик.</span></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под созданным ранее игроком. </span></p>
+<p class="rvps8"><span class="rvts4">Если нажать на кнопку "Покупка товаров", то список будет пустым, так как данный игрок еще ничего не покупал (рис. 17.43). </span></p>
+<p class="rvps10"><img 312="" 163="" alt="" style="padding : 1px;" src="17_data/img57.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.43. Список покупок товара</span></p>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts4">Аналогичную настройку необходимо сделать для списка заказов и текущих задач. </span></p>
+<p class="rvps8"><span class="rvts4">Перейдем к списку заказов. В окне редактирования на вкладке "Формы" создадим форму списка (рис. 17.44). </span></p>
+<p class="rvps10"><img 467="" 223="" alt="" style="padding : 1px;" src="17_data/img58.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.44. Добавление формы списка</span></p>
+<p class="rvps8"><span class="rvts4">Перейдем на вторую вкладку 
+конструктора формы и определим структуру списка. Он должен содержать в 
+себе поля "Дата", "Номер", "Товар", "Цена", "Количество" и "Итоговая 
+сумма" (рис. 17.45). </span></p>
+<p class="rvps10"><img 265="" 248="" alt="" style="padding : 1px;" src="17_data/img59.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.45. Настройка структуры списка</span></p>
+<p class="rvps8"><span class="rvts4">В открывшемся редакторе форм 
+подставим фрагмент программного кода из модуля формы списка документа 
+"Покупка товаров", который мы скопировали ранее. </span></p>
+<p><img 632="" 70="" alt="" style="padding : 1px;" src="17_data/img60.png"></p>
+<p class="rvps8"><span class="rvts4">После добавления программного кода необходимо связать данный обработчик с событием формы (рис. 17.46). </span></p>
+<p class="rvps10"><img 440="" 96="" alt="" style="padding : 1px;" src="17_data/img61.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.46. Привязка обработчика к событию </span></p>
+<p class="rvps8"><span class="rvts4">Далее необходимо указать, что 
+список заказов должен формироваться для каждого игрока свой. Отроем 
+палитру свойств реквизита "Список", установим галочку напротив свойства 
+"ПроизвольныйЗапрос" и нажмем на кнопку "Открыть" (рис. 17.47). </span></p>
+<p class="rvps10"><img 431="" 121="" alt="" style="padding : 1px;" src="17_data/img62.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.47. Переход к настройке списка</span></p>
+<p class="rvps8"><span class="rvts4">Переходим в конструктор запроса и 
+на вкладке "Условия" в разделе "Компоновка данных" указываем, что отбор 
+будет осуществляться по полю "Игрок" (рис. 17.48). </span></p>
+<p class="rvps10"><img 354="" 232="" alt="" style="padding : 1px;" src="17_data/img63.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.4. Настройка параметра отбора </span></p>
+<p class="rvps8"><span class="rvts4">Благодаря тому, что параметр отбора
+ на форме списка заказов называется так же, как и на форме списка 
+покупок товаров, перенесенный программный код отработает корректно. </span></p>
+<p class="rvps8"><span class="rvts4">Последнее, что осталось настроить, </span>–<span class="rvts4">
+ это форма списка задач. Перейдем в окно редактирования задачи "Этапы 
+заказов" на вкладку "Формы" и добавим новую форму списка задач (рис. 
+17.49).</span></p>
+<p class="rvps10"><img 376="" 185="" alt="" style="padding : 1px;" src="17_data/img64.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.49. Добавление формы списка бизнес-процесса</span></p>
+<p class="rvps8"><span class="rvts4">Поскольку у механизма задачи уже 
+есть адресация, то можно сразу обратиться к свойствам реквизита "Список"
+ и на вкладке "Объект" указать в качестве основной таблицы 
+"ЭтапыЗаказа.ЗадачиПоИсполнителю" (рис. 17.50). </span></p>
+<p class="rvps10"><img 288="" 191="" alt="" style="padding : 1px;" src="17_data/img65.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.50. Настройка списка "Этапов заказа"</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под ранее созданным игроком. </span></p>
+<p class="rvps8"><span class="rvts4">Если сейчас нажать на кнопку "Список заказов", то откроется форма списка бизнес-процессов (рис. 17.51).</span></p>
+<p class="rvps10"><img 322="" 186="" alt="" style="padding : 1px;" src="17_data/img66.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.51. Список бизнес-процессов "Заказ"</span></p>
+<p class="rvps8"><span class="rvts4">Лучше всего по данной команде выводить пользователю список документов с заказами от клиентов. </span></p>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts4">Откроем общую форму "Начальная страница" и обратимся к разделу "Команды", "Глобальные команды" (рис. 17.52). </span></p>
+<p class="rvps10"><img 436="" 315="" alt="" style="padding : 1px;" src="17_data/img67.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.52. Раздел "Глобальные команды"</span></p>
+<p class="rvps8"><span class="rvts4">Теперь в глобальных командах 
+появился раздел "Для администратора". Если его развернуть, то появится 
+список с пунктами "Обычное", "Создать", "Отчеты" и "Сервис", содержимое 
+которого мы видели ранее. </span></p>
+<p class="rvps8"><span class="rvts4">На форму необходимо вынести команду
+ для перехода к списку документов "Заказ клиента" и удалить команду 
+"БизнесПроцессЗаказОткрытьСписок" (рис. 17.53).</span></p>
+<p class="rvps10"><img 338="" 161="" alt="" style="padding : 1px;" src="17_data/img68.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.53. Изменения в группе "ДанныеЗаказов" </span></p>
+<p class="rvps2"><span class="rvts4">Для новой команды необходимо указать заголовок "Заказы клиентов" (рис. 17.54). </span></p>
+<p class="rvps10"><img 352="" 136="" alt="" style="padding : 1px;" src="17_data/img69.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.54. Изменение заголовка команды </span></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps8"><span class="rvts4">Теперь, если открыть список заказов
+ клиентов, текущих задач или покупок товаров, то все они будут пустыми, 
+так как текущий игрок еще ничего не покупал и пока что не выполнил ни 
+одного заказа (рис. 17.55). </span></p>
+<p class="rvps10"><img 317="" 149="" alt="" style="padding : 1px;" src="17_data/img70.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.55. Пустой список заказов</span></p>
+<p class="rvps2"><span class="rvts4">Попробуем открыть магазин (рис. 17.56). </span></p>
+<p class="rvps10"><img 350="" 212="" alt="" style="padding : 1px;" src="17_data/img71.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.56. Поступление нового заказа</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps8"><span class="rvts4">В результате в списке появился 
+новый заказ от клиента. На данный момент его нельзя выполнить, так как у
+ игрока не хватает товаров в наличии. Если проверить список документов 
+"Заказы клиентов", то он будет пуст, так как заказ не был выполнен (рис.
+ 17.57). </span></p>
+<p class="rvps10"><img 401="" 174="" alt="" style="padding : 1px;" src="17_data/img72.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.57. Пустой список заказов после появления задачи</span></p>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts4">Осталось сделать последнюю маленькую настройку, а именно убрать вывод интервала между заказами. </span></p>
+<p class="rvps8"><span class="rvts4">В модуле общей формы "Начальная страница" уберем строку, которая выводит сообщение с интервалом. </span></p>
+<p><img 455="" 126="" alt="" style="padding : 1px;" src="17_data/img73.png"></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под администратором. </span></p>
+<p class="rvps8"><span class="rvts4">В пользовательском режиме 
+отображаются список апгрейдов, баланс и рейтинг игрока Администратор. 
+Список заказов пуст, так во всех заказах, которые создавались ранее, не 
+был указан исполнитель, то есть они были обезличены (рис. 17.58). </span></p>
+<p class="rvps10"><img 353="" 279="" alt="" style="padding : 1px;" src="17_data/img74.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.58. Начальная страница Администратора</span></p>
+<p class="rvps8"><span class="rvts3">Весь желаемый функционал реализован!</span><span class="rvts4"> Доработать систему можно различными способами, но главная задача на текущий момент выполнена. </span></p>
+<p class="rvps8"><span class="rvts4">В рамках этого модуля была создана 
+игра, к которой могут подключаться разные игроки. Для каждого игрока 
+отображается только его информация. </span></p>
+<p class="rvps8"><span class="rvts4">Если сейчас попробовать построить 
+отчет по рейтингу игроков, то в списке будет только Администратор, 
+потому что другие игроки еще не приступили к развитию своих магазинов. </span></p>
+<p class="rvps8"><span class="rvts4">Перезапустим пользовательский режим и авторизуемся в системе под своим игроком (рис. 17.59). </span></p>
+<p class="rvps10"><img 382="" 207="" alt="" style="padding : 1px;" src="17_data/img75.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.59. Авторизация под своим пользователем</span></p>
+<p class="rvps8"><span class="rvts4">Купим для этого игрока апгрейд с минимальным порогом рейтинга для приобретения, например, "Один кассир" (рис. 17.60). </span></p>
+<p class="rvps10"><img 338="" 154="" alt="" style="padding : 1px;" src="17_data/img76.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.60. Покупка апгрейда "Один кассир"</span></p>
+<p class="rvps8"><span class="rvts4">После покупки на начальном экране отобразится рейтинг текущего игрока </span>–<span class="rvts4"> 5. Повторно сформируем отчет по рейтингу. Теперь в списке два игрока (рис. 17.61). </span></p>
+<p class="rvps10"><img 354="" 158="" alt="" style="padding : 1px;" src="17_data/img77.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.61. Отчет по рейтингу игроков</span></p>
+<p class="rvps2"><span class="rvts4">Попробуем закупить товарные позиции для текущего игрока (рис. 17.62). </span></p>
+<p class="rvps10"><img 326="" 245="" alt="" style="padding : 1px;" src="17_data/img78.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 17.62. Покупка товаров для текущего игрока</span></p>
+<p class="rvps8"><span class="rvts4">На начальном экране по кнопке 
+"Отчет по остаткам товаров" можно посмотреть, сколько товаров есть у 
+каждого игрока на складе (рис. 17.63). Если сформировать отчет по 
+финансам, то там также отобразится информация по обоим игрокам (рис. 
+17.64). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 319="" 126="" alt="" style="padding : 1px;" src="17_data/img79.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 314="" 112="" alt="" style="padding : 1px;" src="17_data/img80.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.63. Отчет по остаткам товаров</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts8">Рис. 17.64. Отчет по финансам</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts4">Чем больше будет идти учет в 
+созданной игре и чем больше будет игроков, тем больше они будут 
+продавать и покупать товары и тем быстрее увеличат свой рейтинг. Можно 
+устраивать состязания и подводить итоги по отчетам. </span></p>
+<p class="rvps10"><span class="rvts11">На этом прохождение второго модуля завершено!</span></p>
+<p class="rvps13"><span class="rvts4">В рамках </span><span class="rvts3">этого модуля</span><span class="rvts4">
+ мы рассмотрели не только программирование, но и конфигурирование. 
+Создали множество объектов, поработали с формами и даже 
+взаимодействовали с программой с точки зрения администратора.&nbsp; </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts11">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts12"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 61="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><img 81="" alt="" style="padding : 1px;" src="17_data/img81.png"></p>
+</td>
+<td 440="" 61="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts4">В системе не может быть пользователей с двумя </span><span class="rvts3">одинаковыми</span><span class="rvts4"> именами.&nbsp; </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts9"><br></span></p>
+<h2 class="rvps18"><a name="_Toc121319212"></a>
+<span class="rvts0"><span class="rvts13">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps6"><span class="rvts5">С помощью какого символа обозначаются параметры в запросе? </span></li>
+</ol>
+<h2 class="rvps12"><a name="_Toc121319213"></a>
+<span class="rvts0"><span class="rvts7">Домашнее задание! </span></span></h2>
+<p class="rvps8"><span class="rvts4">Доработайте форму начального экрана
+ под концепцию своего магазина. Например, можно вынести на начальный 
+экран дополнительную информацию в пункт управления или новые команды для
+ быстрого перехода к нужным игроку объектам. </span></p>
+<ol class="list0">
+<li value="2" style="page-break-before: always;" class="rvps20"><span class="rvts6"></span></li>
+</ol>
+<p><span class="rvts9"><br></span></p>
+
+</body></html>

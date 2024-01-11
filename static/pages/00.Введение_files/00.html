@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>00</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 76px 57px 76px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ color: #000000;
+}
+span.rvts4
+{
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-family: 'Calibri';
+ color: #000000;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 14pt;
+ font-family: 'Pragmatica';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 14pt;
+ font-family: 'Pragmatica';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts11
+{
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+ background-color: #ffff00;
+}
+span.rvts13
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts14
+{
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts16
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts17
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts18
+{
+}
+span.rvts19
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts20
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts21
+{
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 11px;
+}
+.rvps5
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps9
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps10
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps11
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 71px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 71px;
+}
+.rvps17
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps18
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps19
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 119px;
+}
+.rvps20
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 119px;
+}
+.rvps21
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 71px;
+}
+.rvps22
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 57px;
+}
+.rvps23
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 47px;
+}
+.rvps24
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 71px;
+}
+.rvps25
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 71px;
+}
+.rvps26
+{
+ line-height: 1.06;
+ widows: 2;
+ orphans: 2;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 71px; list-style-position: outside; list-style-type: decimal;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 25px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<p><a name="_Toc121319119"></a>
+<span class="rvts1">Описание</span><span class="rvts2"> </span><span class="rvts1">программы</span></p>
+<p class="rvps1"><span class="rvts3">Программа </span><span class="rvts4">"Разработчик
+ Junior: программирование бизнес-приложений, игр и сайтов. Изучаемые 
+языки: 1С, JavaScript, HTML, CSS, PHP, MySQL, C#"</span><span class="rvts3">
+ состоит из 4 модулей по 36 ак. часов. Каждый модуль программы является 
+логическим продолжением предыдущего, рекомендуем проходить их 
+последовательно друг за другом:</span></p>
+<div><table border="1" cellpadding="4" cellspacing="-4" style="border-width: 0px; border-collapse: collapse;">
+<tbody><tr valign="top">
+<td 624="" valign="top" style="border-width : 4px; border-color: #000000; border-style: solid; padding: 0px 7px; border-top: none; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts5">1 </span><span class="rvts6">МОДУЛЬ</span><span class="rvts7">.</span><span class="rvts5"> "</span><span class="rvts6">МИНИ</span><span class="rvts5"> </span><span class="rvts6">ИГРЫ</span><span class="rvts5"> 1</span><span class="rvts6">С</span><span class="rvts5">"</span></p>
+<p class="rvps3"><span class="rvts3">Первый модуль посвящен созданию 
+мини-игр на языке "1С:Предприятие 8". Изучая основы программирования, 
+ученики научились создавать 2D</span><span class="rvts8">-</span><span class="rvts3">игры,
+ создали игру-квест с собственным сюжетом и научились создавать 
+карточные игры. На примере создания игральных кубиков освоили начальную 
+логику и синтаксис программирования. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 624="" valign="top" style="border-width : 4px; border-color: #c00000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts5">2 </span><span class="rvts6">МОДУЛЬ</span><span class="rvts7">.</span><span class="rvts5"> </span><span class="rvts9">"1</span><span class="rvts10">С</span><span class="rvts9">:</span><span class="rvts10">МАГНАТ</span><span class="rvts9">"</span></p>
+<p class="rvps1"><span class="rvts11">Во втором модуле ученикам 
+предстоит создать свой первый бизнес-проект. После создания нескольких 
+игр встает необходимость реализации более серьезной игры. Теперь с 
+помощью платформы "1С:Предприятие 8" создадим игру с торгово-учетной 
+системой. Задача игрока в новой разработке </span>–<span class="rvts11">
+ не уйти в ноль и выполнять заказы клиентов. В игровом формате вместе 
+создадим собственное приложение для оптимизации бизнес-процесса. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 624="" valign="top" style="border-width : 4px; border-color: #c00000; border-style: solid; padding: 0px 7px; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts5"></span><br><span class="rvts5">3 </span><span class="rvts6">МОДУЛЬ</span><span class="rvts5">. "</span><span class="rvts6">СОЗДАНИЕ</span><span class="rvts5"> </span><span class="rvts6">СОЦИАЛЬНОЙ</span><span class="rvts5"> </span><span class="rvts6">СЕТИ</span><span class="rvts5"> </span><span class="rvts6">С</span><span class="rvts5"> </span><span class="rvts6">НУЛЯ</span><span class="rvts5">"</span></p>
+<p class="rvps4"><span class="rvts3">В третьем модуле ученики 
+разработают сайт с системой аутентификации пользователя с последующей 
+его авторизацией. Мы ознакомимся с такими языками программирования, как 
+HTML, CSS, JavaScript и другие, узнаем как работает база данных и 
+создадим собственный веб-дизайн.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 624="" valign="top" style="border-width : 4px; border-color: #000000; border-style: solid; padding: 0px 7px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps1"><span class="rvts12"></span><br><span class="rvts5">4 </span><span class="rvts6">МОДУЛЬ</span><span class="rvts5">. </span><span class="rvts6">РАЗРАБОТКА</span><span class="rvts5"> 3D-</span><span class="rvts6">ИГРЫ</span><span class="rvts12">&nbsp;&nbsp; </span></p>
+<p class="rvps1"><span class="rvts3">В четвертом модуле ученики 
+познакомятся с одним из самых популярных движков для создания видеоигр -
+ Unity.&nbsp; Мы ознакомимся с синтаксисом и интерфейсом, рассмотрим 
+применение физики и анимации для создания собственного бесконечного 
+раннера с подсчетом очков и записью рекордов игроков.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps5" style="page-break-before: always;"><span class="rvts13"><br></span></p>
+<p><span class="rvts11">Обозначения:</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts14"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts13">Новые </span><span class="rvts15">термины</span><span class="rvts13"> выделяются следующим образом.&nbsp; </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts13"><br></span></p>
+<p><span class="rvts13"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><img 68="" alt="" style="padding : 1px;" src="00_data/img1.png"></p>
+</td>
+<td 533="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts14">Важные дополнения к материалу выделяются следующим образом. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts13"><br></span></p>
+<p class="rvps10"><span class="rvts13"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span class="rvts13"><br></span></p>
+<p><a name="__RefHeading___Toc281390624"></a>
+<span class="rvts13"><br></span></p>
+<h1 class="rvps11"><span class="rvts0"><span class="rvts1">Введение</span></span><span class="rvts0"><span class="rvts2">&nbsp; </span></span></h1>
+<p class="rvps12"><span class="rvts8">Добро пожаловать во второй модуль 
+программы "Разработчик Junior". В рамках второго модуля мы создадим 
+бизнес-приложение. В отличие от первого модуля, где создавалось 
+несколько небольших игрушек, во втором модуле мы создадим большую, 
+комплексную игру, посвященную торговле.&nbsp;&nbsp; </span></p>
+<p class="rvps12"><span class="rvts8">В результате у каждого получится 
+разработать игру вокруг своего собственного магазина на любую тематику: 
+зоомагазин, магазин бытовой техники или магазин товаров для творчества. </span></p>
+<p class="rvps12"><span class="rvts8"><br></span></p>
+<p class="rvps12"><span class="rvts8">Для начала обучения на этом модуле каждый ученик </span><span class="rvts16">должен</span><span class="rvts8"> завершить прохождение модуля 1, на котором: </span></p>
+<ul class="list0">
+<li style="margin-left: 0px" class="rvps14"><span class="rvts17">изучалось взаимодействие с двумя режимами работы: "1С:Предприятие" и "Конфигуратор";</span></li>
+<li style="margin-left: 0px" class="rvps14"><span class="rvts17">изучались принципы разработки и использования конфигураций на базе платформы "1С:Предприятие 8.3";</span></li>
+<li style="margin-left: 0px" class="rvps14"><span class="rvts17">формировалось представление об особенностях программирования на встроенном языке.</span></li>
+</ul>
+<p class="rvps12"><span class="rvts8"><br></span></p>
+<p class="rvps12"><span class="rvts13">Если все пункты соблюдены, то можно приступать к обучению! </span></p>
+<p class="rvps12"><span class="rvts13"><br></span></p>
+<p class="rvps12"><span class="rvts13">Для начала изучим логику 
+программы, которая должна получиться в результате: задача каждого игрока
+ заключается в том, чтобы получать прибыль от работы своего предприятия.
+ Благодаря полученным средствам игрок сможет улучшать и развивать свой 
+магазин. Игрок должен стремиться занять первые позиции по прибыли и 
+рейтингу в списке всех игроков. </span></p>
+<p class="rvps12"><span class="rvts11">Для реализации такой игры нам потребуется выполнить ряд задач: </span></p>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps16"><span class="rvts18">создать возможность регистрации или авторизации игрока (рис. 1);</span></li>
+</ol>
+<p class="rvps17"><img 458="" 247="" alt="" style="padding : 1px;" src="00_data/img2.png"></p>
+<p class="rvps17"><span class="rvts19">Рис. 1. Окно авторизации</span></p>
+<ol class="list3">
+<li value="2" style="margin-left: 0px" class="rvps16"><span class="rvts18">создать форму регистрации нового игрока (рис. 2);</span></li>
+</ol>
+<p class="rvps18"><img 400="" 220="" alt="" style="padding : 1px;" src="00_data/img3.png"></p>
+<p class="rvps17"><span class="rvts19">Рис. 2. Форма регистрации</span></p>
+<ol class="list3">
+<li value="3" style="margin-left: 0px" class="rvps16"><span class="rvts18">настроить форму начального экрана (рис. 3), на которой можно:</span></li>
+<ol class="list4">
+<li value="1" style="margin-left: 0px" class="rvps20"><span class="rvts18">Увидеть приобретенные игроком апгрейды.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps20"><span class="rvts18">Открыть или закрыть магазин.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps20"><span class="rvts18">Посмотреть финансовое состояние, а также рейтинг торгового предприятия. </span></li>
+</ol></ol>
+<p class="rvps12"><span class="rvts11">От рейтинга зависит то, как часто в магазин будут приходить покупатели: чем выше рейтинг, тем больше покупателей приходит </span>–<span class="rvts11"> фирма получает большую прибыль. Также рейтинг влияет на итоговое количество товара.</span></p>
+<p class="rvps21"><span class="rvts20"><br></span></p>
+<p class="rvps22"><img 526="" 362="" alt="" style="padding : 1px;" src="00_data/img4.png"></p>
+<p class="rvps17"><span class="rvts19">Рис. 3. Форма начального экрана</span></p>
+<ol class="list3">
+<li value="4" style="margin-left: 0px" class="rvps16"><span class="rvts18">добавить возможность просмотра остатков товаров для каждого игрока (рис. 4);</span></li>
+</ol>
+<p class="rvps21"><span class="rvts20"><br></span></p>
+<p class="rvps23"><img 474="" 209="" alt="" style="padding : 1px;" src="00_data/img5.png"></p>
+<p class="rvps17"><span class="rvts21">Рис. 4. Отчет по остаткам товаров</span></p>
+<ol class="list3">
+<li value="5" style="margin-left: 0px" class="rvps16"><span class="rvts18">создать документ "Покупка товара" для пополнения склада каждого игрока (рис. 5);</span></li>
+</ol>
+<p class="rvps21"><span class="rvts20"><br></span></p>
+<p class="rvps24"><img 476="" 321="" alt="" style="padding : 1px;" src="00_data/img6.png"></p>
+<p class="rvps17"><span class="rvts21">Рис. 5. Документ "Покупка товаров"</span></p>
+<ol class="list3">
+<li value="6" style="margin-left: 0px" class="rvps16"><span class="rvts18">создать механизм выполнения этапа заказа и отправки его покупателю (рис. 6);</span></li>
+</ol>
+<p class="rvps21"><span class="rvts20"><br></span></p>
+<p class="rvps24"><img 452="" 361="" alt="" style="padding : 1px;" src="00_data/img7.png"></p>
+<p class="rvps25"><span class="rvts21">Рис. 6. Формы этапов заказа клиента</span></p>
+<ol class="list3">
+<li value="7" style="margin-left: 0px" class="rvps16"><span class="rvts18">добавить механизм "Покупка апгрейда". При покупке улучшения необходимо учитывать рейтинг игрока (рис. 7);</span></li>
+</ol>
+<p class="rvps24"><img 561="" 337="" alt="" style="padding : 1px;" src="00_data/img8.png"></p>
+<p class="rvps25"><span class="rvts21">Рис. 7. Документ "Приобретение апгрейда"</span></p>
+<ol class="list3">
+<li value="8" style="margin-left: 0px" class="rvps16"><span class="rvts18">задача
+ игрока сводится к тому, чтобы развивать свое дело и зарабатывать как 
+можно больше денег, тем самым соревнуясь с другими участниками системы. 
+Для просмотра прогресса каждого игрока необходимо создать отчет по 
+рейтингу (рис. 8); </span></li>
+</ol>
+<p class="rvps21"><span class="rvts20"><br></span></p>
+<p class="rvps21"><img 579="" 263="" alt="" style="padding : 1px;" src="00_data/img9.png"></p>
+<p class="rvps25"><span class="rvts21">Рис. 8. Отчет по рейтингу</span></p>
+<p class="rvps26" style="page-break-before: always;"><span class="rvts15"><br></span></p>
+<p><span class="rvts13"><br></span></p>
+
+</body></html>

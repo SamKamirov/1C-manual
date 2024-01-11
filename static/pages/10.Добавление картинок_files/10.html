@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+ font-weight: bold;
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+ text-decoration: underline;
+}
+span.rvts10
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts11
+{
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts15
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps6
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps8
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps11
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps12
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps14
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps17
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319169"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 10.<br><br></span></span><br><span class="rvts0"><span class="rvts1">Добавление</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">картинок</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия </span><span class="rvts4">–</span><span class="rvts5">
+ прикрепление картинок к апгрейдам. Картинки нужны для того, чтобы 
+пользователь видел на начальном экране все приобретенные им апгрейды. 
+Такое отображение удобнее всего сделать с помощью картинок.</span></p>
+<p class="rvps2"><span class="rvts5">В рамках этого занятия нам потребуется выполнить 2 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts6">Подготовка формы элемента справочника "Апгрейды".</span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts6">Реализация алгоритма добавления картинок.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts5">Прикрепить картинки можно с помощью специального типа данных </span>–<span class="rvts5">
+ "ХранилищеЗначения". Данный тип позволяет хранить различные файлы, 
+например, картинки, текстовые документы, сканы формата PDF и тому 
+подобное.</span></p>
+<h2 class="rvps5"><a name="_Toc121319170"></a>
+<span class="rvts0"><span class="rvts7">Настройка прикладного решения. Подготовка формы</span></span></h2>
+<p class="rvps2"><span class="rvts5">В рамках </span><span class="rvts3">первой задачи </span><span class="rvts5">необходимо реализовать механизм хранения только файлов формата PNG, JPEG, GIF и BNP. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим в справочник "Апгрейды" новый реквизит "Картинка", тип данных </span>–<span class="rvts5"> "ХранилищеЗначения" (рис. 10.1).</span></p>
+<p class="rvps6"><img 404="" 184="" alt="" style="padding : 1px;" src="10_data/img1.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.1. Добавление реквизита "Картинка"</span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 86="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="10_data/img2.png"></p>
+</td>
+<td 572="" 86="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts5">Данный
+ реквизит не отображается на форме элемента справочника из-за его типа 
+данных, так как "Хранилище значения" содержит в себе двоичные данные о 
+файлах, хранящихся в системе. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Для отображения картинки потребуется создать элемент формы, который будет связан с реквизитом формы.</span></p>
+<p class="rvps2"><span class="rvts5">Создадим новую форму. Перейдем на вкладку "Формы" и добавим новую форму элемента справочника (рис. 10.2).</span></p>
+<p class="rvps6"><img 412="" 229="" alt="" style="padding : 1px;" src="10_data/img3.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.2. Добавление новой формы элемента справочника</span></p>
+<p class="rvps2"><span class="rvts5">Для отображения картинки необходимо
+ сослаться на файл, то есть получить ссылку на запись картинки в базе 
+данных и отобразить ее в виде изображения. Ссылка состоит из букв и 
+цифр, поэтому для ее хранения будет использоваться тип данных "строка". </span></p>
+<p class="rvps2"><span class="rvts5">Добавим реквизит формы и назовем его "АдресКартинки", тип данных </span>–<span class="rvts5"> "строка", длина </span>–<span class="rvts5"> 0. Данный реквизит будет существовать только в рамках этой формы (рис. 10.3).</span></p>
+<p class="rvps6"><img 426="" 174="" alt="" style="padding : 1px;" src="10_data/img4.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.3. Добавление реквизита формы</span></p>
+<p class="rvps8"><span class="rvts5">Добавим реквизит на форму, зажав его левой кнопкой мыши (рис. 10.4).</span></p>
+<p class="rvps6"><img 417="" 156="" alt="" style="padding : 1px;" src="10_data/img5.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.4. Добавление реквизита на форму</span></p>
+<p class="rvps2"><span class="rvts5">Для нового элемента укажем вид </span>–<span class="rvts5">
+ "Поле картинки", а также уберем заголовок и поставим галочку напротив 
+свойства "Гиперссылка", благодаря чему появится возможность нажимать на 
+элемент формы (рис. 10.5). </span></p>
+<p class="rvps6"><img 296="" 132="" alt="" style="padding : 1px;" src="10_data/img6.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.5. Настройка поля "АдресКартинки"</span></p>
+<p class="rvps2"><span class="rvts5">Пользователь должен выбирать 
+картинку путем нажатия на поле. Чтобы пользователю был понятен процесс, 
+перейдем в палитре свойств на вкладку "Использование" и в свойстве 
+"ТекстНевыбраннойКартинки" напишем "Нажмите для выбора картинки" (рис. 
+10.6).</span></p>
+<p class="rvps6"><img 376="" 114="" alt="" style="padding : 1px;" src="10_data/img7.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.6. Добавление надписи для невыбранной картинки</span></p>
+<p class="rvps2"><span class="rvts5">Для красивого и пропорционального 
+отображения картинок изменим размер картинки. Перейдем на вкладку 
+"Оформление" и укажем в свойстве "РазмерКартинки" </span>–<span class="rvts5"> </span><span class="rvts9">"Пропорционально</span><span class="rvts5">" (рис. 10.7).</span></p>
+<p class="rvps6"><img 376="" 116="" alt="" style="padding : 1px;" src="10_data/img8.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 10.7. Установка размера картинки</span></p>
+<h2 class="rvps5"><a name="_Toc121319171"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Механизм прикрепления картинок</span></span></h2>
+<p class="rvps2"><span class="rvts3">Вторая задача</span><span class="rvts5">
+ заключается в том, чтобы запрограммировать реакцию программы на событие
+ "Нажатие". Перейдем на вкладку "События" и добавим обработчик события 
+"Нажатие". Определим событие "На клиенте" и нажмем на кнопку "ОК" (рис. 
+10.8).</span></p>
+<p class="rvps6"><img 367="" 140="" alt="" style="padding : 1px;" src="10_data/img9.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.8. Добавление события</span></p>
+<p><span class="rvts10"><br></span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="10_data/img10.png"></p>
+</td>
+<td 572="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts11">Если
+ создать событие сразу в модуле формы, а не через палитру свойств, то 
+оно не сработает, так не будет установлена связь между обработчиком и 
+самим событием элемента формы.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">У данного обработчика есть параметр
+ "СтандартнаяОбработка", который выдает пользователю сообщение о том, 
+что произошло в ходе выполнения действия. Данное сообщение выводить не 
+требуется, поэтому установим значение параметра "СтандартнаяОбработка" </span>–<span class="rvts5"> "Ложь"</span><span class="rvts10">.</span></p>
+<p><img 462="" 72="" alt="" style="padding : 1px;" src="10_data/img11.png"></p>
+<p class="rvps11"><span class="rvts5">Чтобы прикрепить изображение, воспользуемся специальной процедурой, которая называется "НачатьПомещениеФайла". </span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="10_data/img12.png"></p>
+</td>
+<td 572="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps12"><span class="rvts11">При
+ попытке ввести название данной процедуры с помощью подсказки ничего не 
+произойдет, так как данный метод считается устаревшим.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">В текущей ситуации этот обработчик 
+является самым удобным. Кроме того, он уже использовался в прошлом. 
+Запишем название процедуры вручную. </span></p>
+<p><img 519="" 100="" alt="" style="padding : 1px;" src="10_data/img13.png"></p>
+<p class="rvps2"><span class="rvts5">Описание данного метода можно найти
+ в документации, нажав по нему правой кнопкой мыши и выбрав пункт "Поиск
+ в Синтакс-помощнике". Из описания следует, что в процедуре необходимо 
+определить параметр "ОписаниеОповещениеОЗавершении". Он указывает, какая
+ процедура должна сработать после завершения помещения файла. Для этого 
+необходимо предварительно определить специальную конструкцию 
+"Оповещение". </span></p>
+<p><img 527="" 114="" alt="" style="padding : 1px;" src="10_data/img14.png"></p>
+<p class="rvps2"><span class="rvts5">Далее необходимо указать, какая 
+процедура будет использоваться для обработки файла и где она будет 
+вызываться. Назовем данную процедуру "ОбработатьВыборФайла". </span></p>
+<p><img 537="" 107="" alt="" style="padding : 1px;" src="10_data/img15.png"></p>
+<p class="rvps2"><span class="rvts5">"ОбработатьВыборФайла" </span>–<span class="rvts5">
+ это название экспортной процедуры, которая будет проверять, какой файл 
+прикрепляется, и будет давать отказ от записи в случае выбора 
+пользователем неподходящего файла. </span></p>
+<p class="rvps2"><span class="rvts5">В качестве второго параметра укажем
+ модуль, в котором будет срабатывать данная процедура, а именно модуль, в
+ котором сейчас идет написание кода.</span></p>
+<p class="rvps13"><img 428="" 76="" alt="" style="padding : 1px;" src="10_data/img16.png"></p>
+<p class="rvps2"><span class="rvts5">Вернемся к методу "НачатьПомещениеФайла" и укажем параметры.</span></p>
+<p class="rvps13"><img 439="" 78="" alt="" style="padding : 1px;" src="10_data/img17.png"></p>
+<p class="rvps2"><span class="rvts9">Первый параметр</span><span class="rvts5"> </span>–<span class="rvts5"> это описание оповещения "Оповещение". </span><span class="rvts9">Пропустим второй и третий</span><span class="rvts5"> параметры, так как это имя и адрес картинки, информации о которых сейчас нет. </span><span class="rvts9">Четвертый параметр</span><span class="rvts5"> </span>–<span class="rvts5"> это интерактивность, укажем значение </span>–<span class="rvts5">
+ "Истина". Благодаря этому нам нет нужды указывать второй параметр, так 
+как мы не знаем заранее путь к файлу, который выберет пользователь. </span></p>
+<p class="rvps2"><span class="rvts5">Параметр </span><span class="rvts9">"УникальныйИдентификатор"</span><span class="rvts5"> означает, что все происходит внутри данной формы </span>–<span class="rvts5"> если пользователь закроет форму и не зафиксирует запись картинки в базе данных, то картинка исчезнет.</span></p>
+<p class="rvps2"><span class="rvts5">Создадим экспортную процедуру 
+"ОбработатьВыборФайла", которая вызывается для анализа файла. Она должна
+ быть экспортной, поскольку этого требует формат создания оповещения. </span></p>
+<p><img 224="" 64="" alt="" style="padding : 1px;" src="10_data/img18.png"></p>
+<p class="rvps2"><span class="rvts5">Согласно документации, у процедуры 
+должны быть определенные параметры. Добавим процедуре параметры 
+"Результат", "Адрес", "ПомещаемыйФайл" и "ДополнительныеПараметры". </span></p>
+<p><img 564="" 60="" alt="" style="padding : 1px;" src="10_data/img19.png"></p>
+<p class="rvps2"><span class="rvts5">Необходимо проверять расширение 
+выбранного файла. Если расширение файла не PNG, JPEG, GIF или BNP, тогда
+ пользователь получит ошибку. Удобнее всего получить расширение от 
+"Файл". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts11"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts3">Файл</span><span class="rvts5"> </span>–<span class="rvts5"> это специальный тип данных, который содержит в себе информацию о файле.&nbsp;</span><span class="rvts10"> </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Создадим новую переменную "Файл", тип данных </span>–<span class="rvts5"> "файл". В качестве параметра укажем "ПомещаемыйФайл"</span><span class="rvts10">.</span></p>
+<p class="rvps8"><img 442="" 56="" alt="" style="padding : 1px;" src="10_data/img20.png"></p>
+<p class="rvps2"><span class="rvts5">Теперь можно считать расширение 
+файла. Создадим новую переменную "Расширение". Для дальнейшего анализа 
+расширения воспользуемся функцией "ВРег", чтобы все символы стали 
+заглавными.</span></p>
+<p><img 457="" 59="" alt="" style="padding : 1px;" src="10_data/img21.png"></p>
+<p class="rvps2"><span class="rvts5">Реализуем проверку расширения. Используем следующее условие:</span></p>
+<p><img 541="" 88="" alt="" style="padding : 1px;" src="10_data/img22.png"></p>
+<p class="rvps2"><span class="rvts5">Необходимо проверить, выбрался ли 
+файл. Если файл не был выбран, то необходимо прервать выполнение 
+процедуры. За это отвечает параметр "Результат". </span></p>
+<p><img 559="" 115="" alt="" style="padding : 1px;" src="10_data/img23.png"></p>
+<p class="rvps2"><span class="rvts5">После того, как нужный файл с 
+подходящим расширением был выбран, запишем адрес временного хранения 
+файла в реквизит формы, так как связанный с ним элемент позволит увидеть
+ эту картинку.</span></p>
+<p><img 548="" 132="" alt="" style="padding : 1px;" src="10_data/img24.png"></p>
+<p class="rvps2"><span class="rvts5">Для того чтобы пользователь, 
+закрывая форму, получал сообщение с вопросом о сохранении изменений, 
+необходимо добавить признак модифицированности для формы.</span></p>
+<p><img 555="" 140="" alt="" style="padding : 1px;" src="10_data/img25.png"></p>
+<p class="rvps2"><span class="rvts5">Так </span><span class="rvts9">картинка отобразится</span><span class="rvts5"> на форме, однако она </span><span class="rvts9">не будет храниться в базе данных</span><span class="rvts5">.
+ Для сохранения картинки в базу данных необходимо сделать запись в 
+реквизит объекта справочника. Реализуем две процедуры: для записи и для 
+чтения данных.</span></p>
+<p class="rvps2"><span class="rvts5">Определим новый обработчик на 
+форме. В палитре свойств формы перейдем на вкладку "События" и выберем 
+событие "ПередЗаписьюНаСервере" (рис. 10.9).</span></p>
+<p class="rvps6"><img 519="" 292="" alt="" style="padding : 1px;" src="10_data/img26.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.9. Создание обработчика на форме</span></p>
+<p class="rvps2"><span class="rvts5">В этом обработчике необходимо 
+проверять, что реквизит формы "АдресКартинки" является адресом ко 
+временному хранилищу, в котором находится картинка. Выполнять проверку 
+необходимо до закрытия формы. Если во временном хранилище действительно 
+есть адрес картинки, тогда ее необходимо сохранить в информационную 
+базу.</span></p>
+<p class="rvps2"><span class="rvts5">Создадим условие, которое будет проверять наличие адреса файла.</span></p>
+<p class="rvps16"><img 334="" 65="" alt="" style="padding : 1px;" src="10_data/img27.png"></p>
+<p class="rvps8"><span class="rvts5">Запишем адрес картинки в отдельную переменную.</span></p>
+<p class="rvps16"><img 412="" 82="" alt="" style="padding : 1px;" src="10_data/img28.png"></p>
+<p class="rvps8"><span class="rvts5">Подготовим уровень сжатия данных. Запишем его в отдельную переменную.</span></p>
+<p class="rvps16"><img 420="" 96="" alt="" style="padding : 1px;" src="10_data/img29.png"></p>
+<p class="rvps2"><span class="rvts5">Последнее, что нужно сделать, </span>–<span class="rvts5">
+ это записать данные картинки в справочник. Для этого воспользуемся 
+параметром процедуры "ТекущийОбъект". В данном случае мы записываем 
+двоичные данные файла напрямую в реквизит объекта, так как доступ к 
+реквизитам с типом "ХранилищеЗначения" со стороны формы ("ЭтотОбъект") 
+невозможна.</span></p>
+<p class="rvps16"><img 451="" 101="" alt="" style="padding : 1px;" src="10_data/img30.png"></p>
+<p class="rvps2"><span class="rvts5">Теперь картинка сохраняется в базе. Однако при открытии формы необходимо ее </span><span class="rvts9">считывать</span><span class="rvts5">, чтобы пользователь увидел картинку. Для этого добавим еще один обработчик формы. </span></p>
+<p class="rvps2"><span class="rvts5">На вкладке "События" в палитре свойств формы определим новый обработчик события "ПриСозданииНаСервере" (рис. 10.10).</span></p>
+<p class="rvps6"><img 600="" 340="" alt="" style="padding : 1px;" src="10_data/img31.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.10. Создание обработчика "ПриСозданииНаСервере"</span></p>
+<p class="rvps2"><span class="rvts5">Данный обработчик будет считывать навигационную ссылку на картинку, чтобы отобразить ее в реквизите "АдресКартинки". </span></p>
+<p><img 539="" 63="" alt="" style="padding : 1px;" src="10_data/img32.png"></p>
+<p class="rvps2"><span class="rvts5">В результате получилось 4 процедуры. "ПриСозданииНаСервере" и "ПередЗаписьюНаСервере" </span>–<span class="rvts5"> это события формы. Клиентская экспортная процедура "ОбработатьВыборФайла" была создана вручную. "АдресКартинкиНажатие" </span>–<span class="rvts5"> это обработчик события.</span></p>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps2"><span class="rvts5">Откроем справочник "Апгрейды" и 
+выберем любой апгрейд. Например, "Один кассир", далее добавим картинку 
+для данного апгрейда. Нажмем на кнопку "Записать и закрыть". Теперь при 
+открытии формы данного элемента в ней всегда будет данная картинка (рис.
+ 10.11).</span></p>
+<p class="rvps6"><img 319="" 239="" alt="" style="padding : 1px;" src="10_data/img33.png"></p>
+<p class="rvps6"><span class="rvts8">Рис. 10.11. Итоговый вариант карточки справочника "Апгрейды"</span></p>
+<p class="rvps17"><span class="rvts12">На этом десятое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts5">мы реализовали механизм, благодаря которому игрок теперь сможет прикреплять картинки для создаваемых им апгрейдов. </span></p>
+<p class="rvps11"><span class="rvts5">На </span><span class="rvts3">следующем занятии</span><span class="rvts5"> мы займемся доработкой формы начальной страницы. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><span class="rvts13">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><span class="rvts14"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 130="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 117="" alt="" style="padding : 1px;" src="10_data/img34.png"></p>
+</td>
+<td 440="" 130="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><span class="rvts5">Реквизиты с типом </span><span class="rvts3">"Хранилище значения" </span><span class="rvts5">не
+ отображается на форме элемента справочника из-за его типа данных, так 
+как они содержит в себе двоичные данные о файлах, хранящихся в системе. </span></p>
+<p class="rvps2"><span class="rvts5">Параметр</span><span class="rvts3"> "ОписаниеОповещениеОЗавершении" </span><span class="rvts5">метода "НачатьПомещениеФайла()" указывает, какая процедура должна быть выполнена после завершения помещения файла. </span></p>
+<p class="rvps2"><span class="rvts3">Файл</span><span class="rvts5"> </span>–<span class="rvts5"> это специальный тип данных, который содержит в себе информацию о файле.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts10"><br></span></p>
+<h2 class="rvps20"><a name="_Toc121319172"></a>
+<span class="rvts0"><span class="rvts15">Контрольные вопросы</span></span></h2>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts6">С помощью какого типа данных можно получить информацию о прикрепляемом файле, например, расширение файла? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts6">Что хранят в себе реквизиты с типом "Хранилище значения"? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps22"><span class="rvts6">Какой вид нужно указать у элемента формы, чтобы в нем отображалась картинка? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts10"><br></span></p>
+
+</body></html>

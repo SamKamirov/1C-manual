@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>15</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts9
+{
+ font-weight: bold;
+}
+span.rvts10
+{
+ text-decoration: underline;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts12
+{
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 8px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps14
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps15
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps18
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps19
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps20
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps21
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps22
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+.rvps23
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319194"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 15. </span></span><span class="rvts0"><span class="rvts1">Создание</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">отчетов</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема этого занятия</span><span class="rvts4"> </span>–<span class="rvts4"> создание отчетов. Отчеты позволяют анализировать данные в более удобном виде. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 58="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps3"><span class="rvts5"><br></span></p>
+</td>
+<td 553="" 58="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts3">Отчеты</span><span class="rvts4"> позволяют анализировать и выводить данные в более удобном виде для пользователя. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В системе реализуем три отчета, а также выполним несколько смежных задач: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Отчет для отображения информации об остатках денежных средств на счете игрока</span><span class="rvts7">.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">Доработка отчета об остатках денежных средств.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Отчет о рейтинге игроков.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">Отчет об остатках товаров на складе.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">Доработка начальной страницы.</span></li>
+</ol>
+<h2 class="rvps6"><a name="_Toc121319195"></a>
+<span class="rvts0"><span class="rvts8">Отслеживание расходов товаров и финансов. Создание отчета об остатках товаров</span></span></h2>
+<p class="rvps2"><span class="rvts4">Добавим первый отчет. Имя отчета </span>–<span class="rvts4">
+ "ОстаткиДенег". Чтобы сформировать отчет, необходимо воспользоваться 
+"Схемой компоновки данных". Нажмем на кнопку "Открыть схему компоновки 
+данных" (рис. 15.1).</span></p>
+<p class="rvps7"><img 284="" 250="" alt="" style="padding : 1px;" src="15_data/img1.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.1. Создание отчета</span></p>
+<p class="rvps2"><span class="rvts4">В появившемся окне нажимаем "Готово" и попадаем в основную схему компоновки данных. </span></p>
+<p class="rvps2"><span class="rvts4">Для создания отчета необходимо воспользоваться минимум двумя вкладками: "Наборы данных" и "Настройки". </span></p>
+<p class="rvps2"><span class="rvts4">Во вкладке "Наборы данных" 
+формируется запрос к системе для получения необходимых данных. Добавим 
+новый набор данных, нажав на кнопку "Добавить", и выберем пункт 
+"Добавить набор данных </span>–<span class="rvts4"> запрос" (рис. 15.2).</span></p>
+<p class="rvps7"><img 221="" 98="" alt="" style="padding : 1px;" src="15_data/img2.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.2. Добавление набора данных</span></p>
+<p class="rvps8"><span class="rvts4">Для составления запроса нажмем на кнопку "Конструктор запроса" (рис. 15.3).</span></p>
+<p class="rvps7"><img 403="" 292="" alt="" style="padding : 1px;" src="15_data/img3.png"></p>
+<p class="rvps9"><span class="rvts9">Рис. 15.3. Открытие конструктора запроса</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps3"><span class="rvts5"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts3">Конструктор запроса</span><span class="rvts4"> позволяет проанализировать данные системы, выбрать таблицу и определить поля этой таблицы для получения данных для отчета. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Для отчета "ОстаткиДенег" данные будут запрашиваться из регистра накопления "ОстаткиДенег", а именно из </span><span class="rvts10">виртуальной таблицы</span><span class="rvts4">
+ "ОстаткиДенег.Остатки". Выберем ее двойным нажатием левой кнопки мыши. 
+Из таблицы выбираем поля "Игрок" и "КоличествоОстаток", после чего 
+нажимаем "Ок" (рис. 15.4).</span></p>
+<p class="rvps7"><img 466="" 189="" alt="" style="padding : 1px;" src="15_data/img4.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.4. Составление запроса при помощи конструктора запросов</span></p>
+<p class="rvps2"><span class="rvts4">В результате в нижней части экрана появляется текст запроса, а в верхней </span>–<span class="rvts4"> таблица со списком полей, которые будут доступны к выводу. </span></p>
+<p class="rvps2"><span class="rvts4">Для удобства игрока зададим 
+заголовок полю "КоличествоОстаток". Для этого нажмем на галочку под 
+именем поля и введем новый заголовок </span>–<span class="rvts4"> "Осталось денег". После чего перейдем на вкладку "Настройки" (рис. 15.5).</span></p>
+<p class="rvps7"><img 579="" 132="" alt="" style="padding : 1px;" src="15_data/img5.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.5. Создание заголовка</span></p>
+<p class="rvps2"><span class="rvts4">На вкладке "Настройки" нажмем на 
+кнопку "Открыть конструктор настроек" (волшебную палочку) и настроим 
+компоновку данных. В качестве типа отчета укажем "Список" (рис. 15.6).</span></p>
+<p class="rvps7"><img 348="" 222="" alt="" style="padding : 1px;" src="15_data/img6.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.6. Настройка компоновки данных</span></p>
+<p class="rvps2"><span class="rvts4">Далее выберем поля для отчета: 
+"Игрок" и "КоличествоОстаток" (рис. 15.7). Следующим шагом можно 
+определить тип группировки данных, но, поскольку работа идет с 
+виртуальной таблицей, группировка не требуется. Нажимаем "Далее". Затем 
+следует настройка порядка данных в отчете. Выберем поле "Игрок" и нажмем
+ "Ок" (рис. 15.8).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 268="" 190="" alt="" style="padding : 1px;" src="15_data/img7.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 268="" 190="" alt="" style="padding : 1px;" src="15_data/img8.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.7. Настройка компоновки данных</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.8. Настройка сортировки отчета</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В нижней части экрана перейдем на 
+вкладку "Другие настройки" и изменим "Макет оформления", нажав два раза 
+левой кнопкой мыши по значению "Основной". В появившемся окне выбираем 
+"Зеленый" (рис. 15.9).</span></p>
+<p class="rvps7"><img 297="" 258="" alt="" style="padding : 1px;" src="15_data/img9.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.9. Изменение макета оформления отчета</span></p>
+<p class="rvps8"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps2"><span class="rvts4">Нажмем на раздел "Отчеты" и в списке выберем единственный на текущий момент отчет </span>–<span class="rvts4"> "Остатки денег". Далее нажмем на кнопку "Сформировать" (рис. 15.10).</span></p>
+<p class="rvps10"><img 270="" 146="" alt="" style="padding : 1px;" src="15_data/img10.png"></p>
+<p class="rvps11"><span class="rvts9">Рис. 15.10. Отчет "Остатки денег"</span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps12"><img 68="" alt="" style="padding : 1px;" src="15_data/img11.png"></p>
+</td>
+<td 572="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps13"><span class="rvts5">Изменить размер отчета можно, зажав клавишу Ctrl на клавиатуре и покрутив колесико мыши.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В результате отобразилась 
+информация о финансовом состоянии администратора. В дальнейшем, когда в 
+системе появятся новые игроки, информация об их бюджете также будет 
+отображаться в отчете. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<h2 class="rvps6"><a name="_Toc121319196"></a>
+<span class="rvts0"><span class="rvts8">Отслеживание расходов товаров и финансов. Доработка отчета по финансам</span></span></h2>
+<p class="rvps2"><span class="rvts3">Вторая задача</span><span class="rvts4">, которую необходимо решить, </span>–<span class="rvts4">
+ это реализация отображения информации не только об остатке денег, но 
+также и о том, сколько денег игрок потратил и заработал в целом. </span></p>
+<p class="rvps2"><span class="rvts4">Переименуем отчет "ОстаткиДенег" в "ОтчетПоФинансам" и откроем схему компоновки данных (рис. 15.11). </span></p>
+<p class="rvps10"><img 338="" 264="" alt="" style="padding : 1px;" src="15_data/img12.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.11. Изменение имени отчета</span></p>
+<p class="rvps2"><span class="rvts4">В тексте запроса необходимо 
+кардинально изменить набор полей, который будет использоваться для 
+формирования отчета, поэтому проще очистить данное поле (рис. 15.12).</span></p>
+<p class="rvps10"><img 395="" 190="" alt="" style="padding : 1px;" src="15_data/img13.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.12. Удаление текста запроса</span></p>
+<p class="rvps2"><span class="rvts4">Нажмем на кнопку "Конструктор запроса", чтобы заново определить набор полей (рис. 15.13). </span></p>
+<p class="rvps10"><img 386="" 211="" alt="" style="padding : 1px;" src="15_data/img14.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.13. Переход к конструктору запроса</span></p>
+<p class="rvps2"><span class="rvts4">Получать данные необходимо из 
+регистра накопления "ОстаткиДенег". Но сейчас в качестве таблицы выберем
+ виртуальную таблицу "Обороты". Из нее можно получить поля "Игрок", 
+"КоличествоОборот", "КоличествоПриход" и "КоличествоРасход" (рис. 
+15.14). </span></p>
+<p class="rvps10"><img 434="" 172="" alt="" style="padding : 1px;" src="15_data/img15.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.14. Выбор полей для запроса</span></p>
+<p class="rvps2"><span class="rvts4">В данном случае в поле 
+"КоличествоПриход" будет отображаться информация о том, сколько в целом 
+денег игрок получил. В поле "КоличествоРасход" </span>–<span class="rvts4"> сколько денег игрок в целом потратил, а "КоличествоОборот" </span>–<span class="rvts4"> разница между этими двумя полями. </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы пользователь точно понимал, какая информация выводится в этих полях, изменим их заголовки. </span></p>
+<p class="rvps2"><span class="rvts4">У поля "КоличествоОборот" укажем заголовок "Бюджет", у поля "КоличествоПриход" </span>–<span class="rvts4"> "Заработано", у "КоличествоРасход" </span>–<span class="rvts4"> "Потрачено" (рис. 15.15).</span></p>
+<p class="rvps10"><img 455="" 231="" alt="" style="padding : 1px;" src="15_data/img16.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.15. Изменение заголовков полей</span></p>
+<p class="rvps2"><span class="rvts4">Далее на вкладке "Настройки" нужно изменить отчет. Для этого нажмем на волшебную палочку (рис. 15.16).</span></p>
+<p class="rvps10"><img 397="" 212="" alt="" style="padding : 1px;" src="15_data/img17.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.16. Переход к конструктору настроек отчета</span></p>
+<p class="rvps8"><span class="rvts4">В открывшемся окне нажмем на кнопку "Да", так как никаких настроек вручную ранее не было выполнено (рис. 15.17). </span></p>
+<p class="rvps10"><img 267="" 84="" alt="" style="padding : 1px;" src="15_data/img18.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.17. Предупреждение от системы</span></p>
+<p class="rvps8"><span class="rvts4">На первой вкладке нажмем на кнопку "Далее" и перейдем к выбору полей для отображения в отчете. </span></p>
+<p class="rvps8"><span class="rvts4">Поля "КоличествоОстаток" больше нет
+ в списке полей, поэтому напротив него отображается крестик. Удалим 
+данное поле с помощью стрелочки "влево" (рис. 15.18). </span></p>
+<p class="rvps8"><span class="rvts4">Добавим три новых поля: "КоличествоОборот", "КоличествоПриход" и "КоличествоРасход" и нажмем на кнопку "Далее" (рис. 15.19). </span></p>
+<p class="rvps2"><span class="rvts4">В группировке по-прежнему нет 
+необходимости, поэтому пропускаем ее, нажав кнопку "Далее". Сортировка 
+будет выполняться по полю "Игрок", поэтому можно сразу нажать на кнопку 
+"Ок" (рис. 15.20). </span></p>
+<p class="rvps8"><span class="rvts11"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 206="" 183="" alt="" style="padding : 1px;" src="15_data/img19.png"></p>
+</td>
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 206="" 183="" alt="" style="padding : 1px;" src="15_data/img20.png"></p>
+</td>
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 206="" 183="" alt="" style="padding : 1px;" src="15_data/img21.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.18. Удаление поля "КоличествоОстаток" </span></p>
+</td>
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.19. Добавление новых полей </span></p>
+</td>
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.20. Закрытие конструктора настроек отчета</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">В результате в отчете по финансам 
+теперь отображается информация не только о текущем балансе игрока, но и о
+ том, сколько денег он заработал и потратил за всю игру (рис. 15.21). </span></p>
+<p class="rvps10"><img 336="" 84="" alt="" style="padding : 1px;" src="15_data/img22.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.21. Отчет по финансам</span></p>
+<p class="rvps2"><span class="rvts4">Попробуем закупить товары, чтобы 
+проверить изменение информации в отчете. В качестве товара укажем, 
+например, "Мятный шарик" в количестве трех штук (рис. 15.22). </span></p>
+<p class="rvps10"><img 371="" 156="" alt="" style="padding : 1px;" src="15_data/img23.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.22. Новая покупка товаров</span></p>
+<p class="rvps2"><span class="rvts4">Вернемся к отчету и сформируем его повторно (рис. 15.23). </span></p>
+<p class="rvps10"><img 389="" 94="" alt="" style="padding : 1px;" src="15_data/img24.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.23. Измененный отчет по финансам</span></p>
+<p class="rvps8"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">В результате бюджет уменьшился, а сумма потраченных средств увеличилась. </span></p>
+<h2 class="rvps6"><a name="_Toc121319197"></a>
+<span class="rvts0"><span class="rvts8">Отслеживание расходов товаров и финансов. Отчет по рейтингу игроков</span></span><span class="rvts0"><span class="rvts12"> </span></span></h2>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим новый отчет. Имя отчета </span>–<span class="rvts4"> "ОтчетПоРейтингу". Далее нажмем на кнопку "Открыть схему компоновки данных" (рис. 15.24). </span></p>
+<p class="rvps10"><img 307="" 244="" alt="" style="padding : 1px;" src="15_data/img25.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.24. Добавление нового отчета "ОтчетПоРейтингу" </span></p>
+<p class="rvps8"><span class="rvts4">В окне схемы компоновки данных добавим новый набор данных (рис. 15.25). </span></p>
+<p class="rvps10"><img 446="" 227="" alt="" style="padding : 1px;" src="15_data/img26.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.25. Добавление набора данных</span></p>
+<p class="rvps2"><span class="rvts4">Информация в отчете будет 
+формироваться на основании данных из регистра сведений. Благодаря этим 
+данным будет виден рейтинг каждого игрока на текущий момент игры.</span></p>
+<p class="rvps2"><span class="rvts4">Нажмем на кнопку "Конструктор 
+запроса" и сформируем соответствующий запрос. Так как необходимо 
+получать актуальную информацию, то в качестве таблицы выберем 
+виртуальную таблицу "Срез последних" регистра сведений, из которой 
+запросим два поля: "Игрок" и "Рейтинг" (рис. 15.26).</span></p>
+<p class="rvps10"><img 459="" 192="" alt="" style="padding : 1px;" src="15_data/img27.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.26. Формирование запроса через конструктор</span></p>
+<p class="rvps2"><span class="rvts4">Определив поля, нажмем "ОК". В 
+конструкторе запроса мы выбрали лишь два поля, но в списке полей выше их
+ получилось четыре. Дело в том, что данные поля нужны для определенных 
+настроек, которые в текущем варианте отчета не потребуются. </span></p>
+<p class="rvps8"><span class="rvts4">Перейдем на вкладку "Настройки" и откроем "Конструктор настроек". В качестве типа отчета укажем "Список" (рис. 15.27). </span></p>
+<p class="rvps10"><img 536="" 272="" alt="" style="padding : 1px;" src="15_data/img28.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.27. Выбор типа отчета</span></p>
+<p class="rvps8"><span class="rvts4">В качестве полей укажем "Игрок" и 
+"Рейтинг" (рис. 15.28). В данном случае группировка также не требуется, 
+поэтому этот этап можно пропустить. </span></p>
+<p class="rvps8"><span class="rvts4">На следующей вкладке в качестве 
+поля, по которому будет осуществляться сортировка, укажем поле 
+"Рейтинг". Сортировки должны выполняться по убыванию (рис. 15.29). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 285="" alt="" style="padding : 1px;" src="15_data/img29.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 324="" 285="" alt="" style="padding : 1px;" src="15_data/img30.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.28. Выбор полей для отображения в отчете</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts9">Рис. 15.29. Выбор поля сортировки</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts4">Так у игроков появится интерес занять первое место в общем рейтинге. </span></p>
+<p class="rvps8"><span class="rvts4">Также добавим немного красоты отчету. Перейдем на вкладку "Другие настройки" и укажем макет оформления </span>–<span class="rvts4"> "Зеленый" (рис. 15.30). </span></p>
+<p class="rvps10"><img 425="" 289="" alt="" style="padding : 1px;" src="15_data/img31.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.30. Выбор макета для отчета </span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">Сформируем новый отчет по рейтингу (рис. 15.31). </span></p>
+<p class="rvps10"><img 361="" 327="" alt="" style="padding : 1px;" src="15_data/img32.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.31. Отчет по рейтингу</span></p>
+<p class="rvps2"><span class="rvts4">В отчете отображаются две записи о 
+рейтинге игрока "Администратор". Данная ситуация возникла из-за того, 
+что данный игрок приобрел два апгрейда из разных категорий (рис. 15.32).
+ </span></p>
+<p class="rvps10"><img 540="" 226="" alt="" style="padding : 1px;" src="15_data/img33.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.32. Таблица "Регистрация апгрейдов"</span></p>
+<p class="rvps2"><span class="rvts4">Чтобы отображать суммарный рейтинг игрока, необходимо группировать информацию в отчете по полю "Игрок". </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">В основной схеме компоновки данных 
+отчета "ОтчетПоРейтингу" перейдем на вкладку "Наборы данных" и откроем 
+конструктор запроса (рис. 15.33). </span></p>
+<p class="rvps10"><img 457="" 229="" alt="" style="padding : 1px;" src="15_data/img34.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.33. Переход к конструктору запроса </span></p>
+<p class="rvps2"><span class="rvts4">В конструкторе запроса перейдем на 
+вкладку "Группировка" и укажем в качестве поля группировки поле "Игрок",
+ а в качестве суммируемого поля </span>–<span class="rvts4"> "Рейтинг" (рис. 15.34). </span></p>
+<p class="rvps10"><img 515="" 215="" alt="" style="padding : 1px;" src="15_data/img35.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.34. Настройка группировки полей</span></p>
+<p class="rvps2"><span class="rvts4">В итоге поля никак не изменились, и
+ по-прежнему из базы запрашивается информация об игроке и рейтинге. Но 
+теперь в отчете будет выводиться информация о рейтинге игрока в целом. </span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных, запустим пользовательский режим и построим отчет по рейтингу (рис. 15.35). </span></p>
+<p class="rvps10"><img 399="" 106="" alt="" style="padding : 1px;" src="15_data/img36.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.35. Отчет по рейтингу игроков</span></p>
+<p class="rvps2"><span class="rvts4">В результате в отчете отображается только одна запись об актуальном на данный момент рейтинге игрока. </span></p>
+<h2 class="rvps6"><a name="_Toc121319198"></a>
+<span class="rvts0"><span class="rvts8">Отслеживание расходов товаров и финансов. Отчет по остаткам товаров</span></span></h2>
+<p class="rvps2"><span class="rvts4">Четвертая задача заключается в реализации отчета об остатках товаров на складе у каждого игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим новый отчет. Имя отчета </span>–<span class="rvts4"> "ОтчетПоОстаткамТоваров". Далее откроем основную схему компоновки данных (рис. 15.36). </span></p>
+<p class="rvps10"><img 312="" 252="" alt="" style="padding : 1px;" src="15_data/img37.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.36. Создание отчета "ОтчетПоОстаткамТоваров"</span></p>
+<p class="rvps2"><span class="rvts4">Добавим новый набор данных, нажав на кнопку "Добавить", и выберем пункт "Добавить набор данных </span>–<span class="rvts4"> запрос" (рис. 15.37).</span></p>
+<p class="rvps7"><img 298="" 133="" alt="" style="padding : 1px;" src="15_data/img38.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.37. Добавление набора данных</span></p>
+<p class="rvps2"><span class="rvts4">В конструкторе запроса укажем в 
+качестве таблицы виртуальную таблицу "Остатки", чтобы сразу получать 
+актуальную информацию о количестве товара у каждого игрока. Нам 
+потребуются поля "Товар", "Игрок" и "КоличествоОстаток" (рис. 15.38). </span></p>
+<p class="rvps10"><img 515="" 215="" alt="" style="padding : 1px;" src="15_data/img39.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.38. Выбор данных в конструкторе запроса</span></p>
+<p class="rvps2"><span class="rvts4">Также изменим заголовок для поля "КоличествоОстаток" на "Количество" (рис. 15.39). </span></p>
+<p class="rvps10"><img 477="" 219="" alt="" style="padding : 1px;" src="15_data/img40.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.39. Изменение заголовка поля</span></p>
+<p class="rvps2"><span class="rvts4">Данный отчет будет реализован в 
+формате таблицы. В качестве строк будут выводиться товары, а в качестве 
+колонок будут указаны игроки. На пересечении товара и игрока будет 
+выводиться либо остаток по данному товару, либо ничего, если у игрока на
+ текущий момент нет этого товара. </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы работать с таблицей, необходимо указать, что числовое поле "КоличествоОстаток" </span>–<span class="rvts4"> это ресурс. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Ресурсы" и укажем поле "КоличествоОстаток" в качестве ресурса (рис. 15.40). </span></p>
+<p class="rvps10"><img 543="" 127="" alt="" style="padding : 1px;" src="15_data/img41.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.40. Выбор ресурса</span></p>
+<p class="rvps2"><span class="rvts4">Далее перейдем на вкладку "Настройки" и откроем "Конструктор настроек". В качестве типа отчета укажем "Таблица" (рис. 15.41).</span></p>
+<p class="rvps10"><img 497="" 340="" alt="" style="padding : 1px;" src="15_data/img42.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.41. Выбор типа отчета </span></p>
+<p class="rvps2"><span class="rvts4">На следующей вкладке необходимо определить, из каких полей состоит отчет. Выберем все три поля </span>–<span class="rvts4"> "Игрок", "КоличествоОстаток" и "Товар" (рис. 15.42).</span></p>
+<p class="rvps10"><img 299="" 263="" alt="" style="padding : 1px;" src="15_data/img43.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.42. Выбор полей </span></p>
+<p class="rvps8"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">"КоличествоОстаток" визуально отличается, поскольку данное поле было указано как ресурс. </span></p>
+<p class="rvps2"><span class="rvts4">На следующей вкладке необходимо 
+указать строки и колонки таблицы. Подсказка в виде структуры таблицы в 
+верхней части окна позволяет примерно определить правила формирования 
+таблицы. </span></p>
+<p class="rvps2"><span class="rvts4">В качестве строк укажем поле "Товар", а в качестве колонок </span>–<span class="rvts4"> поле "Игрок" (рис. 15.43). </span></p>
+<p class="rvps10"><img 299="" 298="" alt="" style="padding : 1px;" src="15_data/img44.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.43. Настройка строк и колонок таблицы</span></p>
+<p class="rvps2"><span class="rvts4">В данном случае ресурс никуда определять не требуется, поскольку он будет находиться на пересечении строк и колонок. </span></p>
+<p class="rvps2"><span class="rvts4">На следующей вкладке определим, что информация должна сортироваться по игрокам и товарам в алфавитном порядке (рис. 15.44). </span></p>
+<p class="rvps10"><img 284="" 283="" alt="" style="padding : 1px;" src="15_data/img45.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.44. Выбор поля сортировки</span></p>
+<p class="rvps2"><span class="rvts4">Также укажем макет оформления "Арктика" на вкладке "Другие настройки" (рис. 15.45). </span></p>
+<p class="rvps10"><img 558="" 275="" alt="" style="padding : 1px;" src="15_data/img46.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.45. Выбор макета отчета</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем "Отчет по остаткам товаров" и сформируем его (рис. 15.46). </span></p>
+<p class="rvps10"><img 513="" 391="" alt="" style="padding : 1px;" src="15_data/img47.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.46. Отчет по остаткам товаров </span></p>
+<p class="rvps2"><span class="rvts4">Приобретем товар, отличный от того, что есть в отчете. Например, "Сухой корм для собак" в количестве одна штука (рис. 15.47). </span></p>
+<p class="rvps10"><img 442="" 188="" alt="" style="padding : 1px;" src="15_data/img48.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.47. Покупка товара</span></p>
+<p class="rvps2"><span class="rvts4">Если сформировать отчет повторно после покупки, то в нем отобразится информация о только что приобретенном товаре (рис. 15.48). </span></p>
+<p class="rvps10"><img 539="" 480="" alt="" style="padding : 1px;" src="15_data/img49.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.48. Отчет по остаткам товаров </span></p>
+<p class="rvps2"><span class="rvts4">В данном отчете можно наблюдать различные итоги: по товарам, игрокам, а также общие итоги. По желанию их можно отключить. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">В основной схеме компоновки данных 
+на вкладке "Настройки" перейдем к "Другим настройкам". У свойств 
+"Расположение общих итогов по горизонтали" и "Расположение общих итогов 
+по вертикали" укажем значения "Нет" (рис. 15.49). </span></p>
+<p class="rvps10"><img 555="" 260="" alt="" style="padding : 1px;" src="15_data/img50.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.49. Отключение общих итогов</span></p>
+<p class="rvps2"><span class="rvts4">В результате в пользовательском 
+режиме будет отображаться информация только об остатках конкретных 
+товаров у конкретного игрока (рис. 15.50). </span></p>
+<p class="rvps10"><img 572="" 338="" alt="" style="padding : 1px;" src="15_data/img51.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.50. Отчет по остаткам товаров </span></p>
+<p><span class="rvts11"><br></span></p>
+<h2 class="rvps14"><a name="_Toc121319199"></a>
+<span class="rvts0"><span class="rvts8">Усложнение в логике игры. Доработка начальной страницы</span></span></h2>
+<p class="rvps2"><span class="rvts3">Пятая задача</span><span class="rvts4">, которую необходимо выполнить, </span>–<span class="rvts4">
+ это вывод на начальный экран кнопок для перехода к отчетам. Потому что в
+ дальнейшем, когда будет производиться настройка интерфейса, мы уберем 
+большинство команд перехода к объектам. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем форму начальной страницы. Ее можно найти в ветке "Общие", развернув список "Общих форм" (рис. 15.51). </span></p>
+<p class="rvps10"><img 173="" 184="" alt="" style="padding : 1px;" src="15_data/img52.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.51. Переход к общей форме</span></p>
+<p class="rvps2"><span class="rvts4">На форме "Начальная страница" добавим еще одну группу в "КомандыФормы"</span><span class="rvts11">,</span><span class="rvts4"> чтобы поместить в нее команды перехода к отчетам. </span></p>
+<p class="rvps2"><span class="rvts4">Нажмем правой кнопкой мыши по группе "КомандыФормы" и добавим новую обычную группу (рис. 15.52).</span></p>
+<p class="rvps10"><img 365="" 160="" alt="" style="padding : 1px;" src="15_data/img53.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.52. Добавление новой группы </span></p>
+<p class="rvps2"><span class="rvts4">Имя и заголовок группы будут идентичны </span>–<span class="rvts4"> "Отчеты", определим тип группировки </span>–<span class="rvts4"> "Вертикальная" (рис. 15.53). </span></p>
+<p class="rvps10"><img 355="" 131="" alt="" style="padding : 1px;" src="15_data/img54.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.53. Настройка группы </span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Далее перейдем на вкладку 
+"Команды", "Глобальные команды". Развернув раздел "Главное", "Отчеты", 
+можно получить доступ ко всем трем командам, которые касаются отчетов. 
+Переместим все эти команды в группу "Отчеты" на форме (рис. 15.54). </span></p>
+<p class="rvps10"><img 345="" 160="" alt="" style="padding : 1px;" src="15_data/img55.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.54. Добавление команд на форму </span></p>
+<p class="rvps2"><span class="rvts4">Также определим для группы "КомандыФормы" тип группировки </span>–<span class="rvts4"> "Горизонтальная всегда" (рис. 15.55).</span></p>
+<p class="rvps10"><img 391="" 161="" alt="" style="padding : 1px;" src="15_data/img56.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.55. Изменение группировки для "КомандыФормы"</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальной странице появился новый раздел с командами для перехода к различным отчетам (рис. 15.56). </span></p>
+<p class="rvps10"><img 388="" 265="" alt="" style="padding : 1px;" src="15_data/img57.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.56. Начальная страница </span></p>
+<p class="rvps2"><span class="rvts4">Следующее, что необходимо сделать, </span>–<span class="rvts4">
+ это изменить логику выставления наценки на товары при их продаже. 
+Наценку необходимо указывать в зависимости от того, какой сейчас рейтинг
+ у игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в общий модуль "ФоновыеПроцедуры", чтобы реализовать данную логику (рис. 15.57). </span></p>
+<p class="rvps10"><img 346="" 113="" alt="" style="padding : 1px;" src="15_data/img58.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.57. Переход в общий модуль </span></p>
+<p class="rvps2"><span class="rvts4">Сейчас наценка на товар фиксирована и равна 20 процентам. </span></p>
+<p><img 608="" 266="" alt="" style="padding : 1px;" src="15_data/img59.png"></p>
+<p class="rvps2"><span class="rvts4">Реализуем здесь следующий алгоритм:
+ цена будет формироваться как сумма основной цены и наценки, выраженных в
+ дробном числе. Таким образом появится возможность добавлять любой 
+процент наценки. Основная цена товара </span>–<span class="rvts4"> это 
+100%, которые в виде числа выражаются как 1, а наценка в 20% в виде 
+числа выражается как 0.2. Так, наценка в 20% будет рассчитана как 
+умножение основной цены на 1.2. Процент наценки будет вычисляться с 
+помощью функции. </span></p>
+<p><img 673="" 308="" alt="" style="padding : 1px;" src="15_data/img60.png"></p>
+<p class="rvps2"><span class="rvts4">Ниже определим функцию "ПолучитьПроцентНаценки". </span></p>
+<p><img 551="" 76="" alt="" style="padding : 1px;" src="15_data/img61.png"></p>
+<p class="rvps2"><span class="rvts4">Чтобы определить процент наценки, необходимо узнать рейтинг текущего игрока. </span></p>
+<p><img 562="" 60="" alt="" style="padding : 1px;" src="15_data/img62.png"></p>
+<p class="rvps2"><span class="rvts4">Функционал по анализу рейтинга будет удобнее позаимствовать с формы начального экрана (рис. 15.58).</span></p>
+<p class="rvps10"><img 470="" 156="" alt="" style="padding : 1px;" src="15_data/img63.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.58. Функция в модуле формы "Начальная страница" </span></p>
+<p class="rvps2"><span class="rvts4">Скопированный алгоритм необходимо вставить в функцию "ПолучитьПроцентНаценки"</span><span class="rvts11">.</span></p>
+<p><img 481="" 150="" alt="" style="padding : 1px;" src="15_data/img64.png"></p>
+<p class="rvps2"><span class="rvts4">Изменим логику данного алгоритма: в контексте общего модуля больше нет понятия "ЭтотОбъект", поэтому его необходимо убрать. </span></p>
+<p><img 446="" 138="" alt="" style="padding : 1px;" src="15_data/img65.png"></p>
+<p class="rvps2"><span class="rvts4">В результате алгоритм получения наценки будет выглядеть следующим образом: </span></p>
+<p class="rvps8"><img 402="" 172="" alt="" style="padding : 1px;" src="15_data/img66.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">Сейчас рейтинг игрока составляет 
+10, значит, наценка будет равна 20 процентам. Нажмем на кнопку "Открыть 
+магазин", чтобы убедиться в этом (рис. 15.59).</span></p>
+<p class="rvps10"><img 354="" 200="" alt="" style="padding : 1px;" src="15_data/img67.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.59. Проверка цены товара</span></p>
+<p class="rvps2"><span class="rvts4">Если открыть любой из только что поступивших заказов, то можно увидеть, что цена формируется с наценкой в 20%. </span></p>
+<p class="rvps2"><span class="rvts4">Попробуем искусственно через константу увеличить рейтинг игрока до максимального значения </span>–<span class="rvts4"> 999 (рис. 15.60). </span></p>
+<p class="rvps10"><img 245="" 81="" alt="" style="padding : 1px;" src="15_data/img68.png"></p>
+<p class="rvps7"><span class="rvts9">Рис.15.60. Изменение рейтинга игрока </span></p>
+<p class="rvps2"><span class="rvts4">В результате цена товара в новом заказе увеличилась в два раза (рис. 15.61). </span></p>
+<p class="rvps10"><img 192="" 154="" alt="" style="padding : 1px;" src="15_data/img69.png"></p>
+<p class="rvps7"><span class="rvts9">Рис. 15.61. Проверка стоимости товара</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем доступа к 
+редактированию рейтинга у игрока не будет. Это значение будет 
+считываться в фоновом режиме и формироваться на основании купленных 
+игроком апгрейдов. </span></p>
+<p class="rvps2"><span class="rvts4">Задачу с некорректной наценкой и связанный с ней бизнес-процесс следует удалить. </span></p>
+<p class="rvps15"><span class="rvts13">На этом пятнадцатое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts4">мы
+ добавили три отчета и кнопки для быстрого перехода к ним на начальном 
+экране. А также настроили увеличение наценки на товар в зависимости от 
+текущего рейтинга игрока. </span></p>
+<p class="rvps16"><span class="rvts4">На </span><span class="rvts3">следующих занятиях</span><span class="rvts4"> мы продолжим реализацию функционала участия в программе разных игроков. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts14">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts15"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 61="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><img 81="" alt="" style="padding : 1px;" src="15_data/img70.png"></p>
+</td>
+<td 440="" 61="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts3">Отчеты</span><span class="rvts4"> позволяют анализировать и выводить данные в более удобном виде для пользователя. </span></p>
+<p class="rvps2"><span class="rvts3">Конструктор запроса</span><span class="rvts4"> позволяет проанализировать данные системы, выбрать таблицу и определить поля этой таблицы для получения данных для отчета.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts11"><br></span></p>
+<h2 class="rvps19"><a name="_Toc121319200"></a>
+<span class="rvts0"><span class="rvts16">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps21"><span class="rvts6">Что такое отчет и зачем он нужен? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps23"><span class="rvts6">Каким образом можно выбрать поля для отображения в отчете? </span></li>
+</ol>
+<h2 class="rvps14"><a name="_Toc121319201"></a>
+<span class="rvts0"><span class="rvts8">Домашнее задание! </span></span></h2>
+<p class="rvps2"><span class="rvts4">Нужно доработать отчеты таким 
+образом, чтобы они соответствовали тематике вашей игры. Например, можно 
+указать дополнительное поле группировки или создать совершенно новый 
+отчет. </span></p>
+<p style="page-break-before: always;"><span class="rvts11"><br></span></p>
+
+</body></html>

@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>08</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts9
+{
+ text-decoration: underline;
+}
+span.rvts10
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 8px 0px;
+}
+.rvps13
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps16
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps20
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319156"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 8. </span></span><span class="rvts0"><span class="rvts1">Работа</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">с</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">формами</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> настройка формы бизнес</span><span class="rvts5">-</span><span class="rvts4">процесса, задачи и начального экрана.</span></p>
+<p class="rvps2"><span class="rvts4">В рамках этого занятия мы выполним 4 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts6">Уберем
+ лишние поля из формы бизнес-процесса, а также уберем все команды, 
+потому что бизнес-процесс создается автоматически с помощью алгоритма, 
+который мы описали на прошлом занятии, и пользователю нет необходимости 
+стартовать его вручную.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts6">На форму задачи, напротив, нужно добавить несколько полей и также изменить набор команд в командной панели.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts6">Выведем на форму начальной страницы список актуальных заказов.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps6"><span class="rvts6">На
+ форме начального экрана создадим кнопку "Закрыть магазин", а также 
+опишем алгоритм, благодаря которому покупатели будут приходить регулярно
+ с определенной периодичностью. </span></li>
+</ol>
+<p class="rvps7"><span class="rvts4">В данный момент в пользовательском 
+режиме взаимодействие с бизнес-процессом и задачами выстроено не самым 
+удобным образом. Например, форма бизнес-процесса имеет дополнительные 
+поля, которые не нужны пользователю. Следовательно, их необходимо убрать
+ (рис. 8.1).</span></p>
+<p class="rvps8"><img 297="" 207="" alt="" style="padding : 1px;" src="08_data/img1.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.1. Форма бизнес-процесса</span></p>
+<p class="rvps7"><span class="rvts4">В форме задачи также необходимо 
+убрать лишние поля и оставить только те, которые содержат полезную для 
+игрока информацию (рис. 8.2).</span></p>
+<p class="rvps8"><img 276="" 112="" alt="" style="padding : 1px;" src="08_data/img2.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.2. Форма задачи бизнес-процесса</span></p>
+<p class="rvps7"><span class="rvts4">Помимо удаления полей также настроим наборы кнопок, из которых состоит функционал форм.</span></p>
+<h2 class="rvps9"><a name="_Toc121319157"></a>
+<span class="rvts0"><span class="rvts8">Настройка прикладного решения. Изменение формы бизнес-процесса </span></span></h2>
+<p class="rvps7"><span class="rvts4">Начнем с </span><span class="rvts3">первой задачи</span><span class="rvts4">
+ и настроим форму бизнес-процесса. В окне конфигурации двойным кликом 
+левой кнопки мыши откроем окно редактирования бизнес-процесса "Заказ" 
+(рис. 8.3).</span></p>
+<p class="rvps7"><span class="rvts4">Перейдем на вкладку формы и добавим форму бизнес-процесса, нажав на кнопку "Добавить" (рис. 8.4).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 384="" 257="" alt="" style="padding : 1px;" src="08_data/img3.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 426="" 216="" alt="" style="padding : 1px;" src="08_data/img4.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.3. Открытие окна редактирования бизнес-процесса</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.4. Добавление формы бизнес-процесса</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">В появившемся окне ничего не изменяем, оставляем выбор на пункте "Форма бизнес-процесса" и нажимаем "Далее" (рис. 8.5).</span></p>
+<p class="rvps7"><span class="rvts4">Теперь необходимо выбрать поля для 
+бизнес-процесса. Набор полей будет следующим: "Номер", "Дата", "Итог", 
+"Товар", "Цена", "Количество", "Сумма", "Стартован" и "Завершен". 
+Галочку у поля "Ведущая задача" уберем. После того, как все поля 
+выбраны, нажимаем на кнопку "Готово" (рис. 8.6).</span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 317="" 197="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 268="" 251="" alt="" style="padding : 1px;" src="08_data/img5.png"></p>
+</td>
+<td 317="" 197="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 268="" 251="" alt="" style="padding : 1px;" src="08_data/img6.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 317="" 45="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><span class="rvts7">Рис. 8.5. Настройка пользовательской формы бизнес-процесса</span></p>
+</td>
+<td 317="" 45="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts7">Рис. 8.6. Выбор полей для пользовательской формы</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">Если при выборе полей галочка напротив поля "Ведущая задача" не была убрана, то данное поле можно удалить в редакторе формы.</span></p>
+<p class="rvps7"><span class="rvts4">В открывшемся редакторе формы, в 
+верхнем левом углу, выберете поле, которое необходимо удалить, и нажмите
+ на кнопку "Удалить" (рис. 8.7).</span></p>
+<p class="rvps8"><img 272="" 158="" alt="" style="padding : 1px;" src="08_data/img7.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.7. Удаление реквизита в редакторе форм</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps13"><img 68="" alt="" style="padding : 1px;" src="08_data/img8.png"></p>
+</td>
+<td 533="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts4">Удалить
+ требуется только поле "Ведущая задача". Если при создании формы вы 
+сняли галочку у этого элемента, то удалять его повторно не требуется. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">Далее настроим внешний вид формы. 
+Бизнес-процесс создается автоматически, поэтому удалим набор кнопок. Для
+ этого обратимся к командной панели и в палитре свойств уберем флажок 
+"Автозаполнение" (рис. 8.8).</span></p>
+<p class="rvps8"><img 484="" 277="" alt="" style="padding : 1px;" src="08_data/img9.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.8. Отключение автозаполнения командной панели</span></p>
+<p class="rvps7"><span class="rvts4">Бизнес-процесс создается автоматически, поэтому участие пользователя в нем не требуется. </span></p>
+<p class="rvps7"><span class="rvts4">Далее настроим расположение полей. 
+Поля "Номер" и "Дата" объединим в горизонтальную группу. Для этого 
+выберем поле "Номер" и нажмем по нему правой кнопкой мыши. В контекстном
+ меню выберем пункт "Добавить" (рис. 8.9). В окне выбора типа элемента 
+выберем пункт "Группа </span>–<span class="rvts4"> Обычная группа без отображения" и нажмем "Ок" (рис. 8.10).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 176="" 218="" alt="" style="padding : 1px;" src="08_data/img10.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 209="" 169="" alt="" style="padding : 1px;" src="08_data/img11.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.9. Добавление группы</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.10. Выбор группировки полей</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts5"><br></span></p>
+<p class="rvps14"><span class="rvts4">Для удобства разработки присвоим 
+данной группе название "ГруппаДатаНомер". Далее перенесем в данную 
+группу поля "Дата" и "Номер". Для этого данные поля нужно выбрать и 
+переместить в группу, зажав левую кнопку мыши (рис. 8.11). </span></p>
+<p class="rvps8"><img 497="" 135="" alt="" style="padding : 1px;" src="08_data/img12.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.11. Группировка полей</span></p>
+<p class="rvps7"><span class="rvts4">Также изменим заголовки для этих полей. Полю "Номер" присвоим заголовок "Заказ №" (рис. 8.12).</span></p>
+<p class="rvps8"><img 509="" 138="" alt="" style="padding : 1px;" src="08_data/img13.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.12. Присвоение заголовка полю "Номер"</span></p>
+<p class="rvps2"><span class="rvts4">Для поля "Дата" укажем заголовок "От" (рис. 8.13).</span></p>
+<p class="rvps8"><img 507="" 115="" alt="" style="padding : 1px;" src="08_data/img14.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.13. Присвоение заголовка полю "Дата"</span></p>
+<p class="rvps7"><span class="rvts4">Расположение поля "Товар" сделаем 
+выше, чтобы оно располагалось под только что созданной группой, а поле 
+"Итог" перенесем на третье с конца место. Для этого их достаточно 
+передвинуть в списке с помощью кнопок в верхнем левом углу (рис. 8.14).</span></p>
+<p class="rvps8"><img 167="" 137="" alt="" style="padding : 1px;" src="08_data/img15.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.14. Перестановка полей на форме</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">В свойствах поля "Товар" укажем, 
+что данное поле является надписью, так как его не требуется изменять. 
+Однако для большей информативности поставим галочку у свойства 
+"Гиперссылка" </span>–<span class="rvts4"> это позволит открыть карточку товара прямо из формы бизнес-процесса при нажатии по этому полю (рис. 8.15).</span></p>
+<p class="rvps8"><img 201="" 207="" alt="" style="padding : 1px;" src="08_data/img16.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.15. Изменение свойств поля "Товар"</span></p>
+<p class="rvps7"><span class="rvts4">Поля "Цена", "Количество" и "Сумма"
+ также объединим в горизонтальную группу. Нажмем по полю "Цена" правой 
+кнопкой мыши и в контекстном меню нажмем на кнопку "Добавить" (рис. 
+8.16). В выпавшем окне выберем пункт "Группа </span>–<span class="rvts4"> Обычная группа без отображения" и нажмем "ОК" (рис. 8.17).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 230="" 323="" alt="" style="padding : 1px;" src="08_data/img17.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 252="" 204="" alt="" style="padding : 1px;" src="08_data/img18.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><span class="rvts7">Рис. 8.16. Добавление группы для полей "Цена", "Количество" и "Сумма"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><span class="rvts7">Рис. 8.17. Выбор группировки полей</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">Назовем данную группу "ГруппаДанныеКОплате" и перенесем в нее поля "Цена", "Количество" и "Сумма" (рис. 8.18).</span></p>
+<p class="rvps8"><img 494="" 123="" alt="" style="padding : 1px;" src="08_data/img19.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.18. Группировка полей и переименование группы</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">Для полей "Цена", "Количество" и "Сумма" укажем вид </span>–<span class="rvts4"> "Поле надписи", так как эти поля заполняются автоматически (рис. 8.19 </span>–<span class="rvts4"> 8.21).</span></p>
+<p class="rvps8"><img 512="" 105="" alt="" style="padding : 1px;" src="08_data/img20.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.19. Изменение вида поля "Цена"</span></p>
+<p class="rvps8"><img 512="" 106="" alt="" style="padding : 1px;" src="08_data/img21.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.20. Изменение вида поля "Количество"</span></p>
+<p class="rvps8"><img 494="" 103="" alt="" style="padding : 1px;" src="08_data/img22.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.21. Изменение вида поля "Сумма"</span></p>
+<p class="rvps2"><span class="rvts4">То же самое делаем с полем "Итог" (рис. 8.22).</span></p>
+<p class="rvps8"><img 496="" 125="" alt="" style="padding : 1px;" src="08_data/img23.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.22. Изменение вида поля "Итог"</span></p>
+<p class="rvps7"><span class="rvts4">Поля "Стартован" и "Завершен" также объединим в группу, тип группы "Группа </span>–<span class="rvts4"> Обычная группа без отображения" (рис. 8.23).</span></p>
+<p class="rvps8"><img 214="" 130="" alt="" style="padding : 1px;" src="08_data/img24.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.23. Добавление группировки полей</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">Назовем данную группу "ГруппаСтартованЗавершен" и перенесем в нее поля "Стартован" и "Завершен" (рис. 8.24). </span></p>
+<p class="rvps8"><img 509="" 137="" alt="" style="padding : 1px;" src="08_data/img25.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.24. Группировка полей и переименование группы</span></p>
+<p class="rvps7"><span class="rvts4">Также изменим заголовок поля 
+"Стартован" на "Принят в работу" и изменим вид полей "Стартован" и 
+"Завершен" на "Поле надписи" (рис. 8.25 </span>–<span class="rvts4"> 8.26).</span></p>
+<p class="rvps8"><img 503="" 137="" alt="" style="padding : 1px;" src="08_data/img26.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.25. Изменение заголовка и вида поля "Стартован"</span></p>
+<p class="rvps8"><img 494="" 133="" alt="" style="padding : 1px;" src="08_data/img27.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.26. Изменение вида поля "Завершен" </span></p>
+<p class="rvps7"><span class="rvts4">Поля "Дата" и "Номер" заполняются 
+автоматически в момент создания бизнес-процесса. Изменим их вид на "Поле
+ надписи", чтобы пользователь не мог вносить изменения (рис. 8.27 </span>–<span class="rvts4"> 8.28).</span></p>
+<p class="rvps8"><img 504="" 137="" alt="" style="padding : 1px;" src="08_data/img28.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.27. Изменение вида поля "Номер"</span></p>
+<p class="rvps2"><span class="rvts5"><br></span></p>
+<p class="rvps8"><img 496="" 135="" alt="" style="padding : 1px;" src="08_data/img29.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.28. Изменение вида поля "Дата"</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps7"><span class="rvts4">Откроем любой заказ, чтобы 
+проверить корректность отображения формы. Как можно увидеть, новая форма
+ более удобна для пользователя. Все поля заполнены, кроме "Итог". Данное
+ поле будет настроено позднее. </span></p>
+<p class="rvps7"><span class="rvts4">Так как данный заказ еще не 
+выполнен, но уже стартовал, то поля "Стартован" и "Завершен" имеют 
+значения "Да" и "Нет" соответственно (рис. 8.29).</span></p>
+<p class="rvps8"><img 513="" 155="" alt="" style="padding : 1px;" src="08_data/img30.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.29. Форма заказа</span></p>
+<p class="rvps7"><span class="rvts4">Если же открыть уже выполненные заказы, то в поле "Завершен" будет значение "Да" (рис. 8.30).</span></p>
+<p class="rvps8"><img 513="" 155="" alt="" style="padding : 1px;" src="08_data/img31.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.30. Форма завершенного заказа</span></p>
+<p class="rvps7"><span class="rvts4">Однако изменение вида поля на поле надписи </span>–<span class="rvts4"> не единственный вариант отображения данных в форме, при котором пользователь не может вносить изменения.</span></p>
+<p class="rvps7"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+<p class="rvps7"><span class="rvts4">Выберем поле "Номер" и изменим вид поля на "Поле ввода" (рис. 8.31).</span></p>
+<p class="rvps8"><img 496="" 131="" alt="" style="padding : 1px;" src="08_data/img32.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.31. Изменение вида поля "Номер"</span></p>
+<p class="rvps7"><span class="rvts4">Повторим данную операцию с каждым полем формы, кроме полей "Стартован" и "Завершен" </span>–<span class="rvts4"> у них вид изменится на "Поле флажка" (рис. 8.32 </span>–<span class="rvts4"> 8.39).</span></p>
+<p class="rvps8"><img 488="" 115="" alt="" style="padding : 1px;" src="08_data/img33.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.32. Изменение вида поля "Дата"</span></p>
+<p class="rvps8"><img 484="" 129="" alt="" style="padding : 1px;" src="08_data/img34.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.33. Изменение вида поля "Товар"</span></p>
+<p class="rvps8"><img 496="" 135="" alt="" style="padding : 1px;" src="08_data/img35.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.34. Изменение вида поля "Цена"</span></p>
+<p class="rvps8"><img 509="" 133="" alt="" style="padding : 1px;" src="08_data/img36.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.35. Изменение вида поля "Количество"</span></p>
+<p class="rvps8"><img 508="" 140="" alt="" style="padding : 1px;" src="08_data/img37.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.36. Изменение вида поля "Сумма"</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps8"><img 496="" 136="" alt="" style="padding : 1px;" src="08_data/img38.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.37. Изменение вида поля "Итог"</span></p>
+<p class="rvps8"><img 508="" 136="" alt="" style="padding : 1px;" src="08_data/img39.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.38. Изменение вида поля "Стартован"</span></p>
+<p class="rvps8"><img 496="" 136="" alt="" style="padding : 1px;" src="08_data/img40.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.39. Изменение вида поля "Завершен"</span></p>
+<p class="rvps7"><span class="rvts4">Зажав клавишу Ctrl, выделим все 
+поля в форме и в палитре свойств поставим галочку напротив свойства 
+"ТолькоПросмотр" (рис. 8.40).</span></p>
+<p class="rvps8"><img 509="" 139="" alt="" style="padding : 1px;" src="08_data/img41.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.40. Изменение свойства всех полей сразу</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим режим пользователя.</span></p>
+<p class="rvps2"><span class="rvts4">Откроем любой заказ, чтобы проверить настройки (рис. 8.41).</span></p>
+<p class="rvps8"><img 372="" 122="" alt="" style="padding : 1px;" src="08_data/img42.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.41. Итоговая форма заказа клиента</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps15"><span class="rvts4">Данный вариант формы является финальным и больше изменяться не будет. Далее приступим ко </span><span class="rvts3">второй задаче</span><span class="rvts4"> </span>–<span class="rvts4"> реализации формы задачи.</span></p>
+<h2 class="rvps9"><a name="_Toc121319158"></a>
+<span class="rvts0"><span class="rvts8">Настройка прикладного решения. Изменение формы задачи </span></span></h2>
+<p class="rvps7"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+<p class="rvps7"><span class="rvts4">Приступим к решению </span><span class="rvts3">второй задачи</span><span class="rvts4">
+ и добавим форму элемента "ЭтапыЗаказа". Для этого в дереве конфигурации
+ откроем задачи и далее развернем "ЭтапыЗаказа". После этого щелкнем 
+правой кнопкой мыши по пункту "Формы" и в открывшемся меню выберем пункт
+ "Добавить" (рис. 8.42).</span></p>
+<p class="rvps8"><img 155="" 218="" alt="" style="padding : 1px;" src="08_data/img43.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.42. Добавление пользовательской формы</span></p>
+<p class="rvps7"><span class="rvts4">В появившемся окне мы не вносим 
+никаких изменений и нажимаем кнопку "Далее" (рис. 8.43). В следующем 
+окне необходимо выбрать поля, которые останутся в новой форме. Это будут
+ поля "Наименование" и "Дата". Нажмем на кнопку "Готово", чтобы перейти в
+ редактор формы (рис. 8.44).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 282="" 263="" alt="" style="padding : 1px;" src="08_data/img44.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 286="" 268="" alt="" style="padding : 1px;" src="08_data/img45.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.43. Настройка пользовательской формы</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.44. Выбор полей формы</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">После открытия редактора формы выберем поле "Наименование" и в заголовке напишем "Этап" (рис. 8.45).</span></p>
+<p class="rvps8"><img 508="" 137="" alt="" style="padding : 1px;" src="08_data/img46.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.45. Изменение заголовка поля "Наименование"</span></p>
+<p class="rvps7"><span class="rvts4">Для поля "Дата" в заголовке напишем "От" (рис. 8.46).</span></p>
+<p class="rvps8"><img 509="" 137="" alt="" style="padding : 1px;" src="08_data/img47.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.46. Изменение заголовка поля "Дата"</span></p>
+<p class="rvps7"><span class="rvts4">Объединим поля "Дата" и 
+"Наименование" в одну группу. Для этого нажмем на кнопку "Добавить" и в 
+появившемся окне выберем тип группы "Группа </span>–<span class="rvts4"> Обычная группа без отображения" (рис. 8.47).</span></p>
+<p class="rvps8"><img 264="" 155="" alt="" style="padding : 1px;" src="08_data/img48.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.47. Добавление группы</span></p>
+<p class="rvps7"><span class="rvts4">Изменим название группы на "ГруппаНаименованиеДата" и перенесем поля в группу (рис. 8.48).</span></p>
+<p class="rvps8"><img 509="" 138="" alt="" style="padding : 1px;" src="08_data/img49.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.48. Группировка полей</span></p>
+<p class="rvps2"><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">Для наглядности выведем 
+пользователю информацию о товаре, цене, количестве и сумме, а также 
+текущем итоге бизнес-процесса. Данную информацию можно получить через 
+ссылку. </span></p>
+<p class="rvps7"><span class="rvts4">Так как задача уже ссылается на 
+бизнес-процесс, в разделе "Реквизиты" в правой верхней части экрана 
+развернем главный реквизит "Объект". Он представляет собой все 
+реквизиты, которые есть у механизма "Задача". В нем раскроем реквизит 
+"Бизнес-процесс", поскольку он ссылочного типа. Добавим поля в форму, 
+выделив нужный элемент и перенеся его на нашу форму. Для ускорения 
+процесса можно выделить все нужные реквизиты через клавишу Ctrl и 
+перенести все сразу (рис. 8.49).</span></p>
+<p class="rvps8"><img 337="" 196="" alt="" style="padding : 1px;" src="08_data/img50.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.49. Добавление реквизитов на форму</span></p>
+<p class="rvps7"><span class="rvts4">Определим внешний вид новых элементов. Добавим их в группу. Нажмем на любой элемент, а затем </span>–<span class="rvts4"> на кнопку "Добавить". Тип группы "Группа </span>–<span class="rvts4"> Обычная группа без отображения", нажмем на кнопку "ОК" (рис. 8.50).</span></p>
+<p class="rvps8"><img 215="" 117="" alt="" style="padding : 1px;" src="08_data/img51.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.50. Добавление группы</span></p>
+<p class="rvps7"><span class="rvts4">Перенесем реквизиты "Цена", "Количество" и "Сумма" в группу и назовем ее "ГруппаЦенаКоличествоСумма" (рис. 8.51).</span></p>
+<p class="rvps8"><img 520="" 174="" alt="" style="padding : 1px;" src="08_data/img52.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.51. Группировка полей и переименование группы</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">Все элементы, полученные из 
+бизнес-процесса, не могут быть изменены пользователем, так как они 
+получены через ссылку. Следовательно, нет необходимости вносить 
+ограничение на их изменение.</span></p>
+<p class="rvps7"><span class="rvts4">Теперь изменим командную панель. Для начала отключим у нее автозаполнение (рис. 8.52).</span></p>
+<p class="rvps8"><img 508="" 94="" alt="" style="padding : 1px;" src="08_data/img53.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.52. Отключение автозаполнения у командной панели</span></p>
+<p class="rvps7"><span class="rvts4">Самостоятельно определим в 
+командную панель команду "Выполнено, закрыть". В правой части редактора 
+форм переходим на вкладку "Команды", затем </span>–<span class="rvts4"> 
+на вкладку "Стандартные команды". Далее развернем пункт "Форма", выделим
+ нужную команду и перенесем ее в командную панель (рис. 8.53).</span></p>
+<p class="rvps8"><img 364="" 210="" alt="" style="padding : 1px;" src="08_data/img54.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.53. Добавление команды</span></p>
+<p class="rvps7"><span class="rvts4">В заголовке команды укажем 
+"Выполнить этап" и поставим галочку напротив пункта "КнопкаПоУмолчанию",
+ чтобы визуально выделить команду для пользователя (рис. 8.54).</span></p>
+<p class="rvps8"><img 509="" 176="" alt="" style="padding : 1px;" src="08_data/img55.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.54. Настройка команды</span></p>
+<p class="rvps7"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps7"><span class="rvts4">Откроем этапы заказа и выберем в списке любой этап. Благодаря ссылочному типу данных поля в карточке уже заполнены (рис. 8.55).</span></p>
+<p class="rvps8"><img 410="" 150="" alt="" style="padding : 1px;" src="08_data/img56.png"></p>
+<p class="rvps16"><span class="rvts7">Рис. 8.55. Обновленная форма этапа заказа</span></p>
+<h2 class="rvps9"><a name="_Toc121319159"></a>
+<span class="rvts0"><span class="rvts8">Настройка прикладного решения. Вывод списка актуальных заказов</span></span></h2>
+<p class="rvps7"><span class="rvts4">Перейдем к </span><span class="rvts3">третьей задаче</span><span class="rvts4">,
+ в рамках которой необходимо изменить начальную страницу. В данный 
+момент на ней можно только открыть магазин. Но было бы намного удобнее, 
+если бы список текущих заказов также отображался на форме начального 
+экрана. </span></p>
+<p class="rvps7"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+<p class="rvps7"><span class="rvts4">В дереве конфигурации открываем "Общее", затем "Общие формы"</span><span class="rvts5">,</span><span class="rvts4"> откроем форму "НачальнаяСтраница" (рис. 8.56).</span></p>
+<p class="rvps8"><img 370="" 192="" alt="" style="padding : 1px;" src="08_data/img57.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.56. Форма начальной страницы</span></p>
+<p class="rvps7"><span class="rvts4">Данные в формате списка и 
+определяются как динамический список, который выстраивается через запрос
+ к информационной базе. Чтобы добавить такой список, добавим реквизит 
+формы и назовем его "АктивныеЗаказы", тип данных </span>–<span class="rvts4"> "ДинамическийСписок" (рис. 8.57).</span></p>
+<p class="rvps8"><img 460="" 196="" alt="" style="padding : 1px;" src="08_data/img58.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.57. Добавление динамического списка</span></p>
+<p class="rvps7"><span class="rvts4">Чтобы динамический список знал, 
+откуда брать информацию, необходимо указать "ОсновнуюТаблицу" на вкладке
+ "Объект". В качестве основной таблицы укажем "ЭтапыЗаказа" (рис. 8.58).</span></p>
+<p class="rvps8"><img 435="" 187="" alt="" style="padding : 1px;" src="08_data/img59.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.58. Выбор основной таблицы для динамического списка</span></p>
+<p class="rvps7"><span class="rvts4">Итак, у нас выстраивается структура
+ данных, и появляются соответствующие колонки. Однако полей появилось 
+больше, чем нужно. Пользователю нужно выводить только реквизиты "Товар",
+ "Количество" и "Итог", которых сейчас нет в структуре данных (рис. 
+8.59).</span></p>
+<p class="rvps8"><img 263="" 234="" alt="" style="padding : 1px;" src="08_data/img60.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.59. Структура динамического списка</span></p>
+<p class="rvps2"><span class="rvts4">Для получения доступа к нужным 
+реквизитам откроем палитру свойств динамического списка "АктивныеЗаказы"
+ и на вкладке "Объект" поставим галочку напротив свойства 
+"ПроизвольныйЗапрос". Таким образом изменится структура чтения данных из
+ списка задач (рис. 8.60). Настроим произвольный запрос, открыв 
+настройку списка (рис. 8.61).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 306="" 160="" alt="" style="padding : 1px;" src="08_data/img61.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 306="" 158="" alt="" style="padding : 1px;" src="08_data/img62.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.60. Включение произвольного запроса</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.61. Открытие настройки списка</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts4">В открывшемся окне отображается 
+консоль запросов. Она удобна в данном случае, поскольку будет видно, 
+какие поля будут использоваться в динамическом списке. Для начала 
+откроем конструктор запроса (рис. 8.62).</span></p>
+<p class="rvps8"><img 410="" 328="" alt="" style="padding : 1px;" src="08_data/img63.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.62. Открытие конструктора запроса</span></p>
+<p class="rvps7"><span class="rvts4">В левой части консоли запросов 
+видим список полей. Необходимо убрать все поля, кроме 
+"ЗадачаЭтапыЗаказа.Наименование". Выберем любое поле и нажмем на 
+стрелочку влево. Повторим, пока не останется только поле "Наименование" 
+(рис. 8.63).</span></p>
+<p class="rvps8"><img 600="" 307="" alt="" style="padding : 1px;" src="08_data/img64.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.63. Исключение полей из конструктора запросов</span></p>
+<p class="rvps7"><span class="rvts4">Добавим в запрос поля "Товар", "Количество" и "Итог" из поля "Бизнес-процесс", прочитав их по ссылке. </span></p>
+<p class="rvps7"><span class="rvts4">Раскроем "ЗадачаЭтапыЗаказа", затем
+ откроем "БизнесПроцесс" и двойным нажатием левой кнопки мыши добавим 
+необходимые поля (рис. 8.64).</span></p>
+<p class="rvps8"><img 511="" 330="" alt="" style="padding : 1px;" src="08_data/img65.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.64. Добавление полей в конструктор запроса</span></p>
+<p class="rvps7"><span class="rvts4">Однако при таком запросе на 
+начальном экране будут выводиться все этапы заказов, даже те, которые 
+давно были выполнены. Для удобства добавим к запросу условие, которое 
+поможет выводить только этапы незавершенных заказов.</span></p>
+<p class="rvps7"><span class="rvts4">Перейдем на вкладку "Условия", 
+выберем поле "Выполнена" и перенесем его в поле условий. Поставим 
+галочку в ячейке "Произвольное выражение" и изменим значение условия на 
+"ЛОЖЬ" (рис. 8.65).</span></p>
+<p class="rvps8"><img 520="" 330="" alt="" style="padding : 1px;" src="08_data/img66.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.65. Составление условия запроса</span></p>
+<p class="rvps7"><span class="rvts4">Также укажем псевдонимы для полей, поскольку сейчас они могут быть не очень понятны для пользователя. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку 
+"Объединение/Псевдонимы" и уберем конструкцию "БизнесПроцесс" у полей. 
+После чего нажмем "Ок" (рис. 8.66). Нажимаем "ОК" уже в консоли 
+запросов, чтобы закрыть ее (рис. 8.67).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 340="" 220="" alt="" style="padding : 1px;" src="08_data/img67.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 279="" 223="" alt="" style="padding : 1px;" src="08_data/img68.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.66. Создание псевдонимов для полей</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 8.67. Закрытие консоли запросов</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">Теперь динамический список готов к 
+переносу на начальную страницу. Удерживая "АктивныеЗаказы" левой кнопкой
+ мыши, перенесем его на форму. На вопрос о добавлении новых колонок 
+ответим "Да" (рис. 8.68).</span></p>
+<p class="rvps8"><img 354="" 171="" alt="" style="padding : 1px;" src="08_data/img69.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.68. Добавление динамического списка на форму начальной страницы</span></p>
+<p class="rvps7"><span class="rvts4">Необходимо изменить порядок колонок
+ в новой таблице. Раскроем "АктивныеЗаказы" и переместим некоторые поля.
+ Порядок колонок будет следующий: колонку "Наименование" переносим в 
+самое начало, затем идут колонки "Дата", "Товар", "Количество" и "Итог".
+ "Пометка на удаление", "Ссылка" и "СтандартнаяКартинка" необходимо 
+удалить с формы (рис. 8.69).</span></p>
+<p class="rvps8"><img 206="" alt="" style="padding : 1px;" src="08_data/img70.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.69. Перечень колонок таблицы динамического списка</span></p>
+<p class="rvps7"><span class="rvts4">Список этапов заказов должен 
+интерактивно обновляться. Выберем "АктивныеЗаказы" в элементах 
+интерфейса и в палитре свойств перейдем на вкладку "Использование". 
+Поставим галочку напротив свойства "АвтоОбновление", 
+"ПериодАвтоОбновления" установим на 5 секунд (рис. 8.70).</span></p>
+<p class="rvps8"><img 484="" 212="" alt="" style="padding : 1px;" src="08_data/img71.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.70. Установка динамического обновления списка </span></p>
+<p class="rvps7"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps7"><span class="rvts4">На начальном экране появился список
+ незавершенных заказов. Нажмем на кнопку "Открыть магазин" три раза. 
+Через 5 секунд в списке появятся новые заказы (рис. 8.71).</span></p>
+<p class="rvps8"><img 345="" 136="" alt="" style="padding : 1px;" src="08_data/img72.png"></p>
+<p class="rvps16"><span class="rvts7">Рис. 8.71. Проверка динамического обновления списка</span></p>
+<h2 class="rvps17"><a name="_Toc121319160"></a>
+<span class="rvts0"><span class="rvts8">Автоматизация игрового процесса. Доработка создания заказов. Закрытие магазина</span></span></h2>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 127="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts4">Сейчас</span></p>
+</td>
+<td 122="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts4">Должно быть</span></p>
+</td>
+<td rowspan="2" 369="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts3">Четвертая задача</span><span class="rvts4">
+ сводится к доработке механизма открытия магазина. Настоящий магазин 
+открывается и через некоторое время закрывается, а не открывается 
+несколько раз для получения соответствующего количества заказов.</span></p>
+<p class="rvps7"><span class="rvts4">Потребуется поменять логику работы магазина, а также добавить возможность его закрыть. </span></p>
+<p class="rvps7"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 127="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><img 131="" 187="" alt="" style="padding : 1px;" src="08_data/img73.png"></p>
+</td>
+<td 122="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><img 133="" 128="" alt="" style="padding : 1px;" src="08_data/img74.png"></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts4">Добавим команду на форму начального
+ экрана, которую назовем "ЗакрытьМагазин". Добавим команду на форму, 
+перетащив ее на команду "ОткрытьМагазин", чтобы они находились рядом 
+(рис. 8.72).</span></p>
+<p class="rvps8"><img 436="" 149="" alt="" style="padding : 1px;" src="08_data/img75.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.72. Добавление команды "ЗакрытьМагазин" </span></p>
+<p class="rvps7"><span class="rvts4">Для удобства переместим данную 
+кнопку под кнопку "ОткрытьМагазин". Для этого выберем кнопку 
+"ЗакрытьМагазин" и нажмем на синюю стрелочку вниз (рис. 8.73).</span></p>
+<p class="rvps8"><img 228="" 234="" alt="" style="padding : 1px;" src="08_data/img76.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.73. Перенос кнопки "ЗакрытьМагазин"</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps14"><span class="rvts4">Необходимо настроить новую 
+команду. Откроем палитру свойств и в строке "Действие" создадим 
+обработчик на клиенте с помощью кнопки "Открыть" (рис. 8.74).</span></p>
+<p class="rvps8"><img 322="" 165="" alt="" style="padding : 1px;" src="08_data/img77.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.74. Создание обработчика команды "ЗакрытьМагазин" </span></p>
+<p class="rvps7"><span class="rvts4">Необходимо изменить логику в данном
+ модуле. Сейчас при нажатии на кнопку "ОткрытьМагазин" единожды 
+выполняется фоновая процедура "ГенераторПосетителей". Нужно, чтобы она 
+выполнялась </span><span class="rvts9">неоднократно</span><span class="rvts4">. </span></p>
+<p class="rvps7"><span class="rvts4">Определим для этого отдельную клиентскую процедуру в новой области "СлужебныеПроцедурыИФункции"</span><span class="rvts5">.</span></p>
+<p class="rvps7"><span class="rvts4">Добавим новую процедуру с директивой на клиенте. Процедура будет вызывать фоновую процедуру, которая будет доработана позже.</span></p>
+<p class="rvps2"><img 468="" 104="" alt="" style="padding : 1px;" src="08_data/img78.png"></p>
+<p class="rvps7"><span class="rvts4">В процедуре "ОткрытьМагазин" 
+необходимо генерировать посетителей с каким-то интервалом. Для этого 
+используем механизм "ПодключитьОбработчикОжидания". Для начала интервал 
+будет равен 5 секундам.</span></p>
+<p class="rvps2"><img 481="" 123="" alt="" style="padding : 1px;" src="08_data/img79.png"></p>
+<p class="rvps7"><span class="rvts4">В процедуре "ЗакрытьМагазин" необходимо прервать поток посетителей. Воспользуемся механизмом "ОтключитьОбработчикОжидания"</span></p>
+<p class="rvps2"><img 409="" 126="" alt="" style="padding : 1px;" src="08_data/img80.png"></p>
+<p class="rvps7"><span class="rvts4">В итоговом варианте код модуля общей формы будет выглядеть следующим образом: </span></p>
+<p class="rvps2"><img 474="" 253="" alt="" style="padding : 1px;" src="08_data/img81.png"></p>
+<p class="rvps7"><span class="rvts4">Для доработки фоновой процедуры откроем общий модуль "ФоновыеПроцедуры" (рис. 8.75).</span></p>
+<p class="rvps8"><img 360="" 83="" alt="" style="padding : 1px;" src="08_data/img82.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.75. Открытие общего модуля "ФоновыеПроцедуры"</span></p>
+<p class="rvps7"><span class="rvts4">В данном модуле создадим процедуру 
+"ГенерацияПосетителейФоном", на которую ссылались ранее в процедуре 
+"ЗапуститьГенерациюПосетителей()"</span><span class="rvts5">.</span></p>
+<p class="rvps2"><img 508="" 70="" alt="" style="padding : 1px;" src="08_data/img83.png"></p>
+<p class="rvps7"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps7"><span class="rvts4">Теперь при нажатии кнопки "Открыть 
+магазин" заказы будут генерироваться автоматически до того момента, пока
+ не будет нажата кнопка "Закрыть магазин" (рис. 8.76).</span></p>
+<p class="rvps8"><img 293="" 222="" alt="" style="padding : 1px;" src="08_data/img84.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 8.76. Автоматическая генерация заказов посетителей</span></p>
+<p class="rvps19"><span class="rvts10">На этом восьмое занятие окончено!</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps7"><span class="rvts3">На этом занятии </span><span class="rvts4">мы настроили формы бизнес</span><span class="rvts5">-</span><span class="rvts4">процесса,
+ задачи, вывели на начальный экран список актуальных для игрока заказов,
+ а также доработали алгоритм поступления заказов, благодаря которому 
+заказы поступают с определенной периодичность, когда магазин открыт. </span></p>
+<p class="rvps7"><span class="rvts4">В будущем заработок будет выстраиваться на основании рейтинга магазина. Реализацию рейтинга магазина рассмотрим на </span><span class="rvts3">следующем занятии</span><span class="rvts5">.</span></p>
+<p class="rvps7"><span class="rvts11"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts12">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts11"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 170="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps13"><img 156="" alt="" style="padding : 1px;" src="08_data/img85.png"></p>
+</td>
+<td 440="" 170="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts4">Для
+ того чтобы вывести список на форму со своими собственными настройками, 
+необходимо добавить реквизит с типом "Динамический список" и составить 
+для него произвольный запрос. </span></p>
+<p class="rvps7"><span class="rvts4">Метод "ПодключитьОбработчикОжидания()" позволяет вызывать указанную в скобках процедуру с указанной периодичностью. </span></p>
+<p class="rvps7"><span class="rvts4">Метод "ОтключитьОбработчикОжидания()" позволяет завершить выполнение процедуры, указанной в скобках.</span></p>
+<p class="rvps7"><span class="rvts4">"ФоновыеЗадания.Выполнить()" запускает выполнение указанной в скобках процедуры в фоновом режиме. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts5"><br></span></p>
+<h2 class="rvps20"><a name="_Toc121319161"></a>
+<span class="rvts0"><span class="rvts8">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts6">С помощью какого объекта можно вызвать процедуру в фоновом режиме? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts6">Какое свойство нужно отключить у командной панели, чтобы ее можно было настроить самостоятельно? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps22"><span class="rvts6">У какого вида групп формы отображается заголовок? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts5"><br></span></p>
+<p><span class="rvts5"><br></span></p>
+
+</body></html>

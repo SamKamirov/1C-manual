@@ -1,0 +1,1036 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts4
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts7
+{
+ font-size: 10pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts10
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts12
+{
+}
+span.rvts13
+{
+ font-weight: bold;
+}
+span.rvts14
+{
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts16
+{
+ font-weight: bold;
+}
+span.rvts17
+{
+ font-weight: bold;
+}
+span.rvts18
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts19
+{
+}
+span.rvts20
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts21
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ text-decoration: underline;
+}
+span.rvts22
+{
+}
+span.rvts23
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts24
+{
+ font-weight: bold;
+}
+span.rvts25
+{
+ font-weight: bold;
+}
+span.rvts26
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps3
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps5
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps10
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+}
+.rvps14
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps15
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps19
+{
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps20
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps23
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps24
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps25
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: 47px;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps26
+{
+ text-indent: 47px;
+ widows: 2;
+ orphans: 2;
+}
+.rvps27
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: 47px;
+ widows: 2;
+ orphans: 2;
+}
+.rvps28
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps29
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps30
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps31
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps32
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps33
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps34
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps35
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps36
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319120"></a>
+<span class="rvts0"><span class="rvts1"><br></span></span></h1>
+<p><img 139="" 138="" alt="" style="padding : 1px;" src="01_data/img1.jpg"></p>
+<h1 class="rvps1"><span class="rvts0"><span class="rvts2">Занятие</span></span><span class="rvts0"><span class="rvts3"> 1. </span></span><span class="rvts0"><span class="rvts2">Создание</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts2">новой</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts2">конфигурации</span></span><span class="rvts0"><span class="rvts3">. </span></span><span class="rvts0"><span class="rvts2">Определение</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts2">целей<br><br>
+</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts2">и</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts2">задач</span></span></h1>
+<p class="rvps2"><span class="rvts4">Для прохождения модуля "1С:Магнат" потребуется установить платформу "1С:Предприятие 8.3" актуальной версии. </span></p>
+<p class="rvps2"><span class="rvts4">Инструкцию по установке программы для популярных операционных систем и дистрибутивы можно найти по ссылке </span><a class="rvts5" href="https://uc1.1c.ru/uchebnaya-versiya-1s/">https://uc1.1c.ru/uchebnaya-versiya-1s/</a><span class="rvts6">&nbsp; </span><span class="rvts4">или QR-коду.</span></p>
+<p><span class="rvts7"><br></span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts9">Тема этого занятия </span><span class="rvts10">–</span><span class="rvts9"> </span><span class="rvts1">подготовка
+ информационной базы к созданию новой, а также добавление данных о 
+директоре магазина и создание механизма для хранения информации об 
+апгрейдах. </span></p>
+<h2 class="rvps3"><a name="_Toc121319121"></a>
+<span class="rvts0"><span class="rvts11">Подготовка. Создание новой информационной базы</span></span></h2>
+<p class="rvps4"><span class="rvts1">После установки программы нужно создать новую информационную базу. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 60="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 60="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts13">Информационная база</span><span class="rvts12"> </span><span class="rvts14">–</span><span class="rvts12"> это совокупность функционала и данных, которые находятся в программе.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps6"><span class="rvts12">Для создания информационной базы 
+необходимо запустить ярлык программы "1С:Предприятие". Если на 
+компьютере нет информационных баз, то появится окно (см. рис. 1.1), в 
+котором необходимо выбрать вариант "Нет". </span></p>
+<p class="rvps7"><img 239="" 102="" alt="" style="padding : 1px;" src="01_data/img2.png"></p>
+<p class="rvps7"><span class="rvts13">Рис. 1.1. Уведомление программы</span></p>
+<p class="rvps6"><span class="rvts12">Если ранее вы уже работали в 
+программе и создавали свои приложения, то появится окно выбора 
+информационной базы. В этом окне необходимо нажать на кнопку "Добавить" 
+(рис. 1.2). </span></p>
+<p class="rvps8"><img 296="" 205="" alt="" style="padding : 1px;" src="01_data/img3.png"></p>
+<p class="rvps7"><span class="rvts13">Рис. 1.2. Окно выбора информационной базы</span></p>
+<p class="rvps9"><span class="rvts1">Далее нужно выбрать вариант 
+"Создание новой информационной базы" (рис. 1.3). После этого создадим 
+пустую базу без конфигурации (рис. 1.4). На следующем шаге необходимо 
+дать название информационной базе </span><span class="rvts15">–</span><span class="rvts1">
+ "Модуль 2. "1С:Магнат" (рис. 1.5). Под этим названием ИБ будет 
+отображаться в общем списке, поэтому название должно быть осмысленным. </span></p>
+<p class="rvps10"><span class="rvts16"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 201="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 199="" 202="" alt="" style="padding : 1px;" src="01_data/img4.png"></p>
+</td>
+<td 206="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 204="" alt="" style="padding : 1px;" src="01_data/img5.png"></p>
+</td>
+<td 213="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 211="" 216="" alt="" style="padding : 1px;" src="01_data/img6.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 201="" 48="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts16">Рис. 1.3. Создание новой информационной базы</span></p>
+<p class="rvps12"><span class="rvts16"><br></span></p>
+</td>
+<td 206="" 48="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts16">Рис. 1.4. Добавление информационной базы</span></p>
+</td>
+<td 213="" 48="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><span class="rvts16">Рис. 1.5. Наименование информационной базы</span></p>
+<p><span class="rvts1"><br></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts1">Информационная база будет 
+располагаться локально. Далее необходимо указать каталог информационной 
+базы (рис. 1.6). После выбора каталога необходимо нажать "Далее". В 
+следующем окне нет необходимости менять какие-либо настройки и можно 
+нажать "Готово" (рис. 1.7).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 72="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 72="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts13">Каталог </span><span class="rvts17">–</span><span class="rvts13"> </span><span class="rvts12">это
+ папка, в которой будут находиться файлы, необходимые для работы базы. 
+Папку можно оставить по умолчанию, либо указать другой каталог.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps14"><span class="rvts1"> </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 264="" 266="" alt="" style="padding : 1px;" src="01_data/img7.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 260="" 266="" alt="" style="padding : 1px;" src="01_data/img8.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><span class="rvts16">Рис. 1.6. Выбор каталога информационной базы</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><span class="rvts16">Рис. 1.7. Завершение добавления информационной базы</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">В результате в списке появится 
+новая база: "Модуль 2. "1С:Магнат". Если сейчас нажать на кнопку 
+"1С:Предприятие", то есть запустить режим пользователя (игрока), 
+откроется пустое окно, так как функционал игры еще не разработан. </span></p>
+<h2 class="rvps3"><a name="_Toc121319122"></a>
+<span class="rvts0"><span class="rvts18">Настройка прикладного решения. Добавление директора</span></span></h2>
+<p><span class="rvts1">Приступим к разработке, запустим режим "Конфигуратор" (рис. 1.8).</span></p>
+<p class="rvps8"><img 413="" 288="" alt="" style="padding : 1px;" src="01_data/img9.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.8. Запуск режима разработчика</span></p>
+<p class="rvps16"><span class="rvts19">После запуска режима 
+"Конфигуратор" необходимо получить доступ к конструктору, из которого 
+будет формироваться программа. Для того чтобы получить к нему доступ, 
+нужно нажать в верхней панели на пункт "Конфигурация" и в списке выбрать
+ пункт "Окно конфигурации" (рис. 1.9). </span></p>
+<p class="rvps2"><span class="rvts1">Из "дерева конфигурации" можно 
+получить доступ ко всем объектам, из которых будет выстраиваться 
+программа (рис. 1.10). В рамках создаваемой программы будут рассмотрены 
+не все объекты конфигурации, поскольку многие из них нужны во взрослых 
+задачах. А для решения этих задач требуются соответствующие знания и 
+опыт.</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><img 432="" 265="" alt="" style="padding : 1px;" src="01_data/img10.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><img 432="" 265="" alt="" style="padding : 1px;" src="01_data/img11.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" 12="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><span class="rvts16">Рис. 1.9. Открытие дерева конфигурации</span></p>
+</td>
+<td 316="" 12="" valign="top" style="padding: 0px 7px;"><p class="rvps15"><span class="rvts16">Рис. 1.10. Дерево конфигурации</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps17"><span class="rvts1">Перед тем как приступить к 
+разработке игры, необходимо поставить задачу, которая будет реализована в
+ рамках этого урока. Всего запланировано </span><span class="rvts9">3 задачи.</span></p>
+<p class="rvps17"><span class="rvts9">Первая задача: </span><span class="rvts1">необходимо
+ реализовать механизм, с помощью которого можно указывать, кто является 
+директором магазина. В качестве директора будет выступать игрок. Эта 
+задача сводится к тому, чтобы научить программу хранить информацию о 
+директоре. Для этих целей подойдет объект конфигурации "Константа".</span><span class="rvts9"> </span></p>
+<p><span class="rvts1"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts13">Константа </span><span class="rvts14">–</span><span class="rvts12">
+ это значение, которое либо не изменяется вовсе, либо изменяется крайне 
+редко. Вся разработка, которая проводится в окне конфигурации, не должна
+ содержать персональных данных.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">Директора будет указывать сам игрок при запуске программы в режиме пользователя. </span></p>
+<p class="rvps2"><span class="rvts1">Для того чтобы создать новую 
+константу, необходимо нажать по одноименной ветке правой кнопкой мыши и в
+ появившемся списке выбрать "Добавить" (рис. 1.11). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 432="" 258="" alt="" style="padding : 1px;" src="01_data/img12.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.11. Добавление новой константы</span></p>
+<p class="rvps18"><span class="rvts1">После добавления константы в правой части откроется окно (</span><span class="rvts9">палитра свойств</span><span class="rvts1">), с помощью которого можно настроить созданную константу. </span></p>
+<p class="rvps18"><span class="rvts1">Заранее неизвестно, кто будет директором, но точно известно, что он будет. Укажем для константы обезличенное название </span><span class="rvts15">–</span><span class="rvts1"> "Директор". Поле "синоним" заполнится автоматически после того, как будет нажата клавиша Enter.</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts13">Синоним </span><span class="rvts14">–</span><span class="rvts12"> это название, которое видит пользователь (игрок). Благодаря синониму он поймет, что именно нужно указывать в поле.</span><span class="rvts13">&nbsp; </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps18"><span class="rvts1">Информация о директоре может состоять из фамилии, имени и различных символов, то есть из текста. </span><span class="rvts9">Текстовый тип в языке программирования </span><span class="rvts10">–</span><span class="rvts9"> это строка.</span><span class="rvts1"> Укажем длину строки для имени директора </span><span class="rvts15">–</span><span class="rvts1"> 50 символов. Этой длины будет достаточно, чтобы указать всю информацию. </span></p>
+<p class="rvps19"><span class="rvts1">Итоговый вариант настройки константы представлен на рисунке 1.12. </span></p>
+<p class="rvps8"><img 355="" 304="" alt="" style="padding : 1px;" src="01_data/img13.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.12. Настройка константы</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps18"><span class="rvts1">Перед тем как приступить к 
+проверке созданного функционала, необходимо перенести его пользователям.
+ Для этого потребуется обновить конфигурацию базы данных. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts13">Конфигурация базы данных </span><span class="rvts14">–</span><span class="rvts12">
+ это то, с чем взаимодействуют пользователи (игроки). Для ее обновления 
+нужно попросить всех пользователей выйти из игры и только потом 
+переносить новый функционал.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps18"><span class="rvts1">Перенести функционал, то есть 
+обновить конфигурацию базы данных, можно с помощью синего бочонка в 
+верхней части экрана (рис. 1.13). </span></p>
+<p class="rvps8"><img 472="" 284="" alt="" style="padding : 1px;" src="01_data/img14.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.13. Обновление конфигурации базы данных</span></p>
+<p class="rvps18"><span class="rvts1">После обновления открывается окно с информацией о том, что появился новый объект </span><span class="rvts15">–</span><span class="rvts1"> константа "Директор". В этом окне нажимаем на кнопку "Принять" (рис. 1.14). </span></p>
+<p class="rvps8"><img 432="" 258="" alt="" style="padding : 1px;" src="01_data/img15.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.14. Подтверждение изменений в структуре конфигурации</span></p>
+<p class="rvps18"><span class="rvts1">После обновления можно проверить новый функционал в режиме пользователя. </span><br><span class="rvts1">Запустить
+ пользовательский режим можно, нажав на кнопку "Сервис" в панели 
+главного меню и выбрав "1С:Предприятие" в выпавшем списке (рис. 1.15), 
+либо с помощью горячих клавиш </span><span class="rvts9">Ctrl + F5.</span><span class="rvts1"> </span></p>
+<p class="rvps8"><img 493="" 302="" alt="" style="padding : 1px;" src="01_data/img16.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.15. Запуск режима пользователя</span></p>
+<p><span class="rvts1">В открывшемся режиме пользователя отображается 
+кнопка "Сервис", в которой находится созданная нами константа "Директор"
+ (рис. 1.16). </span></p>
+<p class="rvps8"><img 362="" 198="" alt="" style="padding : 1px;" src="01_data/img17.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.16. Расположение константы "Директор" в режиме пользователя</span></p>
+<p class="rvps2"><span class="rvts1">Если нажать по кнопке "Директор", 
+то откроется окно, в котором игрок сможет указать необходимые данные. 
+Заполним данные о директоре нашего магазина (рис. 1.17). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 335="" 78="" alt="" style="padding : 1px;" src="01_data/img18.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.17. Заполнение информации о директоре</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">Далее необходимо сохранить 
+введенные данные. Это можно сделать с помощью кнопки "Записать и 
+закрыть", благодаря которой информация сохранится в программе, и окно 
+закроется, либо можно нажать кнопку "Записать". Эта команда делает 
+аналогичное действие </span><span class="rvts15">–</span><span class="rvts1"> сохраняет информацию в программе, но не закрывает окно (рис. 1.18). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 361="" 84="" alt="" style="padding : 1px;" src="01_data/img19.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.18. Сохранение данных директора в программе</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 95="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><img 68="" alt="" style="padding : 1px;" src="01_data/img20.png"></p>
+</td>
+<td 553="" 95="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps21"><span class="rvts12">Одна из популярных ошибок, которые допускают при работе с программой, </span><span class="rvts14">–</span><span class="rvts12"> это внесение изменений в режиме разработчика, пока еще открыт пользовательский режим.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps4"><span class="rvts1">Например, изменим длину константы "Директор" на 100 (рис. 1.19).</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 355="" 303="" alt="" style="padding : 1px;" src="01_data/img21.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.19. Изменение константы "Директор"</span></p>
+<p><span class="rvts1"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 95="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><img 68="" alt="" style="padding : 1px;" src="01_data/img22.png"></p>
+</td>
+<td 553="" 95="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps21"><span class="rvts12">Кнопка
+ обновления (бочонок) может быть недоступна из-за того, что активен 
+режим редактирования. Чтобы из него выйти, необходимо подтвердить 
+внесенные изменения, нажав левой кнопкой мыши в любом месте, кроме 
+редактируемого поля.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps22"><span class="rvts1">После внесения изменений обновляем
+ конфигурацию базы данных. Если пользовательский режим был свернут, а не
+ закрыт, возникнет ошибка исключительной блокировки информационной базы 
+(рис. 1.20). </span></p>
+<p class="rvps8"><img 504="" 309="" alt="" style="padding : 1px;" src="01_data/img23.png"></p>
+<p class="rvps23"><span class="rvts9">Рис. 1.20. Ошибка исключительной блокировки базы</span></p>
+<p class="rvps19"><span class="rvts1">Для того чтобы такой ошибки не возникало, </span><span class="rvts9">необходимо закрывать</span><span class="rvts1">
+ режим пользователя перед внесением изменений. После закрытия 
+пользовательского режима нужно нажать на кнопку "повторить", после чего 
+изменения зафиксируются (рис. 1.21). </span></p>
+<p class="rvps24"><img 618="" 189="" alt="" style="padding : 1px;" src="01_data/img24.png"></p>
+<p class="rvps23"><span class="rvts9">Рис. 1.21. Повторное обновление конфигурации базы данных</span></p>
+<p><span class="rvts20"><br></span></p>
+<h2 class="rvps3"><a name="_Toc121319123"></a>
+<span class="rvts0"><span class="rvts18">Настройка прикладного решения. Хранение видов апгрейдов</span></span></h2>
+<p class="rvps18"><span class="rvts9">Вторая задача</span><span class="rvts1"> </span><span class="rvts15">–</span><span class="rvts1"> реализовать хранение апгрейдов для магазина. </span></p>
+<p class="rvps18"><span class="rvts1">Апгрейды могут быть разными, </span><span class="rvts21">поэтому их нужно классифицировать. </span></p>
+<p class="rvps18"><span class="rvts1">В системе должно быть </span><span class="rvts9">четыре категории апгрейдов:</span><span class="rvts1"> они касаются количества сотрудников в магазине, "плюшек" для посетителей, улучшения логистики и улучшения магазина. </span><br><span class="rvts1">Апгрейды </span><span class="rvts15">–</span><span class="rvts1"> это те четыре картинки, которые были изображены на главном экране (рис. 1.3). </span></p>
+<p class="rvps18"><span class="rvts1">Разновидности апгрейдов </span><span class="rvts15">–</span><span class="rvts1"> это фиксированный набор. Для хранения таких данных подойдет объект конфигурации, который называется "перечисление". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts13">Перечисление </span><span class="rvts14">–</span><span class="rvts12">
+ это фиксированный набор значений, который не изменяется в процессе 
+работы с прикладным решением (игрой). Перечисление задается в режиме 
+разработчика.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps25"><span class="rvts1">Для того чтобы добавить новое 
+перечисление, необходимо найти его в дереве конфигурации, нажать правой 
+кнопкой мыши и выбрать в появившемся списке "Добавить" (рис. 1.22). </span></p>
+<p class="rvps8"><img 229="" 476="" alt="" style="padding : 1px;" src="01_data/img25.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.22. Добавление перечисления</span></p>
+<p class="rvps2"><span class="rvts1">В открывшемся окне редактирования нужно указать имя перечисления </span><span class="rvts15">–</span><span class="rvts1"> "Виды апгрейдов" (рис. 1.23). </span></p>
+<p class="rvps8"><img 348="" 308="" alt="" style="padding : 1px;" src="01_data/img26.png"></p>
+<p class="rvps23"><span class="rvts9">Рис. 1.23. Вкладка "Основные", перечисления "Виды апгрейдов" </span></p>
+<p class="rvps18"><span class="rvts1">После добавления нового 
+перечисления можно указать набор вариантов, из которых выстроится 
+взаимодействие пользователя с системой. Для того чтобы добавить варианты
+ видов апгрейдов, перейдем на вкладку "Данные" и через плюсик добавим 
+новое значение (рис. 1.24). С помощью палитры свойств можно указать имя,
+ синоним и комментарий для каждого значения перечисления.</span></p>
+<p class="rvps8"><img 597="" 396="" alt="" style="padding : 1px;" src="01_data/img27.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.24. Добавление нового значения перечисления</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts13">Имя </span><span class="rvts14">–</span><span class="rvts12"> это то, что видит разработчик. </span><span class="rvts13">Синоним</span><span class="rvts12"> </span><span class="rvts14">–</span><span class="rvts12"> это то, что в системе увидит игрок.</span><span class="rvts13"> Комментарий</span><span class="rvts12"> нужен разработчику, чтобы пояснить назначение механизма другому разработчику.&nbsp; </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts1">Если во время работы у вас 
+закрылось окошко палитры свойств, его можно открыть двумя способами: 
+двойным щелчком левой кнопкой мыши по конкретному значению, либо правой 
+кнопкой мыши, затем выбрать в выпавшем списке "Свойства" (рис. 1.25). </span></p>
+<p class="rvps26"><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 282="" 213="" alt="" style="padding : 1px;" src="01_data/img28.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.25. Открытие палитры свойств</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><img 68="" alt="" style="padding : 1px;" src="01_data/img29.png"></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts12">При работе с палитрой свойств должна быть выключена (без рамки) "воронка", так как она убирает часть настроек (рис. 1.26).</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 309="" 114="" alt="" style="padding : 1px;" src="01_data/img30.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.26. "Воронка"</span></p>
+<p class="rvps2"><span class="rvts1">Поиск нужных свойств будет намного 
+удобнее, если расположить их в виде закладок. Для этого необходимо 
+нажать в любом пустом месте палитры свойств правой кнопкой мыши и в 
+списке выбрать "Закладками" (рис. 1.27).&nbsp; </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 295="" 217="" alt="" style="padding : 1px;" src="01_data/img31.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.27. Отображение палитры свойств закладками</span></p>
+<p class="rvps27"><span class="rvts1">Укажем значения для перечисления: 
+"КоличествоСотрудников", "ПлюшкиДляГостей", "УлучшениеЛогистики", 
+"УлучшениеМагазина" (рис. 1.28).</span></p>
+<p class="rvps8"><img 311="" 271="" alt="" style="padding : 1px;" src="01_data/img32.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.28. Заполнение значений перечисления</span></p>
+<p class="rvps2"><span class="rvts1">Четыре разновидности видов апгрейдов готовы. Теперь необходимо прикрепить данный набор значений к самим апгрейдам. </span></p>
+<p class="rvps2"><span class="rvts1"><br></span></p>
+<h2 class="rvps28"><a name="_Toc121319124"></a>
+<span class="rvts0"><span class="rvts18">Настройка прикладного решения. Хранение данных апгрейдов</span></span></h2>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps18"><span class="rvts1">Приступим </span><span class="rvts9">к третьей задаче </span><span class="rvts15">–</span><span class="rvts1"> хранение апгрейдов в системе. </span></p>
+<p class="rvps18"><span class="rvts1">Их может быть много, и в каждой системе (игре) они могут быть разными. Для хранения такой информации подойдет "Справочник ". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts13">Справочник</span><span class="rvts12"> </span><span class="rvts14">–</span><span class="rvts12"> это механизм, который позволяет хранить список. Список заполняет пользователь (игрок).</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps18"><span class="rvts1">Добавим новый справочник. Для 
+этого в дереве конфигурации находим "Справочники", нажимаем по ним 
+правой кнопкой мыши и выбираем "Добавить". Имя справочника укажем 
+"Апгрейды" (рис. 1.29). </span></p>
+<p class="rvps8"><img 348="" 311="" alt="" style="padding : 1px;" src="01_data/img33.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.29. Добавление нового справочника</span></p>
+<p class="rvps17"><span class="rvts22">Обновим конфигурацию базы данных с
+ помощью синего бочонка и запустим режим пользователя, чтобы посмотреть,
+ как все будет функционировать. </span></p>
+<p class="rvps17"><span class="rvts22">В пользовательском режиме появилась команда </span><span class="rvts1">"</span><span class="rvts22">Апгрейды</span><span class="rvts1">"</span><span class="rvts22"> для перехода к новому справочнику (рис. 1.30). </span></p>
+<p class="rvps15"><img 362="" 193="" alt="" style="padding : 1px;" src="01_data/img34.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.30. Пользовательский режим</span></p>
+<p style="page-break-before: always;"><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts1">Перечисление "Виды апгрейдов" нигде не отображается, поскольку является несамостоятельным уточняющим признаком.</span></p>
+<p class="rvps2"><span class="rvts1">Перейдем к апгрейдам. Для того чтобы создать новый апгрейд, необходимо нажать кнопку "Создать" (рис. 1.31). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 353="" 188="" alt="" style="padding : 1px;" src="01_data/img35.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.31. Создание нового апгрейда </span></p>
+<p><span class="rvts1">Появляется окно, в котором можно указать наименование и код апгрейда. </span></p>
+<p class="rvps2"><span class="rvts1">Код элементов формируется автоматически, по сути, это порядковый номер элемента, а наименование необходимо заполнять вручную </span><span class="rvts15">–</span><span class="rvts1"> это и есть название создаваемого апгрейда. </span></p>
+<p class="rvps2"><span class="rvts1">По умолчанию длина наименования ограничена, поэтому предварительно стоит ее увеличить. </span></p>
+<p><span class="rvts1">Закроем режим пользователя (рис. 1.32) и вернемся в конфигуратор. </span></p>
+<p class="rvps15"><img 353="" 188="" alt="" style="padding : 1px;" src="01_data/img36.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.32. Закрытие режима пользователя</span></p>
+<p><span class="rvts1">Изменить длину наименования можно на вкладке "Данные". Укажем длину наименования </span><span class="rvts15">–</span><span class="rvts1"> 50 символов (рис. 1.33). </span></p>
+<p class="rvps8"><img 372="" 387="" alt="" style="padding : 1px;" src="01_data/img37.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.33. Изменение длины наименования в справочнике "Апгрейды"</span></p>
+<p><span class="rvts1"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><img 68="" alt="" style="padding : 1px;" src="01_data/img38.png"></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps29"><span class="rvts12">Максимальная длина наименования </span><span class="rvts14">–</span><span class="rvts12"> 150 символов.</span></p>
+<p class="rvps29"><span class="rvts12">Максимальная длина кода </span><span class="rvts14">–</span><span class="rvts12"> 50 символов.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">После изменения длины наименования 
+обновим конфигурацию базы данных и заполним список апгрейдов в 
+пользовательском режиме (рис. 1.34). </span></p>
+<p class="rvps8"><img 522="" 412="" alt="" style="padding : 1px;" src="01_data/img39.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.34. Обновление конфигурации и запуск пользовательского режима</span></p>
+<p class="rvps17"><span class="rvts1">В пользовательском режиме необходимо нажать на "Апгрейды", чтобы перейти к списку текущих апгрейдов. </span></p>
+<p class="rvps17"><span class="rvts1">Для добавления записи о новом апгрейде нажмем на кнопку "Создать". </span><br><span class="rvts1">Добавим несколько апгрейдов для кассиров: один кассир, два кассира, три кассира, четыре кассира (рис. 1.35). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 486="" 260="" alt="" style="padding : 1px;" src="01_data/img40.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.35. Заполнение списка апгрейдов</span></p>
+<p class="rvps4"><span class="rvts1">Сортировка данного списка 
+происходит по умолчанию по колонке "Наименование" в алфавитном порядке. 
+Ее можно изменить на сортировку по коду (порядковому номеру), если 
+нажать на колонку "Код" (рис. 1.36).</span></p>
+<p class="rvps30"><img 496="" 276="" alt="" style="padding : 1px;" src="01_data/img41.png"></p>
+<p class="rvps31"><span class="rvts16">Рис. 1.36. Сортировка по колонке "Код" </span></p>
+<p class="rvps4"><span class="rvts1">Добавим еще несколько апгрейдов (рис. 1.37). </span></p>
+<p class="rvps30"><img 448="" 201="" alt="" style="padding : 1px;" src="01_data/img42.png"></p>
+<p class="rvps31"><span class="rvts16">Рис. 1.37. Заполнение справочника "Апгрейды" </span></p>
+<p class="rvps4"><span class="rvts1">Записи в справочнике можно создать копированием (рис. 1.38). </span></p>
+<p class="rvps30"><img 457="" 271="" alt="" style="padding : 1px;" src="01_data/img43.png"></p>
+<p class="rvps31"><span class="rvts16">Рис. 1.38. Копирование записей в справочнике </span></p>
+<p class="rvps17"><span class="rvts1">С помощью копирования можно 
+создать записи "Курьер на мотоцикле" и "Курьер на автомобиле" (рис. 
+1.39). При создании элемента копированием копируется только 
+наименование, а код создается новый, потому что он должен быть уникален.
+ Это еще не все апгрейды, которые будут добавлены.</span></p>
+<p class="rvps8"><img 400="" 237="" alt="" style="padding : 1px;" src="01_data/img44.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.39. Заполнение справочника копированием элементов</span></p>
+<p class="rvps17"><span class="rvts1">Сейчас необходимо разделить улучшения для магазина, которые уже созданы, на категории. </span></p>
+<p class="rvps17"><span class="rvts1">Явно выделяются две группы: 
+количество сотрудников (одни, два, три и четыре кассира) и улучшение 
+логистики (пеший курьер, курьеры на велосипеде, мотоцикле и автомобиле).
+ </span></p>
+<p class="rvps17"><span class="rvts1">Для того чтобы разделить эти 
+апгрейды на категории, потребуется подключить к данному списку виды 
+апгрейдов, которые создавались ранее. Так, напротив кассиров будет 
+написано, что это апгрейд "количество сотрудников", а курьеры </span><span class="rvts15">–</span><span class="rvts1"> это "улучшение логистики". </span></p>
+<p class="rvps17"><span class="rvts1">Кроме того, апгрейды в игре можно 
+будет покупать. Они дают бонусный рейтинг, но требуют минимального 
+рейтинга для покупки. Потребуется добавить много дополнительных колонок,
+ чтобы в каждой позиции было указано следующее: какой это вид апгрейда, 
+сколько он стоит, какой у него рейтинг и какой минимальный рейтинг 
+покупки. </span></p>
+<p class="rvps17"><span class="rvts1">Приступим к реализации и перейдем в режим конфигуратора. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><img 68="" alt="" style="padding : 1px;" src="01_data/img45.png"></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12">Если
+ окно редактирования было закрыто, его можно открыть повторно, нажав по 
+необходимому объекту в дереве конфигурации два раза левой кнопкой мыши, 
+либо правой кнопкой мыши, затем выбрать "Изменить".</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps4"><span class="rvts1">Для того чтобы добавить новые 
+колонки, на вкладке "Данные" справочника "Апгрейды" добавим новые 
+реквизиты. Добавить реквизит можно, нажав на соответствующую кнопку над 
+окошком с реквизитами (рис. 1.40). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 288="" 290="" alt="" style="padding : 1px;" src="01_data/img46.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.40. Добавление нового реквизита</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">Первый реквизит, который необходимо добавить, </span><span class="rvts15">–</span><span class="rvts1"> это "Вид апгрейда". Имя </span><span class="rvts15">–</span><span class="rvts1"> "ВидАпгрейда", синоним </span><span class="rvts15">–</span><span class="rvts1">
+ "Вид апгрейда". В данном случае тип "строка" не подойдет, так как 
+строковый тип вводится с клавиатуры, а в системе уже предварительно был 
+создан список апгрейдов в перечислении "Виды апгрейдов", и его можно 
+использовать, сославшись на него. Тип реквизита </span><span class="rvts15">–</span><span class="rvts1"> "ПеречислениеСсылка.ВидыАпгрейдов" (рис. 1.41). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 309="" 228="" alt="" style="padding : 1px;" src="01_data/img47.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.41. Добавление реквизита "Вид апгрейда"</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps2"><span class="rvts1">Далее добавим еще одну колонку </span><span class="rvts15">–</span><span class="rvts1"> "Цена". Цена </span><span class="rvts15">–</span><span class="rvts1"> это числовое значение, так как она состоит только из цифр. </span></p>
+<p><span class="rvts1"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><span class="rvts12"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts1">В случае с числовым типом данных доступны другие настройки, нежели со строкой: длина </span><span class="rvts15">–</span><span class="rvts1"> сколько цифр находится в числе, например, число 10 состоит из двух цифр (1 и 0); точность </span><span class="rvts15">–</span><span class="rvts1"> количество знаков после запятой; неотрицательное </span><span class="rvts15">–</span><span class="rvts1"> если галочка установлена, то значение не может быть со знаком минус. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts1"><br></span></p>
+<p><span class="rvts1">Для реквизита, в котором будут храниться данные о цене, необходимо указать имя </span><span class="rvts15">–</span><span class="rvts1"> "Цена", синоним </span><span class="rvts15">–</span><span class="rvts1"> "Цена", длина </span><span class="rvts15">–</span><span class="rvts1"> 10, точность </span><span class="rvts15">–</span><span class="rvts1"> 0, неотрицательное (рис. 1.42). </span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 434="" 249="" alt="" style="padding : 1px;" src="01_data/img48.png"></p>
+<p class="rvps15"><span class="rvts16">Рис. 1.42. Добавление реквизита "Цена"</span></p>
+<p><span class="rvts1">Добавим еще одну колонку для хранения информации о том, сколько очков дает апгрейд. </span><br><span class="rvts1">Имя реквизита </span><span class="rvts15">–</span><span class="rvts1"> "Рейтинг", тип </span><span class="rvts15">–</span><span class="rvts1"> "число", длина </span><span class="rvts15">–</span><span class="rvts1"> 3, точность </span><span class="rvts15">–</span><span class="rvts1"> 0, неотрицательное (рис. 1.43).</span></p>
+<p class="rvps8"><img 443="" 261="" alt="" style="padding : 1px;" src="01_data/img49.png"></p>
+<p class="rvps15"><span class="rvts16">Рис.1.43. Добавление реквизита "Рейтинг"</span></p>
+<p class="rvps4"><span class="rvts1">Точно так же добавим еще один реквизит для хранения информации о минимальном рейтинге покупки. Имя реквизита </span><span class="rvts15">–</span><span class="rvts1"> "МинимальныйРейтингДляПокупки", тип </span><span class="rvts15">–</span><span class="rvts1"> "число", длина </span><span class="rvts15">–</span><span class="rvts1"> 3, точность </span><span class="rvts15">–</span><span class="rvts1"> 0, неотрицательное (рис. 1.44).</span></p>
+<p><span class="rvts1"><br></span></p>
+<p class="rvps8"><img 426="" 259="" alt="" style="padding : 1px;" src="01_data/img50.png"></p>
+<p class="rvps15"><span class="rvts16">Рис.1.44. Добавление реквизита "Рейтинг"</span></p>
+<p><span class="rvts1"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><img 68="" alt="" style="padding : 1px;" src="01_data/img51.png"></p>
+</td>
+<td 553="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts1">Имена
+ реквизитов, состоящие из более чем одного слова, пишутся по следующему 
+принципу: все слова задаются слитно, каждое новое слово пишется с 
+большой буквы, либо через нижнее подчеркивание. В начале имен реквизитов
+ </span><span class="rvts9">нельзя</span><span class="rvts1"> писать </span><span class="rvts9">цифры</span><span class="rvts1">, а также не следует использовать </span><span class="rvts9">специальные символы</span><span class="rvts1">.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps17"><span class="rvts1">Обновим конфигурацию базы данных с
+ помощью синего бочонка, запустим режим пользователя и полностью 
+заполним справочник "Апгрейды". </span></p>
+<p class="rvps17"><span class="rvts1">В пользовательском режиме перейдем
+ в справочник "Апгрейды" и настроим существующие записи. При открытии в 
+карточке апгрейда могут отображаться не все созданные реквизиты. Для 
+того чтобы это исправить, необходимо увеличить форму в размере, потянув 
+за "уголок" (рис. 1.45). </span></p>
+<p class="rvps8"><img 276="" 158="" alt="" style="padding : 1px;" src="01_data/img52.png"></p>
+<p class="rvps15"><span class="rvts16">Рис.1.45. Увеличение формы элемента </span></p>
+<p class="rvps4"><span class="rvts1">Итоговый вариант справочника представлен на рисунке 1.46.</span></p>
+<p class="rvps8"><img 380="" 225="" alt="" style="padding : 1px;" src="01_data/img53.png"></p>
+<p class="rvps15"><span class="rvts16">Рис.1.46. Итоговый вариант справочника "Апгрейды"&nbsp; </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps5"><img 68="" alt="" style="padding : 1px;" src="01_data/img54.png"></p>
+</td>
+<td 553="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p><span class="rvts1">У каждого вида апгрейда должен быть апгрейд с минимальным рейтингом для покупки </span><span class="rvts15">–</span><span class="rvts1"> 0. Иначе у игрока не будет возможности прокачиваться.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps32"><span class="rvts20">На этом первое занятие окончено!</span></p>
+<p class="rvps33"><span class="rvts9">В рамках этого занятия</span><span class="rvts1">
+ мы создали ячейку для хранения данных о директоре магазина, а также 
+список апгрейдов. Помимо этого, мы разделили все апгрейды на категории. </span></p>
+<p class="rvps33"><span class="rvts9">На следующем занятии</span><span class="rvts1"> мы создадим механизм, который позволит хранить данные о товарах, которые игрок сможет покупать и продавать покупателям.&nbsp; </span></p>
+<p class="rvps33"><span class="rvts1">После прохождения каждого занятия 
+рекомендуем повторить все термины, которые были изучены, а также 
+закрепить пройденный материал, ответив на контрольные вопросы. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 41="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts23">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps34"><img 104="" alt="" style="padding : 1px;" src="01_data/img55.png"></p>
+</td>
+<td 469="" 70="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts24">Информационная база</span><span class="rvts22"> </span>–<span class="rvts22"> это совокупность функционала и данных, которые находятся в программе.</span></p>
+<p class="rvps17"><span class="rvts24">Каталог </span><span class="rvts25">–</span><span class="rvts24"> </span><span class="rvts22">это папка, в которой будут находиться файлы, необходимые для работы базы. </span></p>
+<p class="rvps17"><span class="rvts24">Константа </span>–<span class="rvts22"> это значение, которое либо не изменяется вовсе, либо изменяется крайне редко. </span></p>
+<p class="rvps17"><span class="rvts24">Конфигурация базы данных </span>–<span class="rvts22">
+ это то, с чем взаимодействуют пользователи (игроки). Для ее обновления 
+нужно попросить всех пользователей выйти из игры и только потом 
+переносить новый функционал.</span></p>
+<p class="rvps17"><span class="rvts24">Перечисление </span>–<span class="rvts22">
+ это фиксированный набор значений, который не изменяется в процессе 
+работы с прикладным решением (игрой). Перечисление задается в режиме 
+разработчика.</span></p>
+<p class="rvps17"><span class="rvts24">Имя </span>–<span class="rvts22"> это то, что видит разработчик. </span><span class="rvts24">Синоним</span><span class="rvts22"> </span>–<span class="rvts22"> это то, что в системе увидит игрок.</span><span class="rvts24"> Комментарий</span><span class="rvts22"> нужен разработчику, чтобы пояснить назначение механизма другому разработчику.&nbsp; </span></p>
+<p class="rvps17"><span class="rvts24">Справочник</span><span class="rvts22"> </span>–<span class="rvts22"> это механизм, который позволяет хранить список. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts1"><br></span></p>
+<h2 class="rvps28"><a name="_Toc121319125"></a>
+<span class="rvts0"><span class="rvts18">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps36"><span class="rvts26">Сколько значений может хранить в себе константа? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps36"><span class="rvts26">Что отображается пользователю: имя или синоним объекта? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps36"><span class="rvts26">Какой тип данных используется для отображения текста пользователю? </span></li>
+<li value="4" style="margin-left: 0px" class="rvps36"><span class="rvts26">Какой объект конфигурации подойдет для хранения ограниченного списка вариантов? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts3"><br></span></p>
+<p><span class="rvts1"><br></span></p>
+
+</body></html>

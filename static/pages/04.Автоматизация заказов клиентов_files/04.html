@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>04</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts8
+{
+}
+span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+span.rvts11
+{
+ text-decoration: underline;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps7
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.06;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps13
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps15
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps16
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps17
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps18
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps19
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps20
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319136"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 4. </span></span><span class="rvts0"><span class="rvts1">Автоматизация</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">заказов</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">клиентов</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема этого занятия</span><span class="rvts4"> </span>–<span class="rvts4">
+ автоматизация создания заказов клиентов. Товарные позиции и их 
+количество должны выбираться случайным образом, а также должна 
+рассчитываться сумма заказа. </span></p>
+<p class="rvps2"><span class="rvts4">В рамках четвертого занятия мы выполним 4 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать бизнес-процесс.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Определить сценарий работы бизнес-процесса.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Определить программную логику проверки наличия товара на складе.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать задачи для бизнес-процесса. </span></li>
+</ol>
+<p class="rvps4"><span class="rvts6"><br></span></p>
+<h2 class="rvps5"><a name="_Toc121319137"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Создание бизнес-процесса</span></span></h2>
+<p class="rvps6"><span class="rvts3">Первая задача</span><span class="rvts4"> </span>–<span class="rvts4"> создать бизнес-процесс и определить сценарий его работы. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts3">Бизнес-процес</span><span class="rvts4">с </span>–<span class="rvts4"> это объект, который позволяет определить сценарий, по которому будет двигаться прогресс выполнения процесса. В нашем случае </span>–<span class="rvts4"> заказа клиента. Сценарии могут быть различными: последовательные или с условиями</span><span class="rvts9">. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Добавим новый бизнес-процесс, нажав правой кнопкой мыши по ветке "Бизнес-процессы" и выбрав "Добавить". Имя бизнес-процесса </span>–<span class="rvts4"> "Заказ" (рис. 4.1).</span></p>
+<p class="rvps9"><img 291="" 179="" alt="" style="padding : 1px;" src="04_data/img1.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.1. Добавление бизнес-процесса "Заказ"</span></p>
+<p><span class="rvts9"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 298="" valign="top" style="padding: 0px 7px;"><p><img 296="" 197="" alt="" style="padding : 1px;" src="04_data/img2.png"></p>
+</td>
+<td 335="" valign="top" style="padding: 0px 7px;"><p class="rvps6"><span class="rvts4">Перейдем
+ на вкладку "Данные", чтобы определить структуру бизнес-процесса. 
+Структура будет выглядеть следующим образом: бизнес-процесс должен 
+давать обратную связь игроку о том, что заказ был отправлен, либо не был
+ выполнен, потому что не хватило товара. Необходимо выводить итоговое 
+сообщение. Для этой цели добавим новый реквизит. Имя реквизита </span>–<span class="rvts4"> "Итог", тип </span>–<span class="rvts4"> "строка", неограниченная длина (рис. 4.2).</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><img 413="" 216="" alt="" style="padding : 1px;" src="04_data/img3.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.2. Добавление реквизита "Итог" </span></p>
+<p class="rvps11"><span class="rvts4">Задача данного механизма 
+заключается в том, чтобы указывать название товара, его цену, количество
+ и сумму, следовательно, потребуется добавить соответствующие реквизиты в
+ структуру бизнес-процесса. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим еще один реквизит. Имя реквизита </span>–<span class="rvts4"> "Товар", тип </span>–<span class="rvts4"> "СправочникСсылка.Товары" (рис. 4.3).</span></p>
+<p class="rvps9"><img 386="" 205="" alt="" style="padding : 1px;" src="04_data/img4.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.3. Добавление реквизита "Товар"</span></p>
+<p class="rvps2"><span class="rvts4">Далее необходимо добавить еще один реквизит для хранения информации о цене товара. Имя реквизита </span>–<span class="rvts4"> "Цена", тип </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4">10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 4.4). </span></p>
+<p class="rvps9"><img 387="" 202="" alt="" style="padding : 1px;" src="04_data/img5.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.4. Добавление реквизита "Цена"</span></p>
+<p class="rvps2"><span class="rvts4">Также потребуется реквизит "Количество": тип </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 4.5). </span></p>
+<p class="rvps9"><img 370="" 203="" alt="" style="padding : 1px;" src="04_data/img6.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.5. Добавление реквизита "Количество"</span></p>
+<p class="rvps2"><span class="rvts4">Последний реквизит, который необходимо добавить, </span>–<span class="rvts4"> "Сумма": тип </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 4.6).</span></p>
+<p class="rvps9"><img 344="" 186="" alt="" style="padding : 1px;" src="04_data/img7.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 4.6. Добавление реквизита "Сумма"</span></p>
+<h2 class="rvps13"><a name="_Toc121319138"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Создание карты маршрута</span></span></h2>
+<p class="rvps14"><span class="rvts4">Для бизнес-процесса необходимо 
+определить схему, по которой будет продвигаться сценарий посещения 
+покупателем магазина и покупки товара. Данный сценарий реализуется с 
+помощью карты маршрута. Создание карты маршрута </span>–<span class="rvts4"> это </span><span class="rvts3">вторая задача</span><span class="rvts4">, которую мы выполним. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts3">Карта маршрута </span><span class="rvts4">описывает логику бизнес-процесса и весь его жизненный цикл от точки старта до точки завершения в виде схемы.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Прочее" и нажмем на кнопку "Карта маршрута", чтобы создать эту самую карту (рис. 4.7). </span></p>
+<p class="rvps9"><img 207="" 193="" alt="" style="padding : 1px;" src="04_data/img8.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.7. Открытие карты маршрута </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы настроить карту 
+маршрута, необходимо выбрать вид элемента в нижней панели, либо в 
+разделе "Карта маршрута", "Вставка элемента схемы" (рис. 4.8).</span></p>
+<p class="rvps9"><img 324="" 228="" alt="" style="padding : 1px;" src="04_data/img9.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.8. Способы выбора элемента</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Карта маршрута похожа на блок-схему, следовательно, начать нужно с определения </span><span class="rvts11">точки старта</span><span class="rvts4">, сигнала для системы о том, что начинается продвижение по данной карте (рис. 4.9).</span></p>
+<p class="rvps9"><img 391="" 213="" alt="" style="padding : 1px;" src="04_data/img10.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.9. Выбор точки старта</span></p>
+<p class="rvps2"><span class="rvts4">После выбора элемента курсор 
+превратится в черное перекрестие. С его помощью, удерживая левую кнопку 
+мыши, можно определить начальное положение и размер элемента (рис. 
+4.10). </span></p>
+<p class="rvps9"><img 525="" 215="" alt="" style="padding : 1px;" src="04_data/img11.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.10. Добавление точки старта</span></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем можно будет изменять 
+размер элемента, а также переносить его с помощью левой кнопкой мыши, 
+либо стрелок на клавиатуре. </span></p>
+<p class="rvps2"><span class="rvts4">Необходимо обработать следующее событие: в магазин поступает заказ. Для этого добавим на схему </span><span class="rvts11">точку действия</span><span class="rvts4"> таким образом, чтобы она располагалась ниже точки старта, а также стрелочка, которая из нее выходит, закрасилась. </span><span class="rvts11">Это будет означать, что две точки соединились между собой</span><span class="rvts4"> (рис. 4.11).&nbsp; </span></p>
+<p class="rvps9"><img 352="" 203="" alt="" style="padding : 1px;" src="04_data/img12.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.11. Добавление точки действия</span></p>
+<p class="rvps2"><span class="rvts4">Откроем свойства точки действия, 
+чтобы настроить ее. Для этого необходимо нажать по точке правой кнопкой 
+мыши и в списке выбрать "Свойства" (рис. 4.12). </span></p>
+<p class="rvps9"><img 366="" 205="" alt="" style="padding : 1px;" src="04_data/img13.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.12. Переход к свойствам точки действия</span></p>
+<p class="rvps15"><span class="rvts4">На вкладке "Основные" определим имя точки действия </span>–<span class="rvts4"> "ПоступилНовыйЗаказ" (рис. 4.13). </span></p>
+<p class="rvps9"><img 399="" 246="" alt="" style="padding : 1px;" src="04_data/img14.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.13. Настройка точки действия</span></p>
+<p class="rvps2"><span class="rvts4">Эта точка действия будет отражать 
+следующее событие: пришел клиент и хочет приобрести товар в магазине. 
+После того, как новый заказ поступит, необходимо проверить, достаточно 
+ли товара в наличии или нет. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим соответствующую логику на 
+схему: если товар в наличии, то мы продаем его клиенту. Иначе будет 
+заново объявляться событие "Поступление нового заказа", что означает 
+возвращение клиента в магазин в надежде, что товар появился. </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы реализовать условие, потребуется </span><span class="rvts11">точка условия</span><span class="rvts4">. Добавим соответствующий элемент на схему ниже точки действия "Поступил новый заказ" (рис. 4.14). </span></p>
+<p class="rvps9"><img 395="" 213="" alt="" style="padding : 1px;" src="04_data/img15.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.14. Добавление точки условия</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Далее необходимо настроить точку условия через свойства. Имя точки </span>–<span class="rvts4"> "ПроверкаТовараНаСкладе", заголовок </span>–<span class="rvts4"> "Товар есть на складе?" (рис. 4.15).</span></p>
+<p class="rvps9"><img 480="" 192="" alt="" style="padding : 1px;" src="04_data/img16.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.15. Настройка точки действия</span></p>
+<p class="rvps2"><span class="rvts4">Если товара нет на складе, то выход
+ "Нет" будет возвращаться в точку "Поступил новый заказ", так как, 
+несмотря на отсутствие товара в данный момент, клиент вернется за ним 
+через некоторое время (рис. 4.16).</span></p>
+<p class="rvps9"><img 205="" 190="" alt="" style="padding : 1px;" src="04_data/img17.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.16. Определение действия при отсутствии товара на складе</span></p>
+<p class="rvps2"><span class="rvts4">Если товара на складе достаточно, 
+то заказ необходимо отправить покупателю. Чтобы реализовать такой 
+вариант, необходимо добавить еще одну точку действия на схему. Имя точки
+ действия </span>–<span class="rvts4"> "ОтправкаЗаказа" (рис. 4.17).</span></p>
+<p class="rvps9"><img 320="" 207="" alt="" style="padding : 1px;" src="04_data/img18.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.17. Добавление точки действия "Отправка заказа"</span></p>
+<p class="rvps15"><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Последнее, что осталось сделать, </span>–<span class="rvts4"> завершить бизнес-процесс, добавив </span><span class="rvts11">точку завершения </span><span class="rvts4">(рис. 4.18). </span></p>
+<p class="rvps9"><img 290="" 277="" alt="" style="padding : 1px;" src="04_data/img19.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.18. Установка точки завершения</span></p>
+<p class="rvps14"><span class="rvts4">Схема бизнес-процесса готова, однако это еще не все. </span></p>
+<h2 class="rvps13"><a name="_Toc121319139"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Алгоритм проверки наличия товара на складе</span></span></h2>
+<p class="rvps2"><span class="rvts3">Третья задача</span><span class="rvts4">
+ заключается в следующем: чтобы система могла дать ответ о наличии 
+товаров на складе, необходимо определить программную логику точки 
+условия. На данный момент функционала по контролю остатков нет в 
+системе, поэтому ответ будет выдаваться случайным образом. В зависимости
+ от ответа будет изменяться итоговое сообщение.</span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы добавить программную
+ логику, необходимо открыть палитру свойств точки условия, перейти на 
+вкладку "События" и нажать на лупу, чтобы создать обработчик события 
+"Проверка условия" (рис. 4.19). </span></p>
+<p class="rvps9"><img 375="" 214="" alt="" style="padding : 1px;" src="04_data/img20.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.19. Добавление обработчика события</span></p>
+<p class="rvps2"><span class="rvts4">В модуле объекта бизнес-процесса 
+создастся обработчик с названием 
+"ПроверкаТовараНаСкладеПроверкаУсловия", у которого есть два параметра: 
+"ТочкаМаршрутаБизнесПроцесса" </span>–<span class="rvts4"> описание точки маршрута и "Результат" </span>–<span class="rvts4"> ответ, куда дальше двигаться по схеме. Ответов может быть два </span>–<span class="rvts4"> "да" или "нет". Следовательно, "Результат" может быть в положении истина, либо ложь. </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы реализовать случайный ответ о наличии товара на складе, потребуется генератор случайных чисел. </span></p>
+<p class="rvps15"><img 572="" 69="" alt="" style="padding : 1px;" src="04_data/img21.png"></p>
+<p class="rvps2"><span class="rvts4">Если случайным образом будет 
+получен ноль, то будем отказываться от дальнейшего продвижения по схеме и
+ сообщать игроку, что товара не хватает. </span></p>
+<p class="rvps2"><span class="rvts4">Если случайным образом будет 
+получена единица, то будем отправлять заказ на упаковку и выводить 
+соответствующее сообщение пользователю. </span></p>
+<p class="rvps15"><img 562="" 215="" alt="" style="padding : 1px;" src="04_data/img22.png"></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем, когда будет создан механизм для контроля остатков, программная логика будет изменена.</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и попробуем запустить пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">При обновлении возникнет ошибка, связанная с тем, что у бизнес-процесса не выбрана задача (рис. 4.20).</span></p>
+<p class="rvps9"><img 484="" 93="" alt="" style="padding : 1px;" src="04_data/img23.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.20. Сообщение об ошибке</span></p>
+<h2 class="rvps13"><a name="_Toc121319140"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Добавление задачи для бизнес-процесса</span></span></h2>
+<p class="rvps2"><span class="rvts4">Данная ошибка возникла из-за того, что на карте маршрута каждая точка действия ("Поступил новый заказ" и "Отправка заказа") </span>–<span class="rvts4"> это </span><span class="rvts11">задачи</span><span class="rvts4">,
+ которые должны создаваться и фиксироваться, ведь если заказ поступил, и
+ его можно обработать (хватает товара на складе), то первая задача 
+выполняется. Также, если заказ отправляется, то данная задача 
+выполняется, и происходит завершение бизнес-процесса (рис. 4.21).</span></p>
+<p class="rvps9"><img 176="" 287="" alt="" style="padding : 1px;" src="04_data/img24.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.21. Карта маршрута бизнес-процесса</span></p>
+<p class="rvps2"><span class="rvts4">Чтобы фиксировать перечисленные выше этапы, потребуется соответствующий механизм </span>–<span class="rvts4"> "Задача". Это последняя, </span><span class="rvts3">четвертая задача</span><span class="rvts4">, которая будет выполнена на текущем занятии. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts3">Задачи</span><span class="rvts4"> </span>–<span class="rvts4">
+ механизм, позволяющий вести учет заданий, которые составляют этапы в 
+бизнес-процессах, а также описывать их распределение по исполнителям. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Перед тем как создавать задачи, 
+подкорректируем код в модуле объекта бизнес-процесса. Его можно открыть,
+ нажав правой кнопкой мыши по бизнес-процессу "Заказ" в дереве 
+конфигурации и выбрав в списке "Модуль объекта" (рис. 4.22).</span></p>
+<p class="rvps9"><img 231="" 409="" alt="" style="padding : 1px;" src="04_data/img25.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.22. Переход в модуль объекта бизнес-процесса</span></p>
+<p class="rvps15"><span class="rvts4">Чтобы в бизнес-процесс попало 
+сообщение о том, что не удалось выполнить заказ, либо что он отправлен 
+на упаковку, необходимо записать данную информацию в бизнес-процессе. </span></p>
+<p class="rvps15"><img 661="" 239="" alt="" style="padding : 1px;" src="04_data/img26.png"></p>
+<p class="rvps2"><span class="rvts4">Указать задачи для бизнес-процесса можно на вкладке "Основные" в поле "Задачи" (рис. 4.23). </span></p>
+<p class="rvps9"><img 366="" 337="" alt="" style="padding : 1px;" src="04_data/img27.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.23. Вкладка "Основные" бизнес-процесса</span></p>
+<p class="rvps2"><span class="rvts4">В конфигурации пока нет механизма 
+"Задачи". Добавим его, нажав правой кнопкой мыши по ветке "Задачи" в 
+дереве конфигурации и выбрав "Добавить". Имя задачи </span>–<span class="rvts4"> "ЭтапыЗаказа", представление объекта </span>–<span class="rvts4"> "Этап заказа" (рис. 4.24).</span></p>
+<p class="rvps9"><img 361="" 331="" alt="" style="padding : 1px;" src="04_data/img28.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.24. Создание задачи "ЭтапыЗаказа"</span></p>
+<p class="rvps2"><span class="rvts4">Теперь можно вернуться к бизнес-процессу и указать "Этапы заказа" в качестве задачи (рис. 4.25). </span></p>
+<p class="rvps9"><img 350="" 191="" alt="" style="padding : 1px;" src="04_data/img29.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.25. Выбор задачи для бизнес-процесса</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим, чтобы проверить результат. </span></p>
+<p class="rvps2"><span class="rvts4">Смоделируем процесс того, что в 
+магазин пришел клиент. Необходимо зарегистрировать заказ. Обратимся к 
+бизнес-процессу "Заказ" и нажмем "Создать" (рис. 4.26).</span></p>
+<p class="rvps9"><img 475="" 229="" alt="" style="padding : 1px;" src="04_data/img30.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.26. Добавление нового заказа</span></p>
+<p class="rvps2"><span class="rvts4">Изначально бизнес-процесс обладает 
+большим количеством дополнительных полей, которые для пользователя будут
+ лишними, например, поле "Ведущая задача", а также кнопки "Активировать"
+ и "Записать". В дальнейшем форма бизнес-процесса будет изменена.</span></p>
+<p class="rvps2"><span class="rvts4">Заполним информацию о заказе покупателя. В качестве товара укажем "Мятный шарик", цена </span>–<span class="rvts4"> 160, количество </span>–<span class="rvts4"> 1, сумма </span>–<span class="rvts4"> 160. После заполнения всех полей нажмем на кнопку "Стартовать и закрыть" (рис. 4.27).</span></p>
+<p class="rvps9"><img 274="" 190="" alt="" style="padding : 1px;" src="04_data/img31.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.27. Заполнение информации о заказе клиента</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Процесс начался. Теперь необходимо 
+проверить наличие товара на складе и продать товар, если это возможно. 
+Чтобы зафиксировать этапы, необходимо перейти к списку этапов заказа 
+(рис. 4.28).</span></p>
+<p class="rvps9"><img 435="" 192="" alt="" style="padding : 1px;" src="04_data/img32.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.28. Переход к списку этапов заказа</span></p>
+<p class="rvps2"><span class="rvts4">Откроем карточку этапа заказа и выполним его, нажав на кнопку "Выполнено, закрыть" (рис. 4.29).</span></p>
+<p class="rvps9"><img 404="" 193="" alt="" style="padding : 1px;" src="04_data/img33.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.29. Выполнение этапа заказа</span></p>
+<p class="rvps2"><span class="rvts4">После выполнения этапа заказа появилась новая задача, так как товара не оказалось в наличии (рис. 4.30).</span></p>
+<p class="rvps9"><img 514="" 123="" alt="" style="padding : 1px;" src="04_data/img34.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.30. Форма списка "Этапы заказа"</span></p>
+<p class="rvps2"><span class="rvts4">Согласно схеме, которая была 
+создана в режиме конфигуратора, если товара нет в наличии, то обработка 
+поступления заказа начинается заново до тех пор, пока товар не появится 
+на складе. </span></p>
+<p class="rvps2"><span class="rvts4">Если сейчас вернуться к списку 
+бизнес-процессов (заказов) и обновить его вручную с помощью кнопки 
+"Еще", "Обновить" (рис. 4.31), либо клавиши F5, то в бизнес-процессе 
+поменяется значение в колонке "Итог" (рис. 4.32). </span></p>
+<p class="rvps9"><img 421="" 98="" alt="" style="padding : 1px;" src="04_data/img35.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.31. Форма списка "Заказы"</span></p>
+<p class="rvps10"><img 416="" 58="" alt="" style="padding : 1px;" src="04_data/img36.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.32. Изменение в колонке "Итог"</span></p>
+<p class="rvps2"><span class="rvts4">Данный бизнес-процесс не завершится, поскольку товара нет. </span></p>
+<p class="rvps2"><span class="rvts4">Создадим новый бизнес-процесс с товаром "Сухой корм", цена </span>–<span class="rvts4"> 400, количество </span>–<span class="rvts4"> 2, сумма </span>–<span class="rvts4"> 800. Запустим данный бизнес-процесс с помощью кнопки "Стартовать и закрыть" (рис. 4.33). </span></p>
+<p class="rvps9"><img 229="" 159="" alt="" style="padding : 1px;" src="04_data/img37.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.33. Создание нового заказа</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><img 48="" alt="" style="padding : 1px;" src="04_data/img38.png"></p>
+</td>
+<td 553="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts8">Повторно стартовать уже начатый бизнес-процесс нельзя.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Далее нужно обработать этапы в соответствующем списке. Откроем "Этапы заказа". </span></p>
+<p class="rvps2"><span class="rvts4">Данный список уже был открыт ранее, поэтому интерактивно он не обновляется. Нажмем на клавишу F5, чтобы его обновить. </span></p>
+<p class="rvps2"><span class="rvts4">На форме списка выбираем новый этап заказа и выполняем его (рис. 4.34). </span></p>
+<p class="rvps2"><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts9"><br></span></p>
+<p class="rvps9"><img 337="" 170="" alt="" style="padding : 1px;" src="04_data/img39.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.34. Выполнение этапа заказа</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Для выполнения этого заказа на складе было достаточно товара. На форме списка появился новый этап "Отправка заказа" (рис. 4.35).</span></p>
+<p class="rvps9"><img 410="" 88="" alt="" style="padding : 1px;" src="04_data/img40.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.35. Переход к этапу "Отправка заказа" </span></p>
+<p class="rvps2"><span class="rvts4">Если открыть список всех заказов и 
+обновить его, то у последнего заказа в колонке "Итог" будет отображаться
+ сообщение "Заказ отправлен на упаковку" (рис. 4.36).</span></p>
+<p class="rvps9"><img 422="" 202="" alt="" style="padding : 1px;" src="04_data/img41.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.36. Изменение статуса заказа</span></p>
+<p class="rvps2"><span class="rvts4">Теперь можно зафиксировать отправку заказа, выполнив соответствующий этап (рис. 4.37). </span></p>
+<p class="rvps9"><img 399="" 190="" alt="" style="padding : 1px;" src="04_data/img42.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.37. Выполнение этапа "Отправка заказа"</span></p>
+<p class="rvps2"><span class="rvts4">Теперь бизнес-процесс завершен. 
+Если вернуться обратно к списку заказов и обновить его, то у последнего 
+бизнес-процесса будет стоять галочка в графе "Завершен" (рис. 4.38). </span></p>
+<p class="rvps9"><img 515="" 87="" alt="" style="padding : 1px;" src="04_data/img43.png"></p>
+<p class="rvps10"><span class="rvts10">Рис. 4.38. Завершение заказа</span></p>
+<p class="rvps18"><span class="rvts12">На этом четвертое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts4">мы
+ приступили к созданию механизма, который автоматизирует поступление 
+заказов от покупателей: создали бизнес-процесс и задачи для него, а 
+также описали программную логику проверки товаров на складе. </span></p>
+<p class="rvps2"><span class="rvts3">На следующем занятии</span><span class="rvts4">
+ мы реализуем изменение итогового сообщения, программное создание 
+документа "Заказ клиента" на основании бизнес-процесса, а также начнем 
+создание механизма, позволяющего фиксировать остаток товара. </span></p>
+<p><span class="rvts13"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts14">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 170="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><img 156="" alt="" style="padding : 1px;" src="04_data/img44.png"></p>
+</td>
+<td 469="" 170="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts3">Бизнес-процес</span><span class="rvts4">с </span>–<span class="rvts4"> это объект, который позволяет определить сценарий, по которому будет двигаться прогресс выполнения процесса. В нашем случае </span>–<span class="rvts4"> заказа клиента. Сценарии могут быть различными: последовательные или с условиями</span><span class="rvts9">.</span></p>
+<p class="rvps2"><span class="rvts3">Карта маршрута </span><span class="rvts4">описывает логику бизнес-процесса и весь его жизненный цикл от точки старта до точки завершения в виде схемы.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts9"><br></span></p>
+<h2 class="rvps5"><a name="_Toc121319141"></a>
+<span class="rvts0"><span class="rvts7">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps20"><span class="rvts5">Как называется точка, с которой начинается любой бизнес</span><span class="rvts6">-</span><span class="rvts5">процесс? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps20"><span class="rvts5">С помощью какой точки карты маршрута можно создать проверку условия? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps20"><span class="rvts5">Без чего не может существовать бизнес</span><span class="rvts6">-</span><span class="rvts5">процесс? </span></li>
+</ol>
+<p class="rvps4"><span class="rvts6"><br></span></p>
+<p style="page-break-before: always;"><span class="rvts2"><br></span></p>
+<p><span class="rvts9"><br></span></p>
+
+</body></html>

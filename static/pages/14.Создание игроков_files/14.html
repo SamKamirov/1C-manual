@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>14</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts7
+{
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+}
+span.rvts10
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps6
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps10
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 8px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps17
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps18
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps19
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps23
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps24
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319188"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 14. </span></span><span class="rvts0"><span class="rvts1">Создание</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">игроков</span></span><span class="rvts0"><span class="rvts2"> </span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> подготовка функционала для участия нескольких игроков. Для этого нам потребуется выполнить 4 задачи: </span></p>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать справочник для хранения списка игроков. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать механизм, который позволит хранить данные о текущем игроке.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать документ, с помощью которого новым игрокам будет начисляться стартовый капитал.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps4"><span class="rvts5">Доработать программу с учетом разделения ее на пользователей. </span></li>
+</ol>
+<p class="rvps2"><span class="rvts4">При входе в игру пользователь будет
+ указывать свое имя. Пароль для учетной записи установить не удастся, 
+так как разработка ведется на учебной версии. Однако при регистрации 
+игрок должен будет себя как-то обозначить. </span></p>
+<p class="rvps5"><span class="rvts4">Когда новый игрок регистрируется, 
+его данные должны записываться в общий "Список игроков". Для реализации 
+хранения данных об игроках потребуется создать справочник. </span></p>
+<h2 class="rvps6"><a name="_Toc121319189"></a>
+<span class="rvts0"><span class="rvts6">Настройка прикладного решения. Хранение списка игроков</span></span></h2>
+<p class="rvps2"><span class="rvts4">В рамках </span><span class="rvts3">первой задачи</span><span class="rvts4"> необходимо создать список для хранения данных игроков. Добавим новый справочник "Игроки", представление объекта </span>–<span class="rvts4"> "Игрок" (рис. 14.1). </span></p>
+<p class="rvps7"><img 242="" 218="" alt="" style="padding : 1px;" src="14_data/img1.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.1. Добавление справочника "Игроки" </span></p>
+<p class="rvps2"><span class="rvts4">Данный справочник будет пополняться
+ интерактивно по мере появления новых участников в системе. Однако в 
+системе изначально должен быть один игрок </span>–<span class="rvts4"> Администратор. Запись об администраторе </span>–<span class="rvts4"> это заранее определенные в системе данные. </span></p>
+<p class="rvps2"><span class="rvts4">Перед тем как создать предопределенный элемент, потребуется сделать ряд настроек на вкладке "Данные". </span></p>
+<p class="rvps2"><span class="rvts4">Изменим длину кода и наименования на значения побольше </span>–<span class="rvts4"> 50 и 50 соответственно (рис. 14.2). </span></p>
+<p class="rvps7"><img 282="" 300="" alt="" style="padding : 1px;" src="14_data/img2.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.2. Изменение длины стандартных реквизитов </span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Поле "Наименование" будет 
+использоваться для отображения данных игрока в пользовательском режиме. 
+Поле "Код" будет использоваться для программного анализа игрока </span>–<span class="rvts4"> поэтому длина этих реквизитов одинакова. </span></p>
+<p class="rvps2"><span class="rvts4">Тип кода оставим строковым, чтобы была возможность формировать код из букв и прочих символов. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Прочее" и 
+нажмем на кнопку "Предопределенные", чтобы создать запись об 
+Администраторе в системе (рис. 14.3). </span></p>
+<p class="rvps7"><img 272="" 285="" alt="" style="padding : 1px;" src="14_data/img3.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.3. Переход к предопределенным данным </span></p>
+<p class="rvps2"><span class="rvts4">Добавим новый предопределенный элемент с помощью кнопки "Добавить". Имя предопределенного </span>–<span class="rvts4"> "Администратор", код </span>–<span class="rvts4"> "Администратор" (рис. 14.4). </span></p>
+<p class="rvps7"><img 326="" 191="" alt="" style="padding : 1px;" src="14_data/img4.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.4. Добавление предопределенного элемента </span></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем он пригодится, когда 
+будут осуществляться поиск или создание пользователей, чтобы 
+сопоставлять их с теми пользователями, которые уже есть в системе. </span></p>
+<p class="rvps2"><span class="rvts4">Например, если игру запускает новый
+ участник, которого еще нет в списке игроков, нужно будет создать запись
+ с его данными. Данный механизм будет реализован позднее. </span></p>
+<p class="rvps2"><span class="rvts4">Сейчас зафиксировано, что 
+изначально в системе есть Администратор. Но при этом, когда система 
+запускается, нигде не указано, кто именно ее запустил. </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы в дальнейшем сделать настройки, связанные с появление новых игроков</span><span class="rvts8">,</span><span class="rvts4">
+ и привязку прогресса игроков к их "аккаунтам", нужно реализовать 
+механизм, благодаря которому система будет понимать, кто именно сейчас 
+авторизовался в системе. </span></p>
+<p class="rvps5"><span class="rvts4">В дальнейшем система действительно 
+будет запускаться под разными пользователями, но перед этим необходимо 
+создать запись в системе о том, кто зашел в систему.&nbsp; </span></p>
+<h2 class="rvps6"><a name="_Toc121319190"></a>
+<span class="rvts0"><span class="rvts6">Усложнение в логике игры. Хранение данных о текущем игроке</span></span></h2>
+<p class="rvps2"><span class="rvts4">В рамках </span><span class="rvts3">второй задачи</span><span class="rvts4"> мы укажем системе на то, кто сейчас зашел в программу. Это можно сделать с помощью общего механизма "Параметр сеанса". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts3">Параметр сеанса</span><span class="rvts4"> </span>–<span class="rvts4"> это механизм, который позволяет понять, кто сейчас зашел в программу. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Развернем ветку "Общие" и добавим новый параметр сеанса. Имя параметра </span>–<span class="rvts4"> "ТекущийИгрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 14.5). </span></p>
+<p class="rvps7"><img 397="" 119="" alt="" style="padding : 1px;" src="14_data/img5.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.5. Добавление параметра сеанса&nbsp; </span></p>
+<p class="rvps2"><span class="rvts4">Параметр сеанса </span>–<span class="rvts4">
+ это значение, которое изменяется при каждом запуске программы другим 
+пользователем. Например, в игру зашел Администратор, значит, 
+"ТекущийИгрок" </span>–<span class="rvts4"> Администратор. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts4">Для
+ того чтобы параметр сеанса заполнялся данными, необходимо определить 
+обработчик, который срабатывает в момент запуска системы, когда система 
+анализирует, кто к ней подключается. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Временно реализуем фиксированное заполнение </span>–<span class="rvts4"> систему запускает Администратор, поскольку пользователей в системе еще нет. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем модуль сеанса, чтобы 
+определить такой обработчик. Нажмем правой кнопкой мыши по конфигурации и
+ выберем в списке "Открыть модуль сеанса" (рис. 14.6). </span></p>
+<p class="rvps7"><img 289="" 201="" alt="" style="padding : 1px;" src="14_data/img6.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.6. Переход в модуль сеанса&nbsp; </span></p>
+<p class="rvps2"><span class="rvts4">Добавим обработчик 
+"УстановкаПараметровСеанса". Для этого необходимо открыть "Процедуры и 
+функции" и в открывшемся окне выбрать соответствующую процедуру (рис. 
+14.7). </span></p>
+<p class="rvps7"><img 286="" 142="" alt="" style="padding : 1px;" src="14_data/img7.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.7. Добавление обработчика события</span></p>
+<p class="rvps2"><span class="rvts4">В процедуре определим, что параметр
+ сеанса "ТекущийИгрок" будет равен предопределенному элементу 
+"Администратор" из справочника "Игроки". </span></p>
+<p><img 460="" 41="" alt="" style="padding : 1px;" src="14_data/img8.png"></p>
+<p class="rvps2"><span class="rvts4">Обратиться сразу к элементу 
+"Администратор" напрямую можно благодаря тому, что он был создан в 
+конфигураторе. Такое обращение возможно только к предопределенным 
+данным. </span></p>
+<p class="rvps2"><span class="rvts4">Поскольку в системе будут игроки, 
+необходимо реализовать механизм, с помощью которого каждому игроку будет
+ начисляться начальный капитал. Для реализации данного механизма 
+потребуется создать документ, который будет совершать движение 
+информации в регистр накопления "ОстаткиДенег"</span><span class="rvts8">.</span></p>
+<p class="rvps2"><span class="rvts4">Однако сейчас структура регистра 
+позволяет хранить информацию только о том, сколько осталось денег в 
+целом, без привязки к капиталу конкретного игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы разделить бюджет каждого игрока, добавим новое измерение в регистр накопления "ОстаткиДенег". Имя измерения </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки", флаг "Запрет незаполненных значений" (рис. 14.8).</span></p>
+<p class="rvps7"><img 399="" 127="" alt="" style="padding : 1px;" src="14_data/img9.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.8. Добавление измерения "Игрок" в регистр "Остатки денег"</span></p>
+<p class="rvps2"><span class="rvts4">Так как появилось разделение бюджета между игроками, имеет смысл реализовать разделение рейтинга и остатков товаров по игрокам. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим аналогичное измерение в регистр накопления "Остатки товаров" на вкладке "Данные". Имя измерения </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки", флаг "Запрет незаполненных значений" (рис. 14.9).</span></p>
+<p class="rvps7"><img 399="" 220="" alt="" style="padding : 1px;" src="14_data/img10.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.9. Добавление измерения "Игрок" в регистр "Остатки товаров"</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Для разделения рейтинга среди 
+игроков также потребуется добавить информацию об игроке в регистр 
+сведений "Регистрация апгрейдов". На вкладке "Данные" добавим новое 
+измерение. Имя реквизита </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки", флаг "Запрет незаполненных значений" (рис. 14.10).</span></p>
+<p class="rvps7"><img 395="" 127="" alt="" style="padding : 1px;" src="14_data/img11.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.10. Добавление измерения "Игрок" в регистр "Регистрация апгрейдов"</span></p>
+<p class="rvps2"><span class="rvts4">Поскольку в регистрах появились 
+новые измерения, необходимо внести изменения в логику записи из 
+документов данных в эти регистры. </span></p>
+<p class="rvps2"><span class="rvts4">На текущий момент ни в одном из 
+документов не фиксируются данные об игроке. Необходимо добавить реквизит
+ "Игрок" в каждый документ. </span></p>
+<p class="rvps2"><span class="rvts4">Начнем с документа "Покупка 
+товаров". В окне редактирования документа перейдем на вкладку "Данные" и
+ добавим новый реквизит. Имя реквизита </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 14.11).</span></p>
+<p class="rvps7"><img 401="" 102="" alt="" style="padding : 1px;" src="14_data/img12.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.11. Добавление реквизита "Игрок" в документ "Покупка товаров"</span></p>
+<p class="rvps2"><span class="rvts4">Далее необходимо передать 
+информацию о том, какой игрок совершил покупки товаров. Перейдем на 
+вкладку "Движения" и откроем "Конструктор движений" (рис. 14.12). </span></p>
+<p class="rvps7"><img 271="" 287="" alt="" style="padding : 1px;" src="14_data/img13.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.12. Переход в конструктор движений</span></p>
+<p class="rvps2"><span class="rvts4">Для регистра накопления "Остатки 
+товаров" в поле "Игрок" должна записываться информация из реквизита 
+"Игрок" (рис. 14.13). Аналогично для регистра накопления "Остатки денег"
+ в поле "Игрок" должны записываться данные из реквизита "Игрок" (рис. 
+14.14). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 268="" 187="" alt="" style="padding : 1px;" src="14_data/img14.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 268="" 187="" alt="" style="padding : 1px;" src="14_data/img15.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.13. Изменения в конструкторе движений для регистра "Остатки товаров"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.14. Изменения в конструкторе движений для регистра "Остатки денег"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В результате в процедуре "ОбработкаПроведения" появятся новые строки "Движение.Игрок = Игрок"</span><span class="rvts8">.</span></p>
+<p><img 346="" 259="" alt="" style="padding : 1px;" src="14_data/img16.png"></p>
+<p class="rvps2"><span class="rvts4">Информация об игроке не должна 
+отображаться на форме элемента, так как данный реквизит должен 
+заполняться автоматически на основании параметра сеанса "ТекущийИгрок". 
+Запись информации в реквизит будет происходить перед записью данных о 
+покупке в базу. </span></p>
+<p><img 334="" 66="" alt="" style="padding : 1px;" src="14_data/img17.png"></p>
+<p class="rvps2"><span class="rvts4">Аналогичные действия необходимо провести с остальными документами. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем окно редактирования документа "Заказ клиента" и добавим новый реквизит на вкладке "Данные". Имя реквизита </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 14.15).</span></p>
+<p class="rvps2"><span class="rvts8"><br></span></p>
+<p class="rvps7"><img 393="" 101="" alt="" style="padding : 1px;" src="14_data/img18.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.15. Добавление реквизита "Игрок" в документ "Заказ клиента"</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Движения" документа "Заказ клиента" и откроем "Конструктор движений" (рис. 14.16). </span></p>
+<p class="rvps7"><img 216="" 234="" alt="" style="padding : 1px;" src="14_data/img19.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.16. Переход в конструктор движений</span></p>
+<p class="rvps2"><span class="rvts4">Информация в измерение "Игрок" 
+регистра накопления "Остатки товаров" должна записываться из реквизита 
+"Игрок" (рис. 14.17). Аналогично для регистра накопления "Остатки денег"
+ в поле "Игрок" должны записываться данные из реквизита "Игрок" (рис. 
+14.18). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 231="" 162="" alt="" style="padding : 1px;" src="14_data/img20.png"></p>
+</td>
+<td colspan="2" 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 231="" 162="" alt="" style="padding : 1px;" src="14_data/img21.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="2" 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts7">Рис. 14.17. Изменения в конструкторе движений для регистра "Остатки товаров"</span></p>
+</td>
+<td colspan="2" 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><span class="rvts7">Рис. 14.18. Изменения в конструкторе движений для регистра "Остатки денег"</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 68="" alt="" style="padding : 1px;" src="14_data/img22.png"></p>
+</td>
+<td colspan="2" 562="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts9">Если
+ при заполнении данных для регистра "Остатки денег" нажать на кнопку 
+"Заполнить выражения", то для поля "Количество" будет установлено 
+неверное выражение. Следует заменить его на "ИтоговаяСумма".</span></p>
+</td>
+<td style="padding: 0px 7px;"><br>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В результате в процедуре "ОбработкаПроведения" появятся новые строки "Движение.Игрок = Игрок"</span><span class="rvts8">.</span></p>
+<p><img 314="" 237="" alt="" style="padding : 1px;" src="14_data/img23.png"></p>
+<p class="rvps2"><span class="rvts4">Также необходимо указать, на счет 
+какого игрока поступят деньги с заказа. Для этого заполним реквизит 
+"Игрок" значением из параметра сеанса "ТекущийИгрок" перед записью 
+документа. </span></p>
+<p><img 428="" 54="" alt="" style="padding : 1px;" src="14_data/img24.png"></p>
+<p class="rvps2"><span class="rvts4">Повторим те же самые действия для документа "Приобретение апгрейда". На вкладке "Данные" добавим новый реквизит. Имя реквизита </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 14.19).</span></p>
+<p class="rvps7"><img 377="" 99="" alt="" style="padding : 1px;" src="14_data/img25.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.19. Добавление реквизита "Игрок" в документ "Приобретение апгрейда"</span></p>
+<p class="rvps2"><span class="rvts4">После добавления реквизита 
+необходимо внести изменения в логику записи данных из документа в 
+регистры. Перейдем на вкладку "Движения" и откроем "Конструктор 
+движений" (рис. 14.20). </span></p>
+<p class="rvps7"><img 221="" 175="" alt="" style="padding : 1px;" src="14_data/img26.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.20. Переход в конструктор движений</span></p>
+<p class="rvps2"><span class="rvts4">В конструкторе движений для 
+регистров "Регистрация апгрейдов" и "Остатки денег" укажем в качестве 
+выражения для поля "Игрок" одноименный реквизит документа (рис. 14.21 </span>–<span class="rvts4"> 14.22). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 243="" 170="" alt="" style="padding : 1px;" src="14_data/img27.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 243="" 170="" alt="" style="padding : 1px;" src="14_data/img28.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.21. Изменения в конструкторе движений для регистра "Регистрация апгрейдов"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.22. Изменения в конструкторе движений для регистра "Остатки денег"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В результате процедура "Обработка проведения" будет выглядеть следующим образом: </span></p>
+<p><img 361="" 263="" alt="" style="padding : 1px;" src="14_data/img29.png"></p>
+<p class="rvps2"><span class="rvts4">Также добавим новый обработчик события "ПередЗаписью" для того, чтобы фиксировать информацию об игроке, купившем апгрейд. </span></p>
+<p class="rvps16"><img 335="" 80="" alt="" style="padding : 1px;" src="14_data/img30.png"></p>
+<h2 class="rvps6"><a name="_Toc121319191"></a>
+<span class="rvts0"><span class="rvts6">Настройка прикладного решения. Создание документа для начисления стартового капитала</span></span></h2>
+<p class="rvps2"><span class="rvts3">Следующее, что необходимо сделать</span><span class="rvts4">, </span>–<span class="rvts4"> создать механизм, который позволит фиксировать начальный бюджет для игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Для реализации данного механизма создадим документ. Имя документа </span>–<span class="rvts4"> "СтартИгры" (рис. 14.23). </span></p>
+<p class="rvps2"><span class="rvts8"><br></span></p>
+<p class="rvps7"><img 246="" 250="" alt="" style="padding : 1px;" src="14_data/img31.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.23. Добавление документа "СтартИгры"</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Данные", чтобы
+ определить структуру документа. В документе необходимо отобразить 
+информацию об игроке, а также о бюджете, который ему начисляется. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим первый реквизит. Имя реквизита </span>–<span class="rvts4"> "Игрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 14.24). </span></p>
+<p class="rvps7"><img 344="" 82="" alt="" style="padding : 1px;" src="14_data/img32.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.24. Добавление реквизита "Игрок" в документ "Старт игры"</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Добавим второй реквизит, который 
+будет содержать в себе информацию о начисляемой на счет игрока сумме в 
+начале игры. Имя реквизита </span>–<span class="rvts4"> "Бюджет", тип </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 14.25). </span></p>
+<p class="rvps7"><img 352="" 104="" alt="" style="padding : 1px;" src="14_data/img33.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.25. Добавление реквизита "Бюджет" в документ "Старт игры"</span></p>
+<p class="rvps2"><span class="rvts4">Созданный документ должен совершать
+ движения в регистр "Остатки денег". Перейдем на вкладку "Движения" и 
+поставим галочку напротив регистра накопления "ОстаткиДенег". Далее 
+настроим логику записи движений в регистр, нажав на кнопку "Конструктор 
+движений" (рис. 14.26). </span></p>
+<p class="rvps7"><img 202="" 208="" alt="" style="padding : 1px;" src="14_data/img34.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.26. Вкладка "Движения" документа "Старт игры"</span></p>
+<p class="rvps2"><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Из документа "Старт игры" данные в 
+регистр накопления "Остатки денег" должны записываться со знаком плюс, 
+так как документ фиксирует поступление денег на счет игрока. В качестве 
+выражений для полей "Игрок" и "Количество" укажем реквизиты документа 
+"Игрок" и "Бюджет" соответственно (рис. 14.27). </span></p>
+<p class="rvps7"><img 286="" 200="" alt="" style="padding : 1px;" src="14_data/img35.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.27. Настройка движения в конструкторе</span></p>
+<p class="rvps2"><span class="rvts4">В результате в модуле объекта документа "Старт игры" сформировалась процедура "ОбработкаПроведения". </span></p>
+<p><img 355="" 176="" alt="" style="padding : 1px;" src="14_data/img36.png"></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем данный документ будет 
+создаваться в фоновом режиме после регистрации нового игрока. Данный 
+механизм будет реализован позже, а сейчас данные об игроке и бюджете 
+будут указываться вручную. Стартовый капитал игрока будет составлять 
+1000.</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">Создадим новый документ "Старт игры". В качестве игрока укажем "Администратора", бюджет </span>–<span class="rvts4"> 1000. Проведем данный документ (рис. 14.28).</span></p>
+<p class="rvps7"><img 313="" 128="" alt="" style="padding : 1px;" src="14_data/img37.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.28. Создание документа "Старт игры"</span></p>
+<p class="rvps2"><span class="rvts4">Документы для старта игры должны 
+создаваться в фоновом режиме. Логика алгоритма следующая: как только 
+участник зарегистрируется, игра должна перезапуститься. </span></p>
+<p class="rvps2"><span class="rvts4">Смоделируем данный процесс: перезапустим пользовательский режим (рис. 14.29). </span></p>
+<p class="rvps7"><img 452="" 295="" alt="" style="padding : 1px;" src="14_data/img38.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.29. Начальная страница после перезапуска</span></p>
+<p class="rvps5"><span class="rvts4">В результате на начальной странице 
+отобразится бюджет. Однако эта сумма в 1000 сейчас не принадлежит 
+текущему игроку, она общая. Сейчас все механизмы, связанные с получением
+ остатков товаров и бюджетом, получают информацию только по общим 
+значениям. </span></p>
+<h2 class="rvps6"><a name="_Toc121319192"></a>
+<span class="rvts0"><span class="rvts6">Усложнение в логике игры. Разделение данных в игре на пользователей</span></span></h2>
+<p class="rvps2"><span class="rvts3">Четвертая задача</span><span class="rvts4">
+ сводится к тому, чтобы исправить сложившуюся ситуацию. Для этого нам 
+потребуется программно учитывать данные из измерения "Игрок" при 
+получении информации из регистров. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Сначала изменим логику получения данных о бюджете игрока. Перейдем в модуль общей формы "Начальная страница". </span></p>
+<p class="rvps2"><span class="rvts4">Сейчас информация о состоянии счета
+ игрока формируется на основании таблицы остатков. Чтобы данные 
+выбирались по определенному игроку, необходимо в параметрах функции 
+"Остатки" указать параметры отбора в виде структуры. </span></p>
+<p><img 662="" 177="" alt="" style="padding : 1px;" src="14_data/img39.png"></p>
+<p class="rvps2"><span class="rvts4">Следующее, что необходимо настроить, </span>–<span class="rvts4">
+ это получение данных о рейтинге игрока. Рейтинг формируется в момент 
+получения изображений, которые выводятся на начальный экран. </span></p>
+<p class="rvps2"><span class="rvts4">В функции "ПолучитьАдресКартинки" 
+на основании вида апгрейда формируется срез информации. Но теперь этого 
+отбора недостаточно, так как необходимо получать данные не только по 
+конкретному виду апгрейда, но и по конкретному игроку. </span></p>
+<p class="rvps2"><span class="rvts4">Для реализации данного механизма вставим в структуру "СтруктуруОтбора" еще одну пару "ключ </span>–<span class="rvts4"> значение". Ключ </span>–<span class="rvts4"> "Игрок", значение </span>–<span class="rvts4"> "ПараметрыСеанса.ТекущийИгрок". </span></p>
+<p><img 599="" 234="" alt="" style="padding : 1px;" src="14_data/img40.png"></p>
+<p class="rvps2"><span class="rvts4">Осталось решить еще одну задачу, 
+которая связана со списанием товара. Сейчас товары списываются согласно 
+тому, что есть в наличии на складе. Необходимо внести изменения в логику
+ проверки остатков товаров таким образом, чтобы остаток проверялся 
+только у конкретного игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в модуль объекта бизнес-процесса "Заказ" и развернем процедуру "ПроверкаТовараНаСкладеПроверкаУсловия"</span><span class="rvts8">.</span></p>
+<p class="rvps2"><span class="rvts4">Чтобы остатки товаров считывались для текущего игрока, вновь придется реализовать отбор по измерению "Игрок". </span></p>
+<p class="rvps2"><span class="rvts4">Создадим структуру для отбора. В качестве ключа укажем имя измерения, по которому будет производиться отбор, </span>–<span class="rvts4"> "Игрок". Значение </span>–<span class="rvts4"> "ПараметрыСеанса.ТекущийИгрок"</span><span class="rvts8">.</span></p>
+<p><img 614="" 228="" alt="" style="padding : 1px;" src="14_data/img41.png"></p>
+<p class="rvps2"><span class="rvts4">Это пока не все нюансы, которые 
+нужно учесть с появлением игрока. Для того чтобы покупать товары и 
+апгрейды, необходимо, чтобы у текущего игрока хватало на это денег. 
+Потребуется также вмешаться в логику проведения документов "Покупка 
+товара" и "Приобретение апгрейда". </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в модуль объекта документа "Покупка товара" и изменим логику проверки остатка денежных средств на счету игрока. </span></p>
+<p class="rvps2"><span class="rvts4">При вызове функции 
+"ЕстьОтрицательныеФинансы" необходимо передавать информацию об игроке, 
+который осуществляет покупку. Передадим в качестве параметра функции 
+данные из реквизита "Игрок". </span></p>
+<p><img 575="" 364="" alt="" style="padding : 1px;" src="14_data/img42.png"></p>
+<p class="rvps2"><span class="rvts4">Аналогично все должно происходить и
+ в документе "Приобретение апгрейда". Перейдем в модуль объекта этого 
+документа и укажем в качестве параметра функции 
+"ЕстьОтрицательныеФинансы" данные об игроке. </span></p>
+<p><img 447="" 284="" alt="" style="padding : 1px;" src="14_data/img43.png"></p>
+<p class="rvps2"><span class="rvts4">Так как теперь вызов функции происходит с параметром, необходимо принять этот параметр и обработать. </span></p>
+<p class="rvps2"><span class="rvts4">Здесь можно провести аналогию с 
+поездами: с вокзала отправляется поезд с одним вагоном, следовательно, в
+ пункте прибытия будут ожидать поезд также с одним вагоном. </span></p>
+<p class="rvps2"><span class="rvts4">Щелкнем правой кнопкой мыши по функции и выберем в списке "Перейти к определению" (рис. 14.30). </span></p>
+<p class="rvps7"><img 416="" 181="" alt="" style="padding : 1px;" src="14_data/img44.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.30. Переход к определению функции</span></p>
+<p class="rvps10"><span class="rvts4">В открывшемся окне нажмем на кнопку "ОК" (рис. 14.31). </span></p>
+<p class="rvps7"><img 270="" 113="" alt="" style="padding : 1px;" src="14_data/img45.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.31. Объект перехода</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps10"><span class="rvts4">Укажем в качестве параметра функции переменную "Игрок". </span></p>
+<p><img 423="" 151="" alt="" style="padding : 1px;" src="14_data/img46.png"></p>
+<p class="rvps2"><span class="rvts4">Для получения информации о 
+финансовом состоянии игрока также потребуется реализовать отбор данных 
+из виртуальной таблицы "Остатки". Создадим соответствующую структуру 
+отбора. </span></p>
+<p><img 407="" 162="" alt="" style="padding : 1px;" src="14_data/img47.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">При запуске игры под игроком "Администратор" бюджет изначально составляет 1000 (рис. 14.32).</span></p>
+<p class="rvps7"><img 320="" 170="" alt="" style="padding : 1px;" src="14_data/img48.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.32. Старт игры под "Администратором" </span></p>
+<p class="rvps2"><span class="rvts4">Приобретем для данного игрока апгрейд "Миска с водой" по цене 100 (рис. 14.33). </span></p>
+<p class="rvps7"><img 308="" 108="" alt="" style="padding : 1px;" src="14_data/img49.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.33. Приобретение апгрейда "Миска с водой" </span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальном экране 
+изменились данные о бюджете и рейтинге игрока, а также появилась 
+картинка с актуальным апгрейдом из категории "Плюшки для гостей" (рис. 
+14.34).</span></p>
+<p class="rvps7"><img 328="" 190="" alt="" style="padding : 1px;" src="14_data/img50.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.34. Изменения на начальной странице</span></p>
+<p class="rvps2"><span class="rvts4">Нажмем на кнопку "Открыть магазин", чтобы проверить функционал автоматического поступления заказов (рис. 14.35). </span></p>
+<p class="rvps7"><img 330="" 268="" alt="" style="padding : 1px;" src="14_data/img51.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.35. Проверка поступления заказов</span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальной странице появились два новых заказа с интервалом в 10 секунд. </span></p>
+<p class="rvps2"><span class="rvts4">Приобретем товары, которые появились в списке, чтобы выполнить один из заказов. </span></p>
+<p class="rvps2"><span class="rvts4">Создадим новый документ "Покупка товаров". В качестве товара укажем тот продукт, на который поступил заказ (рис. 14.36). </span></p>
+<p class="rvps7"><img 342="" 153="" alt="" style="padding : 1px;" src="14_data/img52.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.36. Покупка товара для выполнения заказа</span></p>
+<p class="rvps2"><span class="rvts4">Если приобрести товар на сумму большую, чем есть в бюджете игрока, то может возникнуть ошибка (рис. 14.37). </span></p>
+<p class="rvps7"><img 273="" 199="" alt="" style="padding : 1px;" src="14_data/img53.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.37. Ошибка при нехватке денег</span></p>
+<p class="rvps2"><span class="rvts4">В таком случае необходимо повторно открыть магазин и дождаться поступления того заказа, который сейчас возможно выполнить. </span></p>
+<p class="rvps2"><span class="rvts4">Вернемся на форму начального экрана. В данный момент бюджет не изменился (рис. 14.38).</span></p>
+<p class="rvps7"><img 347="" 172="" alt="" style="padding : 1px;" src="14_data/img54.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.38. Начальный экран без изменения бюджета</span></p>
+<p class="rvps2"><span class="rvts4"> Данная ситуация могла возникнуть 
+из-за того, что процедура, которая оповещает программу о том, что 
+необходимо обновить начальный экран, не связана с событием формы. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем форму документа "Покупка 
+товаров" и проверим, что в свойствах формы на вкладке "События" 
+закреплен обработчик за событием "ПриЗакрытии". </span></p>
+<p class="rvps2"><span class="rvts4">Если событие не было установлено, то необходимо это сделать (рис. 14.39). </span></p>
+<p class="rvps7"><img 366="" 148="" alt="" style="padding : 1px;" src="14_data/img55.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.39. Настройка связи между событием и обработчиком</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">При повторном открытии программы бюджет действительно изменился (рис. 14.40).</span></p>
+<p class="rvps7"><img 394="" 187="" alt="" style="padding : 1px;" src="14_data/img56.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.40. Начальный экран с измененным бюджетом</span></p>
+<p class="rvps2"><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Чтобы убедиться в корректности работы алгоритма, отменим предыдущую покупку товара (рис. 14.41). </span></p>
+<p class="rvps7"><img 288="" 173="" alt="" style="padding : 1px;" src="14_data/img57.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.41. Отмена покупки товара</span></p>
+<p class="rvps2"><span class="rvts4">После этого откроем документ и 
+выполним покупку повторно. В данной ситуации нельзя реализовать покупку 
+товара через форму списка, так как оповещение об обновлении начальной 
+страницы срабатывает именно при закрытии формы "Покупка товаров" (рис. 
+14.42). </span></p>
+<p class="rvps7"><img 357="" 148="" alt="" style="padding : 1px;" src="14_data/img58.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.42. Повторная покупка товара </span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальном экране отобразится корректный бюджет игрока с учетом только что купленных товаров (рис. 14.43).</span></p>
+<p class="rvps7"><img 300="" 215="" alt="" style="padding : 1px;" src="14_data/img59.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.43. Начальный экран с измененным бюджетом</span></p>
+<p class="rvps10"><span class="rvts4">Выполним один из заказов (рис. 14.44). </span></p>
+<p class="rvps7"><img 351="" 215="" alt="" style="padding : 1px;" src="14_data/img60.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.44. Выполнение этапа заказа</span></p>
+<p class="rvps2"><span class="rvts4">После выполнения первого этапа заказа появилась новая задача </span>–<span class="rvts4"> "Отправка заказа". Также выполним ее (рис. 14.45). </span></p>
+<p class="rvps7"><img 373="" 227="" alt="" style="padding : 1px;" src="14_data/img61.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.45. Отправка заказа покупателю</span></p>
+<p class="rvps2"><span class="rvts4">На начальном экране вновь не 
+изменился бюджет. Этап заказа, который сейчас был выполнен, является 
+задачей. Необходимо реализовать механизм, благодаря которому при 
+закрытии формы задачи будет отправляться оповещение об обновлении 
+начальной страницы. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем форму задачи "Этапы заказов" и в свойствах формы определим обработчик для события "ПриЗакрытии" (рис. 14.46). </span></p>
+<p class="rvps7"><img 406="" 196="" alt="" style="padding : 1px;" src="14_data/img62.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.46. Создание обработчика события "ПриЗакрытии" </span></p>
+<p class="rvps2"><span class="rvts4">При закрытии формы "Этапы заказа" 
+необходимо оповещать систему о необходимости обновить начальную 
+страницу. Данный механизм реализуется с помощью метода "Оповестить"</span><span class="rvts8">.</span></p>
+<p><img 561="" 63="" alt="" style="padding : 1px;" src="14_data/img63.png"></p>
+<p class="rvps10"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps10"><span class="rvts4">Поскольку система была запущена повторно, то бюджет обновился (рис. 14.47). </span></p>
+<p class="rvps7"><img 351="" 147="" alt="" style="padding : 1px;" src="14_data/img64.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.47. Начальный экран с измененным бюджетом</span></p>
+<p class="rvps2"><span class="rvts4">Для проверки работы механизма необходимо открыть магазин повторно и дождаться заказа, который может выполнить текущий игрок. </span></p>
+<p class="rvps2"><span class="rvts4">После того, как нужный заказ появился, можно закрыть магазин и приступить к покупке необходимых товаров. </span></p>
+<p class="rvps10"><span class="rvts4">Например, приобретем товар "Мятный шарик" в количестве 3 штук (рис. 14.48).</span></p>
+<p class="rvps10"><span class="rvts8"><br></span></p>
+<p class="rvps10"><span class="rvts8"><br></span></p>
+<p class="rvps7"><img 284="" 138="" alt="" style="padding : 1px;" src="14_data/img65.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.48. Покупка товара "Мятный шарик" </span></p>
+<p class="rvps10"><span class="rvts4">Далее необходимо вернуться на начальный экран и выполнить заказ (рис. 14.49 </span>–<span class="rvts4"> 14.50). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 329="" 195="" alt="" style="padding : 1px;" src="14_data/img66.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><img 274="" 214="" alt="" style="padding : 1px;" src="14_data/img67.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.49. Выполнение первого этапа заказа</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 14.50. Выполнение второго этапа заказа</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В результате выполнения заказа на начальной странице изменилась информация о бюджете игрока (рис. 14.51). </span></p>
+<p class="rvps7"><img 418="" 188="" alt="" style="padding : 1px;" src="14_data/img68.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 14.51. Изменение информации о бюджете после выполнения заказа</span></p>
+<p class="rvps17"><span class="rvts10">На этом четырнадцатое занятие окончено!</span></p>
+<p class="rvps10"><span class="rvts3">На этом занятии </span><span class="rvts4">мы
+ начали готовить программу к введению многопользовательского режима. 
+Создали новый справочник, а также доработали регистры и алгоритмы, 
+автоматизирующие игровой процесс. </span></p>
+<p class="rvps18"><span class="rvts4">На </span><span class="rvts3">следующих занятиях</span><span class="rvts4">
+ мы продолжим развивать тему разделения игры на пользователей. 
+Необходимо будет создать форму регистрации, а также вести учет всех 
+пользователей игры. Вдобавок к этому будет реализовано разделение прав 
+доступа к объектам между игроками: одна группа будет иметь доступ ко 
+всем реализованным механизмам, а вторая </span>–<span class="rvts4"> лишь к части. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts11">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts12"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 61="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><img 81="" alt="" style="padding : 1px;" src="14_data/img69.png"></p>
+</td>
+<td 440="" 61="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts3">Параметр сеанса</span><span class="rvts4"> </span>–<span class="rvts4"> это механизм, который позволяет понять, кто сейчас зашел в программу.</span></p>
+<p class="rvps2"><span class="rvts4">Чтобы сработала кнопка "Заполнить выражение", должны быть соблюдены два критерия: </span></p>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts5">Тип данных поля и реквизита документа должны совпадать.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts5">Названия поля и реквизита документа должны совпадать. </span></li>
+</ol>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts8"><br></span></p>
+<h2 class="rvps23"><a name="_Toc121319193"></a>
+<span class="rvts0"><span class="rvts13">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps25"><span class="rvts5">Что такое "параметр сеанса"? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps25"><span class="rvts5">Какие критерии должны быть соблюдены, чтобы сработало автоматическое заполнение выражений в конструкторе?&nbsp; </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts8"><br></span></p>
+
+</body></html>

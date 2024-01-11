@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>06</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts6
+{
+ font-weight: bold;
+}
+span.rvts7
+{
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+ text-decoration: underline;
+}
+span.rvts10
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps6
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps11
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps13
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps14
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps16
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps18
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps19
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319147"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 6. </span></span><span class="rvts0"><span class="rvts1">Контроль</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">остатков</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">товарных</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">позиций</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия </span>–<span class="rvts3"> создание алгоритма, который не позволит игроку продавать товары, если в заказе их больше, чем есть в наличии. </span></p>
+<p class="rvps3"><span class="rvts3">В рамках этого занятия выполним 2 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts4">Создание алгоритма проверки данных о товаре в регистре накопления. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts4">Доработка алгоритма. Проверка количества товара на складе игрока. </span></li>
+</ol>
+<h2 class="rvps6"><a name="_Toc121319148"></a>
+<span class="rvts0"><span class="rvts5">Усложнение в логике игры. Проверка наличия данных о товаре в регистре </span></span></h2>
+<p class="rvps2"><span class="rvts3">Сейчас в модуле объекта 
+бизнес-процесса "Заказ" в процедуре 
+"ПроверкаТовараНаСкладеПроверкаУсловия" реализован алгоритм, благодаря 
+которому заказ всегда отправляется покупателю. Исправим данный алгоритм,
+ чтобы итог формировался в зависимости от того, достаточно товара на 
+складе или нет </span>–<span class="rvts3"> это будет </span><span class="rvts6">первая задача</span><span class="rvts3">, которую мы выполним. </span></p>
+<p class="rvps2"><span class="rvts3">Перейдем в модуль объекта 
+бизнес-процесса, нажав правой кнопкой мыши по бизнес-процессу "Заказ" в 
+дереве конфигурации и выбрав в выпадающем списке "Модуль объекта" (рис. 
+6.1).</span></p>
+<p class="rvps7"><img 184="" 362="" alt="" style="padding : 1px;" src="06_data/img1.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.1. Открытие модуля объекта</span></p>
+<p class="rvps2"><span class="rvts3">Очистим содержимое процедуры, при 
+этом оставим саму процедуру, так как она связана с точкой условия, и 
+начнем определять ее заново.</span></p>
+<p class="rvps9"><img 559="" 95="" alt="" style="padding : 1px;" src="06_data/img2.png"></p>
+<p class="rvps2"><span class="rvts3">Чтобы получить возможность 
+проанализировать остатки товара, необходимо обратиться к регистрам 
+накопления. Это можно сделать программно, через механизм 
+"РегистрыНакопления". После этого необходимо указать конкретный регистр </span>–<span class="rvts3"> "ОстаткиТоваров"</span><span class="rvts8">.</span></p>
+<p class="rvps9"><img 505="" 63="" alt="" style="padding : 1px;" src="06_data/img3.png"></p>
+<p class="rvps2"><span class="rvts3">Запустим режим пользователя </span><span class="rvts9">без обновления конфигурации</span><span class="rvts3">.
+ Для этого необходимо открыть "Сервис" и в выпавшем меню выбрать 
+"1С:Предприятие". В появившемся окне на вопрос об обновлении 
+конфигурации выбираем "Нет" (рис. 6.2 </span>–<span class="rvts3"> рис. 6.3). </span></p>
+<p class="rvps7"><img 363="" 94="" alt="" style="padding : 1px;" src="06_data/img4.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.2. Запуск режима пользователя без обновления конфигурации</span></p>
+<p class="rvps7"><img 340="" 72="" alt="" style="padding : 1px;" src="06_data/img5.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.3. Запуск режима пользователя без обновления конфигурации</span></p>
+<p class="rvps2"><span class="rvts3">После запуска режима пользователя 
+посмотрим, как устроена физическая таблица регистра. Откроем вкладку 
+"Сервис и настройки" и выберем "Функции для технического специалиста" 
+(рис. 6.4). В открывшемся окне нажмем на плюсик рядом с регистрами 
+накопления, чтобы развернуть список. Далее необходимо открыть регистр, 
+щелкнув по его названию два раза левой кнопкой мыши (рис. 6.5). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 288="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps10"><img 322="" 148="" alt="" style="padding : 1px;" src="06_data/img6.png"></p>
+</td>
+<td 345="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps10"><img 222="" alt="" style="padding : 1px;" src="06_data/img7.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 288="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 6.4. Сервис и настройки</span></p>
+<p class="rvps11"><span class="rvts7"><br></span></p>
+</td>
+<td 345="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 6.5. Открытие регистра накопления в пользовательском режиме</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts3">В данной таблице видно все записи о поступлениях и расходах товаров (рис. 6.6).</span></p>
+<p class="rvps2"><span class="rvts8"><br></span></p>
+<p class="rvps7"><img 416="" 154="" alt="" style="padding : 1px;" src="06_data/img8.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.6. Физическая таблица регистра накопления "Остатки товаров"</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts3">В таком формате не совсем удобно 
+отслеживать текущий остаток товаров. Было бы лучше увидеть итоги сразу 
+всех операций, а не каждую операцию по отдельности. </span></p>
+<p class="rvps2"><span class="rvts3">Закроем режим пользователя и продолжим работу в конфигураторе.</span></p>
+<p class="rvps2"><span class="rvts3">Чтобы получить остатки регистра накопления, обратимся к функции "Остатки"</span><span class="rvts8">.</span></p>
+<p class="rvps9"><img 565="" 66="" alt="" style="padding : 1px;" src="06_data/img9.png"></p>
+<p class="rvps2"><span class="rvts3">Данная функция вернет таблицу по </span><span class="rvts9">остаткам</span><span class="rvts3">, потому что различных товарных позиций может быть много. Запишем ее в отдельную переменную "ОстаткиТоваров"</span><span class="rvts8">.</span></p>
+<p class="rvps9"><img 572="" 63="" alt="" style="padding : 1px;" src="06_data/img10.png"></p>
+<p class="rvps2"><span class="rvts3">Далее необходимо найти в этой 
+таблице данные по остаткам того товара, который продается в данном 
+заказе. Поиск в таблице остатков будет осуществляться по товару, 
+указанному в бизнес-процессе. Для этого создадим переменную 
+"ИнформацияОТоваре", чтобы хранить результаты поиска по таблице.</span></p>
+<p class="rvps9"><img 558="" 82="" alt="" style="padding : 1px;" src="06_data/img11.png"></p>
+<p class="rvps2"><span class="rvts3">В итоге в этой переменной может храниться как </span><span class="rvts9">информацию об остатках товара</span><span class="rvts3">, так и вовсе </span><span class="rvts9">ничего</span><span class="rvts3">.
+ В таком случае это означает, что в регистре еще не было записи о данном
+ товаре, значит, товар еще не был куплен. Реализуем проверку: если 
+информации о товаре нет, тогда пользователь получит сообщение о том, что
+ товара нет в наличии.</span></p>
+<p class="rvps2"><span class="rvts3">Для начала создадим само условие. В
+ платформе "1С:Предприятие" предусмотрен тип данных на случай, если 
+данные не удалось найти. Данный тип называется </span><span class="rvts9">"Неопределено"</span><span class="rvts3">. </span></p>
+<p class="rvps9"><img 558="" 107="" alt="" style="padding : 1px;" src="06_data/img12.png"></p>
+<p class="rvps2"><span class="rvts3">Чтобы вывести пользователю сообщение об ошибке, воспользуемся конструкцией </span><span class="rvts9">"ВызватьИсключение"</span><span class="rvts3">. Само сообщение об ошибке указывается в двойных кавычках сразу после вызова конструкции.</span></p>
+<p class="rvps9"><img 570="" 80="" alt="" style="padding : 1px;" src="06_data/img13.png"></p>
+<p class="rvps2"><span class="rvts3">Далее запишем информацию о том, что товара нет в наличии в реквизит "Итог" бизнес-процесса.</span></p>
+<p class="rvps9"><img 573="" 92="" alt="" style="padding : 1px;" src="06_data/img14.png"></p>
+<p class="rvps2"><span class="rvts3">Так как товара нет в наличии, присвоим переменной "Результат" значение "ложь". При таком значении бизнес-процесс </span><span class="rvts9">вернется в исходное положение</span><span class="rvts3">. </span></p>
+<p class="rvps9"><img 570="" 103="" alt="" style="padding : 1px;" src="06_data/img15.png"></p>
+<p class="rvps2"><span class="rvts3">После этого необходимо прервать процедуру. Используем для этого метод </span><span class="rvts9">"Возврат"</span><span class="rvts8">.</span></p>
+<p class="rvps9"><img 571="" 115="" alt="" style="padding : 1px;" src="06_data/img16.png"></p>
+<p class="rvps2"><span class="rvts3">Обновим конфигурацию базы данных и запустим пользовательский режим, чтобы проверить работоспособность данной процедуры. </span></p>
+<p class="rvps2"><span class="rvts3">Благодаря физической таблице 
+регистра накопления известно, что корм для собак закончился. Поэтому для
+ проверки процедуры создадим новый заказ на приобретение покупателем 
+корма для собак. </span></p>
+<p class="rvps2"><span class="rvts3">Создадим новый заказ. В качестве товара укажем "Сухой корм", цена </span>–<span class="rvts3"> 100, количество </span>–<span class="rvts3"> 3, сумма </span>–<span class="rvts3"> 300 и нажмем на кнопку "Стартовать и закрыть" (рис. 6.7).</span></p>
+<p class="rvps7"><img 386="" 321="" alt="" style="padding : 1px;" src="06_data/img17.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.7. Создание нового заказа</span></p>
+<p class="rvps9"><span class="rvts3">После этого появилась новая задача в списке "Этапы заказа" (рис. 6.8). </span></p>
+<p class="rvps7"><img 550="" 299="" alt="" style="padding : 1px;" src="06_data/img18.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.8. Список задач</span></p>
+<p class="rvps2"><span class="rvts3">При попытке выполнить данную задачу сработает алгоритм, и пользователь увидит ошибку (рис. 6.9).</span></p>
+<p class="rvps7"><img 421="" 290="" alt="" style="padding : 1px;" src="06_data/img19.png"></p>
+<p class="rvps12"><span class="rvts7">Рис. 6.9. Выполнение задачи с ошибкой</span></p>
+<h2 class="rvps6"><a name="_Toc121319149"></a>
+<span class="rvts0"><span class="rvts5">Усложнение в логике игры. Проверка количества товара на складе</span></span></h2>
+<p class="rvps2"><span class="rvts3">Теперь рассмотрим другой случай: если товар имеется </span><span class="rvts9">в наличии</span><span class="rvts3">, но его </span><span class="rvts9">недостаточно</span><span class="rvts3"> для продажи, например, когда клиент хочет купить 10 мятных шариков, а на складе осталось всего 3. Приступим к выполнению </span><span class="rvts6">второй задачи</span><span class="rvts3"> и обработаем данный сценарий.</span></p>
+<p class="rvps2"><span class="rvts3">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+<p class="rvps2"><span class="rvts3">Запишем новое условие в модуле 
+объекта бизнес-процесса: если количество товара в бизнес-процессе 
+больше, чем количество товара на складе, тогда необходимо вновь выводить
+ ошибку пользователю.</span></p>
+<p><img 525="" 161="" alt="" style="padding : 1px;" src="06_data/img20.png"></p>
+<p class="rvps9"><span class="rvts3">Также необходимо изменить итог по заказу в соответствующем реквизите.</span></p>
+<p><img 579="" 168="" alt="" style="padding : 1px;" src="06_data/img21.png"></p>
+<p class="rvps2"><span class="rvts3">Затем присвоим переменной "Результат" значение "ложь" и прервем работу процедуры с помощью метода "Возврат"</span><span class="rvts8">.</span></p>
+<p><img 545="" 186="" alt="" style="padding : 1px;" src="06_data/img22.png"></p>
+<p class="rvps9"><span class="rvts3">Также напишем алгоритм работы при достаточном количестве товара.</span></p>
+<p><img 490="" 216="" alt="" style="padding : 1px;" src="06_data/img23.png"></p>
+<p class="rvps2"><span class="rvts3">Теперь обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps2"><span class="rvts3">Для проверки процедуры создадим заказ с заведомо большим количеством товаров. В качестве товара укажем "Мятный шарик", цена </span>–<span class="rvts3"> 200, количество </span>–<span class="rvts3"> 30, сумма </span>–<span class="rvts3"> 6000. После ввода данных нажмем на кнопку "Стартовать и закрыть" (рис. 6.10).</span></p>
+<p class="rvps7"><img 461="" 257="" alt="" style="padding : 1px;" src="06_data/img24.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.10. Создание нового заказа</span></p>
+<p class="rvps2"><span class="rvts3">После этого появился новый этап заказа. Перейдем к списку "Этапы заказа", откроем новую задачу и выполним ее (рис. 6.11).</span></p>
+<p class="rvps7"><img 304="" 208="" alt="" style="padding : 1px;" src="06_data/img25.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.11. Выполнение задачи с ошибкой</span></p>
+<p class="rvps2"><span class="rvts3">В результате возникло сообщение о нехватке товара. Чтобы выполнить данный заказ, пополним количество товара на складе. </span></p>
+<p class="rvps2"><span class="rvts3">Для этого создадим новый документ "Покупка товаров". В качестве товара укажем "Мятный шарик", цена </span>–<span class="rvts3"> 150, количество </span>–<span class="rvts3"> 30, сумма </span>–<span class="rvts3"> 4500 (рис. 6.12).</span></p>
+<p class="rvps7"><img 413="" 226="" alt="" style="padding : 1px;" src="06_data/img26.png"></p>
+<p class="rvps8"><span class="rvts7">Рис. 6.12. Покупка товара</span></p>
+<p class="rvps9"><span class="rvts3">После этого вернемся к этапам 
+заказа и выполним последнюю задачу (рис. 6.13). Затем отправим заказ 
+клиенту, после чего бизнес-процесс завершится (рис. 6.14).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p><img 310="" 127="" alt="" style="padding : 1px;" src="06_data/img27.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 315="" 129="" alt="" style="padding : 1px;" src="06_data/img28.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 6.13. Выполнение этапа заказа</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts7">Рис. 6.14. Отправка заказа клиенту</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps14"><span class="rvts10">На этом шестое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts6">На этом занятии </span><span class="rvts3">мы описали алгоритм, благодаря которому игрок теперь не сможет отправить заказ покупателю, если товара из заказа нет на складе </span>–<span class="rvts3"> был реализован контроль отрицательных остатков.&nbsp; </span></p>
+<p class="rvps2"><span class="rvts6">На следующем занятии</span><span class="rvts3">
+ мы автоматизируем поступление заказов, а именно опишем алгоритм, 
+который будет автоматически создавать новые заказы от покупателей со 
+случайным товаром и случайным количеством. </span></p>
+<p><span class="rvts11"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts12">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 170="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><img 156="" alt="" style="padding : 1px;" src="06_data/img29.png"></p>
+</td>
+<td 469="" 170="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts3">Чтобы
+ получить данные из виртуальной таблицы регистра накопления, нужно 
+сначала указать, с каким именно объектом вы будете работать, потом 
+указать название конкретного регистра и после этого обратиться к 
+виртуальной таблице по ее названию: 
+"РегистрыНакопления.ОстаткиТоваров.Остатки()". Такая логика работы с 
+данными и свойствами применима ко всем объектам конфигурации. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts8"><br></span></p>
+<h2 class="rvps17"><a name="_Toc121319150"></a>
+<span class="rvts0"><span class="rvts5">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps19"><span class="rvts4">Какая виртуальная таблица возвращает данные по остаткам из регистра накопления?</span></li>
+<li value="2" style="margin-left: 0px" class="rvps19"><span class="rvts4">Как можно обратиться к виртуальной таблице "Остатки"? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps19"><span class="rvts4">С помощью какого метода можно искать данные в таблицах? </span></li>
+<li value="4" style="margin-left: 0px" class="rvps19"><span class="rvts4">Какой тип данных используется для того, чтобы проверить, была найдена информация или нет? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts8"><br></span></p>
+<p><span class="rvts8"><br></span></p>
+
+</body></html>

@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>03</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts4
+{
+ font-weight: bold;
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+}
+span.rvts8
+{
+}
+span.rvts9
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts12
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps5
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+.rvps7
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.06;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps16
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 8px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps20
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps22
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps23
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps24
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319130"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 3. </span></span><span class="rvts0"><span class="rvts1">Создание</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">документов</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">для</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">покупки</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">и</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">продажи<br><br></span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">товаров</span></span></h1>
+<p class="rvps2"><span class="rvts3">Настройка прикладного решения. Документ "Покупка товаров"</span></p>
+<p><span class="rvts4">Тема этого занятия</span><span class="rvts5"> </span>–<span class="rvts5">
+ создание двух документов: "Покупка товаров" и "Заказ клиента". Эти 
+документы позволят фиксировать в игре информацию о товарах, которые 
+игрок купил или продал покупателю. </span></p>
+<p><span class="rvts6"><br></span></p>
+<p><span class="rvts5">Нам предстоит выполнить 4 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts7">Создать документ, который позволит фиксировать информацию о закупке товара в наш магазин для продажи; </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts7">Создание алгоритма для автоматического расчета суммы по каждой покупаемой товарной позиции и настройки формы; </span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts7">Написание алгоритма для получения цены товара;</span></li>
+<li value="4" style="margin-left: 0px" class="rvps6"><span class="rvts7">Создание документа для учета заказов клиентов. </span></li>
+</ol>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p><span class="rvts4">Документ</span><span class="rvts5"> </span>–<span class="rvts5">
+ это объект конфигурации, позволяющий хранить информацию о событиях, 
+произошедших в организации, например, покупка или продажа товара. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h2 class="rvps8"><a name="_Toc121319131"></a>
+<span class="rvts0"><span class="rvts9">Настройка прикладного решения. Документ "Покупка товаров"</span></span></h2>
+<p class="rvps9"><span class="rvts5">Начнем с </span><span class="rvts4">первой задачи</span><span class="rvts5"> и добавим документ "Покупка товаров", который будет отражать приобретение товаров для последующей перепродажи. </span></p>
+<p class="rvps10"><span class="rvts5">Добавим новый документ, нажав по ветке "Документы" правой кнопкой мыши и выбрав "Добавить". Имя документа </span>–<span class="rvts5"> "Покупка товаров" (рис. 3.1). </span></p>
+<p class="rvps11"><img 339="" 235="" alt="" style="padding : 1px;" src="03_data/img1.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.1. Создание документа "Покупка товаров"</span></p>
+<p class="rvps13"><span class="rvts5">Для определения структуры 
+документа перейдем на вкладку "Данные". Зачастую в рамках одной покупки 
+приобретается сразу несколько разновидностей товаров в разном объеме и 
+по разным ценам. Для решения такой задачи потребуется создать табличную 
+часть. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts4">Табличная часть</span><span class="rvts5">
+ предназначена для хранения информации, структура которой одинакова, но 
+количество такой информации заранее неизвестно и может отличаться у 
+каждого документа.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps10"><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Для того чтобы добавить табличную часть, необходимо нажать на соответствующую кнопку. Укажем имя табличной части </span>–<span class="rvts5"> "Товары" (рис. 3.2). </span></p>
+<p class="rvps14"><img 418="" 254="" alt="" style="padding : 1px;" src="03_data/img2.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.2. Добавление табличной 
+части 
+"Товары"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span></p>
+<p class="rvps15"><span class="rvts5">Далее необходимо добавить 
+реквизиты табличной части. Их можно добавить с помощью соответствующей 
+кнопки над списком табличных частей, либо нажав по табличной части 
+правой кнопкой мыши и выбрав "Добавить" </span>–<span class="rvts5"> "Реквизит табличной части" (рис. 3.3).</span></p>
+<p class="rvps11"><img 398="" 279="" alt="" style="padding : 1px;" src="03_data/img3.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.3. Способы добавления нового реквизита табличной части</span></p>
+<p class="rvps9"><span class="rvts5">После добавления нового реквизита должна получиться конструкция в виде диагонали: сначала все табличные части, потом </span>–<span class="rvts5"> табличная часть "Товары", далее </span>–<span class="rvts5"> "Реквизит1" (рис. 3.4). </span></p>
+<p class="rvps11"><img 285="" 63="" alt="" style="padding : 1px;" src="03_data/img4.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.4. Табличная часть "Товары" после добавления реквизита </span></p>
+<p class="rvps9"><span class="rvts5">Далее необходимо настроить реквизит табличной части через палитру свойств. Имя реквизита </span>–<span class="rvts5"> "Товар", тип </span>–<span class="rvts5"> "СправочникСсылка.Товары" (рис. 3.5). </span></p>
+<p class="rvps11"><img 399="" 238="" alt="" style="padding : 1px;" src="03_data/img5.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.5. Настройка реквизита "Товар"</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Добавим еще три числовых реквизита: "Цена", "Количество" и "Сумма". </span></p>
+<p class="rvps10"><span class="rvts5">Первый реквизит предназначен для хранения информации о цене товара. Имя реквизита </span>–<span class="rvts5"> "Цена", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 3.6). </span></p>
+<p class="rvps11"><img 530="" 155="" alt="" style="padding : 1px;" src="03_data/img6.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.6. Добавление реквизита "Цена" в табличную часть</span></p>
+<p class="rvps9"><span class="rvts5">Второй реквизит нужен для хранения информации о количестве товара. Имя реквизита </span>–<span class="rvts5"> "Количество", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 3.7). </span></p>
+<p class="rvps11"><img 538="" 154="" alt="" style="padding : 1px;" src="03_data/img7.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.7. Добавление реквизита "Количество" в табличную часть</span></p>
+<p class="rvps9"><span class="rvts5">Третий реквизит предназначен для хранения информации о сумме, которую необходимо заплатить за конкретный товар. Имя реквизита </span>–<span class="rvts5"> "Сумма", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 3.8). </span></p>
+<p class="rvps11"><img 537="" 164="" alt="" style="padding : 1px;" src="03_data/img8.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.8. Добавление реквизита "Сумма" в табличную часть</span></p>
+<p class="rvps9"><span class="rvts5">Поскольку товаров может быть много,
+ и табличная часть может получиться достаточно большой, необходимо 
+создать реквизит на весь документ, который будет хранить итоговую сумму 
+по всему документу. </span></p>
+<p class="rvps10"><span class="rvts5">Добавим новый реквизит в верхней части окна редактирования. Имя реквизита </span>–<span class="rvts5"> "Итоговая сумма", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 3.9). </span></p>
+<p class="rvps14"><img 435="" 150="" alt="" style="padding : 1px;" src="03_data/img9.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.9. Добавление реквизита "Итоговая сумма"</span></p>
+<p class="rvps9"><span class="rvts5">Обновим конфигурацию базы данных и запустим режим пользователя. </span></p>
+<p class="rvps10"><span class="rvts5">Перейдем к списку документов "Покупка товаров" и создадим новый документ с помощью кнопки "Создать" (рис. 3.10).</span></p>
+<p class="rvps11"><img 403="" 147="" alt="" style="padding : 1px;" src="03_data/img10.png"></p>
+<p class="rvps16"><span class="rvts10">Рис. 3.10. Создание нового документа "Покупка товаров"</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 39="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 39="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts4">Документ отличается от справочника</span><span class="rvts5"> тем, что он может проводиться. В рамках документа </span><span class="rvts4">"Запись"</span><span class="rvts5"> </span>–<span class="rvts5"> это планирование события, например, планирование покупки товара через пару дней. </span><span class="rvts4">"Проведение"</span><span class="rvts5"> </span>–<span class="rvts5"> это фиксация того, что событие реально произошло. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><span class="rvts5">Три кнопки </span>–<span class="rvts5"> "Провести и закрыть", "Записать" и "Провести" </span>–<span class="rvts5"> могут ввести игрока в заблуждение. В дальнейшем их потребуется переименовать. </span></p>
+<p class="rvps9"><span class="rvts5">Добавим новую строку табличной 
+части с помощью кнопки "Добавить" и выберем товар для покупки, например,
+ "Мятный шарик" (рис. 3.11). </span></p>
+<p class="rvps11"><img 388="" 239="" alt="" style="padding : 1px;" src="03_data/img11.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.11. Заполнение табличной части "Товары"</span></p>
+<p class="rvps9"><span class="rvts5">Помимо кнопок, в дальнейшем мы 
+изменим отображение полей и настроим программную логику для работы с 
+табличной частью, поскольку сейчас при заполнении информации о 
+покупаемом товаре система не считывает стоимость товара и не подставляет
+ ее в колонку "Цена"</span><span class="rvts6">.</span></p>
+<p class="rvps9"><span class="rvts5">Кроме того, необходимо реализовать автоматический подсчет суммы, если заполнены цена и количество. </span></p>
+<p class="rvps9"><span class="rvts5">Заполним строку табличной части, указав цену на товар </span>–<span class="rvts5"> 10, а количество </span>–<span class="rvts5"> 1 (рис. 3.12). </span></p>
+<p class="rvps11"><img 445="" 275="" alt="" style="padding : 1px;" src="03_data/img12.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.12. Заполнение колонок "Цена" и "Количество" табличной части "Товары"</span></p>
+<p class="rvps9"><span class="rvts5">Сумма за покупку этого товара </span>–<span class="rvts5">
+ 10, но на текущий момент мы еще не прописали алгоритм для 
+автоматического расчета суммы, поэтому колонка осталась пустой.&nbsp; </span></p>
+<p class="rvps10"><span class="rvts5">Также необходимо реализовать 
+автоматический подсчет итоговой суммы по всему документу, поскольку 
+товарных позиций в табличной части может быть очень много. </span></p>
+<p class="rvps10"><span class="rvts5">Например, добавим новую строку 
+табличной части с товаром "Сухой корм" по цене 50 в количестве 2 штук 
+(рис. 3.13). Пока что все данные вводятся вручную. </span></p>
+<p class="rvps11"><img 436="" 274="" alt="" style="padding : 1px;" src="03_data/img13.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.13. Добавление новой строки в табличную часть "Товары"</span></p>
+<p class="rvps9"><span class="rvts5">Заполним колонку "Сумма" в обеих строках табличной части и поле "Итоговая сумма". В первой строке сумма </span>–<span class="rvts5"> 10, во второй </span>–<span class="rvts5"> 100, итоговая сумма </span>–<span class="rvts5"> 110 (рис. 3.14). Всю внесенную информацию необходимо сохранить с помощью кнопки "Записать". </span></p>
+<p class="rvps11"><img 417="" 262="" alt="" style="padding : 1px;" src="03_data/img14.png"></p>
+<p class="rvps16"><span class="rvts10">Рис. 3.14. Заполнение полей в документе "Покупка товаров"</span></p>
+<h2 class="rvps8"><a name="_Toc121319132"></a>
+<span class="rvts0"><span class="rvts9">Усложнение в логике игры. Автоматизация расчета суммы за покупку товара</span></span></h2>
+<p class="rvps9"><span class="rvts4">Вторая задача</span><span class="rvts5">
+ сводится к тому, чтобы реализовать автоматический подсчет и поменять 
+отображение полей. Для ее реализации потребуется создать форму. </span></p>
+<p class="rvps10"><span class="rvts5">Закроем режим пользователя и перейдем в конфигуратор. </span></p>
+<p class="rvps10"><span class="rvts5">Чтобы создать новую форму, 
+перейдем на вкладку "Формы" в окне редактирования документа "Покупка 
+товаров" и нажмем на лупу в поле "Форма документа" (рис. 3.15). </span></p>
+<p class="rvps14"><img 352="" 371="" alt="" style="padding : 1px;" src="03_data/img15.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.15. Вкладка "Формы" </span></p>
+<p class="rvps9"><span class="rvts5">Форма документа будет основной, об этом говорит галочка </span><span class="rvts4">"Назначить форму основной"</span><span class="rvts5">, следовательно, она будет использоваться по умолчанию при открытии формы любого из документов "Покупка товаров". </span></p>
+<p class="rvps10"><span class="rvts5">Далее нажимаем на кнопку "Готово" (рис. 3.16). </span></p>
+<p class="rvps11"><img 247="" 231="" alt="" style="padding : 1px;" src="03_data/img16.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.16. Работа в конструкторе формы документа</span></p>
+<p class="rvps9"><span class="rvts5">В результате открывается редактор формы, в котором и будет происходить дальнейшая работа. </span></p>
+<p class="rvps9"><span class="rvts5">Для начала изменим отображение 
+кнопок, так как понятия "Провести и закрыть", "Записать" и "Провести" 
+могут смутить и запутать игрока.</span></p>
+<p class="rvps9"><span class="rvts5">Для того чтобы определить набор 
+кнопок самостоятельно, обратимся к "Командной панели" и уберем в палитре
+ свойств галочку у свойства "Автозаполнение" (рис. 3.17).&nbsp; </span></p>
+<p class="rvps11"><img 509="" 285="" alt="" style="padding : 1px;" src="03_data/img17.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.17. Отключение автозаполнения командной панели</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps9"><span class="rvts5">Теперь можно самостоятельно определить набор команд для командной панели. </span></p>
+<p class="rvps10"><span class="rvts5">Для этого необходимо обратиться к 
+разделу "Команды", в котором нужно выбрать раздел "Стандартные команды".
+ Далее нажмем на плюсик напротив группировки "Форма" и перенесем события
+ "Провести и закрыть" и "Записать" в командную панель (рис. 3.18).</span></p>
+<p class="rvps14"><img 485="" 258="" alt="" style="padding : 1px;" src="03_data/img18.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.18. Добавление команд на форму</span></p>
+<p class="rvps9"><span class="rvts5">Отлично! Интерфейс начинает меняться. </span></p>
+<p class="rvps9"><span class="rvts5">Но названия команд "Провести и закрыть" и "Записать" остались прежними. Изменим отображение этих кнопок в интерфейсе. </span></p>
+<p class="rvps9"><span class="rvts5">Для начала обратимся к кнопке 
+"Провести и закрыть" и изменим имя и заголовок команды в палитре свойств
+ на "Купить". Кроме того, необходимо выделить цветом эту кнопку. Это 
+можно сделать с помощью свойства </span><span class="rvts4">"КнопкаПоУмолчанию"</span><span class="rvts5"> (рис. 3.19). </span></p>
+<p class="rvps11"><img 426="" 232="" alt="" style="padding : 1px;" src="03_data/img19.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.19. Изменение кнопки "Провести и закрыть"</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">У второй команды заменим имя на "ЗапланироватьПокупку", поскольку запись </span>–<span class="rvts5"> это планирование события. В качестве заголовка укажем </span>–<span class="rvts5"> "Запланировать покупку" (рис. 3.20). </span></p>
+<p class="rvps11"><img 450="" 238="" alt="" style="padding : 1px;" src="03_data/img20.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.20. Изменение кнопки "Записать"</span></p>
+<p class="rvps9"><span class="rvts5">Продолжим работу с элементами формы
+ и определим красивую шапку для документа, которая будет состоять из 
+стандартных реквизитов документа </span>–<span class="rvts5"> "Номер" и "Дата"</span><span class="rvts6">.</span></p>
+<p class="rvps9"><span class="rvts5">Разместим "Номер" и "Дату" в одну 
+строку. Для реализации такого расположения необходимо создать группу с 
+горизонтальным отображением. </span></p>
+<p class="rvps9"><span class="rvts5">Нажмем правой кнопкой мыши по элементу "Номер" и выберем пункт "Добавить" в появившемся списке (рис. 3.21).</span></p>
+<p class="rvps11"><img 552="" 189="" alt="" style="padding : 1px;" src="03_data/img21.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.21. Добавление нового элемента формы</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">В появившемся списке выберем вариант "Группа </span>–<span class="rvts5"> Обычная группа без отображения" и нажмем "ОК" (рис. 3.22).</span></p>
+<p class="rvps14"><img 225="" 184="" alt="" style="padding : 1px;" src="03_data/img22.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.22. Выбор типа элемента</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="03_data/img23.png"></p>
+</td>
+<td 553="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts6">Группа
+ без отображения отличается тем, что для нее не выводится заголовок. Она
+ используется, чтобы сгруппировать поля необходимым образом.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><span class="rvts5">Для новой группы важно определить имя, чтобы в дальнейшем было проще определить ее назначение. Имя группы </span>–<span class="rvts5"> "Шапка". Также нужно указать вид группировки </span>–<span class="rvts5"> "Горизонтальная всегда" (рис. 3.23). </span></p>
+<p class="rvps11"><img 410="" 187="" alt="" style="padding : 1px;" src="03_data/img24.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.23. Изменение имени группы</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Определим в эту группу поля "Номер" и "Дата" с помощью перетаскивания (рис. 3.24). </span></p>
+<p class="rvps11"><img 244="" 172="" alt="" style="padding : 1px;" src="03_data/img25.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.24. Определение элементов в группу</span></p>
+<p class="rvps9"><span class="rvts5">Названия полей "Номер" и "Дата" могут быть недостаточно наглядны для игрока, поэтому лучше определить для них новые заголовки. </span></p>
+<p class="rvps10"><span class="rvts5">Для "Номера" укажем заголовок "Покупка №" (рис. 3.25), а для "Даты" </span>–<span class="rvts5"> "От" (рис. 3.26).</span></p>
+<p class="rvps11"><img 569="" 140="" alt="" style="padding : 1px;" src="03_data/img26.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.25. Изменение заголовка поля "Номер"</span></p>
+<p class="rvps11"><img 560="" 135="" alt="" style="padding : 1px;" src="03_data/img27.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.26. Изменение заголовка поля "Дата"</span></p>
+<p class="rvps9"><span class="rvts5">Поле "Итоговая сумма" не должно 
+быть доступно к редактированию для пользователя. Для того чтобы 
+реализовать такую настройку, необходимо открыть палитру свойств элемента
+ "Итоговая сумма" и в свойстве </span><span class="rvts4">"Вид"</span><span class="rvts5"> указать </span><span class="rvts4">"Поле надписи"</span><span class="rvts5"> (рис. 3.27).</span></p>
+<p class="rvps11"><img 517="" 238="" alt="" style="padding : 1px;" src="03_data/img28.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.27. Изменение вида элемента "Итоговая сумма"</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Следующее, что необходимо сделать, </span>–<span class="rvts5">
+ это указать пользователю, какие именно данные нужно добавить в 
+табличную часть. Для этого определим другое название кнопки "Добавить". 
+Идея такая же, как с кнопками "Купить" и "Запланировать покупку". </span></p>
+<p class="rvps10"><span class="rvts5">У командной панели табличной части "Товары" нужно отключить автозаполнение (рис. 3.28). </span></p>
+<p class="rvps11"><img 569="" 157="" alt="" style="padding : 1px;" src="03_data/img29.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.28. Отключение автозаполнения командной панели табличной части</span></p>
+<p class="rvps9"><span class="rvts5">После отключения автозаполнения 
+командной панели перейдем в стандартные команды, развернем список команд
+ табличной части "Товары" и переместим команду "Добавить" в командную 
+панель табличной части на форме (рис. 3.29).</span></p>
+<p class="rvps11"><img 428="" 168="" alt="" style="padding : 1px;" src="03_data/img30.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.29. Добавление команды на форму</span></p>
+<p class="rvps9"><span class="rvts5">Изменим имя новой команды на "ТоварыДобавитьТовар", а заголовок </span>–<span class="rvts5"> на "Добавить товар" (рис. 3.30).</span></p>
+<p class="rvps14"><img 449="" 116="" alt="" style="padding : 1px;" src="03_data/img31.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.30. Изменение имени и заголовка команды</span></p>
+<p class="rvps9"><span class="rvts5">На этом настройка формы окончена</span><span class="rvts6">,</span><span class="rvts5">
+ и теперь можно приступить к описанию алгоритма автоматического расчета 
+суммы. Логика будет следующая: при изменении цены или количества 
+необходимо рассчитывать сумму, а при изменении товарной позиции </span>–<span class="rvts5"> получать актуальную цену на выбранный товар. </span></p>
+<p class="rvps9"><span class="rvts5">Определим по обработчику для 
+каждого из полей. Начнем с колонки "Товар". Для того чтобы определить 
+обработчик какого-либо события, необходимо: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps18"><span class="rvts7">Открыть палитру свойств колонки</span><span class="rvts11">.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps18"><span class="rvts7">Перейти на вкладку события</span><span class="rvts11">.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps18"><span class="rvts7">У события "ПриИзменении" нажать на кнопку "Открыть" в виде лупы (рис. 3.31).</span></li>
+</ol>
+<p class="rvps11"><img 458="" 116="" alt="" style="padding : 1px;" src="03_data/img32.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.31. Создание обработчика события для колонки "Товар"</span></p>
+<p class="rvps9"><span class="rvts5">В открывшемся окне выбираем "Создать на клиенте" и нажимаем "ОК" (рис. 3.32). Далее все </span><span class="rvts4">обработчики будут создаваться на клиенте</span><span class="rvts5">. </span></p>
+<p class="rvps11"><img 266="" 114="" alt="" style="padding : 1px;" src="03_data/img33.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.32. Выбор директивы компиляции</span></p>
+<p class="rvps14"><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">После появления обработчика события вернемся обратно на форму и добавим еще несколько обработчиков (рис. 3.33). </span></p>
+<p class="rvps11"><img 482="" 125="" alt="" style="padding : 1px;" src="03_data/img34.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.33. Переход из модуля на форму</span></p>
+<p class="rvps9"><span class="rvts5">Определим обработчик для колонки 
+"Цена", открыв палитру свойств колонки и перейдя на вкладку события. У 
+события "ПриИзменении" необходимо нажать на лупу (рис. 3.34).</span></p>
+<p class="rvps11"><img 509="" 182="" alt="" style="padding : 1px;" src="03_data/img35.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.34. Создание обработчика события для колонки "Цена"</span></p>
+<p class="rvps9"><span class="rvts5">После добавления обработчика 
+события для изменения цены определим обработчик для колонки 
+"Количество". Для этого откроем палитру свойств колонки и перейдем на 
+вкладку события. У события "ПриИзменении" необходимо нажать на лупу 
+(рис. 3.35). </span></p>
+<p class="rvps11"><img 508="" 184="" alt="" style="padding : 1px;" src="03_data/img36.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.35. Создание обработчика события для колонки "Количество"</span></p>
+<p class="rvps9"><span class="rvts5">В результате были определены три обработчика событий, которые связаны с элементами формы. </span></p>
+<p class="rvps9"><span class="rvts5">Для того чтобы грамотно распределить код в модуле, добавим области. Область можно добавить, написав в модуле </span><span class="rvts4">"#Обл"</span><span class="rvts5"> и нажав сочетание клавиш </span><span class="rvts4">Ctrl+ Q</span><span class="rvts5">. </span></p>
+<p><img 184="" 80="" alt="" style="padding : 1px;" src="03_data/img37.png"></p>
+<p><span class="rvts6"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 56="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 54="" alt="" style="padding : 1px;" src="03_data/img38.png"></p>
+</td>
+<td 553="" 56="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts6">У области обязательно должно быть имя, иначе возникнет ошибка, и программа не будет работать. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts5">Имя области </span>–<span class="rvts5"> "ОбработчикиСобытийЭлементовФормы". </span></p>
+<p><img 455="" 93="" alt="" style="padding : 1px;" src="03_data/img39.png"></p>
+<p class="rvps10"><span class="rvts5">Далее определим все три процедуры в
+ эту область. Это можно сделать, выделив все процедуры и зажав их левой 
+кнопкой мыши, перенести в область (рис. 3.36).</span></p>
+<p class="rvps14"><img 346="" 213="" alt="" style="padding : 1px;" src="03_data/img40.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.36. Модуль формы документа "Покупка товаров"</span></p>
+<p class="rvps10"><span class="rvts5">Помимо области "ОбработчикиСобытийЭлементовФормы" потребуется реализовать еще одну область </span>–<span class="rvts5">
+ "СлужебныеПроцедурыИФункции" (рис. 3.37). В этой области будут 
+располагаться те процедуры, которые мы придумаем и опишем 
+самостоятельно. </span></p>
+<p class="rvps14"><img 309="" 263="" alt="" style="padding : 1px;" src="03_data/img41.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.37. Добавление новой области</span></p>
+<p class="rvps14"><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">В данной области необходимо 
+реализовать отдельную процедуру по подсчету суммы, поскольку она будет 
+вызываться и при изменении цены, и при изменении количества. </span></p>
+<p class="rvps10"><span class="rvts5">Опишем данную процедуру. </span></p>
+<p class="rvps10"><span class="rvts5">Для начала определим директиву. 
+Напишем внутри области "СлужебныеПроцедурыИФункции" ключевое слово 
+"дирек" и сочетанием клавиш Ctrl+ Q вызовем окно с выбором директивы. 
+Подсчитывать сумму необходимо как произведение цены и количества, эти 
+данные известны и видны пользователю, следовательно, можно выбрать 
+вариант "НаКлиенте" (рис. 3.38). </span></p>
+<p class="rvps11"><img 338="" 234="" alt="" style="padding : 1px;" src="03_data/img42.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.38. Выбор директивы компиляции</span></p>
+<p class="rvps10"><span class="rvts5">Далее на клиенте опишем процедуру с помощью ключевого слова "проц" и сочетания клавиш Ctrl+ Q (рис. 3.39). </span></p>
+<p class="rvps14"><img 448="" 118="" alt="" style="padding : 1px;" src="03_data/img43.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.39. Вызов шаблона для создания процедуры</span></p>
+<p class="rvps10"><span class="rvts5">В появившемся окне необходимо выбрать первый вариант </span>–<span class="rvts5"> "Процедура" (рис. 3.40). </span></p>
+<p class="rvps14"><img 244="" 154="" alt="" style="padding : 1px;" src="03_data/img44.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.40. Выбор шаблона</span></p>
+<p class="rvps10"><span class="rvts5">Далее в появившемся окне укажем имя процедуры </span>–<span class="rvts5"> "РасчетСуммы" (рис. 3.41). </span></p>
+<p class="rvps14"><img 269="" 100="" alt="" style="padding : 1px;" src="03_data/img45.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.41. Установка имени процедуры</span></p>
+<p class="rvps9"><span class="rvts5">Задача расчета суммы сводится к 
+тому, что необходимо понимать, с какой текущей строкой на данный момент 
+идет работа. Именно в этой строке сумма будет рассчитываться как цена, 
+умноженная на количество. </span></p>
+<p class="rvps9"><span class="rvts5">Для того чтобы программно получать 
+текущие данные строки, в которой работает пользователь, запишем их в 
+отдельную переменную "ТекущаяСтрока". Определим ее как обращение через 
+коллекцию элементов </span>–<span class="rvts5"> "Элементы", далее 
+уточним, что работа идет с табличной частью "Товары", и укажем, что 
+необходимы "ТекущиеДанные" из этой таблицы. </span></p>
+<p><img 448="" 171="" alt="" style="padding : 1px;" src="03_data/img46.png"></p>
+<p class="rvps9"><span class="rvts5">Именно текущие данные обладают полным набором колонок, включая название товара, его количество, цену и сумму. </span></p>
+<p class="rvps9"><span class="rvts5">Работы выполняются именно со стороны элементов, так как необходимо понимать, с какой именно строкой работает пользователь. </span></p>
+<p class="rvps9"><span class="rvts5">Итоговый вариант процедуры будет выглядеть следующим образом: </span></p>
+<p><img 511="" 123="" alt="" style="padding : 1px;" src="03_data/img47.png"></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="03_data/img48.png"></p>
+</td>
+<td 553="" 102="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p><span class="rvts6">В
+ данном случае подсказка по сочетанию клавиш Ctrl + пробел 
+функционировать не будет, поскольку система не знает, какие колонки 
+будут в этой табличной части до исполнения программы.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps10"><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">После определения процедуры "РасчетСуммы" необходимо вызвать ее при изменении цены и количества:</span></p>
+<p><img 540="" 359="" alt="" style="padding : 1px;" src="03_data/img49.png"></p>
+<p class="rvps20"><span class="rvts5">Обновим конфигурацию базы данных и запустим режим пользователя. </span></p>
+<p class="rvps9"><span class="rvts5">В документе "Покупка товаров" 
+откроем созданный ранее документ и попробуем указать произвольные цену и
+ количество. Автоматический подсчет суммы работает (рис. 3.42).</span></p>
+<p class="rvps11"><img 502="" 296="" alt="" style="padding : 1px;" src="03_data/img50.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.42. Проверка работы алгоритма</span></p>
+<p class="rvps9"><span class="rvts5">Следующая задача заключается в том,
+ чтобы считывать актуальные цены на выбранный товар. Необходимо, чтобы 
+при выборе товара происходила автоматическая подстановка цены в 
+соответствующую колонку. </span></p>
+<p class="rvps9"><span class="rvts5">Обработчик события "ПриИзменении" 
+для колонки "Товар" уже существует. Осталось только прописать алгоритм 
+подстановки цены в соответствующую колонку. Однако на экране 
+пользователя при работе с документом цены товара нет, отображаются 
+только данные о названии товара. На самом деле название товара </span>–<span class="rvts5">
+ это не просто строка с названием. Это ссылка на запись об этом товаре в
+ справочнике "Товары". Благодаря ссылочному типу данных можно получить 
+информацию о цене товара из его карточки.&nbsp; </span></p>
+<p class="rvps9"><span class="rvts5">Если сейчас открыть карточку 
+товарной позиции по кнопке "Открыть", то будет запрашиваться информация 
+из базы данных, то есть будет совершен серверный вызов (рис. 3.43).</span></p>
+<p class="rvps11"><img 436="" 286="" alt="" style="padding : 1px;" src="03_data/img51.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.43. Просмотр данных о товаре</span></p>
+<p class="rvps9"><span class="rvts5">Следовательно, через сервер можно проанализировать саму запись в справочнике, узнать ее код, наименование, а также цену. </span></p>
+<p class="rvps13"><span class="rvts5">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<h2 class="rvps8"><a name="_Toc121319133"></a>
+<span class="rvts0"><span class="rvts9">Усложнение в логике игры. Получение цены товара </span></span></h2>
+<p class="rvps9"><span class="rvts5">Приступим к выполнению </span><span class="rvts4">третьей задачи</span><span class="rvts5">.
+ В этот раз нужно написать функцию, так как необходимо получать цену и 
+подставлять ее в табличную часть. Директива компиляции будет на сервере,
+ так как игрок не видит перед собой цену на товар и может получить ее</span><span class="rvts6">,</span><span class="rvts5"> только открыв карточку товара. Опишем новую серверную функцию в области служебных процедур и функций:</span></p>
+<p><img 659="" 276="" alt="" style="padding : 1px;" src="03_data/img52.png"></p>
+<p class="rvps9"><span class="rvts5">Далее необходимо вызвать данную 
+функцию со стороны клиента при изменении товара. Для этого потребуется 
+получить информацию о товаре, который меняется, а также после получения 
+цены рассчитать сумму:</span></p>
+<p><img 656="" 293="" alt="" style="padding : 1px;" src="03_data/img53.png"></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps21"><span class="rvts5">Итоговый вариант кода в модуле формы документ "Покупка товаров" будет выглядеть следующим образом:</span></p>
+<p><img 531="" 442="" alt="" style="padding : 1px;" src="03_data/img54.png"></p>
+<p class="rvps9"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим.</span></p>
+<p class="rvps9"><span class="rvts5">В документе "Покупка товаров" 
+попробуем изменить товар. Можно перевыбрать тот же самый товар, событие 
+"ПриИзменении" сработает в любом случае. Изменим "Мятный шарик" на 
+"Мятный шарик" (рис. 3.44). </span></p>
+<p class="rvps11"><img 492="" 324="" alt="" style="padding : 1px;" src="03_data/img55.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.44. Изменение товара в документе "Покупка товаров"</span></p>
+<p class="rvps9"><span class="rvts5">В результате в колонку "Цена" 
+подставилась актуальная цена на товар и посчиталась сумма. Повторим то 
+же самое действие для товара "Сухой корм" (рис. 3.45). </span></p>
+<p class="rvps11"><img 436="" 293="" alt="" style="padding : 1px;" src="03_data/img56.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.45. Изменение второго товара в документе "Покупка товаров"</span></p>
+<p class="rvps9"><span class="rvts5">Однако итоговая сумма сейчас не рассчитывается, даже если нажать кнопку "Запланировать покупку" или "Купить". </span></p>
+<p class="rvps9"><span class="rvts5">Для того чтобы "Итоговая сумма" рассчитывалась автоматически, необходимо поработать с другим модулем </span>–<span class="rvts5"> модулем объекта. </span></p>
+<p class="rvps9"><span class="rvts5">Документы могут формироваться программно, и в таких ситуациях табличная часть не видна</span><span class="rvts6">,</span><span class="rvts5">
+ и нет возможности интерактивно (вводя данные в колонки) рассчитывать 
+сумму, но итоговая сумма должна быть рассчитана в любом случае. </span></p>
+<p class="rvps9"><span class="rvts5">Сохраним все внесенные изменения с 
+помощью кнопки "Запланировать покупку", закроем пользовательский режим и
+ перейдем в конфигуратор. </span></p>
+<p class="rvps10"><span class="rvts5">Закроем окно с формой документа и перейдем к окну редактирования документа "Покупка товаров". </span></p>
+<p class="rvps10"><span class="rvts5">Перейдем на вкладку "Прочее" и нажмем на кнопку "Модуль объекта" (рис. 3.46). </span></p>
+<p class="rvps11"><img 253="" 266="" alt="" style="padding : 1px;" src="03_data/img57.png"></p>
+<p class="rvps16"><span class="rvts10">Рис. 3.46. Переход в модуль объекта</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 38="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 38="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts4">Модуль объекта</span><span class="rvts5"> описывает логику поведения отдельно взятого документа. </span><span class="rvts6">Алгоритмы,
+ которые в нем описаны, срабатывают как при программном взаимодействии с
+ документом, так и при нажатии на кнопки в пользовательском режиме.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><span class="rvts5">В данной ситуации необходимо рассчитывать общий итог для документа</span><span class="rvts6">,</span><span class="rvts5"> если он проводится, то есть событие происходит, и в случае, если событие лишь планируется, то есть если документ записывается</span><span class="rvts6">.</span></p>
+<p class="rvps9"><span class="rvts5">И той и другой цели удовлетворяет 
+обработчик "ПередЗаписью". Для того чтобы создать обработчик для этого 
+события, можно обратиться к кнопке "Процедуры и функции", либо 
+воспользоваться сочетанием клавиш Ctrl + Alt + P (рис. 3.47).</span></p>
+<p class="rvps11"><img 348="" 157="" alt="" style="padding : 1px;" src="03_data/img58.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.47. Вызов списка процедур и функций модуля</span></p>
+<p><span class="rvts5">В появившемся окне выберем вариант "ПередЗаписью" (рис. 3.48).</span></p>
+<p class="rvps12"><img 356="" 206="" alt="" style="padding : 1px;" src="03_data/img59.png"><span class="rvts10"> </span></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.48. Выбор процедуры</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 84="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 68="" alt="" style="padding : 1px;" src="03_data/img60.png"></p>
+</td>
+<td 553="" 84="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p><span class="rvts6">Обработчик </span><span class="rvts12">"ПередЗаписью"</span><span class="rvts6"> используется в тех случаях, когда необходимо дозаполнить данные перед тем, как они попадут в систему.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><span class="rvts5">Процедура в модуле объекта документа "Покупка товаров" будет выглядеть следующим образом: </span></p>
+<p><img 593="" 63="" alt="" style="padding : 1px;" src="03_data/img61.png"></p>
+<p class="rvps9"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим.</span></p>
+<p class="rvps10"><span class="rvts5">Попробуем провести документ из 
+формы списка. Для этого необходимо нажать по документу правой кнопкой 
+мыши и в списке выбрать "Провести" (рис. 3.49). </span></p>
+<p class="rvps14"><img 341="" 229="" alt="" style="padding : 1px;" src="03_data/img62.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.49. Проведение документа из формы списка</span></p>
+<p><span class="rvts6"><br></span></p>
+<p><span class="rvts5">В результате сумма по документу изменится (рис. 3.50).</span></p>
+<p class="rvps11"><img 414="" 50="" alt="" style="padding : 1px;" src="03_data/img63.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.50. Изменение итоговой суммы в документе</span></p>
+<p class="rvps13"><span class="rvts5">Закроем режим пользователя и перейдем в конфигуратор. </span></p>
+<h2 class="rvps22"><a name="_Toc121319134"></a>
+<span class="rvts0"><span class="rvts13">Настройка прикладного решения. Документ "Заказ клиента"</span></span></h2>
+<p class="rvps10"><span class="rvts5">Последняя, </span><span class="rvts4">четвертая задача</span><span class="rvts5">, которую необходимо выполнить, </span>–<span class="rvts5"> это создание документа "Заказ клиента". Товары на продажу уже закуплены, теперь необходимо продать их покупателям. </span></p>
+<p class="rvps10"><span class="rvts5">Добавим новый документ, нажав по ветке "Документы" правой кнопкой мыши и выбрав "Добавить". Имя документа </span>–<span class="rvts5"> "Заказ клиента" (рис. 3.51).</span></p>
+<p class="rvps14"><img 349="" 333="" alt="" style="padding : 1px;" src="03_data/img64.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.51. Добавление документа "Заказ клиента" </span></p>
+<p class="rvps9"><span class="rvts5">Структура документа будет 
+следующая: одномоментно клиент будет приходить с желанием купить один 
+товар, следовательно, в данном случае табличная часть не потребуется. </span></p>
+<p class="rvps9"><span class="rvts5">Процесс создания нового документа можно упростить, перенося реквизиты из уже созданного документа в структуру нового. </span></p>
+<p class="rvps9"><span class="rvts5">В документе должны содержаться 
+реквизиты: товар, цена, количество и итоговая сумма. Перенесем все эти 
+реквизиты из уже созданного документа "Покупка товара" (рис. 3.52).</span></p>
+<p class="rvps11"><img 505="" 345="" alt="" style="padding : 1px;" src="03_data/img65.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.52. Добавление реквизитов переносом</span></p>
+<p><span class="rvts6"><br></span></p>
+<p><span class="rvts5">С помощью стрелок навигации перенесем реквизит "Итоговая сумма" в самый низ (рис. 3.53).</span></p>
+<p class="rvps14"><img 301="" 311="" alt="" style="padding : 1px;" src="03_data/img66.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.53. Изменение порядка реквизитов</span></p>
+<p class="rvps9"><span class="rvts5">Поскольку в данном документе нет 
+табличной части, подсчет итоговой суммы будет происходить как умножение 
+значений реквизитов "цена" и "количество". </span></p>
+<p class="rvps9"><span class="rvts5">Определим алгоритм расчета суммы в 
+модуле объекта. Для того чтобы к нему перейти, выберем ветку "Прочее" и 
+нажмем на кнопку "Модуль объекта" (рис. 3.54).</span></p>
+<p class="rvps14"><img 252="" 266="" alt="" style="padding : 1px;" src="03_data/img67.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.54. Переход в модуль объекта</span></p>
+<p class="rvps10"><span class="rvts5">Итоговая сумма заказа покупателя 
+должна рассчитываться и при записи документа, и при проведении. Опишем 
+алгоритм расчета в обработчике события "ПередЗаписью". </span></p>
+<p><img 563="" 72="" alt="" style="padding : 1px;" src="03_data/img68.png"></p>
+<p class="rvps9"><span class="rvts5">Последнее, что остается сделать, </span>–<span class="rvts5">
+ это настроить форму документа. Для этого закроем модуль объекта и 
+перейдем на вкладку "Формы" окна редактирования документа, далее добавим
+ новую форму с помощью лупы (рис. 3.55). </span></p>
+<p class="rvps11"><img 287="" 296="" alt="" style="padding : 1px;" src="03_data/img69.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.55. Создание формы документа</span></p>
+<p><span class="rvts5">В открывшемся окне нажимаем на кнопку "Готово", чтобы перейти к редактированию формы (рис. 3.56). </span></p>
+<p class="rvps14"><img 301="" 281="" alt="" style="padding : 1px;" src="03_data/img70.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.56. Работа с конструктором формы</span></p>
+<p class="rvps10"><span class="rvts5">Для начала переопределим набор команд в командной панели, отключив автозаполнение (рис. 3.57). </span></p>
+<p class="rvps14"><img 537="" 148="" alt="" style="padding : 1px;" src="03_data/img71.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.57. Отключение автозаполнения командной панели</span></p>
+<p class="rvps10"><span class="rvts5">Далее добавим команду "Провести и закрыть" из раздела стандартных команд формы (рис. 3.58). </span></p>
+<p class="rvps14"><img 454="" 126="" alt="" style="padding : 1px;" src="03_data/img72.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.58. Перенос команды на форму</span></p>
+<p class="rvps9"><span class="rvts5">Изменим имя новой кнопки, чтобы пользователь точно понимал, для чего она предназначена.&nbsp; Имя кнопки </span>–<span class="rvts5"> "ОформитьЗаказ", заголовок </span>–<span class="rvts5">
+ "Оформить заказ", также выделим команду для пользователя желтым цветом,
+ установив галочку в свойстве "КнопкаПоУмолчанию" (рис. 3.59).</span></p>
+<p class="rvps11"><img 427="" 152="" alt="" style="padding : 1px;" src="03_data/img73.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.59. Настройка кнопки "Провести и закрыть" </span></p>
+<p class="rvps20"><span class="rvts5">Далее определим шапку документа. 
+Создадим новую группу, нажав правой кнопкой мыши по элементу "Номер" и 
+выбрав "Добавить" (рис. 3.60).</span></p>
+<p class="rvps11"><img 360="" 166="" alt="" style="padding : 1px;" src="03_data/img74.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.60. Добавление новой группы</span></p>
+<p><span class="rvts5">В появившемся окне выберем вариант "Группа </span>–<span class="rvts5"> Обычная группа без отображения" (рис. 3.61). </span></p>
+<p class="rvps14"><img 246="" 202="" alt="" style="padding : 1px;" src="03_data/img75.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.61. Выбор типа элемента формы </span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Имя новой группы определим как "Шапка" (рис. 3.62).</span></p>
+<p class="rvps11"><img 565="" 151="" alt="" style="padding : 1px;" src="03_data/img76.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.62. Изменение имени группы</span></p>
+<p class="rvps10"><span class="rvts5">В группу "Шапка" добавим два поля </span>–<span class="rvts5"> "Номер" и "Дата" (рис. 3.63).</span></p>
+<p class="rvps11"><img 187="" alt="" style="padding : 1px;" src="03_data/img77.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.63. Перенос элементов в группу</span></p>
+<p class="rvps9"><span class="rvts5">Также изменим заголовки для этих элементов. Для элемента "Номер" укажем заголовок "Заказ№" (рис. 3.64), а для элемента "Дата" </span>–<span class="rvts5"> "От" (рис. 3.65).</span></p>
+<p class="rvps11"><img 590="" 164="" alt="" style="padding : 1px;" src="03_data/img78.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.64. Изменение заголовка элемента "Номер" </span></p>
+<p class="rvps11"><img 581="" 155="" alt="" style="padding : 1px;" src="03_data/img79.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.65. Изменение заголовка элемента "Дата" </span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Далее определим еще одну группу, 
+которая будет посвящена цене и количеству. Для добавления новой группы 
+необходимо нажать правой кнопкой мыши по элементу "Цена" и в появившемся
+ списке выбрать "Добавить" (рис. 3.66).</span></p>
+<p class="rvps11"><img 362="" 168="" alt="" style="padding : 1px;" src="03_data/img80.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.66. Добавление новой группы на форму</span></p>
+<p class="rvps10"><span class="rvts5">В появившемся окне выберем вариант "Группа </span>–<span class="rvts5"> Обычная группа без отображения" (рис. 3.67). </span></p>
+<p class="rvps11"><img 203="" 166="" alt="" style="padding : 1px;" src="03_data/img81.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.67. Выбор типа элемента формы </span></p>
+<p class="rvps9"><span class="rvts5">У созданной группы необходимо изменить имя и заголовок. Имя группы </span>–<span class="rvts5"> "ДанныеПокупки", заголовок </span>–<span class="rvts5"> "Данные покупки" (рис. 3.68).</span></p>
+<p class="rvps23"><img 582="" 162="" alt="" style="padding : 1px;" src="03_data/img82.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.68. Изменение имени группы</span></p>
+<p><span class="rvts5">Определим в данную группу элементы "Цена" и "Количество" (рис. 3.69).</span></p>
+<p><span class="rvts6"><br></span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps14"><img 151="" 152="" alt="" style="padding : 1px;" src="03_data/img83.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.69. Перенос элементов в группу</span></p>
+<p><span class="rvts6"><br></span></p>
+<p class="rvps10"><span class="rvts5">Далее необходимо определить тип группировки для обеих групп </span>–<span class="rvts5"> "Горизонтальная всегда". Обе группы можно выбрать одновременно, зажав клавишу Ctrl (рис. 3.70).</span></p>
+<p class="rvps11"><img 519="" 288="" alt="" style="padding : 1px;" src="03_data/img84.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.70. Настройка типа группировки для групп</span></p>
+<p class="rvps9"><span class="rvts5">В результате мы создали еще один документ. Он должен формироваться и заполняться автоматически, а значит</span><span class="rvts6">,</span><span class="rvts5"> программировать форму в данном случае уже не требуется. </span></p>
+<p class="rvps9"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим.</span></p>
+<p class="rvps9"><span class="rvts5">Создадим новый документ "Заказ 
+клиента". В дальнейшем они будут формироваться автоматически, но для 
+проверки функционала создадим такой документ вручную (рис. 3.71).</span></p>
+<p class="rvps14"><img 363="" 168="" alt="" style="padding : 1px;" src="03_data/img85.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.71. Ручное создание документа "Заказ клиента" </span></p>
+<p class="rvps9"><span class="rvts5">Сейчас цена на товар была указана 
+вручную, но в дальнейшем она будет браться из карточки конкретного 
+товара, а также к ней будет прибавляться наценка, чтобы магазин мог 
+зарабатывать. </span></p>
+<p class="rvps10"><span class="rvts5">По нажатию на кнопку "Оформить заказ" итоговая сумма рассчитывается автоматически (рис. 3.72).</span></p>
+<p class="rvps14"><img 402="" 131="" alt="" style="padding : 1px;" src="03_data/img86.png"></p>
+<p class="rvps12"><span class="rvts10">Рис. 3.72. Проверка автоматического подсчета суммы</span></p>
+<p><span class="rvts12"><br></span></p>
+<p class="rvps14"><span class="rvts14">На этом третье занятие окончено!</span></p>
+<p class="rvps9"><span class="rvts4">В рамках этого занятия </span><span class="rvts5">мы
+ создали документы, которые позволят фиксировать покупку товара для 
+продажи, а также заказы клиентов. В дальнейшем с помощью этих документов
+ мы сможем реализовать контроль остатков товаров на складе магазина.</span><span class="rvts4"> </span></p>
+<p class="rvps9"><span class="rvts4">На следующем занятии</span><span class="rvts5"> начнется реализация автоматического поступления заказов от покупателей. </span></p>
+<p><span class="rvts12"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts3">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><img 164="" alt="" style="padding : 1px;" src="03_data/img87.png"></p>
+</td>
+<td 469="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts4">Документ</span><span class="rvts5"> </span>–<span class="rvts5">
+ это объект конфигурации, позволяющий хранить информацию о событиях, 
+произошедших в организации, например, покупка или продажа товара.</span></p>
+<p class="rvps9"><span class="rvts4">Документ отличается от справочника</span><span class="rvts5"> тем, что он может проводиться. В рамках документа </span><span class="rvts4">"Запись"</span><span class="rvts5"> </span>–<span class="rvts5"> это планирование события, например, планирование покупки товара через пару дней. </span><span class="rvts4">"Проведение"</span><span class="rvts5"> </span>–<span class="rvts5"> это фиксация того, что событие реально произошло.</span></p>
+<p class="rvps9"><span class="rvts4">Табличная часть</span><span class="rvts5">
+ предназначена для хранения информации, структура которой одинакова, но 
+количество такой информации заранее неизвестно и может отличаться у 
+каждого документа.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 5="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts8"><br></span></p>
+</td>
+<td 469="" 5="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts4">Модуль объекта</span><span class="rvts5"> описывает логику поведения отдельно взятого документа. </span><span class="rvts6">Алгоритмы,
+ которые в нем описаны, срабатывают как при программном взаимодействии с
+ документом, так и при нажатии на кнопки в пользовательском режиме.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts6"><br></span></p>
+<h2 class="rvps24"><a name="_Toc121319135"></a>
+<span class="rvts0"><span class="rvts13">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps26"><span class="rvts7">Какой объект конфигурации позволяет хранить данные о событиях в жизни фирмы/предприятия? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps26"><span class="rvts7">В
+ каком модуле нужно писать код, чтобы он срабатывал и при программной 
+записи документа, и при интерактивной (в пользовательском режиме)? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps26"><span class="rvts7">Чем отличается группа "обычная группа" от группы "без отображения"? </span></li>
+<li value="4" style="margin-left: 0px" class="rvps26"><span class="rvts7">Для чего нужна табличная часть? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts6"><br></span></p>
+<p><span class="rvts6"><br></span></p>
+
+</body></html>

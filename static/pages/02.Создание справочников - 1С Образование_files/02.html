@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>02</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts4
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts5
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+ font-weight: bold;
+}
+span.rvts10
+{
+}
+span.rvts11
+{
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts15
+{
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps11
+{
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps12
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 16px 0px;
+}
+.rvps15
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps16
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 8px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps20
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps21
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps22
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319126"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 2. </span></span><span class="rvts0"><span class="rvts1">Создание</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">справочников</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема этого занятия </span><span class="rvts4">–</span><span class="rvts5">
+ реализация учета товаров в системе. Учет товаров нужен для того, чтобы 
+игрок смог покупать и продавать товары, чтобы получать прибыль. Товары 
+для покупки и на продажу будут одни и те же. Например, игрок купил 
+мятный шарик для кошек за 100 рублей, а продал с небольшой наценкой, 
+чтобы заработать. </span></p>
+<p class="rvps2"><span class="rvts5">В рамках этого занятия мы выполним 2 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts6">Создадим справочник для хранения списка товаров.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts6">Создадим справочник, в котором будет содержаться информация о видах товаров.</span></li>
+</ol>
+<p class="rvps4"><span class="rvts6"><br></span></p>
+<h2 class="rvps5"><a name="_Toc121319127"></a>
+<span class="rvts0"><span class="rvts7">Настройка прикладного решения. Хранение данных о товарах</span></span></h2>
+<p class="rvps6"><span class="rvts5">Необходимо выбрать механизм, который позволит хранить список товаров. Данный механизм мы изучили на прошлом занятии </span><span class="rvts8">–</span><span class="rvts5"> это "справочник". </span></p>
+<p class="rvps2"><span class="rvts5">Добавим новый справочник, нажав правой кнопкой мыши по ветке "Справочники" и выбрав "Добавить". Имя справочника </span><span class="rvts8">–</span><span class="rvts5"> "Товары" (рис. 2.1). </span></p>
+<p class="rvps7"><img 420="" 293="" alt="" style="padding : 1px;" src="02_data/img1.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.1. Добавление справочника "Товары"</span></p>
+<p class="rvps9"><span class="rvts5">Для каждого товара необходимо указывать цену. Добавим новый реквизит на вкладке "Данные". Имя </span><span class="rvts8">–</span><span class="rvts5"> "Цена", тип </span><span class="rvts8">–</span><span class="rvts5"> "число", длина </span><span class="rvts8">–</span><span class="rvts5"> 10, неотрицательное (рис. 2.2).</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps10"><img 398="" 242="" alt="" style="padding : 1px;" src="02_data/img2.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.2. Добавление реквизита "Цена"</span></p>
+<p class="rvps9"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим, чтобы поработать с данным справочником. </span></p>
+<p class="rvps9"><span class="rvts5"><br></span></p>
+<p class="rvps9"><span class="rvts5">Отроем справочник "Товары" и создадим несколько позиций. Например, "мятный шарик" по цене 150 (рис. 2.3). </span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps10"><img 286="" 213="" alt="" style="padding : 1px;" src="02_data/img3.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.3. Добавление нового товара</span></p>
+<p><span class="rvts5"><br></span></p>
+<p><span class="rvts5">Добавим еще одну товарную позицию, например, "Сухой корм для собак" (рис. 2.4). </span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps10"><img 226="" 108="" alt="" style="padding : 1px;" src="02_data/img4.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.4. Добавление нового товара</span></p>
+<p class="rvps9"><span class="rvts5">В данный момент для полного 
+названия корма не хватило места. Это связано с тем, что стандартная 
+длина наименования ограничена (25 символов). Если этой длины 
+недостаточно, необходимо произвести соответствующие настройки.</span></p>
+<p class="rvps6"><span class="rvts5">Закроем режим пользователя и перейдем в конфигуратор. </span></p>
+<p class="rvps9"><span class="rvts5">Увеличить длину реквизита 
+"Наименование" до 150 символов можно на вкладке "Данные" окна 
+редактирования справочника "Товары" (рис. 2.5). </span></p>
+<p class="rvps10"><img 238="" 253="" alt="" style="padding : 1px;" src="02_data/img5.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.5. Изменение длины реквизита "Наименование"</span></p>
+<p class="rvps2"><span class="rvts5">После изменения длины реквизита необходимо подтвердить ввод нового значения, чтобы появилась иконка с синим бочонком </span><span class="rvts8">–</span><span class="rvts5"> обновление конфигурации базы данных. Подтвердить ввод можно, например, нажав на клавишу Enter. </span></p>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts5">В справочнике "Товары" допишем наименование товара и цену (рис. 2.6) и сохраним. </span></p>
+<p class="rvps10"><img 293="" 102="" alt="" style="padding : 1px;" src="02_data/img6.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.6. Изменение данных товара</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps11"><span class="rvts5">Однако товары могут быть не только для продажи, но и для внутреннего потребления: ручки, карандаши, бумага и тому подобное. </span></p>
+<p class="rvps11"><span class="rvts5">Необходимо отделить товары для продажи от товаров для фирмы. </span></p>
+<p class="rvps11"><span class="rvts5">Создадим новый товар для внутреннего использования. Наименование </span><span class="rvts8">–</span><span class="rvts5"> "Бумага", цена </span><span class="rvts8">–</span><span class="rvts5"> 50 (рис. 2.7).</span></p>
+<p class="rvps10"><img 282="" 99="" alt="" style="padding : 1px;" src="02_data/img7.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.7. Добавление нового товара</span></p>
+<p class="rvps2"><span class="rvts5">Для того чтобы разделить данные, потребуется добавить еще одну колонку </span><span class="rvts8">–</span><span class="rvts5"> "Вид товара". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 81="" 39="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps12"><span class="rvts10"><br></span></p>
+</td>
+<td 533="" 39="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps13"><span class="rvts11">Видов товаров</span><span class="rvts10">
+ может быть огромное множество, например, товары для фирмы, лакомства, 
+корма и т. д. Также количество видов товаров может быть расширено по 
+желанию игрока. Возможно, он захочет продавать еще и мягкие игрушки.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps14"><span class="rvts5">Следовательно, для хранения видов товаров потребуется создать справочник. </span></p>
+<h2 class="rvps15"><a name="_Toc121319128"></a>
+<span class="rvts0"><span class="rvts7">Настройка прикладного решения. Хранение видов товаров</span></span></h2>
+<p class="rvps2"><span class="rvts5">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим новый справочник с именем "ВидыТоваров" (рис. 2.8).</span></p>
+<p class="rvps10"><img 298="" 313="" alt="" style="padding : 1px;" src="02_data/img8.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.8. Добавление нового справочника</span></p>
+<p class="rvps11"><span class="rvts5">На вкладке "Данные" укажем максимальную длину наименования </span><span class="rvts8">–</span><span class="rvts5"> 150 символов (рис. 2.9).</span></p>
+<p class="rvps10"><img 297="" 312="" alt="" style="padding : 1px;" src="02_data/img9.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.9. Изменение длины наименования</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps11"><span class="rvts5">Чтобы в дальнейшем было удобнее 
+выделять товары внутреннего потребления, необходимо создать 
+предопределенный элемент справочника. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps12"><span class="rvts10"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts3">Предопределенные элементы</span><span class="rvts5">
+ создаются в режиме "Конфигуратор" и обладают уникальным именем, которое
+ в дальнейшем можно использовать при программировании. С его помощью 
+можно будет однозначно определить, какие товары не требуется учитывать 
+для получения дохода. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Чтобы создать предопределенный элемент, нужно перейти на вкладку "Прочее" и нажать на кнопку "Предопределенные" (рис. 2.10). </span></p>
+<p class="rvps7"><img 228="" 243="" alt="" style="padding : 1px;" src="02_data/img10.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.10. Вкладка "Прочее" справочника</span></p>
+<p class="rvps2"><span class="rvts5">В разделе предопределенных создадим новый предопределенный элемент по кнопке "Добавить" (рис. 2.11).</span></p>
+<p class="rvps10"><img 285="" 145="" alt="" style="padding : 1px;" src="02_data/img11.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.11. Добавление предопределенного элемента</span></p>
+<p class="rvps9"><span class="rvts5">Для создаваемого элемента необходимо указать имя </span><span class="rvts8">–</span><span class="rvts5">
+ это системный идентификатор, который останется в конфигураторе. Он 
+должен быть указан по правилам именования: слитное написание слов, 
+нельзя указывать цифры в начале. Код и наименование </span><span class="rvts8">–</span><span class="rvts5"> это то, что увидит игрок в пользовательском режиме. </span></p>
+<p class="rvps9"><span class="rvts5">Имя нового предопределенного элемента </span><span class="rvts8">–</span><span class="rvts5">
+ "ТоварыВнутреннегоИспользования", наименование заполнится автоматически
+ после нажатия на клавишу Enter. После заполнения полей "Имя" и 
+"Наименование" нажмем на кнопку "Ок" (рис. 2.12).</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps10"><img 260="" 109="" alt="" style="padding : 1px;" src="02_data/img12.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.12. Создание предопределенного элемента</span></p>
+<p><span class="rvts5"><br></span></p>
+<p class="rvps2"><span class="rvts5">Следующее, что необходимо сделать, </span><span class="rvts8">–</span><span class="rvts5"> это добавить реквизит "Вид товара" в справочник "Товары". </span></p>
+<p class="rvps2"><span class="rvts5">Закроем окно редактирования справочника "Виды товаров" и вернемся к справочнику "Товары". </span></p>
+<p class="rvps2"><span class="rvts5">На вкладке "Данные" необходимо добавить новый реквизит. Имя реквизита </span><span class="rvts8">–</span><span class="rvts5"> "ВидТовара", тип </span><span class="rvts8">–</span><span class="rvts5"> "СправочникСсылка.ВидыТоваров" (рис. 2.13).</span></p>
+<p class="rvps10"><img 305="" 233="" alt="" style="padding : 1px;" src="02_data/img13.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.13. Добавление нового реквизита "ВидТовара" в справочник "Товары"</span></p>
+<p class="rvps6"><span class="rvts5">Обновим конфигурацию базы данных и перейдем в пользовательский режим. </span></p>
+<p class="rvps6"><span class="rvts5">В пользовательском режиме 
+необходимо заполнить справочник "Виды товаров". Здесь уже есть созданный
+ ранее предопределенный элемент "Товары внутреннего использования". Он 
+отличается от остальных элементов пометкой в виде желтого шарика. </span></p>
+<p class="rvps6"><span class="rvts5">Создадим несколько видов товаров, например, "Корм" и "Лакомство" (рис. 2.14). </span></p>
+<p class="rvps16"><img 314="" 123="" alt="" style="padding : 1px;" src="02_data/img14.png"></p>
+<p class="rvps8"><span class="rvts9">Рис. 2.14. Заполнение справочника "Виды товаров" </span></p>
+<p class="rvps6"><span class="rvts5">Далее необходимо перейти в справочник "Товары" и указать виды товаров у созданных товарных позиций. </span></p>
+<p class="rvps6"><span class="rvts5">Откроем карточку элемента "Бумага" и укажем, что это </span><span class="rvts8">–</span><span class="rvts5">
+ товар внутреннего использования. С помощью кнопки "Показать все" можно 
+развернуть весь список доступных видов товаров и выбрать "Товары 
+внутреннего использования" (рис. 2.15 </span><span class="rvts8">–</span><span class="rvts5"> 2.16). После выбора вида товара необходимо записать информацию с помощью кнопки "Записать и закрыть" (рис. 2.17).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps16"><img 233="" 157="" alt="" style="padding : 1px;" src="02_data/img15.png"></p>
+</td>
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 174="" 191="" alt="" style="padding : 1px;" src="02_data/img16.png"></p>
+</td>
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 197="" 81="" alt="" style="padding : 1px;" src="02_data/img17.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts9">Рис. 2.15. Работа с карточкой товара "Бумага"</span></p>
+<p class="rvps16"><span class="rvts3"><br></span></p>
+</td>
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts9">Рис. 2.16. Выбор вида товара</span></p>
+<p class="rvps11"><span class="rvts3"><br></span></p>
+</td>
+<td 206="" valign="middle" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts9">Рис. 2.17. Сохранение информации в базе</span></p>
+<p class="rvps11"><span class="rvts3"><br></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps9"><span class="rvts5">Укажем вид товара для мятного 
+шарика. Найти нужный вид товара можно не только через "Показать все", но
+ и с помощью ввода по строке. В поле "Вид товара" начнем вводить слово 
+"лакомство", в выпадающем списке выберем нужный элемент (рис. 2.18). 
+Сохраним внесенные изменения. Аналогично поступим с товаром "Сухой 
+корм". С помощью поиска найдем вид товара "Корм" и сохраним внесенные 
+изменения (рис. 2.19). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 319="" 177="" alt="" style="padding : 1px;" src="02_data/img18.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><img 321="" 179="" alt="" style="padding : 1px;" src="02_data/img19.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts9">Рис. 2.18. Ввод по строке</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps17"><span class="rvts9">Рис. 2.19. Внесение изменений в карточку товара "Сухой корм"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps17"><span class="rvts12">На этом второе занятие окончено!</span></p>
+<p class="rvps6"><span class="rvts3">На этом занятии</span><span class="rvts5">
+ мы добавили два новых справочника в информационную систему: первый 
+позволяет указывать товары и их цены, а другой отвечает за разнообразие 
+видов товаров. Один справочник связан с другим, поэтому для каждого 
+товара можно указывать любой из видов, который определяется в 
+соответствующем справочнике. </span></p>
+<p class="rvps18"><span class="rvts3">На следующем занятии</span><span class="rvts5"> мы создадим объекты, которые будут фиксировать данные о покупке товаров игроком, а также о заказах покупателей. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 40="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts13">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 164="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 104="" alt="" style="padding : 1px;" src="02_data/img20.png"></p>
+</td>
+<td 469="" 70="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts3">Предопределенные элементы</span><span class="rvts5">
+ создаются в режиме "Конфигуратор" и обладают уникальным именем, которое
+ в дальнейшем можно использовать при программировании. С его помощью 
+можно будет однозначно определить, какие товары не требуется учитывать 
+для получения дохода. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts13"><br></span></p>
+<h2 class="rvps20"><a name="_Toc121319129"></a>
+<span class="rvts0"><span class="rvts14">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts15">С помощью каких реквизитов можно осуществлять ввод по строке? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts15">Где создаются предопределенные элементы? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps22"><span class="rvts15">Какая максимальная длина у стандартного реквизита "Наименование"? </span></li>
+<li value="4" style="margin-left: 0px" class="rvps22"><span class="rvts15">Какой
+ объект конфигурации подходит для хранения большого списка данных, 
+имеющих одинаковую структуру, например, списка уроков в школе? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts2"><br></span></p>
+<p><span class="rvts5"><br></span></p>
+
+</body></html>

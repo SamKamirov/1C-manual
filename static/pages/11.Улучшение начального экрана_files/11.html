@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts7
+{
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+}
+span.rvts10
+{
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 8px 0px;
+}
+.rvps12
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps14
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps15
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps18
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps19
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps21
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319173"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 11. <br><br> </span></span><br><span class="rvts0"><span class="rvts1">Улучшение</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">начального</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">экрана</span></span><span class="rvts0"><span class="rvts2"> </span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> реализация механизма, благодаря которому на начальном экране будут выводиться актуальные для игрока апгрейды. </span></p>
+<p class="rvps2"><span class="rvts4">На этом занятии мы выполним 2 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Подготовим форму начального экрана к отображению на ней картинок. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps6"><span class="rvts5">Опишем алгоритм получения информации о последних купленных игроком апгрейдах.</span></li>
+</ol>
+<h2 class="rvps7"><a name="_Toc121319174"></a>
+<span class="rvts0"><span class="rvts6">Настройка прикладного решения. Подготовка формы начальной страницы</span></span></h2>
+<p class="rvps2"><span class="rvts4">Для реализации </span><span class="rvts3">первой задачи</span><span class="rvts4"> потребуется внести изменения в общую форму "НачальнаяСтраница". </span></p>
+<p class="rvps2"><span class="rvts4">Откроем ветку "Общие" и развернем 
+"Общие формы". Двойным нажатием левой кнопки мыши по "НачальнаяСтраница"
+ откроем общую форму (рис. 11.1).</span></p>
+<p class="rvps8"><img 165="" 289="" alt="" style="padding : 1px;" src="11_data/img1.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.1. Переход в форму "НачальнаяСтраница"</span></p>
+<p class="rvps2"><span class="rvts4">На текущий момент начальная 
+страница состоит из названия магазина, кнопок "Открыть магазин" и 
+"Закрыть магазин", а также списка актуальных заказов. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим разделение по функционалу 
+на форму с помощью нескольких групп. Первая группа будет разделять 
+функционал на апгрейды и пункт управления. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим новую группу, нажав на "Форма" правой кнопкой мыши и выбрав "Добавить". В окне выбора типа элемента укажем "Группа </span>–<span class="rvts4"> Обычная группа без отображения" (рис. 11.2). </span></p>
+<p class="rvps8"><img 298="" 144="" alt="" style="padding : 1px;" src="11_data/img2.png"></p>
+<p class="rvps9"><span class="rvts7">Рис.11.2. Добавление группы на форму</span></p>
+<p class="rvps2"><span class="rvts4">В палитре свойств элемента "Группа1" изменим имя группы на "Основное", а также укажем вид группировки </span>–<span class="rvts4"> "Горизонтальная всегда" (рис. 11.3). </span></p>
+<p class="rvps8"><img 408="" 138="" alt="" style="padding : 1px;" src="11_data/img3.png"></p>
+<p class="rvps9"><span class="rvts7">Рис.11.3. Настройка группы "Основное"</span></p>
+<p class="rvps2"><span class="rvts4">Следующее, что необходимо сделать, </span>–<span class="rvts4"> это добавить в группу "Основное" группы "Текущие апгрейды" и "Панель управления". </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы добавить новую 
+группу сразу внутри "Основное", необходимо сфокусироваться на ней и 
+нажать на кнопку "Добавить". Данная группа должна быть с заголовком </span>–<span class="rvts4"> "Группа </span>–<span class="rvts4"> Обычная группа" (рис. 11.4).</span></p>
+<p class="rvps8"><img 238="" 137="" alt="" style="padding : 1px;" src="11_data/img4.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.4. Добавление первой группы с отображением </span></p>
+<p class="rvps2"><span class="rvts4">Имя группы </span>–<span class="rvts4"> "ТекущиеАпгрейды" (рис. 11.5). </span></p>
+<p class="rvps8"><img 564="" 124="" alt="" style="padding : 1px;" src="11_data/img5.png"></p>
+<p class="rvps9"><span class="rvts7">Рис.11.5. Настройка группы "Текущие апгрейды"</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Вторая группа также должна располагаться в группе "Основное" и отображаться с заголовком (рис. 11.6). </span></p>
+<p class="rvps8"><img 266="" 120="" alt="" style="padding : 1px;" src="11_data/img6.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.6. Добавление второй группы с отображением </span></p>
+<p class="rvps2"><span class="rvts4">Имя группы </span>–<span class="rvts4"> "ПунктУправления" (рис. 11.7). </span></p>
+<p class="rvps8"><img 411="" 108="" alt="" style="padding : 1px;" src="11_data/img7.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.7. Настройка группы "Пункт управления"</span></p>
+<p class="rvps2"><span class="rvts4">Созданные группы будут располагаться горизонтально внутри группы "Основное": слева </span>–<span class="rvts4">"Текущие апгрейды", справа </span>–<span class="rvts4">
+ "Пункт управления". "Текущие апгрейды" и "Пункт управления" будут 
+вертикальными группами. В палитре свойств у каждой группы укажем в 
+свойстве "Группировка" </span>–<span class="rvts4"> "Вертикальная" (рис. 11.8).</span></p>
+<p class="rvps8"><img 403="" 133="" alt="" style="padding : 1px;" src="11_data/img8.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.8. Изменение группировки</span></p>
+<p class="rvps2"><span class="rvts4">Далее необходимо добавить в группу 
+"ПунктУправления" еще одну группу, в которой будут располагаться команды
+ формы. Для данной группы заголовок выводить уже не требуется (рис. 
+11.9). </span></p>
+<p class="rvps8"><img 247="" 144="" alt="" style="padding : 1px;" src="11_data/img9.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.9. Добавление новой группы без заголовка</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Имя группы </span>–<span class="rvts4"> "КомандыФормы" (рис. 11.10). </span></p>
+<p class="rvps8"><img 469="" 136="" alt="" style="padding : 1px;" src="11_data/img10.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.10. Настройка группы "КомандыФормы"</span></p>
+<p class="rvps2"><span class="rvts4">В группу "Команды формы" добавим еще одну группу с отображением заголовка. Имя группы </span>–<span class="rvts4"> "ОсновныеКоманды", заголовок </span>–<span class="rvts4"> "Основные", группировка </span>–<span class="rvts4"> "Вертикальная" (рис. 11.11). </span></p>
+<p class="rvps8"><img 420="" 158="" alt="" style="padding : 1px;" src="11_data/img11.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.11. Добавление и настройка группы "Основные команды" </span></p>
+<p class="rvps2"><span class="rvts4">Добавим в группу "ОсновныеКоманды" кнопки "Открыть магазин" и "Закрыть магазин" (рис. 11.12). </span></p>
+<p class="rvps8"><img 229="" 147="" alt="" style="padding : 1px;" src="11_data/img12.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.12. Добавление команд в группу</span></p>
+<p class="rvps2"><span class="rvts4">Также переместим таблицу "Активные заказы" в группу "Пункт управления" (рис. 11.13). </span></p>
+<p class="rvps8"><img 224="" 143="" alt="" style="padding : 1px;" src="11_data/img13.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.13. Перенос таблицы в группу</span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Следующее, что необходимо сделать, </span>–<span class="rvts4"> это добавить в группу "Панель управления" информацию о том, кто является директором магазина, а также рейтинг текущего игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Для реализации данной задачи 
+потребуется создать два новых реквизита формы с помощью кнопки 
+"Добавить" на вкладке "Реквизиты" в правом верхнем окне (рис. 11.14). </span></p>
+<p class="rvps8"><img 257="" 178="" alt="" style="padding : 1px;" src="11_data/img14.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.14. Перенос таблицы в группу</span></p>
+<p class="rvps10"><span class="rvts4">В палитре свойств реквизита "Реквизит1" изменим имя на "Директор", тип </span>–<span class="rvts4"> "строка", длина </span>–<span class="rvts4"> 0 (рис. 11.15). Для второго реквизита укажем имя "Рейтинг", тип </span>–<span class="rvts4"> "строка", длина </span>–<span class="rvts4"> 0 (рис. 11.16).</span></p>
+<div><table 682="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 325="" valign="top" style="padding: 0px 7px;"><p class="rvps2"><img 320="" 129="" alt="" style="padding : 1px;" src="11_data/img15.png"></p>
+</td>
+<td 328="" valign="top" style="padding: 0px 7px;"><p class="rvps2"><img 327="" 132="" alt="" style="padding : 1px;" src="11_data/img16.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 325="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.15. Настройка реквизита "Директор"</span></p>
+</td>
+<td 328="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.16. Настройка реквизита "Рейтинг"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Для данных реквизитов был выбран 
+именно строковый тип данных, так как не существует ссылочного типа 
+данных для констант. Заполняться эти реквизиты будут программно. </span></p>
+<p class="rvps10"><span class="rvts4">Добавим их на форму. Для этого 
+выделим оба реквизита и, зажав левую кнопку мыши, перенесем их в "Пункт 
+управления" (рис. 11.17). Переместим элементы в верхнюю часть группы 
+"Пункт управления" с помощью панели навигации (рис. 11.18). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 364="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 335="" 136="" alt="" style="padding : 1px;" src="11_data/img17.png"></p>
+</td>
+<td 269="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 172="" 133="" alt="" style="padding : 1px;" src="11_data/img18.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 364="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.17. Добавление реквизитов на форму</span></p>
+</td>
+<td 269="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><span class="rvts7">Рис. 11.18. Перемещение элементов</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Изменим вид данных элементов на "Поле надписи", чтобы пользователь не мог вводить в них свои значения (рис. 11.19 </span>–<span class="rvts4"> 11.20). </span></p>
+<p class="rvps8"><img 539="" 169="" alt="" style="padding : 1px;" src="11_data/img19.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.19. Изменение вида элемента "Рейтинг"</span></p>
+<p class="rvps8"><img 539="" 181="" alt="" style="padding : 1px;" src="11_data/img20.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.20. Изменение вида элемента "Директор"</span></p>
+<p class="rvps2"><span class="rvts4">Следующее, что потребуется реализовать, </span>–<span class="rvts4">
+ это отображение картинок апгрейдов. Всего на форме будет четыре 
+картинки для отображения изображения актуального на данный момент 
+апгрейда из каждой категории. </span></p>
+<p class="rvps2"><span class="rvts4">Для реализации данного механизма потребуется создать четыре реквизита, в которых и будут храниться адреса картинок.</span></p>
+<p class="rvps2"><span class="rvts4">С помощью кнопки "Добавить" добавим четыре новых реквизита на вкладке "Реквизиты" (рис. 11.21).</span></p>
+<p class="rvps8"><img 291="" 149="" alt="" style="padding : 1px;" src="11_data/img21.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.21. Добавление новых реквизитов</span></p>
+<p class="rvps2"><span class="rvts4">Настроим каждый из реквизитов: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Первый
+ реквизит будет предназначен для отображения картинки актуального 
+апгрейда из категории "Количество сотрудников". Имя реквизита </span><span class="rvts9">–</span><span class="rvts5">"АдресКартинкиКоличествоСотрудников", синоним </span><span class="rvts9">–</span><span class="rvts5"> "Количество сотрудников" (рис. 11.22). </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Второй
+ реквизит будет предназначен для отображения картинки актуального 
+апгрейда из категории "Плюшки для гостей". Имя реквизита </span><span class="rvts9">–</span><span class="rvts5"> "АдресКартинкиПлюшкиДляГостей", синоним </span><span class="rvts9">–</span><span class="rvts5"> "Плюшки для гостей" (рис. 11.23). </span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Третий
+ реквизит будет предназначен для отображения картинки актуального 
+апгрейда из категории "Улучшение логистики". Имя реквизита </span><span class="rvts9">–</span><span class="rvts5"> "АдресКартинкиУлучшениеЛогистики", синоним </span><span class="rvts9">–</span><span class="rvts5"> "Улучшение логистики" (рис. 11.24). </span></li>
+<li value="4" style="margin-left: 0px" class="rvps4"><span class="rvts5">Четвертый
+ реквизит будет предназначен для отображения картинки актуального 
+апгрейда из категории "Улучшение магазина". Имя реквизита </span><span class="rvts9">–</span><span class="rvts5"> "АдресКартинкиУлучшениеМагазина", синоним </span><span class="rvts9">–</span><span class="rvts5"> "Улучшение магазина" (рис. 11.25). </span></li>
+</ol>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 237="" 133="" alt="" style="padding : 1px;" src="11_data/img22.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 597="" 155="" alt="" style="padding : 1px;" src="11_data/img23.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.22. Изменение имени реквизита "Реквизит1"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.23. Изменение имени реквизита "Реквизит2"</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 563="" 144="" alt="" style="padding : 1px;" src="11_data/img24.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 580="" 137="" alt="" style="padding : 1px;" src="11_data/img25.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.24. Изменение имени реквизита "Реквизит3"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.25. Изменение имени реквизита "Реквизит4"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Далее перенесем созданные реквизиты на форму в группу "ТекущиеАпгрейды" (рис. 11.26). </span></p>
+<p class="rvps8"><img 465="" 181="" alt="" style="padding : 1px;" src="11_data/img26.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.26. Добавление реквизитов в группу "ТекущиеАпгрейды" </span></p>
+<p class="rvps2"><span class="rvts4">Изменим вид каждого поля на "Поле картинки" (рис. 11.27 </span>–<span class="rvts4"> 11.30). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 393="" 119="" alt="" style="padding : 1px;" src="11_data/img27.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 408="" 123="" alt="" style="padding : 1px;" src="11_data/img28.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.27. Изменение вида поля "АдресКартинкиУлучшениеМагазина"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.28. Изменение вида поля "АдресКартинкиУлучшениеЛогистики"</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 424="" 127="" alt="" style="padding : 1px;" src="11_data/img29.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 394="" 122="" alt="" style="padding : 1px;" src="11_data/img30.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.29. Изменение вида поля "АдресКартинкиКоличествоСотрудников"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><span class="rvts7">Рис. 11.30. Изменение вида поля "АдресКартинкиПлюшкиДляГостей"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Но теперь все апгрейды отображаются
+ вертикально друг под другом. Чтобы это исправить, создадим две новые 
+группы, которые позволят распределить картинки по рядам. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим первую группу, нажав правой
+ кнопкой мыши по группе "Текущие апгрейды" и выбрав "Добавить". В списке
+ типов элементов выберем "Группа </span>–<span class="rvts4"> Обычная группа без отображения" (рис. 11.31).</span></p>
+<p class="rvps8"><img 262="" 134="" alt="" style="padding : 1px;" src="11_data/img31.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.31. Добавление первой группы </span></p>
+<p class="rvps2"><span class="rvts4">Имя группы </span>–<span class="rvts4"> "ВерхнийРяд", группировка </span>–<span class="rvts4"> "Горизонтальная всегда". В данную группу необходимо определить "Количество сотрудников" и "Плюшки для гостей" (рис. 11.32). </span></p>
+<p class="rvps8"><img 363="" 147="" alt="" style="padding : 1px;" src="11_data/img32.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.32. Работа с группой "Верхний ряд" </span></p>
+<p><span class="rvts8"><br></span></p>
+<p class="rvps2"><span class="rvts4">Добавим еще одну группу для текущих апгрейдов. Вид группы </span>–<span class="rvts4"> "Группа </span>–<span class="rvts4"> Обычная группа без отображения". Имя группы </span>–<span class="rvts4"> "НижнийРяд". Также определим в данную группу поля для отображения улучшений магазина и логистики (рис. 11.33). </span></p>
+<p class="rvps8"><img 328="" 140="" alt="" style="padding : 1px;" src="11_data/img33.png"></p>
+<p class="rvps9"><span class="rvts7">Рис.11.33. Работа с группой "Нижний ряд"</span></p>
+<p class="rvps10"><span class="rvts4">В результате форма выглядит 
+следующим образом: слева идут текущие апгрейды в два уровня. Вверху 
+отображаются сотрудники и "плюшки" для гостей, ниже </span>–<span class="rvts4">
+ улучшения магазина и логистики. С правой стороны отображается пункт 
+управления, содержащий в себе рейтинг, имя директора, основные команды, а
+ также список текущих заказов. </span></p>
+<h2 class="rvps13"><a name="_Toc121319175"></a>
+<span class="rvts0"><span class="rvts6">Усложнение в логике игры. Отображение купленных апгрейдов на начальной странице</span></span></h2>
+<p class="rvps2"><span class="rvts3">Вторая задача</span><span class="rvts4">, которую нужно реализовать, </span>–<span class="rvts4">
+ это отображение картинок текущих актуальных апгрейдов из каждой 
+категории в созданных элементах, а также вывод информации о директоре и 
+рейтинге игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Для реализации данной задачи потребуется определить событие "ПриОткрытии" для всей формы. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в палитре свойств формы на
+ вкладку "События" и с помощью кнопки "Открыть" добавим обработчик 
+события на клиенте (рис. 11.34). </span></p>
+<p class="rvps8"><img 417="" 135="" alt="" style="padding : 1px;" src="11_data/img34.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.34. Добавление обработчика события "ПриОткрытии"</span></p>
+<p class="rvps2"><span class="rvts4">Процедура "ПриОткрытии" </span>–<span class="rvts4"> это обработчик события формы. Определим его в отдельную область "ОбработчикиСобытийФормы". </span></p>
+<p><img 396="" 128="" alt="" style="padding : 1px;" src="11_data/img35.png"></p>
+<p class="rvps2"><span class="rvts4">При открытии формы необходимо 
+обновлять данные игрока. За это будет отвечать процедура 
+"ОбновитьДанныеИгрока". Определим данную процедуру в области 
+"СлужебныеПроцедурыИФункции". Она будет серверная, так как в ней будут 
+считываться данные картинок апгрейдов, информация о директоре и рейтинг 
+игрока, то есть информация из базы данных. </span></p>
+<p class="rvps14"><img 423="" 267="" alt="" style="padding : 1px;" src="11_data/img36.png"></p>
+<p class="rvps2"><span class="rvts4">Сначала реализуем заполнение 
+реквизита "Рейтинг". Для этого обратимся к реквизиту формы "Рейтинг" и 
+присвоим ему значение из константы "РейтингИгрока". </span></p>
+<p class="rvps14"><img 396="" 132="" alt="" style="padding : 1px;" src="11_data/img37.png"></p>
+<p class="rvps2"><span class="rvts4">Аналогичным образом получим информацию о директоре магазина. </span></p>
+<p class="rvps15"><img 396="" 136="" alt="" style="padding : 1px;" src="11_data/img38.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps8"><img 491="" 291="" alt="" style="padding : 1px;" src="11_data/img39.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.35. Начальная страница </span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальной странице 
+теперь отображается информация о директоре магазина, рейтинге игрока, 
+списке текущих заказов, а также апгрейдах. </span></p>
+<p class="rvps2"><span class="rvts4">Но на данный момент поля для 
+отображения текущих апгрейдов в категориях пустые. Необходимо 
+реализовать механизм считывания данных картинок. </span></p>
+<p class="rvps2"><span class="rvts4">Логика анализа картинок будет одинаковой во всех случаях: отличие будет заключаться лишь в названии </span>–<span class="rvts4"> необходимо обратиться к регистру сведений, считать вид апгрейда и проанализировать, какой это был апгрейд. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Определим получение картинки, а 
+именно ее адреса, в отдельную функцию. С помощью данной функции будем 
+получать либо адрес картинки, либо пустую строку, если адреса нет. </span></p>
+<p class="rvps2"><span class="rvts4">В области "СлужебныеПроцедурыИФункции" опишем серверную функцию "ПолучитьАдресКартинки". </span></p>
+<p class="rvps12"><img 575="" 250="" alt="" style="padding : 1px;" src="11_data/img40.png"></p>
+<p class="rvps2"><span class="rvts4">Получение адреса картинки должно зависеть от вида апгрейда, поскольку на начальном экране их четыре </span>–<span class="rvts4"> улучшения логистики и магазина, "плюшки" для гостей и количество сотрудников.</span></p>
+<p class="rvps2"><span class="rvts4">Для реализации такой зависимости передадим в функцию параметр, в котором будет указана ссылка на вид апгрейда. </span></p>
+<p class="rvps12"><img 574="" 72="" alt="" style="padding : 1px;" src="11_data/img41.png"></p>
+<p class="rvps2"><span class="rvts4">Далее в этой функции необходимо 
+реализовать отбор данных из регистра сведений по виду апгрейда. По 
+правилам синтаксиса языка программирования, для реализации отбор должен 
+быть структурой. </span></p>
+<p class="rvps12"><img 575="" 74="" alt="" style="padding : 1px;" src="11_data/img42.png"></p>
+<p class="rvps2"><span class="rvts4">Структура представляет из себя пару "ключ </span>–<span class="rvts4">
+ значение". Ключ должен совпадать с именем измерения, по которому 
+осуществляется отбор. В качестве значения укажем параметр функции. </span></p>
+<p class="rvps12"><img 574="" 84="" alt="" style="padding : 1px;" src="11_data/img43.png"></p>
+<p class="rvps2"><span class="rvts4">В данном случае названия ключа и 
+значения совпадают. Однако в кавычках указано название измерения 
+регистра сведений "РегистрацияАпгрейдов", а без кавычек </span>–<span class="rvts4"> это название переменной, в которой хранится ссылка на вид апгрейда. </span></p>
+<p class="rvps2"><span class="rvts4">Следующее, что нужно сделать, </span>–<span class="rvts4"> это получить последние актуальные записи, которые зафиксированы в регистре сведений. </span></p>
+<p class="rvps2"><span class="rvts4">Эти данные можно получить с помощью
+ метода "СрезПоследних", которые вернет несколько записей из регистра 
+сведений в виде таблицы. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts10"><br></span></p>
+</td>
+<td 553="" 60="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts3">"СрезПоследних"</span><span class="rvts4"> </span>–<span class="rvts4"> это чтение последних актуальных записей, которые есть в регистре.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><img 576="" 85="" alt="" style="padding : 1px;" src="11_data/img44.png"></p>
+<p class="rvps2"><span class="rvts4">Первый параметр в методе 
+"СрезПоследних" указывать не требуется, так как нет необходимости делать
+ отбор по дате. В качестве второго параметра укажем созданную ранее 
+структуру "СтруктураОтбора". </span></p>
+<p><img 577="" 55="" alt="" style="padding : 1px;" src="11_data/img45.png"></p>
+<p class="rvps2"><span class="rvts4">В результате может быть получено 
+как несколько записей, так и ни одной. Реализуем проверку наличия 
+записей в таблице "ТаблицаАпгрейдов". Для этого необходимо определить, 
+сколько всего строк получилось в результирующей таблице. </span></p>
+<p><img 575="" 76="" alt="" style="padding : 1px;" src="11_data/img46.png"></p>
+<p class="rvps2"><span class="rvts4">Если "ВсегоСтрок" будет равна нулю,
+ то значит, что в таблице нет записей, следовательно, нет необходимости 
+анализировать картинки. </span></p>
+<p class="rvps2"><span class="rvts4">Если записи в таблице есть</span><span class="rvts8">,</span><span class="rvts4"> и их несколько, то необходимо получать последнюю актуальную запись и получать по ней картинку. </span></p>
+<p class="rvps2"><span class="rvts4">Дело в том, что, например, по виду 
+апгрейда "Количество сотрудников" может быть несколько записей в 
+системе, но на главном экране необходимо отображать только последний 
+купленный апгрейд из категории. </span></p>
+<p class="rvps2"><span class="rvts4">Реализуем соответствующее условие. </span></p>
+<p class="rvps12"><img 567="" 124="" alt="" style="padding : 1px;" src="11_data/img47.png"></p>
+<p class="rvps2"><span class="rvts4">Если строк в таблице больше, чем 
+ноль, то необходимо получить запись апгрейда как обращение к таблице 
+"ТаблицаАпгрейдов" и чтение ее последней записи. </span></p>
+<p class="rvps2"><span class="rvts4">Если записей всего две, то в 
+переменной "ВсегоСтрок" будет значение 2, но нумерация записей в таблице
+ начинается с нуля, поэтому необходимо сделать поправку на единицу. </span></p>
+<p><img 577="" 135="" alt="" style="padding : 1px;" src="11_data/img48.png"></p>
+<p class="rvps2"><span class="rvts4">Таким образом</span><span class="rvts8">,</span><span class="rvts4">
+ будет получена запись о регистрации текущего апгрейда, но в ней 
+достаточно много информации, а именно: название, вид, цена, рейтинг и 
+документ-регистратор. Поэтому необходимо уточнить, какие именно данные 
+будут записаны в переменную "ЭлементАпгрейда". </span></p>
+<p class="rvps2"><span class="rvts4">Так как картинка хранится в карточке апгрейда, то получим ссылку на сам апгрейд из одноименного измерения. </span></p>
+<p><img 576="" 116="" alt="" style="padding : 1px;" src="11_data/img49.png"></p>
+<p class="rvps2"><span class="rvts4">Далее сформируем адрес картинки как получение навигационной ссылки. </span></p>
+<p><img 577="" 158="" alt="" style="padding : 1px;" src="11_data/img50.png"></p>
+<p class="rvps2"><span class="rvts4">Поскольку сейчас работа идет с 
+записью о приобретении апгрейда, то можно получить информацию о том, 
+сколько рейтинга оно принесло игроку.</span></p>
+<p class="rvps2"><span class="rvts4">При открытии игры можно считывать 
+информацию о приобретенных ранее апгрейдах и на основании этого 
+формировать текущий рейтинг игрока. </span></p>
+<p class="rvps2"><span class="rvts4">Рейтинг игрока будет формироваться как сумма текущего рейтинга игрока и рейтинг анализируемого апгрейда. </span></p>
+<p><img 638="" 166="" alt="" style="padding : 1px;" src="11_data/img51.png"></p>
+<p class="rvps2"><span class="rvts4">Однако сейчас для системы 
+"РейтингИгрока" ничего не значит, это лишь переменная, которая 
+изменяется на основании своего предыдущего значения, которое не было 
+определено ранее. </span></p>
+<p class="rvps2"><span class="rvts4">Исправим данную ситуацию, указав, 
+что изначальное значение переменной "РейтингИгрока" соответствует 
+значению из константы "РейтингИгрока". </span></p>
+<p><img 656="" 193="" alt="" style="padding : 1px;" src="11_data/img52.png"></p>
+<p class="rvps2"><span class="rvts4">Сейчас был реализован благоприятный
+ исход, в котором были получены ссылка на картинку и количество очков 
+рейтинга, которые принесла покупка текущего апгрейда. Но при получении 
+среза последних записей из регистра может получиться так, что в таблице 
+"ТаблицаАпгрейдов" не будет строк. </span></p>
+<p class="rvps2"><span class="rvts4">Реализуем алгоритм работы программы при таком исходе. Для этого определим ветку "Иначе" в блоке условия. </span></p>
+<p><img 659="" 216="" alt="" style="padding : 1px;" src="11_data/img53.png"></p>
+<p class="rvps2"><span class="rvts4">Если строк в таблице не будет, то тогда "АдресКартинки" будет пустой строкой. </span></p>
+<p class="rvps15"><img 567="" 188="" alt="" style="padding : 1px;" src="11_data/img54.png"></p>
+<p class="rvps2"><span class="rvts4">Прочитав рейтинг игрока, необходимо
+ обратиться к константе "РейтингИгрока" и записать в нее получившееся 
+значение. Изменить значение константы можно с помощью метода 
+"Установить()". </span></p>
+<p class="rvps12"><img 577="" 196="" alt="" style="padding : 1px;" src="11_data/img55.png"></p>
+<p class="rvps2"><span class="rvts4">Таким образом, при запуске игры 
+будут анализироваться все четыре апгрейда, и если игрок приобретал их 
+ранее, то рейтинг будет изменяться. </span></p>
+<p class="rvps2"><span class="rvts4">Так как "ПолучитьАдресКартинки" </span>–<span class="rvts4"> функция, необходимо возвращать значение, а именно "АдресКартинки". </span></p>
+<p class="rvps12"><img 575="" 187="" alt="" style="padding : 1px;" src="11_data/img56.png"></p>
+<p class="rvps2"><span class="rvts4">Данная функция должна вызываться в 
+процедуре "ОбновитьДанныеИгрока". Она возвращает адрес картинки, который
+ необходимо подставить в соответствующие реквизиты формы. При вызове 
+функции необходимо указать в качестве параметра ссылку на вид апгрейда 
+из перечисления. </span></p>
+<p class="rvps12"><img 635="" 98="" alt="" style="padding : 1px;" src="11_data/img57.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps8"><img 503="" 372="" alt="" style="padding : 1px;" src="11_data/img58.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.35. Начальная страница игры</span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальном экране отобразились картинки приобретенных игроком апгрейдов, а также рейтинг. </span></p>
+<p class="rvps2"><span class="rvts4">Однако изображения разместились непропорционально, так как для элементов с картинками не был указан авторазмер. </span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем форму начального экрана и 
+для четырех элементов с картинками в палитре свойств на вкладке 
+"Оформление" укажем "Автоматический размер" (рис. 11.36). </span></p>
+<p class="rvps8"><img 453="" 176="" alt="" style="padding : 1px;" src="11_data/img59.png"></p>
+<p class="rvps9"><span class="rvts7">Рис. 11.36. Изменение размеров картинок</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps8"><img 481="" 385="" alt="" style="padding : 1px;" src="11_data/img60.png"></p>
+<p class="rvps11"><span class="rvts7">Рис.11.37. Итоговый вариант формы начальной страницы</span></p>
+<p class="rvps18"><span class="rvts11">На этом одиннадцатое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts4">мы настроили форму начального экрана таким образом, что на ней теперь отображаются картинки купленных игроком апгрейдов. </span></p>
+<p class="rvps10"><span class="rvts4">На </span><span class="rvts3">следующем занятии</span><span class="rvts4">
+ будет доработан механизм подсчета рейтинга игрока, а также настроена 
+зависимость между рейтингом игрока и скоростью поступления новых 
+заказов. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts12">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts13"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 86="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><img 156="" alt="" style="padding : 1px;" src="11_data/img61.png"></p>
+</td>
+<td 440="" 86="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts4">Чтобы узнать значение из константы, необходимо использовать метод "Получить()", а для того, чтобы его изменить </span>–<span class="rvts4"> "Установить()". </span></p>
+<p class="rvps2"><span class="rvts4">С помощью метода "</span><span class="rvts3">СрезПоследних()"</span><span class="rvts4"> можно считать последние актуальные записи из регистра сведения. </span></p>
+<p class="rvps2"><span class="rvts3">Структура</span><span class="rvts4"> представляет из себя пару "ключ </span>–<span class="rvts4"> значение". Ключ может быть только строковым типом данных. Значение </span>–<span class="rvts4"> любым.</span></p>
+<p class="rvps2"><span class="rvts4">При создании </span><span class="rvts3">структуры для отбора</span><span class="rvts4"> данных ключ должен совпадать с именем измерения, по которому осуществляется отбор. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts8"><br></span></p>
+<h2 class="rvps21"><a name="_Toc121319176"></a>
+<span class="rvts0"><span class="rvts14">Контрольные вопросы</span></span></h2>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps23"><span class="rvts5">Что такое "СрезПоследних()"? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps23"><span class="rvts5">С помощью чего можно получить значение из константы программно? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps23"><span class="rvts5">Что может возвращать значение: процедура или функция? </span></li>
+<li value="4" style="margin-left: 0px" class="rvps23"><span class="rvts5">Что представляет из себя структура? </span></li>
+</ol>
+<p><span class="rvts8"><br></span></p>
+
+</body></html>

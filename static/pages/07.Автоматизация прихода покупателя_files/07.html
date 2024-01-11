@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>07</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts7
+{
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+}
+span.rvts10
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts12
+{
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-weight: bold;
+}
+span.rvts14
+{
+}
+span.rvts15
+{
+ text-decoration: underline;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts17
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts18
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps6
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps15
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps19
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps24
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps25
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319151"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 7. </span></span><span class="rvts0"><span class="rvts1">Автоматизация</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">прихода</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">покупателя</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> реализация автоматического создания заказов от покупателей случайным образом. </span></p>
+<p class="rvps2"><span class="rvts4">Заказ должен поступать в тот 
+момент, когда магазин открыт. Когда магазин открыт, поступают заказы, 
+которые игрок обрабатывает, проверяя наличие товара, и получает прибыль 
+за выполненные заказы. </span></p>
+<p class="rvps2"><span class="rvts4">В рамках этого занятия мы выполним 3 задачи:</span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Приступим к созданию формы начального экрана. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Реализуем возможность открывать магазин. Благодаря этому автоматически будут поступать новые заказы.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Опишем алгоритм автоматического создания заказов от покупателей. Заказы будут формироваться случайным образом.</span></li>
+</ol>
+<h2 class="rvps5"><a name="_Toc121319152"></a>
+<span class="rvts0"><span class="rvts6">Настройка прикладного решения. Создание начальной страницы</span></span></h2>
+<p class="rvps2"><span class="rvts3">Первая задача</span><span class="rvts4">
+ заключается в том, чтобы подготовить начальную страницу. Для реализации
+ механизма "Открыть магазин" потребуется создать специальный интерфейс, 
+который будет отображаться на начальном экране аналогично тому, что было
+ рассмотрено в рамках первого занятия (рис. 7.1). </span></p>
+<p class="rvps6"><img 434="" 247="" alt="" style="padding : 1px;" src="07_data/img1.png"></p>
+<p class="rvps7"><span class="rvts7">Рис. 7.</span><span class="rvts7">1</span><span class="rvts7">. </span><span class="rvts8">Пример начального экрана</span></p>
+<p class="rvps2"><span class="rvts4">Такой интерфейс называется </span><span class="rvts3">"Форма"</span><span class="rvts4">. Формы бывают разных видов: одни связаны со справочниками, другие </span>–<span class="rvts4"> с документами, третьи </span>–<span class="rvts4"> с обработками, бизнес-процессами и так далее. Но для решения данной задачи потребуется форма, которая ни с чем не связана </span>–<span class="rvts4"> это </span><span class="rvts3">общая форма</span><span class="rvts4">. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts10">Общая форма </span>–<span class="rvts10"> </span><span class="rvts11">это форма, которая не принадлежит какому-либо объекту конфигурации, а решает собственную задачу.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Для того чтобы добавить общую 
+форму, необходимо развернуть ветку "Общие", далее нажать правой кнопкой 
+мыши на "Общие формы" и выбрать "Добавить" (рис. 7.2).</span></p>
+<p class="rvps6"><img 144="" 306="" alt="" style="padding : 1px;" src="07_data/img2.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.</span><span class="rvts8">2</span><span class="rvts8">. Добавление общей формы</span></p>
+<p class="rvps2"><span class="rvts4">В конструкторе общих форм укажем имя формы </span>–<span class="rvts4"> "НачальнаяСтраница". После ввода имени формы необходимо нажать на кнопку "Готово" (рис. 7.3). </span></p>
+<p class="rvps6"><img 189="" 246="" alt="" style="padding : 1px;" src="07_data/img3.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.</span><span class="rvts8">3</span><span class="rvts8">. Работа в конструкторе общих форм</span></p>
+<p class="rvps2"><span class="rvts4">В данной форме потребуется определить название механизма, а также создать кнопку для открытия магазина. </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы указать название 
+магазина, нужно создать надпись на форме. Надпись можно создать через 
+добавление нового элемента в редакторе формы. Для этого нажмем на плюсик
+ и выберем в списке элементов "Декорация </span>–<span class="rvts4"> Надпись" (рис. 7.4). </span></p>
+<p class="rvps6"><img 337="" 146="" alt="" style="padding : 1px;" src="07_data/img4.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.4. Добавление надписи</span></p>
+<p><span class="rvts11"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 38="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 38="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts3">"Декорация </span><span class="rvts12">–</span><span class="rvts3"> Надпись"</span><span class="rvts4"> нужна для того, чтобы отображать текст на форме.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Имя декорации </span>–<span class="rvts4"> "НазваниеМагазина" (рис. 7.5). </span></p>
+<p class="rvps6"><img 321="" 96="" alt="" style="padding : 1px;" src="07_data/img5.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.5. Указание имени декорации </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 25="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 25="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts3">Заголовок </span>–<span class="rvts4"> это то, что будет видеть игрок.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В заголовке укажем название, соответствующее тематике магазина. В рамках курса </span>–<span class="rvts4"> это зоомагазин "Бетховен". </span></p>
+<p class="rvps2"><span class="rvts4">Удобнее будет указать заголовок для
+ декорации через отдельное окошко, с помощью которого можно настроить 
+формат надписи. Нажмем на кнопку "Открыть" в свойстве "Заголовок" (рис. 
+7.6).</span></p>
+<p class="rvps11"><img 337="" 101="" alt="" style="padding : 1px;" src="07_data/img6.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.6. Редактирование заголовка декорации</span></p>
+<p class="rvps2"><span class="rvts4">В окне "Строки на разных языках" выберем "Форматированная строка", а также очистим поле с текстом (рис. 7.7). </span></p>
+<p class="rvps2"><span class="rvts4">В режиме редактирования 
+"Форматированная строка" намного больше настроек, благодаря которым 
+можно изменять размер текста, его цвет, редактировать начертание и 
+многое другое. </span></p>
+<p class="rvps2"><span class="rvts4">В поле для ввода текста укажем название магазина </span>–<span class="rvts4">
+ "Зоомагазин “Бетховен”", а также изменим размер текста. После изменения
+ текста заголовка и его размера нажмем на кнопку "ОК" (рис. 7.8). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><img 181="" 163="" alt="" style="padding : 1px;" src="07_data/img7.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><img 181="" 163="" alt="" style="padding : 1px;" src="07_data/img8.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 7.7. Изменение формата строки</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 7.8. Настройка заголовка декорации </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps13"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">В результате "Декорация </span>–<span class="rvts4"> Надпись" отобразится на форме (рис. 7.9). </span></p>
+<p class="rvps11"><img 186="" 73="" alt="" style="padding : 1px;" src="07_data/img9.png"></p>
+<p class="rvps14"><span class="rvts8">Рис. 7.9. Отображение заголовка на форме</span></p>
+<h2 class="rvps5"><a name="_Toc121319153"></a>
+<span class="rvts0"><span class="rvts6">Настройка прикладного решения. Открытие магазина</span></span></h2>
+<p class="rvps2"><span class="rvts3">Вторая задача</span><span class="rvts4"> сводится к тому, чтобы определить кнопку, при нажатии на которую будет открываться магазин. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 47="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 47="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps9"><span class="rvts3">Кнопка</span><span class="rvts4"> </span>–<span class="rvts4"> это то, что видит и на что нажимает игрок. </span></p>
+<p class="rvps9"><span class="rvts10">Команда</span><span class="rvts11"> </span>–<span class="rvts11"> это объект конфигурации, с помощью которого разработчик может описывать действия, предназначенные для выполнения пользователем.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">С точки зрения разработчика, необходимо добавить команду.</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Команды" в 
+правом верхнем окне и на вкладке "Команды формы" с помощью плюсика 
+добавим новую команду (рис. 7.10).</span></p>
+<p class="rvps11"><img 414="" 120="" alt="" style="padding : 1px;" src="07_data/img10.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.10. Добавление новой команды </span></p>
+<p class="rvps2"><span class="rvts4">Имя новой команды </span>–<span class="rvts4"> "ОткрытьМагазин" (рис. 7.11). </span></p>
+<p class="rvps11"><img 322="" 132="" alt="" style="padding : 1px;" src="07_data/img11.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.11. Настройка имени команды</span></p>
+<p class="rvps2"><span class="rvts4">Далее определим связанную с 
+командой кнопку в интерфейсе. Для этого перенесем команду на форму, 
+зажав ее левой кнопкой мыши (рис. 7.12). </span></p>
+<p class="rvps2"><span class="rvts11"><br></span></p>
+<p class="rvps11"><img 381="" 111="" alt="" style="padding : 1px;" src="07_data/img12.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.12. Перенос команды на форму</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Кнопка должна располагаться в низу формы. Ее можно переместить с помощью кнопок навигации (рис. 7.13). </span></p>
+<p class="rvps11"><img 420="" 210="" alt="" style="padding : 1px;" src="07_data/img13.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.13. Перемещение кнопки по форме</span></p>
+<p class="rvps2"><span class="rvts4">Следующим шагом нужно определить 
+программную логику созданной кнопки. В свойствах команды укажем действие
+ для команды с помощью кнопки "Открыть". Кнопка нажимается на стороне 
+клиента, поэтому сделаем событие "НаКлиенте" (рис. 7.14). </span></p>
+<p class="rvps11"><img 354="" 197="" alt="" style="padding : 1px;" src="07_data/img14.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.14. Создание обработчика нажатия на кнопку</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><img 68="" alt="" style="padding : 1px;" src="07_data/img15.png"></p>
+</td>
+<td 533="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts13">Клиентская часть</span><span class="rvts9"> </span><span class="rvts14">–</span><span class="rvts9"> это то, что видит игрок у себя на экране.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">В модуле формы появилась процедура, которая прежде всего является обработчиком команды. </span></p>
+<p class="rvps2"><img 493="" 60="" alt="" style="padding : 1px;" src="07_data/img16.png"></p>
+<p class="rvps2"><span class="rvts4">Подобных обработчиков в рамках начальной формы будет несколько, поэтому необходимо определить область для обработчиков команд. </span></p>
+<p class="rvps2"><span class="rvts4">Для этого в модуле, ниже процедуры, напишем конструкцию "#Обл" </span>–<span class="rvts4"> от слова "область" </span>–<span class="rvts4"> и нажмем сочетание клавиш Ctrl+Q. </span></p>
+<p class="rvps2"><img 406="" 90="" alt="" style="padding : 1px;" src="07_data/img17.png"></p>
+<p class="rvps2"><span class="rvts4">Далее необходимо указать имя области </span>–<span class="rvts4"> "ОбработчикиКоманд". </span></p>
+<p class="rvps2"><img 405="" 87="" alt="" style="padding : 1px;" src="07_data/img18.png"></p>
+<p class="rvps2"><span class="rvts4">Затем перенесем процедуру "ОткрытьМагазин" в созданную область. </span></p>
+<p class="rvps2"><img 353="" 80="" alt="" style="padding : 1px;" src="07_data/img19.png"></p>
+<p class="rvps17"><span class="rvts4">В данной процедуре необходимо 
+описать вызов алгоритма, который будет генерировать посетителей и их 
+заказы. Для начала создадим такую процедуру и после этого вернемся в 
+модуль формы, чтобы ее вызвать. </span></p>
+<h2 class="rvps5"><a name="_Toc121319154"></a>
+<span class="rvts0"><span class="rvts6">Автоматизация игрового процесса. Автоматическое создание заказов покупателей</span></span></h2>
+<p class="rvps2"><span class="rvts3">Третья задача</span><span class="rvts4"> заключается в том, чтобы создать алгоритм генерации новых посетителей и их заказов. </span></p>
+<p class="rvps2"><span class="rvts4">Обработку генерации посетителей 
+нужно определить в таком месте программы, чтобы к ней можно было 
+обращаться из других модулей, а также вызывать данный обработчик с 
+определенной периодичностью, чтобы имитировать заказы клиентов, 
+например, раз в одну минуту или раз в тридцать секунд. </span></p>
+<p class="rvps18"><span class="rvts4">Для реализации данного механизма потребуется создать "Общий модуль". </span><span class="rvts11"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 41="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts9"><br></span></p>
+</td>
+<td 553="" 41="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts3">Общий модуль</span><span class="rvts4"> </span>–<span class="rvts4"> это модуль, в котором можно определять процедуры и функции, часто вызываемые в программе. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Как и в случае с "Общими формами", "Общие модули" не </span><span class="rvts15">привязаны к конкретному механизму</span><span class="rvts4">. Эти модули можно вызывать из других модулей и описывать в них общий функционал. </span></p>
+<p class="rvps2"><span class="rvts4">В рамках данной задачи в общем модуле будет описана процедура </span>–<span class="rvts4">
+ генератор посетителей, в которой программно, случайным образом будут 
+создаваться посетители и их заказы со случайным товаром и случайным 
+количеством этого товара. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим общий модуль. Как и "Общие формы", он находится в ветке "Общие" (рис. 7.15). </span></p>
+<p class="rvps11"><img 170="" 117="" alt="" style="padding : 1px;" src="07_data/img20.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.15. Добавление общего модуля</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Укажем имя общего модуля </span>–<span class="rvts4"> "ФоновыеПроцедуры" (рис. 7.16).</span></p>
+<p class="rvps11"><img 336="" 140="" alt="" style="padding : 1px;" src="07_data/img21.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.16. Имя общего модуля</span></p>
+<p class="rvps2"><span class="rvts4">Модуль назван так, потому что в 
+дальнейшем сценарий генерации посетителей, описанный здесь, будет 
+вызываться с определенной периодичностью в фоновом режиме.</span></p>
+<p class="rvps2"><span class="rvts4">Программная логика в данном модуле 
+должна создавать записи в базе данных, должна происходить работа с 
+данными и прикладными объектами. </span></p>
+<p class="rvps2"><span class="rvts4">Директива, способная на такое взаимодействие, </span>–<span class="rvts4"> </span><span class="rvts15">"Сервер"</span><span class="rvts11">.</span><span class="rvts4"> По умолчанию, галочка "Сервер" уже установлена в настройках модуля (рис. 7.17). </span></p>
+<p class="rvps11"><img 204="" 180="" alt="" style="padding : 1px;" src="07_data/img22.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.17. Проверка директивы компиляции</span></p>
+<p class="rvps2"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Однако сценарий, описанный в этом 
+модуле, будет вызываться с клиента, так как именно на клиенте игрок 
+запускает игру, нажимая на кнопку "Открыть магазин". После нажатия на 
+кнопку команда должна переходить в модуль "Фоновые процедуры". </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы реализовать такую возможность, необходимо поставить галочку </span><span class="rvts15">"Вызов сервера"</span><span class="rvts4"> в настройках модуля (рис. 7.18). </span></p>
+<p class="rvps11"><img 170="" 149="" alt="" style="padding : 1px;" src="07_data/img23.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.18. Установка галочки "Вызов сервера" </span></p>
+<p><span class="rvts11"><br></span></p>
+<div><table 671="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><img 68="" alt="" style="padding : 1px;" src="07_data/img24.png"></p>
+</td>
+<td 581="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts4">Если галочку не поставить, то будет возникать ошибка при проверке работоспособности алгоритма. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Определим в модуле процедуру "ГенераторПосетителей". </span></p>
+<p class="rvps2"><img 568="" 78="" alt="" style="padding : 1px;" src="07_data/img25.png"></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы эту процедуру можно 
+было вызвать из другого модуля, в данном случае из модуля формы, 
+необходимо после имени процедуры указать ключевое слово </span><span class="rvts15">"Экспорт"</span><span class="rvts4">. </span></p>
+<p class="rvps2"><img 569="" 63="" alt="" style="padding : 1px;" src="07_data/img26.png"></p>
+<p class="rvps2"><span class="rvts4">Теперь можно дописать вызов этой процедуры в модуле общей формы. </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы в него вернуться, нужно найти
+ в ветке "Общие" общую форму "НачальнаяСтраница" и нажать по ней два 
+раза левой кнопкой мыши. </span></p>
+<p class="rvps11"><img 146="" 278="" alt="" style="padding : 1px;" src="07_data/img27.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.19. Переход к общей форме "НачальнаяСтраница"</span></p>
+<p class="rvps2"><span class="rvts4">В модуле формы "НачальнаяСтраница" в процедуре "ОткрытьМагазин" необходимо вызвать процедуру "ГенераторПосетителей"</span><span class="rvts11">.</span></p>
+<p class="rvps13"><img 561="" 111="" alt="" style="padding : 1px;" src="07_data/img28.png"></p>
+<p class="rvps2"><span class="rvts4">В рамках данной клиентской процедуры никаких других вызовов не будет </span>–<span class="rvts4"> только переадресация программной логики в общий модуль. </span></p>
+<p class="rvps2"><span class="rvts4">Вернемся в общий модуль "ФоновыеПроцедуры" и опишем алгоритм генерации посетителей.</span></p>
+<p class="rvps2"><span class="rvts4">В процедуре "ГенерацияПосетителей" 
+нужно определить логику на поиск случайного товара и создание случайного
+ заказа этого товара на случайное количество. </span></p>
+<p class="rvps2"><span class="rvts4">Для начала необходимо узнать, 
+сколько товарных позиций учитывается в игровом процессе: какие товары 
+есть в справочнике "Товары". Если товар есть в ассортименте, то есть 
+шанс, что его придут покупать. </span></p>
+<p class="rvps2"><span class="rvts4">Нужно получить количество товарных 
+позиций, продаваемых в магазине. Все товары пронумерованы, и в 
+дальнейшем товар будет выбираться именно по порядковому номеру. </span></p>
+<p class="rvps2"><span class="rvts4">В пользовательском режиме все товары пронумерованы с помощью реквизита "Код" (рис. 7.20).</span></p>
+<p class="rvps2"><span class="rvts11"><br></span></p>
+<p class="rvps11"><img 437="" 100="" alt="" style="padding : 1px;" src="07_data/img29.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.20. Нумерация товаров в пользовательском режиме</span></p>
+<p class="rvps2"><span class="rvts4">Однако в коде присутствуют лишние 
+лидирующие нули. Избавимся от них, чтобы остались только номера товарных
+ позиций (1, 2 и 3). Таким образом, по коду можно будет посчитать 
+количество товаров и определить случайный товар. </span></p>
+<p class="rvps2"><span class="rvts4">Чтобы избавиться от лидирующих нулей, откроем справочник "Товары", перейдем на вкладку "Данные" и укажем тип кода </span>–<span class="rvts4"> "число" (рис. 7.21). </span></p>
+<p class="rvps11"><img 253="" 264="" alt="" style="padding : 1px;" src="07_data/img30.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.21. Изменение типа кода в справочнике "Товары"</span></p>
+<p class="rvps2"><span class="rvts4">Таким образом, лидирующие нули у порядковых номеров исчезнут. Теперь можно вернуться к программированию. </span></p>
+<p class="rvps2"><span class="rvts4">Первое, что нужно сделать, </span>–<span class="rvts4">
+ это посчитать количество товарных позиций в справочнике "Товары". 
+Изначально количество товаров неизвестно, поэтому присвоим переменной 
+"ВсегоТоваров" значение 0. </span></p>
+<p class="rvps2"><img 569="" 65="" alt="" style="padding : 1px;" src="07_data/img31.png"></p>
+<p class="rvps2"><span class="rvts4">После этого нужно получить список товаров из соответствующего справочника. </span></p>
+<p class="rvps19"><img 494="" 76="" alt="" style="padding : 1px;" src="07_data/img32.png"></p>
+<p class="rvps2"><span class="rvts4">Данные будут выбираться до тех пор,
+ пока есть что выбирать. Следовательно, необходимо прокрутить всю 
+выборку данных, пока она есть. Для этой цели подойдет цикл "Пока" </span>–<span class="rvts4"> пока есть что анализировать, будем увеличивать счетчик товаров. </span></p>
+<p class="rvps19"><img 443="" 135="" alt="" style="padding : 1px;" src="07_data/img33.png"></p>
+<p class="rvps2"><span class="rvts4">Второе, что нужно сделать, </span>–<span class="rvts4"> это случайным образом получить товарную позицию из всего списка товаров. Для этого потребуется генератор случайных чисел. </span></p>
+<p class="rvps19"><img 426="" 114="" alt="" style="padding : 1px;" src="07_data/img34.png"></p>
+<p class="rvps2"><span class="rvts4">Далее нужно случайным образом 
+получать номер товарной позиции и анализировать: продается данный товар,
+ или он нужен для внутреннего потребления?</span></p>
+<p class="rvps2"><span class="rvts4">Если это товар для внутреннего 
+потребления, то необходимо продолжать поиск случайного товара. В 
+противном случае остановиться на выборе.</span></p>
+<p class="rvps19"><img 620="" 280="" alt="" style="padding : 1px;" src="07_data/img35.png"></p>
+<p class="rvps2"><span class="rvts4">В результате выполнения цикла "Пока" будет найдена товарная позиция, которую точно можно продать клиенту. </span></p>
+<p class="rvps2"><span class="rvts4">На основании этого будем регистрировать новый заказ </span>–<span class="rvts4"> создавать новый бизнес-процесс. </span></p>
+<p class="rvps2"><img 594="" 317="" alt="" style="padding : 1px;" src="07_data/img36.png"></p>
+<p class="rvps2"><span class="rvts4">В дальнейшем процедура будет 
+доработана, так как наценка на товар будет динамически изменяться в 
+зависимости от рейтинга игрока: чем выше рейтинг, тем выше наценка. </span></p>
+<p class="rvps2"><span class="rvts4">На данный момент итоговый вариант процедуры выглядит следующим образом: </span></p>
+<p class="rvps19"><img 528="" 207="" alt="" style="padding : 1px;" src="07_data/img37.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы проверить 
+реализованный функционал, нужно нажать на кнопку "Открыть магазин" на 
+начальном экране. Но в данный момент никакого начального экрана в 
+пользовательском режиме не отображается (рис. 7.22).</span></p>
+<p class="rvps11"><img 342="" 188="" alt="" style="padding : 1px;" src="07_data/img38.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.22. Отсутствие начального экрана</span></p>
+<p class="rvps2"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор, чтобы добавить начальный экран. </span></p>
+<p class="rvps2"><span class="rvts4">В дереве конфигурации нажмем правой
+ кнопкой мыши по конфигурации и в списке выберем пункт "Открыть рабочую 
+область начальной страницы", чтобы вывести на начальный экран общую 
+форму "НачальнаяСтраница" (рис. 7.23). </span></p>
+<p class="rvps11"><img 178="" 186="" alt="" style="padding : 1px;" src="07_data/img39.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.23. Переход к настройкам начальной страницы</span></p>
+<p class="rvps2"><span class="rvts4">Укажем в качестве шаблона начальной страницы "Одна колонка" (рис. 7.24). </span></p>
+<p class="rvps11"><img 324="" 237="" alt="" style="padding : 1px;" src="07_data/img40.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.24. Выбор шаблона начальной страницы</span></p>
+<p class="rvps2"><span class="rvts4">Далее через кнопку "Добавить" 
+добавим отображение общей формы "НачальнаяСтраница". Подтвердим выбор 
+формы, нажав на кнопку "ОК" (рис. 7.25).</span></p>
+<p class="rvps11"><img 336="" 220="" alt="" style="padding : 1px;" src="07_data/img41.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.25. Выбор формы</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим, чтобы проверить реализованный функционал. </span></p>
+<p class="rvps2"><span class="rvts4">В результате на начальной странице отобразилось название магазина, а также кнопка "Открыть магазин" (рис. 7.26). </span></p>
+<p class="rvps11"><img 408="" 224="" alt="" style="padding : 1px;" src="07_data/img42.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.26. Начальный экран</span></p>
+<p class="rvps2"><span class="rvts11"><br></span></p>
+<p class="rvps2"><span class="rvts4">Сейчас открытие магазина 
+сопровождается одним моментальным заказом от одного клиента. Задачу 
+непрерывного посещения покупателями магазина через определенный интервал
+ решим позже. </span></p>
+<p class="rvps2"><span class="rvts4">Нажмем на кнопку "Открыть магазин" пять раз, чтобы имитировать посещение магазина пятью покупателями (рис. 7.27).</span></p>
+<p class="rvps11"><img 390="" 208="" alt="" style="padding : 1px;" src="07_data/img43.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.27. Создание заказов через кнопку "Открыть магазин"</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем к списку заказов, чтобы проверить работу кнопки (рис. 7.28). </span></p>
+<p class="rvps11"><img 397="" 167="" alt="" style="padding : 1px;" src="07_data/img44.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.28. Список заказов</span></p>
+<p class="rvps2"><span class="rvts4">В результате в списке заказов 
+появилось еще пять новых заказов со случайными товарами и количеством, а
+ также суммой, рассчитанной с учетом наценки. </span></p>
+<p class="rvps2"><span class="rvts4">Убедимся, что для каждой новой задачи был автоматически создан новый этап заказа (рис. 7.29). </span></p>
+<p class="rvps11"><img 394="" 198="" alt="" style="padding : 1px;" src="07_data/img45.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 7.29. Список этапов заказов</span></p>
+<p class="rvps20"><span class="rvts16">На этом седьмое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts4">мы реализовали автоматическое создание заказов, а также начали процесс реализации открытия магазина.</span></p>
+<p class="rvps2"><span class="rvts3">На следующем занятии</span><span class="rvts4">
+ мы научимся закрывать магазин и поработаем над интерфейсом, поскольку 
+сейчас отображается очень много лишних полей в пользовательском режиме.</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts17">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts10"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 170="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><img 156="" alt="" style="padding : 1px;" src="07_data/img46.png"></p>
+</td>
+<td 440="" 170="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts10">Общая форма </span>–<span class="rvts10"> </span><span class="rvts11">это форма, которая не принадлежит какому-либо объекту конфигурации, а решает собственную задачу.</span><span class="rvts3"> </span></p>
+<p class="rvps2"><span class="rvts3">"Декорация </span><span class="rvts12">–</span><span class="rvts3"> Надпись"</span><span class="rvts4"> нужна для того, чтобы отображать текст на форме.</span></p>
+<p class="rvps2"><span class="rvts3">Заголовок элемента формы </span>–<span class="rvts4"> это то, что будет видеть игрок.</span></p>
+<p class="rvps2"><span class="rvts3">Кнопка</span><span class="rvts4"> </span>–<span class="rvts4"> это то, что видит и на что нажимает игрок. </span></p>
+<p class="rvps2"><span class="rvts10">Команда</span><span class="rvts11"> </span>–<span class="rvts11"> это объект конфигурации, с помощью которого разработчик может описывать действия, предназначенные для выполнения пользователем.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts11"><br></span></p>
+<h2 class="rvps21"><a name="_Toc121319155"></a>
+<span class="rvts0"><span class="rvts6">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps23"><span class="rvts5">С помощью какого свойства общего модуля можно указать, что описанные в нем методы могут вызываться с клиента? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps23"><span class="rvts5">Какое ключевое слово указывает, что написанный метод (процедура или функция) может быть вызвана из другого модуля? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps23"><span class="rvts5">Если в алгоритме нужно работать с данными из базы, где должен выполняться код? На клиенте или на сервере? </span></li>
+<li value="4" style="margin-left: 0px; page-break-before: always;" class="rvps25"><span class="rvts18"></span></li>
+</ol>
+<p><span class="rvts11"><br></span></p>
+
+</body></html>

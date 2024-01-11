@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>16</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+}
+span.rvts9
+{
+ font-weight: bold;
+}
+span.rvts10
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts11
+{
+ text-decoration: underline;
+}
+span.rvts12
+{
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps5
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps7
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps8
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps9
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps10
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps12
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps15
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps16
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps18
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps19
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps21
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps22
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 24px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319202"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 16. </span></span><span class="rvts0"><span class="rvts1">Создание</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">пользователей</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">в</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">системе</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> создание пользователей в системе.</span></p>
+<p class="rvps2"><span class="rvts4">В рамках этого занятия нам потребуется выполнить 4 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать роли, которые позволят указать права доступа игрока в системе</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="2" style="margin-left: 0px" class="rvps6"><span class="rvts5">Создать пользователей</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="3" style="margin-left: 0px" class="rvps6"><span class="rvts5">Доработать программу с учетом разделения игры на пользователей</span><span class="rvts6">.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps8"><span class="rvts5">Доработать визуальную составляющую игры.</span></li>
+</ol>
+<h2 class="rvps9"><a name="_Toc121319203"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Разделение игры на роли</span></span></h2>
+<p class="rvps2"><span class="rvts4">Приступим к </span><span class="rvts3">первой задаче</span><span class="rvts4">. Чтобы создать пользователя, необходимо сначала создать для него роль. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 45="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 45="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps11"><span class="rvts3">Роль</span><span class="rvts4"> </span>–<span class="rvts4"> это набор полномочий, который указывает, что может делать пользователь, а что </span>–<span class="rvts4"> нет. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">Создавая пользователей, изначально нужно создать администратора. Без него не получится добавить других пользователей. </span></p>
+<p class="rvps12"><span class="rvts4">Для начала добавим роль 
+"Администратор". Развернем ветку "Общие" и, нажав правой кнопкой мыши по
+ ветке "Роли", добавим новую роль. Имя роли </span>–<span class="rvts4"> "Администратор" (рис. 16.1). </span></p>
+<p class="rvps13"><img 340="" 91="" alt="" style="padding : 1px;" src="16_data/img1.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.1. Добавление роли "Администратор"</span></p>
+<p class="rvps12"><span class="rvts4">Далее приступим к настройке роли. 
+Для роли "Администратор" достаточно поставить две галочки: 
+"Администрирование" и "Администрирование данных" (рис. 16.2). </span></p>
+<p class="rvps13"><img 240="" 204="" alt="" style="padding : 1px;" src="16_data/img2.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.2. Настройка прав для роли "Администратор" </span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts4">В данной системе "Администратор" будет выступать и как </span><span class="rvts11">администратор</span><span class="rvts4">, и как </span><span class="rvts11">пользователь</span><span class="rvts4">.
+ Следовательно, у него должна быть возможность пользоваться программой, 
+например, выполнять заказы и пополнять список товаров. Таким образом, 
+пользователь "Администратор" будет представлять из себя комбинацию 
+полномочий игрока и администратора. </span></p>
+<p class="rvps12"><span class="rvts4">Именно поэтому роль "Администратор" обладает правами на </span><span class="rvts11">администрирование системы и данных</span><span class="rvts4">.
+ Но, по мере добавления объектов, у него будут добавляться права на их 
+использование. Для этого установим галочку "Устанавливать права для 
+новых объектов" (рис. 16.3). </span></p>
+<p class="rvps13"><img 217="" 184="" alt="" style="padding : 1px;" src="16_data/img3.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.3. Установка прав для новых объектов </span></p>
+<p class="rvps2"><span class="rvts4"> Также необходимо добавить еще одну роль. Имя роли </span>–<span class="rvts4"> "Игрок" (рис. 16.4). </span></p>
+<p class="rvps13"><img 393="" 108="" alt="" style="padding : 1px;" src="16_data/img4.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.4. Добавление роли "Игрок"</span></p>
+<p class="rvps12"><span class="rvts4">Роль "Игрок" должна представлять 
+из себя совокупность всех прав доступа, кроме администрирования. В 
+данном случае будет удобнее сначала выдать пользователю все права, а 
+потом снять галочки у "Администрирование" и "Администрирование данных". 
+Также необходимо установить галочку напротив свойства "Устанавливать 
+права для новых объектов" (рис. 16.5). </span></p>
+<p class="rvps12"><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts10"><br></span></p>
+<p class="rvps13"><img 325="" 276="" alt="" style="padding : 1px;" src="16_data/img5.png"></p>
+<p class="rvps15"><span class="rvts9">Рис. 16.5. Настройка прав для роли "Игрок"</span></p>
+<p><span class="rvts10"><br></span></p>
+<h2 class="rvps9"><a name="_Toc121319204"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Добавление основных пользователей</span></span><span class="rvts0"><span class="rvts12"> </span></span></h2>
+<p class="rvps12"><span class="rvts3">Вторая задача</span><span class="rvts4">, которую необходимо реализовать, </span>–<span class="rvts4"> это добавить пользователей в систему. </span></p>
+<p class="rvps12"><span class="rvts4">Сейчас пользователи будут 
+добавлены вручную, но в дальнейшем они будут создаваться автоматически 
+при регистрации новых игроков в системе. </span></p>
+<p class="rvps12"><span class="rvts4">Для того чтобы добавить новых 
+пользователей, необходимо сначала обновить конфигурацию базы данных. 
+Если этого не сделать, то при создании пользователей и распределении 
+ролей между ними роли не отобразятся в списке выбора. </span></p>
+<p class="rvps12"><span class="rvts4">После обновления конфигурации базы
+ данных перейдем на вкладку "Администрирование" и выберем в списке 
+"Пользователи" (рис. 16.6). </span></p>
+<p class="rvps13"><img 377="" 108="" alt="" style="padding : 1px;" src="16_data/img6.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.6. Переход к списку пользователей </span></p>
+<p class="rvps12"><span class="rvts4">Изначально в системе будут фигурировать два пользователя </span>–<span class="rvts4"> "Администратор" и "Тестовый пользователь". Последний будет добавлен лишь для проверки. </span></p>
+<p class="rvps12"><span class="rvts4">В открывшемся окне нажмем на 
+кнопку "Добавить". В качестве имени пользователя укажем "Администратор" 
+(рис. 16.7). Авторизация пользователей будет выполняться средствами 
+платформы "1С:Предприятие" без пароля. </span></p>
+<p class="rvps12"><span class="rvts4">Перейдем на вкладку "Прочее" и 
+выберем обе доступные роли, так как "Администратор" должен 
+администрировать систему и иметь возможность играть (рис. 16.8). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 270="" 216="" alt="" style="padding : 1px;" src="16_data/img7.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 248="" 220="" alt="" style="padding : 1px;" src="16_data/img8.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.7. Добавление пользователя "Администратор"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.8. Выбор ролей для пользователя "Администратор"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">Добавим еще одного пользователя. Имя пользователя </span>–<span class="rvts4">
+ "Тест" (рис. 16.9). Перейдем на вкладку "Прочее" и в списке доступных 
+ролей поставим галочку напротив поля "Игрок" (рис. 16.10). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 288="" 231="" alt="" style="padding : 1px;" src="16_data/img9.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 266="" 230="" alt="" style="padding : 1px;" src="16_data/img10.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.9. Добавление пользователя "Тест"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.10. Выбор ролей для пользователя "Тест"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">При запуске игры система будет 
+спрашивать, под каким пользователем необходимо зайти в программу. 
+Запустим режим пользователя и в выпадающем списке выберем 
+"Администратор" (рис. 16.11). </span></p>
+<p class="rvps13"><img 268="" 144="" alt="" style="padding : 1px;" src="16_data/img11.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.11. Запуск игры под "Администратором"</span></p>
+<p class="rvps12"><span class="rvts4">В результате система запустилась 
+под пользователем "Администратор". На начальном экране отображаются 
+информация о рейтинге и бюджете этого игрока, список заказов, а также 
+приобретенные им апгрейды (рис. 16.12). </span></p>
+<p class="rvps13"><img 445="" 280="" alt="" style="padding : 1px;" src="16_data/img12.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.12. Начальная страница игрока "Администратор"</span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и перезапустим игру под пользователем "Тест" (рис. 16.13). </span></p>
+<p class="rvps13"><img 304="" 164="" alt="" style="padding : 1px;" src="16_data/img13.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.13. Запуск игры под тестовым игроком</span></p>
+<p class="rvps12"><span class="rvts4">По задумке, на начальной странице 
+должна отобразиться информация об игроке "Тест": его бюджет, рейтинг, 
+апгрейды и список актуальных заказов. Так как это новый игрок</span><span class="rvts10">,</span><span class="rvts4"> и данных о нем еще нет в системе, то все эти характеристики должны быть пустыми (рис. 16.14).</span></p>
+<p class="rvps13"><img 423="" 271="" alt="" style="padding : 1px;" src="16_data/img14.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.14. Начальная страница игрока "Тест"</span></p>
+<p class="rvps12"><span class="rvts4">Но после запуска пользовательского
+ режима на начальном экране у нас аналогичная картина. Отбор информации 
+на начальный экран выстраивается вокруг параметра сеанса. На данный 
+момент параметр сеанса </span>–<span class="rvts4"> фиксированное значение, которое соответствует элементу "Администратор" из справочника "Игроки"</span><span class="rvts10">.</span></p>
+<p class="rvps12"><span class="rvts4">Перейдем в справочник "Игроки" и добавим новую запись о текущем игроке </span>–<span class="rvts4"> "Тест". Наименование и код должны совпадать (рис. 16.15). </span></p>
+<p class="rvps13"><img 359="" 385="" alt="" style="padding : 1px;" src="16_data/img15.png"></p>
+<p class="rvps15"><span class="rvts9">Рис. 16.15. Создание игрока "Тест"</span></p>
+<p><span class="rvts10"><br></span></p>
+<h2 class="rvps9"><a name="_Toc121319205"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Доработка программы для разделения ее на пользователей</span></span></h2>
+<p class="rvps12"><span class="rvts4">Третья задача заключается в том</span><span class="rvts10">,</span><span class="rvts4"> чтобы поменять принцип заполнения параметра сеанса при запуске системы. </span></p>
+<p class="rvps12"><span class="rvts4">Принцип следующий: когда 
+пользователь запускает игру, он запускает ее под конкретным именем, 
+которое можно увидеть в правой верхней части в пользовательском режиме. В
+ момент запуска игры, после выбора пользователя, система должна будет 
+найти в справочнике "Игроки" соответствующую запись и установить 
+значение параметра сеанса как ссылку на ее значение. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Данная программная логика 
+определена в модуле сеанса. Чтобы туда попасть, нажмем правой кнопкой 
+мыши по "Конфигурации" и выберем в списке пункт "Открыть модуль сеанса" 
+(рис. 16.16). </span></p>
+<p class="rvps13"><img 262="" 153="" alt="" style="padding : 1px;" src="16_data/img16.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.16. Переход в модуль сеанса </span></p>
+<p class="rvps12"><span class="rvts4">Изменим программную логику заполнения параметра сеанса. </span></p>
+<p class="rvps12"><span class="rvts4">Первое, что необходимо сделать, </span>–<span class="rvts4"> это получить ссылку на текущего игрока из справочника "Игроки"</span><span class="rvts10">.</span><span class="rvts4"> Чтобы понять, что именно нужно искать, получим имя пользователя, запустившего систему. </span></p>
+<p><img 603="" 90="" alt="" style="padding : 1px;" src="16_data/img17.png"></p>
+<p class="rvps12"><span class="rvts4">Это значение будет использоваться для поиска нужного элемента в справочнике "Игроки" по реквизиту "Код". </span></p>
+<p><img 612="" 86="" alt="" style="padding : 1px;" src="16_data/img18.png"></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под игроком "Тест"</span><span class="rvts10">.</span></p>
+<p class="rvps12"><span class="rvts4">В результате на начальной странице
+ отображаются рейтинг и бюджет, равные нулю, а также пустой список 
+актуальных апгрейдов. Однако директор и список текущих заказов 
+по-прежнему отображаются неверно (рис. 16.17). </span></p>
+<p class="rvps13"><img 399="" 256="" alt="" style="padding : 1px;" src="16_data/img19.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.17. Начальная страница игрока "Тест"</span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Для начала исправим значение в 
+поле "Директор". Значение константы "Директор" можно заполнить именем 
+пользователя, которое было получено в модуле сеанса. </span></p>
+<p><img 467="" 72="" alt="" style="padding : 1px;" src="16_data/img20.png"></p>
+<p class="rvps12"><span class="rvts4">Каждый раз, когда игру будут запускать разные игроки, на начальной странице будут отображаться разные имена директора. </span></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию и запустим пользовательский режим под пользователем "Тест"</span><span class="rvts10">.</span></p>
+<p class="rvps12"><span class="rvts4">В результате имя директора теперь соответствует имени пользователя, который вошел в игру (рис. 16.18)</span></p>
+<p class="rvps13"><img 422="" 271="" alt="" style="padding : 1px;" src="16_data/img21.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.18. Начальная страница игрока "Тест"</span></p>
+<p class="rvps12"><span class="rvts4">Следующее, что необходимо настроить на начальном экране, </span>–<span class="rvts4">
+ это список актуальных заказов. Необходимо для каждой задачи указать, 
+какому игроку она предназначается. Логика будет следующая: в момент 
+открытия магазина будет создаваться задача. В задаче должно быть 
+указано, кому она предназначается, и на основании отбора по игроку будет
+ формироваться список актуальных заказов для каждого игрока. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Откроем окно редактирования задачи "Этапы заказа" и перейдем на вкладку "Адресация" (рис. 16.19).</span></p>
+<p class="rvps13"><img 307="" 239="" alt="" style="padding : 1px;" src="16_data/img22.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.19. Начальная страница игрока "Тест"</span></p>
+<p class="rvps12"><span class="rvts4">Чтобы указать у задачи, какому 
+игроку она предназначена, необходимо создать "Реквизит адресации". Его 
+особенность заключается в том, что, в отличие от обычного реквизита, 
+который просто хранит информацию, реквизит адресации позволяет в 
+дальнейшем создать отбор по исполнителю (игроку). </span></p>
+<p class="rvps12"><span class="rvts4">Добавим новый реквизит адресации. Имя реквизита </span>–<span class="rvts4"> "ТекущийИгрок", тип </span>–<span class="rvts4"> "СправочникСсылка.Игроки" (рис. 16.20). </span></p>
+<p class="rvps13"><img 439="" 212="" alt="" style="padding : 1px;" src="16_data/img23.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.20. Добавление реквизита адресации "ТекущийИгрок"</span></p>
+<p class="rvps12"><span class="rvts4">Далее необходимо связать реквизит 
+адресации, то есть данные по задаче с информацией о том, какой 
+пользователь запустил игру. Информация о пользователе хранится в 
+параметре сеанса. </span></p>
+<p class="rvps12"><span class="rvts4">В поле "Текущий исполнитель" нажмем на кнопку выбора (троеточие) и в открывшемся окне выберем "ТекущийИгрок" (рис. 16.21). </span></p>
+<p class="rvps13"><img 400="" 236="" alt="" style="padding : 1px;" src="16_data/img24.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.21. Выбор текущего исполнителя </span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps2"><span class="rvts4">Также установим связь с основным реквизитом адресации (рис. 16.22). </span></p>
+<p class="rvps13"><img 425="" 245="" alt="" style="padding : 1px;" src="16_data/img25.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.22. Выбор основного реквизита адресации</span></p>
+<p class="rvps12"><span class="rvts4">Все эти настройки позволят указать на начальном экране, что список задач нужно выводить только по текущему игроку. </span></p>
+<p class="rvps12"><span class="rvts4">Откроем общую форму "Начальная страница", чтобы сделать соответствующие настройки (рис. 16.23).</span></p>
+<p class="rvps13"><img 207="" 293="" alt="" style="padding : 1px;" src="16_data/img26.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.23. Переход к общей форме</span></p>
+<p class="rvps12"><span class="rvts4">На форме "Начальная страница" 
+откроем палитру свойств реквизита "Активные заказы" и на вкладке 
+"Объект" нажмем на кнопку "Открыть" напротив настройки списка (рис. 
+16.24). </span></p>
+<p class="rvps13"><img 568="" 430="" alt="" style="padding : 1px;" src="16_data/img27.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.24. Переход к настройкам списка</span></p>
+<p class="rvps12"><span class="rvts4">Для отображения текущих задач 
+игрока потребуется изменить таблицу, из которой считывается информация. 
+Сейчас информация считывается по наименованию, товару и его количеству, а
+ также по итогу этапа заказа из таблицы "Задача.ЭтапыЗаказа". </span></p>
+<p class="rvps12"><span class="rvts4">Нажмем на кнопку "Конструктор запроса", чтобы изменить логику формирования списка актуальных заказов (рис. 16.25). </span></p>
+<p class="rvps13"><img 323="" 209="" alt="" style="padding : 1px;" src="16_data/img28.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.25. Переход к конструктору запроса </span></p>
+<p class="rvps12"><span class="rvts4">Если развернуть группировку, то 
+можно увидеть, что теперь в запросе можно обращаться к двум таблицам: 
+"ЭтапыЗаказа" и "ЭтапыЗаказа.ЗадачиПоИсполнителю" (рис. 16.26). </span></p>
+<p class="rvps13"><img 449="" 188="" alt="" style="padding : 1px;" src="16_data/img29.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.26. Список задач в конструкторе запроса</span></p>
+<p class="rvps12"><span class="rvts4">"ЭтапыЗаказа.ЗадачиПоИсполнителю" </span>–<span class="rvts4"> это таблица, в которой происходит отбор по исполнителю, информация о котором хранится в параметре сеанса. </span></p>
+<p class="rvps12"><span class="rvts4">В запросе необходимо получить 
+информацию о наименовании задачи, товаре, количестве товара и итоге по 
+задаче из таблицы "ЭтапыЗаказа.ЗадачиПоИсполнителю" (рис. 16.27). </span></p>
+<p class="rvps13"><img 459="" 248="" alt="" style="padding : 1px;" src="16_data/img30.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.27. Выбор полей для запроса </span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts4">После выбора полей нажмем на кнопку "ОК". Следующее, что необходимо сделать, </span>–<span class="rvts4"> это изменить заголовки колонок в тексте запроса (рис. 16.28). </span></p>
+<p class="rvps13"><img 433="" 121="" alt="" style="padding : 1px;" src="16_data/img31.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.28. Изменение заголовков колонок</span></p>
+<p class="rvps12"><span class="rvts4">На начальной странице необходимо 
+выводить только актуальные заказы. Перейдем на вкладку "Настройки" и 
+выберем "Отбор". Отбор записей должен выполняться по полю "Выполнена" в 
+значении "Ложь" (рис. 16.29). </span></p>
+<p class="rvps16"><img 433="" 235="" alt="" style="padding : 1px;" src="16_data/img32.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.29. Настройка отбора </span></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под игроком "Тест". </span></p>
+<p class="rvps12"><span class="rvts4">В результате видим, что в списке текущих задач для игрока "Тест" пусто (рис. 16.30). </span></p>
+<p class="rvps13"><img 434="" 271="" alt="" style="padding : 1px;" src="16_data/img33.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.30. Начальная страница игрока "Тест"</span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts4">Однако, если перейти к списку всех
+ этапов заказа, то все задачи будут на месте. Так как реквизит адресации
+ "Текущий игрок" был добавлен после создания в базе всех заказов, то он 
+везде не будет заполнен (рис. 16.31). </span></p>
+<p class="rvps16"><img 397="" 235="" alt="" style="padding : 1px;" src="16_data/img34.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.31. Список этапов заказа </span></p>
+<p class="rvps2"><span class="rvts4">Вернемся на начальную страницу и откроем магазин (рис. 16.32). </span></p>
+<p class="rvps13"><img 339="" 256="" alt="" style="padding : 1px;" src="16_data/img35.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.32. Ожидание заказов</span></p>
+<p class="rvps12"><span class="rvts4">По истечению десяти и даже 
+двадцати секунд новых заказов в этом списке не появится. Но если 
+вернуться к списку этапов заказа и обновить его, то новые задачи 
+отобразятся, и в них также не будет указан исполнитель (рис. 16.33).</span></p>
+<p class="rvps13"><img 351="" 149="" alt="" style="padding : 1px;" src="16_data/img36.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.33. Список этапов заказа</span></p>
+<p class="rvps12"><span class="rvts4">Необходимо доработать создание задач. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Перейдем в модуль объекта "Этапы заказа", чтобы описать алгоритм заполнения реквизита адресации (рис. 16.34). </span></p>
+<p class="rvps13"><img 333="" 154="" alt="" style="padding : 1px;" src="16_data/img37.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.34. Переход в модуль объекта этапов заказа</span></p>
+<p class="rvps12"><span class="rvts4">В момент появления новой задачи 
+необходимо дозаполнять реквизит адресации и указывать, что он равен 
+информации из параметра сеанса. Для реализации этого алгоритма подойдет 
+обработчик "ПередЗаписью". </span></p>
+<p class="rvps12"><span class="rvts4">Добавим новый обработчик, нажав на кнопку "Процедуры и функции" и выбрав в списке обработчик "ПередЗаписью" (рис. 16.35). </span></p>
+<p class="rvps13"><img 455="" 350="" alt="" style="padding : 1px;" src="16_data/img38.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.35. Создание обработчика события "ПередЗаписью" </span></p>
+<p class="rvps12"><span class="rvts4">Перед записью задачи необходимо 
+указать, что реквизит адресации должен заполняться, только если 
+создается новая задача. Такую проверку можно осуществить с помощью 
+метода "ЭтоНовый". Данный метод проверяет, есть ли у элемента ссылка. 
+Если ссылки нет и создается новая задача, то укажем текущего игрока.</span></p>
+<p><img 333="" 84="" alt="" style="padding : 1px;" src="16_data/img39.png"></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под пользователем "Тест". </span></p>
+<p class="rvps12"><span class="rvts4">Откроем магазин, чтобы проверить только что реализованный функционал (рис. 16.36).</span></p>
+<p class="rvps13"><img 473="" 309="" alt="" style="padding : 1px;" src="16_data/img40.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.36. Начальная страница с новой задачей для текущего игрока</span></p>
+<p class="rvps12"><span class="rvts4">В результате в списке появилась 
+новая задача. Если сейчас открыть список этапов заказа, то у последней 
+задачи будет указан исполнитель "Тест" (рис. 16.37). </span></p>
+<p class="rvps13"><img 485="" 277="" alt="" style="padding : 1px;" src="16_data/img41.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.37. Список этапов заказа с новой задачей для текущего игрока</span></p>
+<p class="rvps17"><span class="rvts4">Однако тестовый игрок сейчас не 
+сможет выполнить ни один заказ, поскольку у него нет денег. В дальнейшем
+ создание пользователей будет происходить интерактивно по следующему 
+алгоритму: игрок включает игру и указывает, что хочет создать нового 
+пользователя в системе, далее вводит логин для этого пользователя. На 
+основании логина в системе создается запись о пользователе, и ему сразу 
+начисляется стартовый бюджет. Весь этот алгоритм будет реализован на 
+следующем занятии через форму регистрации. </span></p>
+<h2 class="rvps9"><a name="_Toc121319206"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Настройка интерфейса</span></span></h2>
+<p class="rvps12"><span class="rvts4">Сейчас же необходимо выполнить </span><span class="rvts3">четвертую задачу</span><span class="rvts4">, а именно сделать несколько доработок для формы начального экрана. </span></p>
+<p class="rvps12"><span class="rvts4">На начальный экран необходимо 
+вынести команду для приобретения апгрейдов, а также команды, которые 
+позволят игроку просматривать список заказов, текущие задачи и покупать 
+новые товары. </span></p>
+<p class="rvps12"><span class="rvts4">Все команды, которые сейчас мы 
+наблюдаем в режиме пользователя сверху, будут отображены в виде 
+отдельных кнопок. При этом список апгрейдов, товаров и их видов игрок 
+видеть не будет. Вся верхняя панель будет убрана из интерфейса игрока. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем режим пользователя и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Первое, что необходимо сделать, </span>–<span class="rvts4"> это открыть начальную страницу (рис. 16.38). </span></p>
+<p class="rvps13"><img 227="" 326="" alt="" style="padding : 1px;" src="16_data/img42.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.38. Переход к начальной странице </span></p>
+<p class="rvps12"><span class="rvts4">В раздел "Основные" добавим 
+команду для покупки апгрейдов. Это стандартная команда для функционала 
+системы. Перейдем на вкладку "Глобальные команды" и найдем в списке 
+команду для создания нового документа "Приобретение апгрейда". Добавим 
+эту команду на форму (рис. 16.39). </span></p>
+<p class="rvps13"><img 389="" 186="" alt="" style="padding : 1px;" src="16_data/img43.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.39. Добавление новой команды на форму</span></p>
+<p class="rvps2"><span class="rvts4">В качестве заголовка команды укажем "Купить апгрейд" (рис. 16.40). </span></p>
+<p class="rvps13"><img 390="" 171="" alt="" style="padding : 1px;" src="16_data/img44.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.40. Изменение заголовка команды </span></p>
+<p class="rvps2"><span class="rvts4">Также необходимо визуально выделить кнопку "Открыть магазин" (рис. 16.41). </span></p>
+<p class="rvps13"><img 464="" 184="" alt="" style="padding : 1px;" src="16_data/img45.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.41. Кнопка по умолчанию </span></p>
+<p class="rvps2"><span class="rvts4">Добавим еще одну группу в уже существующую группу "КомандыФормы"</span><span class="rvts10">.</span><span class="rvts4"> Тип создаваемого элемента </span>–<span class="rvts4"> "Группа </span>–<span class="rvts4">
+ Обычная группа", в которой будут располагаться команды для быстрого 
+перехода к спискам заказов, текущих задач и покупке товаров (рис. 
+16.42). Имя группы </span>–<span class="rvts4"> "ДанныеЗаказов", группировка </span>–<span class="rvts4"> "Вертикальная" (рис. 16.43). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><img 264="" 157="" alt="" style="padding : 1px;" src="16_data/img46.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><img 390="" 159="" alt="" style="padding : 1px;" src="16_data/img47.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.42. Добавление новой команды</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.43. Настройка группы "ДанныеЗаказов"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">В эту группу необходимо добавить 
+команды для перехода к списку заказов, задач и покупок товаров. Их можно
+ найти на вкладке "Глобальные команды" в разделе "Обычное" (рис. 16.44).
+ </span></p>
+<p class="rvps13"><img 450="" 233="" alt="" style="padding : 1px;" src="16_data/img48.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.44. Добавление новых команд на форму </span></p>
+<p class="rvps12"><span class="rvts4">Определим заголовки для команд. Для команды "Заказ" </span>–<span class="rvts4"> "Список заказов", "Этапы заказа" </span>–<span class="rvts4"> "Текущие задачи" (рис. 16.45 </span>–<span class="rvts4"> 16.46). </span></p>
+<p class="rvps13"><img 387="" 166="" alt="" style="padding : 1px;" src="16_data/img49.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.45. Изменение заголовка команды "Заказы" </span></p>
+<p class="rvps13"><img 398="" 170="" alt="" style="padding : 1px;" src="16_data/img50.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.46. Изменение заголовка команды "Этапы заказа"</span></p>
+<p class="rvps12"><span class="rvts4">Следующая настройка, которую необходимо выполнить в интерфейсе, </span>–<span class="rvts4"> это визуально выделить группы с командами для игрока. </span></p>
+<p class="rvps12"><span class="rvts4">Для этого выделим все три группы и в палитре свойств укажем в свойстве "Отображение" </span>–<span class="rvts4"> "Сильное выделение" (рис. 16.47). </span></p>
+<p class="rvps13"><img 389="" 167="" alt="" style="padding : 1px;" src="16_data/img51.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.47. Изменение отображения групп</span></p>
+<p class="rvps12"><span class="rvts4">Теперь группы разделены зеленой линией. Но данное цветовое оформление можно изменить. </span></p>
+<p class="rvps12"><span class="rvts4">Чтобы изменить цветовое оформление программы, потребуется создать стиль. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 50="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 50="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts3">Стиль</span><span class="rvts4"> </span>–<span class="rvts4"> механизм, позволяющий настроить оформление программы. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">Добавим новый стиль. Данный механизм располагается в ветке "Общие" (рис. 16.48). </span></p>
+<p class="rvps13"><img 195="" 400="" alt="" style="padding : 1px;" src="16_data/img52.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.48. Добавление нового стиля </span></p>
+<p class="rvps2"><span class="rvts4">В открывшемся окне укажем имя стиля, например, "Мой стиль" (рис. 16.49). </span></p>
+<p class="rvps13"><img 324="" 276="" alt="" style="padding : 1px;" src="16_data/img53.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.49. Настройка имени стиля</span></p>
+<p class="rvps12"><span class="rvts4">В этом окне можно поэкспериментировать с настройками цветов различных разделов интерфейса и сразу увидеть результат. </span></p>
+<p class="rvps12"><span class="rvts4">Вариант цветового оформления для данной программы представлен на рисунке 16.50. </span></p>
+<p class="rvps13"><img 327="" 253="" alt="" style="padding : 1px;" src="16_data/img54.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.50. Настройка стиля</span></p>
+<p><span class="rvts10"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><img 68="" alt="" style="padding : 1px;" src="16_data/img55.png"></p>
+</td>
+<td 533="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><span class="rvts8">Больше вариантов для выбора цвета можно найти на вкладке "web" при выборе цвета.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">Осталось применить стиль к 
+создаваемой системе. Для этого необходимо указать основной стиль 
+оформления программы в свойствах конфигурации (рис. 16.51). </span></p>
+<p class="rvps13"><img 510="" 245="" alt="" style="padding : 1px;" src="16_data/img56.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.51. Выбор основного стиля для конфигурации</span></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps12"><span class="rvts4">В результате система выглядит по-другому (рис. 16.52). </span></p>
+<p class="rvps13"><img 532="" 324="" alt="" style="padding : 1px;" src="16_data/img57.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.52. Пользовательский режим после применения стиля</span></p>
+<p class="rvps12"><span class="rvts4">В интерфейсе сначала идет группа с отчетами, а только потом </span>–<span class="rvts4"> команды для перехода к данным заказов. Пользователю будет удобнее, если поменять местами две эти группы. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">На общей форме "Начальная страница" изменим порядок групп (рис. 16.53). </span></p>
+<p class="rvps13"><img 254="" 285="" alt="" style="padding : 1px;" src="16_data/img58.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.53. Изменение порядка групп </span></p>
+<p class="rvps12"><span class="rvts4">Следующее, что будет реализовано в рамках этого занятия, </span>–<span class="rvts4"> разграничение функционала между пользователем и администратором. </span></p>
+<p class="rvps12"><span class="rvts4">Для реализации такого 
+разграничения создадим подсистему, в которую будет включен весь 
+функционал программ, и ограничим видимость этой подсистемы для 
+пользователя. </span></p>
+<p class="rvps12"><span class="rvts4">Добавим новую подсистему, ее можно найти в ветке "Общие", назовем ее "ДляАдминистратора" (рис. 16.54). </span></p>
+<p class="rvps13"><img 416="" 236="" alt="" style="padding : 1px;" src="16_data/img59.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.54. Добавление подсистемы "ДляАдминистратора"</span></p>
+<p class="rvps12"><span class="rvts4">В этом же окне для красоты можно указать картинку для подсистемы. Но перед этим картинку нужно добавить. </span></p>
+<p class="rvps12"><span class="rvts4">В ветке "Общие" найдем раздел "Общие картинки" и добавим новую картинку. Имя картинки </span>–<span class="rvts4">
+ "Администратор" (рис. 16.55). Далее необходимо нажать на кнопку 
+"Выбрать из файла" и в проводнике выбрать нужную картинку (рис. 16.56). </span></p>
+<div><table 671="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 259="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 252="" 196="" alt="" style="padding : 1px;" src="16_data/img60.png"></p>
+</td>
+<td 384="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 375="" 198="" alt="" style="padding : 1px;" src="16_data/img61.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 259="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.55. Добавление картинки "Администратор"</span></p>
+</td>
+<td 384="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.56. Выбор картинки из проводника</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Теперь можно указать эту картинку для подсистемы (рис. 16.57). </span></p>
+<p class="rvps13"><img 364="" 178="" alt="" style="padding : 1px;" src="16_data/img62.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.57. Выбор картинки для подсистемы</span></p>
+<p class="rvps12"><span class="rvts4">Далее необходимо определить состав
+ подсистемы. Для этого перейдем на вкладку "Состав" и проставим галочки у
+ всех констант, справочников, документов, отчетов, регистров сведений, 
+регистров накопления, бизнес-процессов и задач (рис. 16.58). </span></p>
+<p class="rvps13"><img 208="" 285="" alt="" style="padding : 1px;" src="16_data/img63.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.58. Выбор объектов для подсистемы </span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts4">Перейдем к настройке роли "Игрок".
+ В ветке "Общие" развернем список ролей и откроем окно настройки прав 
+доступа роли "Игрок". У данной роли необходимо снять права на просмотр 
+подсистемы "ДляАдминистратора" (рис. 16.59). </span></p>
+<p class="rvps13"><img 407="" 229="" alt="" style="padding : 1px;" src="16_data/img64.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.59. Настройка роли "Игрок"</span></p>
+<p class="rvps12"><span class="rvts4">Благодаря этой настройке пользователи с ролью "Игрок" не будут видеть всего функционала программы. </span></p>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим под игроком "Тест" (рис. 16.60). </span></p>
+<p class="rvps13"><img 452="" 348="" alt="" style="padding : 1px;" src="16_data/img65.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.60. Начальный экран</span></p>
+<p class="rvps12"><span class="rvts4">В результате игрок больше не видит
+ команд для перехода к функционалу, но при этом поле, в котором этим 
+команды должны были отображаться, осталось. </span></p>
+<p class="rvps12"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps12"><span class="rvts4">Обратимся к свойствам конфигурации
+ и отроем интерфейс клиентского приложения (рис. 16.61). В открывшемся 
+окне уберем "Панель функций текущего раздела" с помощью кнопки "Удалить"
+ (рис. 16.62). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 214="" 139="" alt="" style="padding : 1px;" src="16_data/img66.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><img 383="" 228="" alt="" style="padding : 1px;" src="16_data/img67.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.61. Переход к интерфейсу клиентского приложения</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps14"><span class="rvts9">Рис. 16.62. Настройка интерфейса клиентского приложения</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps12"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps12"><span class="rvts4">Так у обычного игрока не будут отображаться лишние команды в пользовательском режиме (рис. 16.63).</span></p>
+<p class="rvps13"><img 384="" 290="" alt="" style="padding : 1px;" src="16_data/img68.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.63. Финальный вариант интерфейса игрока</span></p>
+<p class="rvps2"><span class="rvts4">Перезапустим систему под пользователем "Администратор" (рис. 16.64). </span></p>
+<p class="rvps13"><img 334="" 180="" alt="" style="padding : 1px;" src="16_data/img69.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.64. Запуск системы под пользователем "Администратор"</span></p>
+<p><span class="rvts10"><br></span></p>
+<p class="rvps12"><span class="rvts4">В свою очередь, администратор 
+будет иметь доступ к разделу "Для администратора", где расположены все 
+необходимые для настройки игры объекты (рис. 16.65). </span></p>
+<p class="rvps13"><img 461="" 336="" alt="" style="padding : 1px;" src="16_data/img70.png"></p>
+<p class="rvps14"><span class="rvts9">Рис. 16.65. Раздел "Для администратора"</span></p>
+<p class="rvps13"><span class="rvts13">На этом шестнадцатое занятие окончено!</span></p>
+<p class="rvps12"><span class="rvts3">На этом занятии </span><span class="rvts4">мы завершили разработку механизма, который позволит разделить игру на пользователей. </span></p>
+<p class="rvps17"><span class="rvts4">На </span><span class="rvts3">следующем занятии</span><span class="rvts4"> мы реализуем форму для регистрации новых игроков в системе. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps11"><span class="rvts14">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps11"><span class="rvts15"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 61="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><img 81="" alt="" style="padding : 1px;" src="16_data/img71.png"></p>
+</td>
+<td 440="" 61="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps11"><span class="rvts3">Роль</span><span class="rvts4"> </span>–<span class="rvts4"> это набор полномочий, который указывает, что может делать пользователь, а что </span>–<span class="rvts4"> нет.</span></p>
+<p class="rvps12"><span class="rvts3">Стиль</span><span class="rvts4"> </span>–<span class="rvts4"> механизм, позволяющий настроить оформление программы. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts10"><br></span></p>
+<h2 class="rvps21"><a name="_Toc121319207"></a>
+<span class="rvts0"><span class="rvts16">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Что такое роль? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Какой пользователь и с какой ролью обязательно должен быть в системе? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Для чего нужен стиль? </span></li>
+</ol>
+<p class="rvps22"><span class="rvts10"><br></span></p>
+<p style="page-break-before: always;"><span class="rvts2"><br></span></p>
+<p><span class="rvts10"><br></span></p>
+
+</body></html>

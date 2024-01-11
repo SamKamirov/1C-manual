@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts10
+{
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts15
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps7
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps12
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 47px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 47px;
+}
+.rvps17
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps20
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 47px; list-style-position: outside; list-style-type: disc;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 49px; list-style-position: outside; list-style-type: decimal;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319177"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 12. <br><br> </span></span><br><span class="rvts0"><span class="rvts1">Доработка</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">рейтинга</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> доработка механизмов, связанных с рейтингом игрока. </span></p>
+<p class="rvps2"><span class="rvts4">На этом занятии мы выполним 3 задачи: </span></p>
+<ol class="list2">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Доработаем механизм получения данных о текущем рейтинге игрока</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Автоматизируем обновление рейтинга при покупке нового апгрейда</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="3" style="margin-left: 0px" class="rvps6"><span class="rvts5">Настроим взаимосвязь между рейтингом игрока и частотой поступления заказов. </span></li>
+</ol>
+<h2 class="rvps7"><a name="_Toc121319178"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Доработка получения текущего рейтинга игрока</span></span></h2>
+<p class="rvps8"><span class="rvts4">При запуске пользовательского 
+режима рейтинг имеет значение 20 вместо 10. Это происходит, потому что 
+при запуске система сверяет купленные апгрейды и добавляет 
+соответствующее количество очков. Если перезапустить пользовательский 
+режим, то количество очков снова увеличится. Все потому, что при запуске
+ очки рейтинга не обнуляются. </span></p>
+<p class="rvps8"><span class="rvts4">При обновлении данных игрока установим количество очков рейтинга на 0. Для этого перейдем в модуль общей формы (рис. 12.1).</span></p>
+<p class="rvps9"><img 300="" 181="" alt="" style="padding : 1px;" src="12_data/img1.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.1. Открытие модуля формы</span></p>
+<p class="rvps8"><span class="rvts4">Дополним процедуру "ОбновитьДанныеИгрока"</span><span class="rvts9">.</span></p>
+<p class="rvps2"><img 564="" 167="" alt="" style="padding : 1px;" src="12_data/img2.png"></p>
+<p class="rvps8"><span class="rvts4">Но, если купить еще один апгрейд, например, "Скидочная карта", то после покупки рейтинг не изменится (рис. 12.2).</span></p>
+<p class="rvps9"><img 447="" 244="" alt="" style="padding : 1px;" src="12_data/img3.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.2. Приобретение апгрейда</span></p>
+<p class="rvps8"><span class="rvts4">Рейтинг изменится, и картинка появится только после перезапуска игры (рис. 12.3). </span></p>
+<p class="rvps10"><img 380="" 176="" alt="" style="padding : 1px;" src="12_data/img4.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.3. Обновление данных при помощи перезапуска</span></p>
+<p class="rvps11"><span class="rvts4">Это происходит из-за того, что 
+начальной форме необходимо сообщить о том, что ей нужно снова 
+проанализировать купленные апгрейды и пересчитать рейтинг.</span></p>
+<h2 class="rvps7"><a name="_Toc121319179"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Автоматическое обновление рейтинга</span></span></h2>
+<p class="rvps8"><span class="rvts4">В момент, когда игрок приобретает 
+апгрейд, он закрывает форму путем нажатия кнопки "Купить". Добавим 
+событие "ПриЗакрытии" данной форме, которое будет сообщать начальной 
+странице, что ей необходимо обновиться.</span></p>
+<p class="rvps8"><span class="rvts4">Для этого закроем пользовательский режим, вернемся в конфигуратор и приступим к выполнению </span><span class="rvts3">второй задачи</span><span class="rvts9">.</span></p>
+<p class="rvps8"><span class="rvts4">Откроем редактор формы документа "ПриобретениеАпгрейда" (рис. 12.4).</span></p>
+<p class="rvps9"><img 170="" 353="" alt="" style="padding : 1px;" src="12_data/img5.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.4. Открытие редактора форм</span></p>
+<p class="rvps2"><span class="rvts4">Создадим событие "ПриЗакрытии" на клиенте (рис. 12.5).</span></p>
+<p class="rvps9"><img 485="" 132="" alt="" style="padding : 1px;" src="12_data/img6.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.5. Создание события "ПриЗакрытии"</span></p>
+<p class="rvps8"><span class="rvts4">В событии обратимся к процедуре "ОбновитьНачальныйЭкран" при помощи метода "Оповестить"</span><span class="rvts9">.</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps12"><span class="rvts10"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps13"><span class="rvts9">Метод </span><span class="rvts11">"Оповестить()"</span><span class="rvts9"> отсылает оповещение всем созданным (не обязательно открытым) формам.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><img 312="" 73="" alt="" style="padding : 1px;" src="12_data/img7.png"></p>
+<p class="rvps8"><span class="rvts4">Скопируем название данной процедуры и вернемся в модуль общей формы "НачальнаяСтраница". </span></p>
+<p class="rvps8"><span class="rvts4">Создадим новое событие "ОбработкаОповещения". Определим его на клиенте (рис. 12.6).</span></p>
+<p class="rvps9"><img 575="" 180="" alt="" style="padding : 1px;" src="12_data/img8.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.6. Открытие модуля общей формы и создание события</span></p>
+<p class="rvps8"><span class="rvts4">У данного обработчика есть параметр
+ "ИмяСобытия", которое необходимо сравнить с только что созданной в 
+оповещении процедурой и обновлять данные при срабатывании оповещения. 
+Также перенесем данную процедуру в область "#ОбработчикиСобытийФормы"</span><span class="rvts9">.</span></p>
+<p class="rvps2"><img 446="" 194="" alt="" style="padding : 1px;" src="12_data/img9.png"></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим для проверки работоспособности данного метода. </span></p>
+<p class="rvps8"><span class="rvts4">Для проверки приобретем апгрейд "Миска с водой" (рис. 12.7).</span></p>
+<p class="rvps9"><img 516="" 247="" alt="" style="padding : 1px;" src="12_data/img10.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.7. Приобретение апгрейда "Миска с водой"</span></p>
+<p class="rvps8"><span class="rvts4">После приобретения откроем 
+начальную страницу. Рейтинг автоматически обновился, и появилась 
+соответствующая картинка (рис. 12.8).</span></p>
+<p class="rvps9"><img 526="" 288="" alt="" style="padding : 1px;" src="12_data/img11.png"></p>
+<p class="rvps14"><span class="rvts8">Рис. 12.8. Проверка автоматического обновления рейтинга</span></p>
+<h2 class="rvps7"><a name="_Toc121319180"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Доработка автоматического поступления заказов</span></span></h2>
+<p class="rvps8"><span class="rvts4">Перейдем к третьей задаче и 
+определим интервал поступления заказов на основе рейтинга. Рейтинг, 
+используемый в форме начального экрана, имеет значение типа "Число". 
+Соответственно, его можно использовать для сравнения с определенным 
+уровнем.</span></p>
+<p class="rvps8"><span class="rvts4">Реализуем частоту поступления заказов:</span></p>
+<ul class="list0">
+<li style="margin-left: 0px" class="rvps16"><span class="rvts5">если рейтинг ниже 50, тогда клиенты будут появляться раз в 10 секунд;</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts5">если рейтинг выше 50, но ниже 100, </span><span class="rvts12">–</span><span class="rvts5"> клиенты приходят раз в 7 секунд;</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts5">если рейтинг выше 100 и ниже 150, </span><span class="rvts12">–</span><span class="rvts5">&nbsp; раз в 5 секунд;</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts5">если рейтинг выше 150 и ниже 200, </span><span class="rvts12">–</span><span class="rvts5"> раз в 2 секунды;</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts5">если рейтинг выше 200, тогда клиенты приходят каждую секунду.</span></li>
+</ul>
+<p class="rvps8"><span class="rvts4">Закроем пользовательский режим и вернемся в конфигуратор.</span></p>
+<p class="rvps8"><span class="rvts4">Откроем модуль начальной страницы и
+ создадим новую клиентскую функцию "УзнатьИнтервалПоРейтингу" в области 
+"СлужебныеПроцедурыИФункции"</span><span class="rvts9">.</span></p>
+<p class="rvps2"><img 312="" 229="" alt="" style="padding : 1px;" src="12_data/img12.png"></p>
+<p class="rvps8"><span class="rvts4">Данная функция будет состоять из конструкций "Если" и "ИначеЕсли"</span><span class="rvts9">.</span></p>
+<p><img 466="" 341="" alt="" style="padding : 1px;" src="12_data/img13.png"></p>
+<p class="rvps8"><span class="rvts4">Узнавать рейтинг необходимо при 
+открытии магазина. Перейдем к процедуре обработчика события 
+"ОткрытьМагазин" и изменим ее с использованием новой функции.</span></p>
+<p><img 540="" 205="" alt="" style="padding : 1px;" src="12_data/img14.png"></p>
+<p class="rvps8"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps8"><span class="rvts4">При нажатии на кнопку "Открыть 
+магазин" появляется сообщение с интервалом появления посетителей, и 
+через 10 секунд появляется первый заказ (рис. 12.9).</span></p>
+<p class="rvps9"><img 535="" 287="" alt="" style="padding : 1px;" src="12_data/img15.png"></p>
+<p class="rvps9"><span class="rvts8">Рис. 12.9. Проверка работы алгоритма</span></p>
+<p class="rvps17"><span class="rvts13">На этом двенадцатое занятие окончено!</span></p>
+<p class="rvps8"><span class="rvts3">На этом занятии </span><span class="rvts4">мы</span><span class="rvts3"> </span><span class="rvts4">усовершенствовали
+ механизм вывода рейтинга игрока на начальный экран, настроили его 
+автоматическое обновление, а также описали алгоритм, благодаря которому 
+частота поступления заказов будет напрямую зависеть от рейтинга игрока. </span></p>
+<p class="rvps11"><span class="rvts4">На </span><span class="rvts3">следующем занятии</span><span class="rvts4"> мы займемся финансовой составляющей игры. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><span class="rvts14">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps18"><span class="rvts11"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 130="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 117="" alt="" style="padding : 1px;" src="12_data/img16.png"></p>
+</td>
+<td 440="" 130="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps8"><span class="rvts9">Метод </span><span class="rvts11">"Оповестить()"</span><span class="rvts9"> отсылает оповещение всем созданным (не обязательно открытым) формам.</span></p>
+<p class="rvps8"><span class="rvts9">Для того чтобы сравнить, больше или равно одно значение относительно другого, используется символ </span><span class="rvts11">&gt;=</span><span class="rvts9">. </span></p>
+<p class="rvps8"><span class="rvts9">Если необходимо проверить </span><span class="rvts11">выполнение</span><span class="rvts9"> сразу </span><span class="rvts11">двух условий</span><span class="rvts9">, используется логический оператор И. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts9"><br></span></p>
+<h2 class="rvps20"><a name="_Toc121319181"></a>
+<span class="rvts0"><span class="rvts15">Контрольные вопросы</span></span></h2>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts5">С помощью какого метода можно изменить значение константы? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts5">Какой метод сообщает формам, что произошло какое-то событие? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps22"><span class="rvts5">Какой метод позволяет выводить информацию пользователю в нижней части экрана? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts2"><br></span></p>
+<p><span class="rvts9"><br></span></p>
+
+</body></html>

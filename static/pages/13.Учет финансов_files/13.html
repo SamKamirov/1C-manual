@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>13</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts10
+{
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps6
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 0px;
+}
+.rvps10
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps11
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps15
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps16
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319182"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 13. </span></span><span class="rvts0"><span class="rvts1">Учет</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">финансов</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия</span><span class="rvts4"> </span>–<span class="rvts4"> реализация учета финансов в системе. Для создания системы учета потребуется выполнить 4 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts5">Создать регистр накопления, который будет учитывать движение финансов</span><span class="rvts6">.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts5">Настроить логику движений данных в регистр</span><span class="rvts6">.</span><span class="rvts5"> </span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts5">Описать алгоритм контроля финансов</span><span class="rvts6">.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps4"><span class="rvts5">Автоматизировать обновление бюджета на начальной странице. </span></li>
+</ol>
+<p class="rvps2"><span class="rvts4">В реальной жизни невозможно что-то 
+купить без денег. В текущей игре также необходимо реализовать механизм, 
+который будет проверять, хватает ли у игрока денег на покупку товара или
+ апгрейда. </span></p>
+<p class="rvps5"><span class="rvts4">Основная идея заключается в том, 
+что игроку необходимо зарабатывать деньги на апгрейд, а потом уже 
+покупать его. Благодаря улучшениям в магазине игрок будет зарабатывать 
+больше. Сейчас бюджета нет, поэтому игрок может покупать все подряд. </span></p>
+<h2 class="rvps6"><a name="_Toc121319183"></a>
+<span class="rvts0"><span class="rvts7">Настройка программного решения. Создание регистра "Остатки денег"</span></span></h2>
+<p class="rvps2"><span class="rvts4">Приступим к выполнению </span><span class="rvts3">первой задачи</span><span class="rvts4">. Для того чтобы реализовать учет финансов, необходимо добавить новый регистр накопления. Имя регистра </span>–<span class="rvts4"> "ОстаткиДенег", вид регистра </span>–<span class="rvts4"> "Остатки" (рис. 13.1).</span></p>
+<p class="rvps7"><img 298="" 278="" alt="" style="padding : 1px;" src="13_data/img1.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.1. Добавление регистра "ОстаткиДенег"</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем на вкладку "Данные", чтобы определить структуру регистра. </span></p>
+<p class="rvps2"><span class="rvts4">Добавим ресурс "Количество". Тип данных </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 13.2).</span></p>
+<p class="rvps7"><img 422="" 134="" alt="" style="padding : 1px;" src="13_data/img2.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.2. Добавление ресурса "Количество"</span></p>
+<p class="rvps2"><span class="rvts4">"Неотрицательное" означает запрет 
+на внесение в регистр записей со знаком минус. Однако это не означает, 
+что у игрока не будет возможности брать деньги в долг. </span></p>
+<p class="rvps5"><span class="rvts4">Данная галочка означает, что игрок 
+не сможет либо получить -100 денег, либо потратить -100 денег. Галочка 
+отвечает только за это. Контроль остатков денег будет реализован 
+программно. </span></p>
+<h2 class="rvps6"><a name="_Toc121319184"></a>
+<span class="rvts0"><span class="rvts7">Настройка прикладного решения. Логика движения данных в регистр</span></span></h2>
+<p class="rvps2"><span class="rvts4">Далее решим </span><span class="rvts3">вторую задачу</span><span class="rvts4"> и укажем, с помощью каких документов регистрируются записи в регистре накопления. </span></p>
+<p class="rvps2"><span class="rvts4">На вкладке "Регистраторы" поставим 
+галочку напротив всех документов, ведь при покупке и продаже товаров, а 
+также приобретении апгрейдов необходимы деньги (рис. 13.3).</span></p>
+<p class="rvps7"><img 273="" 259="" alt="" style="padding : 1px;" src="13_data/img3.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.3. Выбор регистраторов</span></p>
+<p class="rvps2"><span class="rvts4">Определим логику записи данных из документов в регистр накопления. Начнем с документа "Покупка товаров". </span></p>
+<p class="rvps2"><span class="rvts4">В окне редактирования документа на вкладке "Движения" необходимо нажать на кнопку "Конструктор движений" (рис. 13.4).</span></p>
+<p class="rvps7"><img 305="" 270="" alt="" style="padding : 1px;" src="13_data/img4.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.4. Открытие конструктора движений</span></p>
+<p class="rvps2"><span class="rvts4">На вопрос о замещении процедуры отвечаем "Да" и переходим в конструктор движений.</span></p>
+<p class="rvps2"><span class="rvts4">Добавим правила движения информации
+ в еще один регистр. Для этого в верхней левой части конструктора нажмем
+ "Добавить" и выберем регистр "ОстаткиДенег" (рис. 13.5).</span></p>
+<p class="rvps7"><img 284="" 228="" alt="" style="padding : 1px;" src="13_data/img5.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.5. Добавление регистра в конструкторе движений</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">Поскольку при покупке товаров деньги тратятся, ставим тип движения "Расход". "Количество" </span>–<span class="rvts4">
+ это ресурс, который отвечает за остатки денег, поэтому в качестве 
+выражения выбираем реквизит "ИтоговаяСумма" и нажимаем "Ок" (рис. 13.6).</span></p>
+<p class="rvps7"><img 346="" 234="" alt="" style="padding : 1px;" src="13_data/img6.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.6. Настройка движения</span></p>
+<p class="rvps2"><span class="rvts4">В результате процедура "ОбработкаПроведения" изменилась, появилась новая часть кода, отвечающая за движение денежных средств.</span></p>
+<p><img 553="" 291="" alt="" style="padding : 1px;" src="13_data/img7.png"></p>
+<p class="rvps2"><span class="rvts4">Так как данный документ отвечает за
+ покупку товаров, необходимо реализовать механизм контроля остатков, 
+благодаря которому игрок не сможет купить товаров на сумму большую, чем у
+ него есть в виртуальном кошельке.</span></p>
+<p class="rvps2"><span class="rvts4">С точки зрения системы необходимо 
+реализовать отказ записи в подобном случае. В дальнейшем потребуется 
+определить контроль отказа проведения документа. </span></p>
+<p class="rvps2"><span class="rvts4">Для этого воспользуемся стандартным
+ параметром "Отказ", который отвечает за возможность проведения 
+документа. Аналогичный контроль будет реализован в документе 
+"ПриобретениеАпгрейда". Данный механизм реализуем позже. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем к документу "ЗаказКлиента"
+ и откроем "Конструктор движений" (рис. 13.7). На вопрос о замещении 
+процедуры отвечаем "Да" и переходим в конструктор движений.</span></p>
+<p class="rvps2"><span class="rvts4">Добавим еще один регистр в верхней левой части конструктора. Выбираем регистр "ОстаткиДенег" (рис. 13.8).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 228="" 198="" alt="" style="padding : 1px;" src="13_data/img8.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 234="" 186="" alt="" style="padding : 1px;" src="13_data/img9.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 13.7. Открытие конструктора движений</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 13.8. Добавление регистра в конструкторе движений</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Поскольку при продаже товаров деньги появляются, ставим тип движения "Приход". "Количество" </span>–<span class="rvts4">
+ это ресурс, который отвечает за остатки денег, поэтому в качестве 
+выражения выбираем реквизит "ИтоговаяСумма" и нажимаем "Ок" (рис. 13.9).</span></p>
+<p class="rvps7"><img 252="" 170="" alt="" style="padding : 1px;" src="13_data/img10.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.9. Настройка движения</span></p>
+<p class="rvps2"><span class="rvts4">В итоге наблюдаем аналогичную картину, как и в прошлом документе. </span></p>
+<p class="rvps2"><span class="rvts4">Реализуем движение для третьего документа.</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем к документу 
+"ПриобретениеАпгрейда" и откроем "Конструктор движений" (рис. 13.10). На
+ вопрос о замещении процедуры отвечаем "Да" и переходим в конструктор 
+движений. Добавим регистр в верхней левой части конструктора. Выбираем 
+регистр "ОстаткиДенег" (рис. 13.11).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 244="" 212="" alt="" style="padding : 1px;" src="13_data/img11.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 228="" 187="" alt="" style="padding : 1px;" src="13_data/img12.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 13.10. Открытие конструктора движений</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps7"><span class="rvts8">Рис. 13.11. Добавление регистра в конструкторе движений</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts9"><br></span></p>
+<p class="rvps2"><span class="rvts4">При покупке апгрейдов деньги убывают </span>–<span class="rvts4">
+ ставим тип движения "Расход". В данном случае в документе отсутствует 
+реквизит, подходящий для учета денежных средств. Но реквизит "Апгрейд" 
+имеет ссылочный тип данных, поэтому через него можно обратиться к цене 
+апгрейда, используя оператор разыменования (точка). </span></p>
+<p class="rvps2"><span class="rvts4">Обращение можно сделать прямо в поле выражения. После этого нажимаем "ОК" (рис. 13.12).</span></p>
+<p class="rvps7"><img 315="" 213="" alt="" style="padding : 1px;" src="13_data/img13.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.12. Настройка движения</span></p>
+<p class="rvps2"><span class="rvts4">Таким образом, движение по количеству денег с видом движения "Расход" происходит через обращение "Апгрейд.Цена"</span><span class="rvts9">.</span></p>
+<p><img 445="" 232="" alt="" style="padding : 1px;" src="13_data/img14.png"></p>
+<p class="rvps2"><span class="rvts4">Вызов процедуры "ПроверкаПокупки" 
+остался, поскольку она вынесена за пределы конструктора. Если она 
+исчезла, то ее необходимо вернуть.</span></p>
+<p class="rvps9"><img 446="" 251="" alt="" style="padding : 1px;" src="13_data/img15.png"></p>
+<h2 class="rvps6"><a name="_Toc121319185"></a>
+<span class="rvts0"><span class="rvts7">Усложнение в логике игры. Контроль финансового состояния игрока</span></span></h2>
+<p class="rvps2"><span class="rvts4">В данном документе также необходимо осуществлять контроль возможности проведения документа, </span>–<span class="rvts4"> это будет наша </span><span class="rvts3">третья задача</span><span class="rvts4">. </span></p>
+<p class="rvps2"><span class="rvts4">Воспользуемся следующим методом: 
+после проведения документа будем сверять значение остатков денежных 
+средств. Если значение будет отрицательным, тогда проведение документа 
+будет отменяться.</span></p>
+<p class="rvps2"><span class="rvts4">В системе уже реализован необходимый механизм. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 130="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps10"><span class="rvts10"><br></span></p>
+</td>
+<td 553="" 130="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts4">В строке </span><span class="rvts3">"Движения.ОстаткиДенег.Записывать = Истина"</span><span class="rvts4">
+ истина отвечает за осуществление записи в регистр в конце процедуры. 
+Если до записи в регистр проверить значения, которые в него 
+записываются, и убедиться, что они не подходят, то всю запись можно 
+отменить и отправить пользователю сообщение о нехватке денег. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts4">Данная логика должна работать как в
+ документе "Приобретение апгрейда", так и в документе "Покупка товаров".
+ Имеет смысл реализовать контроль один раз, чтобы не копировать код в 
+разные модули. </span></p>
+<p class="rvps2"><span class="rvts4">Работа алгоритма проверки связана с регистром накопления "ОстаткиДенег", поэтому необходимо реализовать ее в данном регистре.</span></p>
+<p class="rvps2"><span class="rvts4">Откроем окно редактирования 
+регистра накопления "ОстаткиДенег", перейдем на вкладку "Прочее" и 
+откроем "Модуль менеджера" (рис. 13.13).</span></p>
+<p class="rvps7"><img 263="" 256="" alt="" style="padding : 1px;" src="13_data/img16.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.13. Открытие модуля менеджера</span></p>
+<p class="rvps2"><span class="rvts4">В модуле менеджера определим функцию, поскольку функция позволит нам давать ответы в документы </span>–<span class="rvts4"> отменять записи или оставлять. Имя функции </span>–<span class="rvts4"> "ЕстьОтрицательныеФинансы". Функция должна быть экспортной, поскольку она будет вызываться из модулей объекта двух документов.</span></p>
+<p><img 272="" 60="" alt="" style="padding : 1px;" src="13_data/img17.png"></p>
+<p class="rvps2"><span class="rvts4">Для получения остатков по всей таблице необходимо обратиться к виртуальной таблице, а не к физической. </span></p>
+<p><img 283="" 66="" alt="" style="padding : 1px;" src="13_data/img18.png"></p>
+<p class="rvps2"><span class="rvts4">Однако благодаря тому, что код 
+пишется в модуле менеджера регистра накопления "ОстаткиДенег", можно 
+убрать часть кода, обращающуюся к регистру, и оставить только вызов 
+виртуальной таблицы "Остатки"</span><span class="rvts9">.</span></p>
+<p><img 269="" 65="" alt="" style="padding : 1px;" src="13_data/img19.png"></p>
+<p class="rvps2"><span class="rvts4">Запишем эту таблицу в переменную 
+"ТаблицаОстатков" и вычислим остатки финансов, подведя числовой итог по 
+одной колонке "Количество"</span><span class="rvts9">.</span></p>
+<p><img 333="" 73="" alt="" style="padding : 1px;" src="13_data/img20.png"></p>
+<p class="rvps2"><span class="rvts4">Реализуем проверку остатков денежных средств, чтобы пользователь не вышел за пределы бюджета.</span></p>
+<p><img 408="" 211="" alt="" style="padding : 1px;" src="13_data/img21.png"></p>
+<p class="rvps2"><span class="rvts4">Реализуем вызов данной функции в документах "ПокупкаТовара" и "ПриобретениеАпгрейда". </span></p>
+<p class="rvps2"><span class="rvts4">Откроем модуль объекта документа 
+"ПокупкаТовара" и искусственно совершим запись данных в регистр. Это 
+нужно для того, чтобы к моменту проверки отрицательного бюджета в 
+регистре уже были отрицательные остатки. После чего присвоим параметру 
+"Отказ" результат работы созданной ранее функции.</span></p>
+<p><img 455="" 278="" alt="" style="padding : 1px;" src="13_data/img22.png"></p>
+<p class="rvps2"><span class="rvts4">Аналогично используем функцию в 
+документе "ПриобретениеАпгрейда". Для удобства можно скопировать код и 
+вставить его в модуле объекта другого документа. Скопированный код 
+вставляется также после записи движения данных конструктором.</span></p>
+<p class="rvps9"><img 454="" 285="" alt="" style="padding : 1px;" src="13_data/img23.png"></p>
+<h2 class="rvps6"><a name="_Toc121319186"></a>
+<span class="rvts0"><span class="rvts7">Автоматизация игрового процесса. Автоматическое обновление бюджета игрока</span></span></h2>
+<p class="rvps2"><span class="rvts3">Четвертая задача</span><span class="rvts4">, которую необходимо выполнить, </span>–<span class="rvts4"> это вывод текущего бюджета игрока на начальном экране.</span></p>
+<p class="rvps2"><span class="rvts4">Для этого перейдем на форму "НачальнаяСтраница" и добавим реквизит формы для хранения бюджета. Имя реквизита </span>–<span class="rvts4"> "Бюджет", тип данных </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 13.14).</span></p>
+<p class="rvps7"><img 423="" 162="" alt="" style="padding : 1px;" src="13_data/img24.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.14. Создание реквизита формы "Бюджет"</span></p>
+<p class="rvps2"><span class="rvts4">Перенесем новый реквизит в группу 
+"ПунктУправления". Также изменим порядок расположения элементов в 
+группе: "Директор", "Рейтинг" и "Бюджет". Сделать это можно с помощью 
+панели навигации (рис. 13.15).</span></p>
+<p class="rvps7"><img 423="" 157="" alt="" style="padding : 1px;" src="13_data/img25.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.15. Добавление реквизита формы в группу</span></p>
+<p><span class="rvts9"><br></span></p>
+<p class="rvps11"><span class="rvts4">Изменим вид поля "Бюджет" на "Поле надписи" (рис. 13.16).</span></p>
+<p class="rvps7"><img 406="" 167="" alt="" style="padding : 1px;" src="13_data/img26.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.16. Изменение вида поля "Бюджет"</span></p>
+<p class="rvps2"><span class="rvts4">Для улучшения отображения данных в 
+полях "Бюджет" и "Рейтинг" изменим свойство "ГоризонтальноеПоложение" на
+ "Лево" в палитре свойств на вкладке "Расположение" (рис. 13.17).</span></p>
+<p class="rvps12"><img 379="" 158="" alt="" style="padding : 1px;" src="13_data/img27.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.17. Изменение горизонтального положения полей "Рейтинг" и "Бюджет"</span></p>
+<p class="rvps2"><span class="rvts4">Расчет бюджета игрока будет происходить в модуле формы. Однако его значение необходимо где-то хранить. </span></p>
+<p class="rvps2"><span class="rvts4">Создадим константу "Баланс", тип данных </span>–<span class="rvts4"> "число", длина </span>–<span class="rvts4"> 10, точность </span>–<span class="rvts4"> 0, неотрицательное (рис. 13.18).</span></p>
+<p class="rvps7"><img 387="" 158="" alt="" style="padding : 1px;" src="13_data/img28.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.18. Создание константы "Баланс"</span></p>
+<p class="rvps2"><span class="rvts4">Данная константа будет хранить 
+начальный бюджет игрока и обновляться с каждой проведенной финансовой 
+операцией. Обновление константы будет происходить на форме начальной 
+страницы путем вычисления остатков из регистра накопления. Информация 
+будет записываться как в реквизит формы для отображения игроку, так и в 
+константу. </span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в модуль формы "НачальнаяСтраница" и в обработчике "ОбновитьДанныеИгрока" добавим следующие строки:</span></p>
+<p><img 574="" 168="" alt="" style="padding : 1px;" src="13_data/img29.png"></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию и запустим пользовательский режим.</span></p>
+<p class="rvps2"><span class="rvts4">На форме начального экрана значение
+ бюджета пустое. Это произошло из-за того, что в регистре накопления 
+"ОстаткиДенег" еще нет ни одной записи (рис. 13.19).</span></p>
+<p class="rvps7"><img 437="" 232="" alt="" style="padding : 1px;" src="13_data/img30.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.19. Форма начального экрана</span></p>
+<p class="rvps2"><span class="rvts4">Для чистоты эксперимента можно удалить все записи и создать их заново. Но можно просто перепровести все документы. </span></p>
+<p class="rvps2"><span class="rvts4">Для начала перепроведем все заказы 
+клиентов. Выделим все документы в списке, нажатием по ним правой кнопки 
+мыши выберем "Провести" (рис. 13.20).</span></p>
+<p class="rvps7"><img 403="" 211="" alt="" style="padding : 1px;" src="13_data/img31.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.20. Перепроведение заказов клиентов</span></p>
+<p class="rvps2"><span class="rvts4">При возврате на начальный экран мы 
+обнаружим, что бюджет не обновился. Дело в том, что процедура 
+"ОбновитьДанныеИгрока" срабатывает только при запуске пользовательского 
+режима.</span></p>
+<p class="rvps2"><span class="rvts4">Перезапустим пользовательский режим (рис. 13.21).</span></p>
+<p class="rvps7"><img 414="" 223="" alt="" style="padding : 1px;" src="13_data/img32.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.21. Начальная страница с обновленным бюджетом</span></p>
+<p class="rvps2"><span class="rvts4">Для того чтобы бюджет обновлялся 
+при проведении документов, определим на форме каждого из них событие 
+"ПриЗакрытии", которое будет вызывать оповещение 
+"ОбновитьНачальныйЭкран"</span><span class="rvts9">.</span></p>
+<p class="rvps2"><span class="rvts4">Скопируем из модуля формы документа "ПриобретениеАпгрейда" обработчик события "ПриЗакрытии" (рис. 13.22).</span></p>
+<p class="rvps7"><img 403="" 162="" alt="" style="padding : 1px;" src="13_data/img33.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.22. Копирование обработчика события</span></p>
+<p class="rvps2"><span class="rvts4">Перейдем в редактор формы документа
+ "ЗаказКлиента" и вставим скопированный обработчик в модуль этой формы. 
+Но если прямо сейчас запустить пользовательский режим, то данная 
+процедура не сработает, поскольку она не связана с событием формы. </span></p>
+<p class="rvps2"><span class="rvts4">Откроем палитру свойств формы документа "ЗаказКлиента" и на вкладке "События" свяжем обработчик и событие (рис. 13.23).</span></p>
+<p class="rvps7"><img 502="" 219="" alt="" style="padding : 1px;" src="13_data/img34.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.23. Настройка связи события и обработчика</span></p>
+<p class="rvps2"><span class="rvts4">В модуле формы документа 
+"ПокупкаТоваров" создадим новую область "ОбработчикиСобытийФормы" и 
+вставим в нее процедуру "ПриЗакрытии"</span><span class="rvts9">.</span></p>
+<p><img 255="" 109="" alt="" style="padding : 1px;" src="13_data/img35.png"></p>
+<p class="rvps2"><span class="rvts4">Аналогично с предыдущим документом, свяжем процедуру с событием (рис. 13.24).</span></p>
+<p class="rvps7"><img 473="" 204="" alt="" style="padding : 1px;" src="13_data/img36.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.24. Настройка связи события и обработчика</span></p>
+<p class="rvps2"><span class="rvts4">Обновим конфигурацию базы данных и запустим пользовательский режим.</span><br><span class="rvts4">Перепроведем покупку апгрейда "Один кассир" (рис. 13.25).</span></p>
+<p class="rvps7"><img 668="" 347="" alt="" style="padding : 1px;" src="13_data/img37.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.25. Повторная покупка апгрейда</span></p>
+<p class="rvps11"><span class="rvts4">Вернемся на начальный экран (рис. 13.26).</span></p>
+<p class="rvps7"><img 380="" 198="" alt="" style="padding : 1px;" src="13_data/img38.png"></p>
+<p class="rvps7"><span class="rvts8">Рис.13.26. Начальный экран с измененным бюджетом</span></p>
+<p class="rvps11"><span class="rvts4">В результате бюджет игрока уменьшился на 100 рублей.</span></p>
+<p class="rvps2"><span class="rvts4">Если сейчас перепровести все 
+документы, то бюджет составит 970, но лучше всего удалить все записи и 
+зафиксировать их все заново (рис. 13.27 </span>–<span class="rvts4"> 13.30).</span></p>
+<p class="rvps7"><img 506="" 267="" alt="" style="padding : 1px;" src="13_data/img39.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.27. Удаление записей документа "Приобретение апгрейда"</span></p>
+<p class="rvps7"><img 380="" 211="" alt="" style="padding : 1px;" src="13_data/img40.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.28. Удаление записей бизнес-процесса</span></p>
+<p class="rvps7"><img 437="" 223="" alt="" style="padding : 1px;" src="13_data/img41.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.29. Удаление записей документа "Заказ клиента</span></p>
+<p class="rvps7"><img 449="" 236="" alt="" style="padding : 1px;" src="13_data/img42.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.30. Удаление записей документа "Покупка товара"</span></p>
+<p class="rvps2"><span class="rvts4">После очистки записей перезапустим 
+пользовательский режим и попробуем приобрести апгрейд. Система сообщит 
+игроку, что на балансе недостаточно средств (рис. 13.31).</span></p>
+<p class="rvps7"><img 385="" 212="" alt="" style="padding : 1px;" src="13_data/img43.png"></p>
+<p class="rvps7"><span class="rvts8">Рис. 13.31. Ошибка при попытке купить апгрейд</span></p>
+<p class="rvps13"><span class="rvts11">На этом тринадцатое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts4">мы
+ реализовали контроль финансового состояния игрока. Теперь игрок сможет 
+купить товар или апгрейд только в том случае, если у него будет 
+достаточно средств. </span></p>
+<p class="rvps5"><span class="rvts4">На </span><span class="rvts3">следующем занятии</span><span class="rvts4"> рассмотрим механизм начисления стартового капитала. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts12">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><span class="rvts13"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 130="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><img 117="" alt="" style="padding : 1px;" src="13_data/img44.png"></p>
+</td>
+<td 440="" 130="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts9">Данные из документа в регистр записываются только при </span><span class="rvts13">проведении документа</span><span class="rvts9">. То есть когда действие, которое фиксирует этот документ, действительно произошло. </span></p>
+<p class="rvps2"><span class="rvts4">В строке </span><span class="rvts3">"Движения.ОстаткиДенег.Записывать = Истина"</span><span class="rvts4">
+ истина отвечает за осуществление записи в регистр в конце процедуры. 
+Если до записи в регистр проверить значения, которые в него 
+записываются, и убедиться, что они не подходят, то всю запись можно 
+отменить и отправить пользователю сообщение о нехватке денег. </span></p>
+<p class="rvps2"><span class="rvts4">Экспортные процедуры и функции можно вызывать из других модулей. </span></p>
+<p class="rvps2"><span class="rvts13"><br></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts9"><br></span></p>
+<h2 class="rvps16"><a name="_Toc121319187"></a>
+<span class="rvts0"><span class="rvts14">Контрольные вопросы</span></span></h2>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps18"><span class="rvts5">Из какого объекта конфигурации записываются данные в регистр накопления? </span></li>
+<li value="2" style="margin-left: 0px" class="rvps18"><span class="rvts5">С помощью какого метода можно посчитать суммы данных в колонке таблицы? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps18"><span class="rvts5">В какой момент данные из документа записываются в регистр накопления? </span></li>
+</ol>
+<p style="page-break-before: always;"><span class="rvts2"><br></span></p>
+<p><span class="rvts9"><br></span></p>
+
+</body></html>

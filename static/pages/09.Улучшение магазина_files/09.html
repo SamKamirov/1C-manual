@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>09</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-weight: bold;
+}
+span.rvts4
+{
+ font-weight: bold;
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts8
+{
+ font-weight: bold;
+}
+span.rvts9
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts10
+{
+ font-weight: bold;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts12
+{
+ text-decoration: underline;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts14
+{
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts17
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts18
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps8
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps10
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps13
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps15
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps18
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps20
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps21
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps23
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps24
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 72px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: decimal;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list6 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319162"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 9. <br><br></span></span><br><span class="rvts0"><span class="rvts1">Улучшение</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">магазина</span></span></h1>
+<p class="rvps2"><span class="rvts3">Тема занятия </span><span class="rvts4">–</span><span class="rvts5"> реализация возможности улучшать магазин. </span></p>
+<p class="rvps2"><span class="rvts5">В рамках этого занятия нам потребуется выполнить 5 задач: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts6">Создать ячейку для хранения данных о рейтинге игрока. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts6">Добавить документ, который будет фиксировать покупку апгрейда игроком.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps4"><span class="rvts6">Настроить форму документа "Покупка апгрейда".</span></li>
+<li value="4" style="margin-left: 0px" class="rvps4"><span class="rvts6">Реализовать механизм проверки рейтинга игрока при покупке апгрейда. </span></li>
+<li value="5" style="margin-left: 0px" class="rvps4"><span class="rvts6">Создать механизм, благодаря которому будет фиксироваться актуальный в категории апгрейд, купленный игроком. </span></li>
+</ol>
+<p class="rvps4"><span class="rvts7"><br></span></p>
+<p class="rvps5"><span class="rvts8">Логика следующая</span><span class="rvts6">:
+ чтобы больше зарабатывать, необходимо улучшать магазин, а чтобы 
+улучшить магазин, нужно купить апгрейд. Каждый апгрейд имеет свой 
+минимальный порог рейтинга дли приобретения. Поэтому нужно постепенно 
+улучшать магазин, чтобы открывать новые апгрейды и получать больше 
+прибыли. </span></p>
+<h2 class="rvps6"><a name="_Toc121319163"></a>
+<span class="rvts0"><span class="rvts9">Настройка прикладного решения. Хранение рейтинга игрока</span></span></h2>
+<p class="rvps2"><span class="rvts3">Первая задача</span><span class="rvts5">, которую необходимо решить, </span>–<span class="rvts5">
+ это создание механизма для хранения информации о текущем рейтинге. Для 
+этого реализуем константу "Рейтинг игрока", поскольку необходимо хранить
+ только одно значение, а не список. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим новую константу, нажав правой кнопкой мыши по ветке "Константы" и выбрав "Добавить". Имя константы </span>–<span class="rvts5"> "РейтингИгрока", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 3, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 9.1). </span></p>
+<p class="rvps7"><img 335="" 172="" alt="" style="padding : 1px;" src="09_data/img1.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">1</span><span class="rvts10">. Добавление константы "РейтингИгрока"</span></p>
+<p class="rvps2"><span class="rvts5">В дальнейшем заполнение данной 
+константы будет происходить программно, но сейчас можно вручную 
+зафиксировать текущий рейтинг игрока. Изначально значение константы, то 
+есть рейтинг игрока, равно 0. </span></p>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts5">Убедимся, что сейчас рейтинг игрока
+ нулевой. Для этого откроем форму константы "Рейтинг игрока" через 
+кнопку "Сервис" (рис. 9.2). </span></p>
+<p class="rvps7"><img 238="" 79="" alt="" style="padding : 1px;" src="09_data/img2.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">2</span><span class="rvts10">. Форма константы "Рейтинг игрока"</span></p>
+<p class="rvps2"><span class="rvts5">На текущий момент это означает, что игрок может приобрести очень ограниченное число апгрейдов для улучшения магазина. </span></p>
+<p class="rvps2"><span class="rvts5">В справочнике "Апгрейды" можно 
+просмотреть весь список доступных для покупки апгрейдов. Текущий рейтинг
+ игрока, равный 0, позволяет купить только апгрейды "Один кассир", 
+"Пеший курьер", "Скидочная карта" и "Миска с водой" (рис. 9.3). </span></p>
+<p class="rvps7"><img 341="" 186="" alt="" style="padding : 1px;" src="09_data/img3.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">3</span><span class="rvts10">. Список апгрейдов</span></p>
+<p class="rvps2"><span class="rvts5">Улучшать магазин будем с помощью отдельного события в системе </span>–<span class="rvts5"> "Приобретение апгрейда". Необходимо фиксировать факт того, что игрок приобрел улучшение для магазина. </span></p>
+<p class="rvps2"><span class="rvts5">С одной стороны </span>–<span class="rvts5"> это должно быть событие. С другой стороны </span>–<span class="rvts5">
+ это должен быть список улучшений, которые приобретались. Это 
+необходимо, чтобы в дальнейшем анализировать, когда и какое улучшение 
+было приобретено и какое на данный момент улучшение актуально. </span></p>
+<p class="rvps2"><span class="rvts5">Для решения этих задач потребуются два механизма: документ, позволяющий фиксировать события, и регистр сведений. </span></p>
+<p class="rvps9"><span class="rvts5">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<h2 class="rvps10"><a name="_Toc121319164"></a>
+<span class="rvts0"><span class="rvts11">Настройка прикладного решения. Приобретение апгрейда</span></span></h2>
+<p class="rvps2"><span class="rvts3">Вторая задача</span><span class="rvts5"> в рамках этого занятия будет заключаться в создании документа. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим новый документ, нажав правой кнопкой мыши по ветке "Документы" и выбрав "Добавить". Имя документа </span>–<span class="rvts5"> "ПриобретениеАпгрейда" (рис. 9.4). </span></p>
+<p class="rvps7"><img 273="" 276="" alt="" style="padding : 1px;" src="09_data/img4.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">4</span><span class="rvts10">. Добавление документа "ПриобретениеАпгрейда"</span></p>
+<p class="rvps2"><span class="rvts5">Данный документ должен фиксировать,
+ какой апгрейд хочет приобрести игрок. Перейдем на вкладку "Данные" и 
+определим соответствующие реквизиты. </span></p>
+<p class="rvps2"><span class="rvts5">Первый реквизит </span>–<span class="rvts5"> "Апгрейд", тип </span>–<span class="rvts5"> "СправочникСсылка.Апгрейды" (рис. 9.5). </span></p>
+<p class="rvps7"><img 449="" 120="" alt="" style="padding : 1px;" src="09_data/img5.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">5</span><span class="rvts10">. Добавление реквизита "Апгрейд"</span></p>
+<p class="rvps2"><span class="rvts5">Если сейчас обновить конфигурацию 
+базы данных и запустить пользовательский режим, то можно убедиться, что 
+документ готов не до конца, так как взаимодействовать с ним при текущем 
+уровне настроек неудобно (рис. 9.6). </span></p>
+<p class="rvps2"><span class="rvts5">Сейчас можно и создать документ, и 
+выбрать апгрейд. Но было бы намного удобнее, если бы выносилась 
+информация о том, сколько рейтинга дает приобретаемый апгрейд и какой 
+минимальный рейтинг требуется для его покупки. Вся эта информация есть в
+ карточке апгрейда, которую можно открыть по ссылке (рис. 9.7). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 336="" 188="" alt="" style="padding : 1px;" src="09_data/img6.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 309="" 192="" alt="" style="padding : 1px;" src="09_data/img7.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">6</span><span class="rvts10">. Форма документа "Приобретение апгрейда"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.</span><span class="rvts10">7</span><span class="rvts10">. Просмотр информации об апгрейде по ссылке</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h2 class="rvps10"><a name="_Toc121319165"></a>
+<span class="rvts0"><span class="rvts11">Усложнение в логике игры. Настройка формы документа "Приобретение апгрейда"</span></span></h2>
+<p class="rvps2"><span class="rvts3">Третья задача</span><span class="rvts5">
+ сводится к тому, чтобы вынести данные о цене, рейтинге и минимальном 
+требуемом рейтинге игрока в документ. Эту информацию можно прочитать по 
+ссылке, так как апгрейд уже известен. Кроме того, нужно изменить набор 
+кнопок, потому что для пользователя подписи "Провести и закрыть" и 
+"Записать" не ясны. </span></p>
+<p class="rvps2"><span class="rvts5">Для решения данной задачи потребуется реализовать форму. </span></p>
+<p class="rvps2"><span class="rvts5">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts5">На вкладке "Формы" окна 
+редактирования документа определим основную форму документа с помощью 
+кнопки "Добавить". После выбора типа формы нажмем на кнопку "Готово" 
+(рис. 9.8). </span></p>
+<p class="rvps11"><img 356="" 193="" alt="" style="padding : 1px;" src="09_data/img8.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.8. Добавление основной формы документа </span></p>
+<p class="rvps2"><span class="rvts5">В окне редактирования формы начнем с
+ того, что изменим содержимое командной панели формы. Для этого отключим
+ автозаполнение (рис. 9.9).</span></p>
+<p class="rvps11"><img 465="" 139="" alt="" style="padding : 1px;" src="09_data/img9.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.9. Отключение автозаполнения командной панели</span></p>
+<p class="rvps2"><span class="rvts5">Определить набор команд можно с 
+помощью раздела "Команды", "Стандартные команды". В разделе "Стандартные
+ команды" находятся все команды формы, поскольку форма является </span><span class="rvts12">отражением</span><span class="rvts5"> механизма "Документ". Определим команды "Провести и закрыть" и "Записать" в раздел "командная панель" (рис. 9.10).</span></p>
+<p class="rvps11"><img 401="" 150="" alt="" style="padding : 1px;" src="09_data/img10.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.10. Добавление команд на форму</span></p>
+<p class="rvps2"><span class="rvts5">Для того чтобы пользователь не 
+путался, изменим заголовки. Команды отображены на форме в виде кнопок, 
+следовательно, изменять заголовки нужно именно у кнопок. </span></p>
+<p class="rvps2"><span class="rvts5">Для кнопки "ФормаПровестиИЗакрыть" 
+укажем заголовок "Купить", а также поставим галочку в свойстве 
+"КнопкаПоУмолчанию", чтобы визуально выделить кнопку для пользователя 
+(рис. 9.11). В качестве заголовка для кнопки "ФормаЗаписать" укажем 
+"Запланировать покупку" (рис. 9.12). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><img 321="" 151="" alt="" style="padding : 1px;" src="09_data/img11.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps2"><img 321="" 150="" alt="" style="padding : 1px;" src="09_data/img12.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><span class="rvts10">Рис. 9.11. Изменение заголовка кнопки "ФормаПровестиИЗакрыть"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps13"><span class="rvts10">Рис. 9.12. Изменение заголовка кнопки "ФормаЗаписать"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Далее необходимо убрать поля "Номер" и "Дата" с формы, так как для игрока они будут лишними. </span></p>
+<p class="rvps2"><span class="rvts5">Чтобы удалить поля, необходимо выделить их и либо нажать на крестик, либо на клавишу Delete на клавиатуре (рис. 9.13). </span></p>
+<p class="rvps11"><img 234="" 152="" alt="" style="padding : 1px;" src="09_data/img13.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.13. Удаление лишних элементов формы</span></p>
+<p class="rvps2"><span class="rvts5">Информацию о виде апгрейда, его цене, рейтинге, который он дает, и минимальном рейтинге для покупки можно проанализировать </span><span class="rvts12">по ссылке</span><span class="rvts5"> из реквизита "Апгрейд". </span></p>
+<p class="rvps2"><span class="rvts5">Перейдем на вкладку "Реквизиты" и развернем список всех реквизитов объекта (рис. 9.14). </span></p>
+<p class="rvps11"><img 281="" 168="" alt="" style="padding : 1px;" src="09_data/img14.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.14. Список всех реквизитов объекта</span></p>
+<p class="rvps2"><span class="rvts5">Здесь отображаются все стандартные 
+реквизиты документа, а также те реквизиты, которые были созданы на 
+вкладке "Данные" окна редактирования. </span></p>
+<p class="rvps2"><span class="rvts5">Среди них есть и реквизит 
+"Апгрейд". Для того чтобы добавить необходимую информацию на форму, 
+нажмем на плюсик напротив реквизита "Апгрейд", выделим реквизиты 
+"ВидАпгрейда", "Цена", "Рейтинг" и "МинимальныйРейтингДляПокупки" и 
+перенесем их на форму (рис. 9.15). </span></p>
+<p class="rvps11"><img 460="" 196="" alt="" style="padding : 1px;" src="09_data/img15.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.15. Добавление реквизитов на форму</span></p>
+<p class="rvps2"><span class="rvts5">Далее изменим внешний вид формы, 
+переместив поле "Вид апгрейда" на позицию ниже поля "Апгрейд" с помощью 
+кнопок навигации (рис. 9.16). </span></p>
+<p class="rvps11"><img 310="" 322="" alt="" style="padding : 1px;" src="09_data/img16.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.16. Изменение порядка элементов формы</span></p>
+<p class="rvps2"><span class="rvts5">Поля "Рейтинг" и "Минимальный 
+рейтинг для покупки" объединим в одну группу. Для того чтобы группа 
+появилась рядом с элементом "Рейтинг", нажмем по нему правой кнопкой 
+мыши и выберем в списке "Добавить" (рис. 9.17). В открывшемся окне 
+выберем тип элемента "Группа </span>–<span class="rvts5"> Обычная группа без отображения" (рис. 9.18). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 345="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 277="" 144="" alt="" style="padding : 1px;" src="09_data/img17.png"></p>
+</td>
+<td 288="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 172="" 141="" alt="" style="padding : 1px;" src="09_data/img18.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 345="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.17. Добавление нового элемента формы</span></p>
+</td>
+<td 288="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.18. Выбор типа элемента</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Укажем для новой группы имя </span>–<span class="rvts5"> "ИнформацияРейтинг" (рис. 9.19) и определим в нее поля "Рейтинг" и "Минимальный рейтинг для покупки" (рис. 9.20). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 373="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 396="" 136="" alt="" style="padding : 1px;" src="09_data/img19.png"></p>
+</td>
+<td 260="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 186="" 135="" alt="" style="padding : 1px;" src="09_data/img20.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 373="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.19. Изменение имени группы</span></p>
+</td>
+<td 260="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><span class="rvts3">Рис. 9.20. Перенос элементов в группу "ИнформацияРейтинг"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Итоговый вариант формы представлен на рисунке 9.21. </span></p>
+<p class="rvps11"><img 230="" 108="" alt="" style="padding : 1px;" src="09_data/img21.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.21. Форма документа "Покупка апгрейда"</span></p>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и проверим результат в пользовательском режиме. </span></p>
+<p class="rvps2"><span class="rvts5">Создадим новую "Покупку апгрейда". В качестве товара укажем, например, "Вольер ожидания" (рис. 9.22). </span></p>
+<p class="rvps11"><img 346="" 150="" alt="" style="padding : 1px;" src="09_data/img22.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.22. Заполнение информации в документе "Покупка апгрейда"</span></p>
+<p class="rvps2"><span class="rvts5">В результате на форме отображается информация о виде этого апгрейда, его цене, рейтинге и минимальном рейтинге для покупки. </span></p>
+<p class="rvps2"><span class="rvts5">Реализуем покупку этого апгрейда, нажав на кнопку "Купить" (рис. 9.23). </span></p>
+<p class="rvps11"><img 287="" 111="" alt="" style="padding : 1px;" src="09_data/img23.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.23. Покупка апгрейда </span></p>
+<p class="rvps2"><span class="rvts5">Сейчас система позволяет выполнить покупку, поскольку нет никакого контроля текущего рейтинга. </span></p>
+<h2 class="rvps14"><a name="_Toc121319166"></a>
+<span class="rvts0"><span class="rvts13">Усложнение в логике игры. Проверка апгрейда игрока</span></span></h2>
+<div><table 661="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 330="" 197="" valign="top" style="padding: 0px 7px;"><p class="rvps2"><img 330="" 141="" alt="" style="padding : 1px;" src="09_data/img24.png"></p>
+</td>
+<td 303="" 197="" valign="top" style="padding: 0px 7px;"><p class="rvps2"><span class="rvts3">Четвертая задача</span><span class="rvts5">
+ сводится к тому, чтобы реализовать проверку текущего рейтинга игрока 
+при покупке апгрейда. И если рейтинг слишком низкий, не позволять игроку
+ его покупать. </span></p>
+<p class="rvps2"><span class="rvts5">Факт покупки апгрейда фиксируется по кнопке "Купить", то есть при проведении документа. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Внедримся в программную логику и обработаем событие "Обработка проведения" у документа "Покупка апгрейда". </span></p>
+<p class="rvps2"><span class="rvts5">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts5">Для того чтобы реализовать механизм
+ проверки текущего рейтинга игрока, придется определить программную 
+логику в модуле объекта документа. Если написать код в модуле формы, то 
+программная логика будет работать только в рамках этой формы. Проверка 
+не будет срабатывать при проведении документа из формы списка или при 
+программном проведении. Следовательно, потребуется модуль, алгоритмы 
+которого срабатывают всегда </span>–<span class="rvts5"> модуль объекта. </span></p>
+<p class="rvps2"><span class="rvts5">Перейдем в модуль объекта документа
+ "Покупка апгрейда". Для этого перейдем на вкладку "Прочее" окна 
+редактирования документа и нажнем на кнопку "Модуль объекта" (рис. 
+9.24). </span></p>
+<p class="rvps11"><img 272="" 287="" alt="" style="padding : 1px;" src="09_data/img25.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.24. Переход в модуль объекта документа "Покупка апгрейда"</span></p>
+<p class="rvps2"><span class="rvts5">Здесь потребуется определить 
+стандартное событие "ОбработкаПроведения". Найти его можно несколькими 
+способами: по кнопке "Процедуры и функции", либо с помощью сочетания 
+клавиш Ctrl + Shift + P (рис. 9.25).</span></p>
+<p class="rvps11"><img 471="" 218="" alt="" style="padding : 1px;" src="09_data/img26.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.25. Создание обработчика события "ОбработкаПроведения"</span></p>
+<p class="rvps2"><span class="rvts5">В дальнейшем в обработке проведения
+ будут и другие программные составляющие, а еще алгоритмы. Поэтому лучше
+ вынести проверку в отдельную процедуру. </span></p>
+<p class="rvps2"><span class="rvts5">Получится следующая программная логика: событие "ОбработкаПроведения" будет запускать отдельный сценарий проверки покупки. </span></p>
+<p class="rvps15"><img 574="" 35="" alt="" style="padding : 1px;" src="09_data/img27.png"></p>
+<p class="rvps2"><span class="rvts5">Ниже "ОбработкиПроведения" определим процедуру "ПроверкаПокупки". </span></p>
+<p class="rvps15"><img 568="" 112="" alt="" style="padding : 1px;" src="09_data/img28.png"></p>
+<p class="rvps2"><span class="rvts5">Внутри процедуры "ПроверкаПокупки" 
+необходимо сравнить рейтинг из константы "РейтингИгрока" с минимальным 
+рейтингом апгрейда. Для этого потребуется условие. Также необходимо 
+выводить сообщение пользователю о том, что для покупки нужно повысить 
+рейтинг. </span></p>
+<p class="rvps15"><img 575="" 133="" alt="" style="padding : 1px;" src="09_data/img29.png"></p>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts5">Повторно купим апгрейд с высоким значением "Минимального рейтинга для покупки" (рис. 9.26).</span></p>
+<p class="rvps11"><img 415="" 194="" alt="" style="padding : 1px;" src="09_data/img30.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.26. Покупка апгрейда с высоким минимальным рейтингом</span></p>
+<p class="rvps2"><span class="rvts5">В результате пользователю выведется ошибка о том, что ему нужно повысить рейтинг для покупки данного апгрейда. </span></p>
+<p class="rvps2"><span class="rvts5">Существование данного документа с 
+покупкой рейтинга более не имеет смысла, потому что событие, которое он 
+фиксирует, невозможно. </span></p>
+<p class="rvps2"><span class="rvts5">Отменим проведение данного документа, нажав по нему в списке провой кнопкой мыши и выбрав "Отменить проведение" (рис. 9.27). </span></p>
+<p class="rvps11"><img 334="" 155="" alt="" style="padding : 1px;" src="09_data/img31.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.27. Отмена проведения документа </span></p>
+<p class="rvps9"><span class="rvts5">Повторно провести этот документ и зафиксировать событие не выйдет, так как сработает проверка рейтинга игрока. </span></p>
+<h2 class="rvps14"><a name="_Toc121319167"></a>
+<span class="rvts0"><span class="rvts13">Усложнение в логике игры. Проверка купленных апгрейдов</span></span></h2>
+<p class="rvps2"><span class="rvts5">Каждый игрок может купить большое 
+количество апгрейдов, поэтому необходимо создать механизм, который 
+позволит системе определять актуальный в категории апгрейд, который 
+приобретен игроком на текущий момент игры. У игрока может быть только 
+один апгрейд в рамках одной категории. </span></p>
+<p class="rvps2"><span class="rvts5">Например, если сейчас игрок купит 
+апгрейд "Один кассир", а потом "Два кассира", будет непонятно, что из 
+этого актуально для игрока.</span></p>
+<p class="rvps2"><span class="rvts5">В рамках </span><span class="rvts3">пятой задачи</span><span class="rvts5"> потребуется создать "Регистр сведений" с возможностью </span><span class="rvts12">отслеживания периода</span><span class="rvts5">. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts14"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts3">Периодический регистр сведений</span><span class="rvts5"> </span>–<span class="rvts5"> механизм, который позволяет получить актуальные данные в рамках определенного периода. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Закроем пользовательский режим и перейдем в конфигуратор. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим новый регистр сведений в 
+систему, нажав правой кнопкой мыши по ветке "Регистры сведений" и выбрав
+ "Добавить". Имя регистра сведений </span>–<span class="rvts5"> "РегистрацияАпгрейдов" (рис. 9.28).</span></p>
+<p class="rvps11"><img 256="" 174="" alt="" style="padding : 1px;" src="09_data/img32.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.28. Добавление регистра сведений "РегистрацияАпгрейдов"</span></p>
+<p class="rvps2"><span class="rvts5">Информация в регистр будет поступать из документа "Приобретение апгрейда"</span><span class="rvts15">.</span></p>
+<p class="rvps2"><span class="rvts5">Режим записи "Независимый" 
+обозначает, что информация в регистр пишется пользователем вручную. 
+Однако в регистр "Регистрация апгрейдов" данные должны записываться из 
+документа. Изменим режим записи на "Подчинен регистратору" (рис. 9.29). </span></p>
+<p class="rvps11"><img 212="" 227="" alt="" style="padding : 1px;" src="09_data/img33.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.29. Изменение режима записи регистра сведений</span></p>
+<p class="rvps2"><span class="rvts5">Также необходимо указать, как часто система будет анализировать изменение данных. Периодичность "Непериодический" означает, что</span><span class="rvts15">,</span><span class="rvts5">
+ если в системе была зафиксирована информация о покупке апгрейда "Один 
+кассир", то возможности изменить количество кассиров уже не будет. 
+Данная логика не подходит для реализации текущей задачи. </span></p>
+<p class="rvps2"><span class="rvts5">Изменим периодичность на "По 
+позиции регистратора", то есть по дате документа, так как в данный 
+регистр информация пишется из документа-регистратора (рис. 9.30).</span></p>
+<p class="rvps11"><img 217="" 225="" alt="" style="padding : 1px;" src="09_data/img34.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.30. Изменение периодичности регистра сведений</span></p>
+<p><span class="rvts15"><br></span></p>
+<p class="rvps2"><span class="rvts5">Далее необходимо определить 
+структуру регистра на вкладке "Данные". Сначала укажем измерения, в 
+качестве которых выступают апгрейд и вид апгрейда. </span></p>
+<p class="rvps2"><span class="rvts5">Добавим первое измерение. Имя измерения </span>–<span class="rvts5"> "Апгрейд", тип </span>–<span class="rvts5"> "СправочникСсылка.Апгрейды", ведущее, запрет незаполненных значений (рис. 9.31). </span></p>
+<p class="rvps11"><img 378="" 119="" alt="" style="padding : 1px;" src="09_data/img35.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.31. Добавление измерения "Апгрейд"</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps16"><span class="rvts14"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts5">Галочка </span><span class="rvts3">"Запрет незаполненных значений"</span><span class="rvts5"> позволяет исключить запись о приобретении апгрейда определенного вида без информации о самом апгрейде. </span></p>
+<p class="rvps2"><span class="rvts5">Галочка </span><span class="rvts3">"Ведущее"</span><span class="rvts5"> означает, что при удалении апгрейда из системы будут стерты все записи о покупке данного апгрейда. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Добавим второе измерение. Имя измерения </span>–<span class="rvts5"> "ВидАпгрейда", тип </span>–<span class="rvts5"> "ПеречислениеСсылка.ВидыАпгрейдов" (рис. 9.32). </span></p>
+<p class="rvps11"><img 344="" 112="" alt="" style="padding : 1px;" src="09_data/img36.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.32. Добавление измерения "ВидАпгрейда"</span></p>
+<p class="rvps2"><span class="rvts5">Помимо хранения информации о 
+покупке апгрейда определенного вида, необходимо фиксировать данные о 
+том, сколько денег было затрачено на апгрейд и сколько рейтинга принесла
+ его покупка. Для этого добавим ресурсы. </span></p>
+<p class="rvps2"><span class="rvts5">Имя первого ресурса </span>–<span class="rvts5"> "Цена", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 9.33). </span></p>
+<p class="rvps11"><img 352="" 119="" alt="" style="padding : 1px;" src="09_data/img37.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.33. Добавление ресурса "Цена"</span></p>
+<p class="rvps2"><span class="rvts5">Имя второго ресурса </span>–<span class="rvts5"> "Рейтинг", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 9.34).</span></p>
+<p class="rvps11"><img 360="" 119="" alt="" style="padding : 1px;" src="09_data/img38.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.34. Добавление ресурса "Рейтинг"</span></p>
+<p class="rvps2"><span class="rvts5">Также для данного регистра сведений
+ необходимо указать документ-регистратор. Перейдем на вкладку 
+"Регистратор" и поставим галочку напротив документа 
+"ПриобретениеАпгрейда" (рис. 9.35). </span></p>
+<p class="rvps11"><img 262="" 192="" alt="" style="padding : 1px;" src="09_data/img39.png"></p>
+<p class="rvps18"><span class="rvts10">Рис. 9.35. Выбор регистратора </span></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 68="" alt="" style="padding : 1px;" src="09_data/img40.png"></p>
+</td>
+<td 572="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps20"><span class="rvts14">Если
+ сейчас обновить конфигурацию базы данных, то в пользовательском режиме 
+информация о движении данных из документа в регистр сведений не 
+отобразится.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Проблема заключается в том, что указать связь между документом и регистром </span>–<span class="rvts5"> </span><span class="rvts12">недостаточно</span><span class="rvts5">.
+ Необходимо определить правило, по которому двигается информация. Данное
+ правило можно определить с помощью конструктора, благодаря которому 
+появится программный код, определяющий логику движения данных.</span></p>
+<p class="rvps2"><span class="rvts5">Откроем окно редактирования 
+документа "Приобретение апгрейдов", перейдем на вкладку "Движения" и 
+воспользуемся конструктором движений (рис. 9.36). </span></p>
+<p class="rvps11"><img 277="" 286="" alt="" style="padding : 1px;" src="09_data/img41.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.36. Вкладка "Движения" </span></p>
+<p class="rvps2"><span class="rvts5">После нажатия на кнопку появится 
+окно с предупреждением о том, что при запуске конструктора процедура 
+"ОбработкаПроведения" в модуле объекта документа будет замещена. То есть
+ все, что могло быть написано в данной обработке, будет потеряно. Нажмем
+ на кнопку "Да" (рис. 9.37). </span></p>
+<p class="rvps11"><img 289="" 127="" alt="" style="padding : 1px;" src="09_data/img42.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.37. Окно предупреждения </span></p>
+<p class="rvps2"><span class="rvts5">В открывшемся окне нажмем на кнопку "Заполнить выражения" (рис. 9.38). В результате заполнится лишь одно измерение </span>–<span class="rvts5">
+ "Апгрейд". "Вид апгрейда", "Цена" и "Рейтинг" можно прочитать по ссылке
+ из карточки самого апгрейда. Сделаем заготовки для данных полей в 
+столбце "Выражение", чтобы потом дописать программный код вручную. Это 
+нужно, чтобы соответствующие строки движений информации появились в 
+модуле. </span></p>
+<p class="rvps2"><span class="rvts5">Рядом с полем "ВидАпгрейда" укажем 1, напротив "Цена" </span>–<span class="rvts5"> 2, напротив "Рейтинг" </span>–<span class="rvts5"> 3 и нажмем на кнопку "ОК" (рис. 9.39). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 316="" 222="" alt="" style="padding : 1px;" src="09_data/img43.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 316="" 222="" alt="" style="padding : 1px;" src="09_data/img44.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.38. Автоматическое заполнение выражений</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.39. Ручное заполнение выражений</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">В открывшемся модуле объекта 
+документа "ПриобретениеАпгрейда" появился программный код, описывающий 
+движение данных в регистр сведений. </span></p>
+<p class="rvps15"><img 570="" 161="" alt="" style="padding : 1px;" src="09_data/img45.png"></p>
+<p class="rvps2"><span class="rvts5">Благодаря тому, что в полях "ВидАгрейда", "Цена" и "Рейтинг" были указаны значения, их не придется прописывать вручную. </span></p>
+<p class="rvps2"><span class="rvts5">Укажем, что в "ВидАгрейда", "Цена" и "Рейтинг" будет записываться информация, прочитанная из реквизита "Апгрейд" по ссылке. </span></p>
+<p class="rvps15"><img 572="" 153="" alt="" style="padding : 1px;" src="09_data/img46.png"></p>
+<p class="rvps2"><span class="rvts5">Так как логика движения информации 
+из документа в регистр "Регистрация апгрейда" была реализована с помощью
+ конструктора, то код, прописанный ранее вручную, а именно вызов 
+проверки покупки, был утерян. Восстановим вызов процедуры 
+"ПроверитьПокупку" перед комментариями, созданными конструктором 
+движений. </span></p>
+<p class="rvps21"><img 552="" 157="" alt="" style="padding : 1px;" src="09_data/img47.png"></p>
+<div><table 662="" border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 62="" 127="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 68="" alt="" style="padding : 1px;" src="09_data/img48.png"></p>
+</td>
+<td 572="" 127="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps2"><span class="rvts5">Комментарии,
+ созданные конструктором, можно как удалить, так и оставить. При 
+повторном запуске конструктора он будет считывать то, что находится 
+внутри комментариев, и отображать считанные выражения в окне 
+конструктора. </span></p>
+<p class="rvps22"><span class="rvts14">Если полностью убрать комментарии, то при повторном использовании конструктора вся обработка проведения будет замещена.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим. </span></p>
+<p class="rvps2"><span class="rvts5">Создадим новый документ 
+"Приобретение апгрейда". В качестве апгрейда укажем "Один кассир" и 
+нажмем на кнопку "Купить" (рис. 9.40). Зарегистрируем еще одно 
+приобретение апгрейда, например, "Пеший курьер" (рис. 9.41).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 320="" 109="" alt="" style="padding : 1px;" src="09_data/img49.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps11"><img 326="" 112="" alt="" style="padding : 1px;" src="09_data/img50.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.40. Покупка апгрейда "Один кассир"</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><span class="rvts10">Рис. 9.41. Покупка апгрейда "Пеший курьер"</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps2"><span class="rvts5">Откроем регистр сведений "Регистрация апгрейда" через раздел "Сервис и настройки" </span>–<span class="rvts5">
+ "Функции для технического специалиста". В панели разделов он не 
+отображается, так как данные в него попадают из документов, и отображать
+ его в интерфейсе нет необходимости (рис. 9.42). </span></p>
+<p class="rvps11"><img 442="" 99="" alt="" style="padding : 1px;" src="09_data/img51.png"></p>
+<p class="rvps8"><span class="rvts10">Рис. 9.42. Список зарегистрированных апгрейдов </span></p>
+<p class="rvps2"><span class="rvts5">В дальнейшем этот регистр позволит 
+системе определять, сколько денег было потрачено на апгрейды, сколько 
+денег осталось и какой текущий рейтинг у игрока. </span></p>
+<p class="rvps23"><span class="rvts16">На этом девятое занятие окончено!</span></p>
+<p class="rvps2"><span class="rvts3">На этом занятии </span><span class="rvts5">мы
+ выполнили пять задач, благодаря которым каждый игрок теперь сможет 
+прокачивать свой магазин, покупая апгрейды и тем самым повышая рейтинг 
+своего магазина! </span></p>
+<p class="rvps9"><span class="rvts5">На </span><span class="rvts3">следующем занятии</span><span class="rvts5"> будет реализовано добавление картинок к апгрейдам. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 194="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts17">Это нужно запомнить</span></p>
+</td>
+<td 440="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts18"><br></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 194="" 377="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps19"><img 156="" alt="" style="padding : 1px;" src="09_data/img52.png"></p>
+</td>
+<td 440="" 377="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts3">Периодический регистр сведений</span><span class="rvts5"> </span>–<span class="rvts5"> механизм, который позволяет получить актуальные данные в рамках определенного периода.</span></p>
+<p class="rvps2"><span class="rvts5">Галочка </span><span class="rvts3">"Запрет незаполненных значений"</span><span class="rvts5"> позволяет исключить запись в регистре сведений без указания значения измерения, у которого эта галочка поставлена. </span></p>
+<p class="rvps2"><span class="rvts5">Галочка </span><span class="rvts3">"Ведущее"</span><span class="rvts5"> означает, что при удалении апгрейда из системы будут стерты все записи о покупке данного апгрейда.</span></p>
+<p class="rvps2"><span class="rvts5">Комментарии, </span><span class="rvts3">созданные конструктором</span><span class="rvts5">,
+ можно как удалить, так и оставить. При повторном запуске конструктора 
+он будет считывать то, что находится внутри комментариев, и отображать 
+считанные выражения в окне конструктора. </span></p>
+<p class="rvps2"><span class="rvts5">Если полностью </span><span class="rvts3">убрать комментарии</span><span class="rvts5">, то при повторном использовании конструктора вся обработка проведения будет замещена.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts15"><br></span></p>
+<h2 class="rvps24"><a name="_Toc121319168"></a>
+<span class="rvts0"><span class="rvts11">Контрольные вопросы</span></span></h2>
+<ol class="list3">
+<li value="1" style="margin-left: 0px" class="rvps26"><span class="rvts6">Какое
+ свойство измерения регистра сведений отвечает за то, чтобы в этом 
+измерении при записи данных в регистр всегда была информация?</span></li>
+<li value="2" style="margin-left: 0px" class="rvps26"><span class="rvts6">С помощью чего можно описать логику движения данных в регистр? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps26"><span class="rvts6">Для чего нужны периодические регистры сведений? </span></li>
+<li value="4" style="margin-left: 0px; page-break-before: always;" class="rvps26"><span class="rvts7"></span></li>
+</ol>
+<p><span class="rvts15"><br></span></p>
+
+</body></html>

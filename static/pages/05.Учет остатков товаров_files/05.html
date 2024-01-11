@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>05</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script language="javaScript">document.onselectstart=new Function("return false");
+document.ondragstart=new Function("return false");</script>
+<script language="javaScript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+<style type="text/css"><!--
+body {
+  margin: 76px 57px 76px 113px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Pragmatica Light';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts2
+{
+ font-size: 28pt;
+ font-family: 'Pragmatica';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 28pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts4
+{
+ font-weight: bold;
+}
+span.rvts5
+{
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts8
+{
+}
+span.rvts9
+{
+ font-weight: bold;
+}
+span.rvts10
+{
+ text-decoration: underline;
+}
+span.rvts11
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts12
+{
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts15
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #2e74b5;
+}
+span.rvts17
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: left;
+ text-indent: 0px;
+ line-height: 16px;
+ widows: 2;
+ orphans: 2;
+ border-color: #f37320;
+ border-style: solid;
+ border-width: 6px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 8px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 48px;
+}
+.rvps5
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+.rvps6
+{
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+}
+.rvps8
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps10
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps11
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+}
+.rvps12
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+}
+.rvps13
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 0px 0px;
+}
+.rvps14
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 8px 0px 0px 0px;
+}
+.rvps15
+{
+ widows: 2;
+ orphans: 2;
+}
+.rvps16
+{
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 7px 0px 0px 0px;
+}
+.rvps18
+{
+ text-align: center;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 8px 0px;
+}
+.rvps19
+{
+ text-align: center;
+ widows: 2;
+ orphans: 2;
+ margin: 16px 0px 16px 0px;
+}
+.rvps20
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 16px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 48px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+.rvps24
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 16px 48px;
+}
+.rvps25
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 0px 0px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+--></style>
+</head>
+<body>
+<h1 class="rvps1"><a name="_Toc121319142"></a>
+<span class="rvts0"><span class="rvts1">Занятие</span></span><span class="rvts0"><span class="rvts2"> 5.</span></span><span class="rvts0"><span class="rvts3"> </span></span><span class="rvts0"><span class="rvts1">Учет</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">остатков</span></span><span class="rvts0"><span class="rvts2"> </span></span><span class="rvts0"><span class="rvts1">товаров</span></span></h1>
+<p class="rvps2"><span class="rvts4">Тема этого занятия </span>–<span class="rvts4"> </span><span class="rvts5">реализация учета остатков товарных позиций. </span></p>
+<p class="rvps2"><span class="rvts5">В рамках этого занятия выполним 2 задачи: </span></p>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps4"><span class="rvts6">Создание регистра накопления типа "остатки", который будет фиксировать данные о поступлении и расходе товара. </span></li>
+<li value="2" style="margin-left: 0px" class="rvps4"><span class="rvts6">Описание алгоритма автоматического создания заказа покупателя. </span></li>
+</ol>
+<h2 class="rvps5"><a name="_Toc121319143"></a>
+<span class="rvts0"><span class="rvts7">Отслеживание расходов товаров. Подготовка к учету остатков</span></span></h2>
+<p class="rvps2"><span class="rvts5">В рамках </span><span class="rvts4">первой задачи</span><span class="rvts5"> мы создадим регистр накопления. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts4">Регистр накопления</span><span class="rvts5"> </span>–<span class="rvts5">
+ это механизм, позволяющий накапливать числовые значения. Например, 
+количество товара на складе, количество денег, оставшихся в кармане. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Добавим новый регистр накопления, 
+нажав правой кнопкой мыши по ветке "Регистры накопления" и выбрав 
+"Добавить". Имя регистра накопления </span>–<span class="rvts5"> "ОстаткиТоваров", вид регистра </span>–<span class="rvts5"> "остатки" (рис. 5.1). </span></p>
+<p class="rvps9"><img 305="" 330="" alt="" style="padding : 1px;" src="05_data/img1.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.1. Регистр накопления "ОстаткиТоваров"</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts5">Регистр накопления вида </span><span class="rvts4">"остатки"</span><span class="rvts5"> позволяет фиксировать данные и о поступлении (со знаком плюс), и о расходе (со знаком минус). </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Регистр накопления "Остатки 
+товаров" будет фиксировать как пополнение количества товаров через 
+событие "Покупка товаров", так и расход через событие "Заказ клиента". </span></p>
+<p class="rvps8"><span class="rvts5">Перейдем на вкладку "Данные", чтобы определить структуру механизма. Для начала определим ресурс. </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 55="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 55="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts4">Ресурс</span><span class="rvts5"> </span>–<span class="rvts5">
+ это числовое значение, которое увеличивается, если происходит 
+пополнение товаров, и уменьшается, если происходит продажа товара.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Ресурс </span>–<span class="rvts5"> числовое значение, следовательно, будем считать количество товарных позиций. Добавим новый ресурс. Имя ресурса </span>–<span class="rvts5"> "Количество", тип </span>–<span class="rvts5"> "число", длина </span>–<span class="rvts5"> 10, точность </span>–<span class="rvts5"> 0, неотрицательное (рис. 5.2).</span></p>
+<p class="rvps9"><img 416="" 122="" alt="" style="padding : 1px;" src="05_data/img2.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.2. Добавление ресурса "Количество" </span></p>
+<p class="rvps8"><span class="rvts5">В данном случае галочка 
+"неотрицательное" нужна для того, чтобы нельзя было фиксировать покупку 
+или продажу отрицательного количества товаров. Действительно, ведь 
+теряется смысл: продавая отрицательное количество товара, оно будет 
+увеличиваться на складе.</span></p>
+<p class="rvps8"><span class="rvts5">Если оставить структуру регистра в 
+таком варианте, будет невозможно определить, для какого именно товара 
+зафиксировано данное количество. Для того чтобы фиксировать эту 
+информацию, необходимо добавить "Измерение". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 36="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 36="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts4">Измерение</span><span class="rvts5"> </span>–<span class="rvts5"> это то, в разрезе чего мы храним и вычисляем ресурсы. </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Добавим измерение. Имя измерения </span>–<span class="rvts5"> "Товар", тип </span>–<span class="rvts5"> "СправочникСсылка.Товары", запрет незаполненных значений (рис. 5.3).</span></p>
+<p class="rvps9"><img 422="" 117="" alt="" style="padding : 1px;" src="05_data/img3.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.3. Добавление измерения "Товар" </span></p>
+<p class="rvps8"><span class="rvts5">Без галочки </span><span class="rvts10">"Запрет незаполненных значений"</span><span class="rvts5"> для системы будет нормой записывать информацию по количеству без указания конкретного товара.</span></p>
+<p class="rvps8"><span class="rvts5">Если сейчас обновить конфигурацию 
+базы данных, то возникнет ошибка "Ни один из документов не является 
+регистратором для регистра" (рис. 5.4).</span></p>
+<p class="rvps9"><img 613="" 57="" alt="" style="padding : 1px;" src="05_data/img4.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.4. Ошибка при обновлении конфигурации базы данных</span></p>
+<p class="rvps8"><span class="rvts5">Необходимо указать, какой документ является регистратором для регистра, так как в регистр накопления </span><span class="rvts10">информация должна попадать из документов</span><span class="rvts5">, которые фиксируют события. </span></p>
+<p class="rvps8"><span class="rvts5">Перейдем на вкладку "Регистраторы",
+ чтобы указать документы "Покупка товаров" и "Заказ клиента", информация
+ из которых будет записываться в регистр накопления (рис. 5.5). </span></p>
+<p class="rvps9"><img 301="" 190="" alt="" style="padding : 1px;" src="05_data/img5.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.5. Выбор регистраторов для регистра</span></p>
+<p class="rvps8"><span class="rvts5">Оба документа являются 
+регистраторами для регистра. Документ "Покупка товаров" совершает 
+движения со знаком плюс, поскольку он фиксирует закупку товара, а 
+документ "Заказ клиента" </span>–<span class="rvts5"> со знаком минус, поскольку он фиксирует продажу товара клиенту. </span></p>
+<p class="rvps8"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим. Сейчас никаких ошибок возникать не будет. </span></p>
+<p class="rvps8"><span class="rvts5">В пользовательском режиме созданный ранее регистр накопления "ОстаткиТоваров" не отобразился (рис. 5.6). </span></p>
+<p class="rvps9"><img 406="" 76="" alt="" style="padding : 1px;" src="05_data/img6.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.6. Пользовательский режим </span></p>
+<p class="rvps8"><span class="rvts5">Дело в том, что пользователь не 
+должен работать с этим регистром напрямую, так как данные в него будут 
+записываться автоматически </span><span class="rvts10">при проведении документа</span><span class="rvts5">, но возможность посмотреть на него имеется. </span></p>
+<p class="rvps8"><span class="rvts5">Откроем раздел "Сервис и настройки" и в выпадающем списке выберем "Функции для технического специалиста" (рис. 5.7). </span></p>
+<p class="rvps8"><span class="rvts5">С помощью функций для технического 
+специалиста можно получить доступ ко всем объектам, которые есть в 
+программе. В том числе и к регистру накопления "Остатки товаров". </span></p>
+<p class="rvps8"><span class="rvts5">В открывшемся окне нажмем на плюсик
+ рядом с регистрами накопления, чтобы развернуть список. Далее 
+необходимо открыть регистр, нажав по его названию два раза левой кнопкой
+ мыши (рис. 5.8). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 288="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 340="" 156="" alt="" style="padding : 1px;" src="05_data/img7.png"></p>
+</td>
+<td 345="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 253="" 262="" alt="" style="padding : 1px;" src="05_data/img8.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 288="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts9">Рис. 5.7. Сервис и настройки</span></p>
+</td>
+<td 345="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps12"><span class="rvts9">Рис. 5.8. Открытие регистра накопления в пользовательском режиме</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps13"><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Сейчас таблица регистра накопления пустая, поскольку в нее информация не поступает (рис. 5.9). </span></p>
+<p class="rvps9"><img 491="" 149="" alt="" style="padding : 1px;" src="05_data/img9.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.9. Таблица регистра "Остатки товаров" </span></p>
+<p class="rvps8"><span class="rvts5">Информация в эту таблицу должна 
+поступать в тот момент, когда один из документов регистраторов 
+фиксируется в системе, то есть проводится. </span></p>
+<p class="rvps8"><span class="rvts5">Откроем документ "Покупка товаров" и нажмем на кнопку "Купить" (рис. 5.10). </span></p>
+<p class="rvps9"><img 378="" 153="" alt="" style="padding : 1px;" src="05_data/img10.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.10. Повторная регистрация покупки товаров</span></p>
+<p class="rvps8"><span class="rvts5">Это действие позволит повторно 
+зарегистрировать событие покупки. Но даже сейчас в регистр 
+соответствующие данные не попадут, поскольку не настроены правила 
+движения информации. </span></p>
+<p class="rvps8"><span class="rvts5">Вновь отроем таблицу регистра накопления, чтобы убедиться в этом. </span></p>
+<p class="rvps8"><span class="rvts5">Чтобы открыть ее повторно, нажмем 
+на "Сервис и настройки", далее выберем "Функции для технического 
+специалиста" и в появившемся окне со списком объектов выберем регистр 
+накопления "Остатки товаров" (рис. 5.11 </span>–<span class="rvts5"> 5.13). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 288="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 314="" 144="" alt="" style="padding : 1px;" src="05_data/img11.png"></p>
+</td>
+<td 345="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 222="" alt="" style="padding : 1px;" src="05_data/img12.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 288="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.11. Сервис и настройки</span></p>
+<p class="rvps12"><span class="rvts9"><br></span></p>
+</td>
+<td 345="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.12. Открытие регистра накопления в пользовательском режиме</span></p>
+<p class="rvps12"><span class="rvts9"><br></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts11"><br></span></p>
+<p class="rvps9"><img 472="" 140="" alt="" style="padding : 1px;" src="05_data/img13.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.13. Таблица регистра "Остатки товаров" </span></p>
+<p class="rvps8"><span class="rvts5">Данные в регистр могут записываться только </span><span class="rvts10">из документов</span><span class="rvts5">, вручную пользователь не может их внести. Следовательно, нужно определить </span><span class="rvts10">правила движений</span><span class="rvts5"> информации для документов "Заказ клиента" и "Покупка товара". </span></p>
+<p class="rvps8"><span class="rvts5">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts5">Сначала обратимся к документу 
+"Покупка товаров". Откроем окно редактирования данного документа и 
+перейдем на вкладку "Движения" (рис. 5.14). </span></p>
+<p class="rvps9"><img 397="" 412="" alt="" style="padding : 1px;" src="05_data/img14.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.14. Вкладка движения документа "Покупка товаров"</span></p>
+<p class="rvps8"><span class="rvts5">На этой вкладке можно убедиться, что документ связан с регистром "Остатки товаров" (рис. 5.15). </span></p>
+<p class="rvps9"><img 407="" 422="" alt="" style="padding : 1px;" src="05_data/img15.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.15. Проверка связи между документом и регистром</span></p>
+<p class="rvps8"><span class="rvts5">Благодаря тому, что связь установлена, можно воспользоваться конструктором движений.</span></p>
+<p class="rvps8"><span class="rvts4">Конструктор движений</span><span class="rvts5"> </span>–<span class="rvts5"> это инструмент платформы, который позволяет подготовить программный код автоматически. </span></p>
+<p class="rvps8"><span class="rvts5">Нажмем на кнопку "Конструктор движений", чтобы перейти к настройке (рис. 5.16). </span></p>
+<p class="rvps9"><img 238="" 250="" alt="" style="padding : 1px;" src="05_data/img16.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.16. Переход к конструктору движений</span></p>
+<p class="rvps8"><span class="rvts5">Нажимаем на кнопку </span>–<span class="rvts5"> отрывается отдельное окно, состоящее из трех частей (рис. 5.17). </span></p>
+<p class="rvps9"><img 249="" 175="" alt="" style="padding : 1px;" src="05_data/img17.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.17. Конструктор движения регистров</span></p>
+<p class="rvps8"><span class="rvts5">Слева вверху отображается регистр, в который совершается движение информации. В данном случае это </span>–<span class="rvts5">
+ регистр накопления "Остатки товаров". Также рядом с названием регистра 
+отображается плюс, что означает, что информация идет со знаком плюс </span>–<span class="rvts5">
+ фиксируется приход. Изменить тип движения регистра можно ниже, указав 
+отличный тип движения регистра. Поскольку работа идет с документом 
+"Покупка товаров", данную настройку изменять не будем. </span></p>
+<p class="rvps8"><span class="rvts5">Справа вверху отображается 
+структура документа, а именно "Дата", "Номер" и "Итоговая сумма". Но это
+ не все реквизиты, которые есть в документе. Информация о товаре и его 
+количестве фиксируется в табличной части. </span></p>
+<p class="rvps8"><span class="rvts5">Выберем табличную часть в списке (рис. 5.18). </span></p>
+<p class="rvps9"><img 261="" 183="" alt="" style="padding : 1px;" src="05_data/img18.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.18. Выбор табличной части "Товары"</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Набор реквизитов документа увеличивается. Теперь отображаются "Номер строки", "Товар", "Цена", "Количество" и "Сумма"</span><span class="rvts11">.</span></p>
+<p class="rvps8"><span class="rvts5">В нижней части отображается структура регистра, а именно измерение "Товар" и ресурс "Количество". </span></p>
+<p class="rvps8"><span class="rvts5">Если сфокусироваться на одном из 
+этих полей, то система будет подсказывать с помощью зеленой галочки, 
+данные из какого поля, предположительно, туда нужно отправить (рис. 
+5.19).</span></p>
+<p class="rvps9"><img 316="" 222="" alt="" style="padding : 1px;" src="05_data/img19.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.19. Подсказка при сопоставлении полей и реквизитов</span></p>
+<p class="rvps2"><span class="rvts5">Галочка появляется благодаря тому, 
+что совпадают типы данных. В данном случае и реквизит, и измерение имеют
+ тип "СправочникСсылка.Товары". </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 41="" alt="" style="padding : 1px;" src="05_data/img20.png"></p>
+</td>
+<td 553="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts8">Если галочка отсутствует </span><span class="rvts12">–</span><span class="rvts8"> типы отличаются.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps7"><span class="rvts11"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 50="" alt="" style="padding : 1px;" src="05_data/img21.png"></p>
+</td>
+<td 553="" 42="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts8">Если
+ у полей и реквизитов документа совпадают не только типы данных, но еще и
+ имена, то можно воспользоваться автоматическим заполнением колонки 
+"Выражение".</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Нажмем на кнопку "Заполнить выражения", чтобы данные в пустой колонке заполнились автоматически (рис. 5.20).</span></p>
+<p class="rvps9"><img 322="" 226="" alt="" style="padding : 1px;" src="05_data/img22.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.20. Автоматическое заполнение колонки "Выражение" </span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Информация в нижней таблице будет 
+читаться следующим образом: информация по товару в регистр попадает из 
+табличной части документа как "ТекСтрокаТовары.Товар", а по количеству </span>–<span class="rvts5"> как "ТекСтрокаТовары.Количество". </span></p>
+<p class="rvps8"><span class="rvts5">Оба поля настроены. Нажмем на кнопку "Ок" (рис. 5.21). </span></p>
+<p class="rvps9"><img 359="" 251="" alt="" style="padding : 1px;" src="05_data/img23.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.21. Завершение работы с конструктором движения</span></p>
+<p class="rvps8"><span class="rvts5">В результате открывается программный код, расположенный в модуле объекта документа "Покупка товаров". </span></p>
+<p class="rvps16"><img 572="" 230="" alt="" style="padding : 1px;" src="05_data/img24.png"></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><img 68="" alt="" style="padding : 1px;" src="05_data/img25.png"></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts8">В модуле объекта описывается программная логика отдельно взятого документа.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Ранее в данном модуле уже был описан обработчик "ПередЗаписью" для подсчета итоговой суммы по документу. </span></p>
+<p class="rvps8"><span class="rvts5">Кроме события "ПередЗаписью" у 
+документа есть событие "Проведение". Это событие означает, что документ 
+принят к учету, событие, которое он регистрирует, произошло. </span></p>
+<p class="rvps8"><span class="rvts5">Аналогичную конструкцию необходимо реализовать для второго документа </span>–<span class="rvts5"> "Заказ клиента", в котором будет регистрироваться движение со знаком минус, потому что заказ клиента </span>–<span class="rvts5"> это продажа, расход товара со склада. </span></p>
+<p class="rvps8"><span class="rvts5">Закроем модуль объекта и окно 
+редактирования документа "Покупка товаров" и откроем окно редактирования
+ документа "Заказ клиента". </span></p>
+<p class="rvps8"><span class="rvts5">Необходимо выполнить аналогичные 
+действия. Перейдем на вкладку "Движения" и нажнем на кнопку "Конструктор
+ движения", чтобы сформировать логику записи данных в регистр накопления
+ из документа "Заказ клиента" (рис. 5.22).</span></p>
+<p class="rvps9"><img 322="" 339="" alt="" style="padding : 1px;" src="05_data/img26.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.22. Переход к конструктору движений</span></p>
+<p class="rvps8"><span class="rvts5">Перед тем как заполнять выражения, 
+важно вспомнить, что работа идет с документом "Заказ клиента", 
+следовательно, необходимо изменить тип движения (рис. 5.23). </span></p>
+<p class="rvps9"><img 432="" 302="" alt="" style="padding : 1px;" src="05_data/img27.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.23. Изменение типа движения</span></p>
+<p class="rvps8"><span class="rvts5">Далее необходимо нажать на кнопку "Заполнить выражения". </span></p>
+<p class="rvps8"><span class="rvts5">Поля можно проставить и вручную. 
+Например, чтобы выставить значение для поля "Количество", необходимо 
+сфокусироваться в колонке "Выражение" напротив нужного поля. После этого
+ система сама предложит подходящие варианты, в данном случае это </span>–<span class="rvts5"> "Цена", "Количество" и "ИтоговаяСумма", они будут выделены зеленой галочкой. Дважды нажмем на поле "Количество"</span><span class="rvts11">,</span><span class="rvts5"> чтобы оно подставилось в нужную ячейку (рис. 5.24). После этого нажмем на кнопку "Ок" (рис. 5.25).</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 322="" 226="" alt="" style="padding : 1px;" src="05_data/img28.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps8"><img 322="" 226="" alt="" style="padding : 1px;" src="05_data/img29.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.24. Ручное заполнение выражения</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.25. Завершение работы с конструктором движений</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">В результате получим аналогичный программный код, за исключением того, что вид движения </span>–<span class="rvts5"> расход, а также отсутствует цикл, поскольку в этом документе нет табличной части.</span></p>
+<p class="rvps13"><img 482="" 134="" alt="" style="padding : 1px;" src="05_data/img30.png"></p>
+<p class="rvps8"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим.</span></p>
+<p class="rvps8"><span class="rvts5">Перейдем к списку документов "Покупка товаров" и повторно проведем созданный ранее документ, так как </span><span class="rvts10">запись в регистр попадает только при проведении документа</span><span class="rvts5">. </span></p>
+<p class="rvps8"><span class="rvts5">Если документ уже был проведен 
+ранее, то его можно перепровести. Например, нажав по нему правой кнопкой
+ мыши, далее в выпадающем списке нужно выбрать "Провести" (рис. 5.26).</span></p>
+<p class="rvps9"><img 303="" 150="" alt="" style="padding : 1px;" src="05_data/img31.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.26. Перепроведение документа "Покупка товара"</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Документ заново провелся. Поступим аналогичным образом с документом "Заказ клиента". </span></p>
+<p class="rvps8"><span class="rvts5">Перейдем к списку заказов клиента, 
+нажмем правой кнопкой мыши по созданному ранее документу и в списке 
+выберем "Провести" (рис. 5.27). </span></p>
+<p class="rvps9"><img 464="" 229="" alt="" style="padding : 1px;" src="05_data/img32.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.27. Перепроведение документа "Заказ клиента"</span></p>
+<p class="rvps8"><span class="rvts5">Проверим данные в регистре "Остатки
+ товаров". Для этого необходимо нажать на "Сервис и настройки", далее 
+выбрать "Функции для технического специалиста" и в появившемся окне со 
+списком объектов выбрать регистр накопления "Остатки товаров" (рис. 5.28
+ </span>–<span class="rvts5"> 5.29). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 288="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 340="" 156="" alt="" style="padding : 1px;" src="05_data/img33.png"></p>
+</td>
+<td 345="" 189="" valign="middle" style="padding: 0px 7px;"><p class="rvps11"><img 253="" 262="" alt="" style="padding : 1px;" src="05_data/img34.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 288="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.28. Сервис и настройки</span></p>
+<p class="rvps12"><span class="rvts9"><br></span></p>
+</td>
+<td 345="" 18="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.29. Открытие регистра накопления в пользовательском режиме</span></p>
+<p class="rvps12"><span class="rvts9"><br></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">В результате в таблице регистра 
+накопления отобразилась информация о покупке пяти мятных шариков и двух 
+упаковок сухого корма для собак, а также расход двух единиц товара 
+"Сухой корм для собак" (рис. 5.30).</span></p>
+<p class="rvps9"><img 454="" 225="" alt="" style="padding : 1px;" src="05_data/img35.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.30. Таблица регистра "Остатки товаров" </span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Благодаря регистру накопления можно понять, что "Сухой корм для собак" на складе закончился, а "Мятные шарики" еще есть. </span></p>
+<p class="rvps2"><span class="rvts5">Таким образом, система была подготовлена для реализации механизма контроля отрицательных остатков. </span></p>
+<h2 class="rvps5"><a name="_Toc121319144"></a>
+<span class="rvts0"><span class="rvts7">Отслеживание расходов товаров. Автоматическое создание документа "Заказ клиента"</span></span></h2>
+<p class="rvps8"><span class="rvts4">Вторая задача</span><span class="rvts5">,
+ которую необходимо решить, сводится к тому, чтобы автоматизировать 
+создание документа "Заказ клиента". Документ должен создаваться в тот 
+момент, когда появляется новый заказ. Это необходимо для того, чтобы при
+ выполнении заказа купленный товар списывался со склада. </span></p>
+<p class="rvps8"><span class="rvts5">Закроем пользовательский режим и вернемся в конфигуратор. </span></p>
+<p class="rvps8"><span class="rvts5">Для реализации автоматического создания документа необходимо изменить карту маршрута бизнес-процесса. </span></p>
+<p class="rvps8"><span class="rvts5">Чтобы внести изменения в карту 
+маршрута, необходимо перейти на вкладку "Прочее" в окне редактирования 
+бизнес-процесса и нажать на кнопку "Карта маршрута" (рис. 5.31). </span></p>
+<p class="rvps9"><img 240="" 225="" alt="" style="padding : 1px;" src="05_data/img36.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.31. Открытие карты маршрута бизнес-процесса</span></p>
+<p class="rvps8"><span class="rvts5">На карте маршрута необходимо 
+определить следующую логику: если товар есть на складе, то заказ 
+отправляется покупателю. После этого необходимо программно создать 
+документ "Заказ клиента", который израсходует товарные позиции со 
+склада, указанные в заказе. </span></p>
+<p class="rvps8"><span class="rvts5">Для этого необходимо добавить еще 
+один этап между отправкой заказа и завершением бизнес-процесса. Для 
+удобства отправку заказа и завершение можно друг от друга отдалить (рис.
+ 5.32).</span></p>
+<p class="rvps9"><img 112="" 140="" alt="" style="padding : 1px;" src="05_data/img37.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.32. Фрагмент карты бизнес-процесса </span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Следующим этапом необходимо добавить элемент "Точка обработки"</span><span class="rvts11">.</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 80="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps6"><span class="rvts8"><br></span></p>
+</td>
+<td 553="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps17"><span class="rvts4">Точка обработки</span><span class="rvts5"> нужна, чтобы определить события, обработать программные действия.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">В рамках данного примера будет реализована обработка программного создания документа "Заказ клиента". </span></p>
+<p class="rvps8"><span class="rvts5">Добавим точку обработки на карту маршрута рядом с оформлением заказа и точкой завершения бизнес-процесса. Имя точки обработки </span>–<span class="rvts5"> "ФормированиеЧека" (рис. 5.33). </span></p>
+<p class="rvps9"><img 344="" 233="" alt="" style="padding : 1px;" src="05_data/img38.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.33. Добавление точки обработки</span></p>
+<p class="rvps8"><span class="rvts5">Далее требуется изменить порядок 
+следования линий. Чек будет формироваться после отправки заказа, 
+следовательно, линия, выходящая из точки действия "Отправка заказа"</span><span class="rvts11">,</span><span class="rvts5"> будет входить в точку обработки "Формирования чека". </span></p>
+<p class="rvps8"><span class="rvts5">Выберем линию, выходящую из "Отправки заказа"</span><span class="rvts11">,</span><span class="rvts5"> и, удерживая левую кнопку мыши, переместим стрелочку к точке обработки "Формирование чека" (рис. 5.34). </span></p>
+<p class="rvps9"><img 286="" 228="" alt="" style="padding : 1px;" src="05_data/img39.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.34. Перенос линии </span></p>
+<p class="rvps8"><span class="rvts5">После этого передвинем точку "Формирование чека" и свяжем ее с точкой завершения бизнес-процесса (рис. 5.35). </span></p>
+<p class="rvps9"><img 163="" 371="" alt="" style="padding : 1px;" src="05_data/img40.png"></p>
+<p class="rvps18"><span class="rvts9">Рис. 5.35. Итоговый вариант карты маршрута бизнес-процесса</span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 71="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 68="" alt="" style="padding : 1px;" src="05_data/img41.png"></p>
+</td>
+<td 562="" 70="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps15"><span class="rvts8">Необходимо
+ убедиться, что все стрелочки закрашены. Если это не так, нужно 
+соединить линии таким образом, чтобы они следовали от одной точки к 
+другой.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">Далее необходимо определить 
+действие для точки обработки. Для этого откроем ее свойства и на вкладке
+ "События" определим обработку через кнопку "Открыть" (рис. 5.36).</span></p>
+<p class="rvps9"><img 343="" 287="" alt="" style="padding : 1px;" src="05_data/img42.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.36. Создание обработчика события для точки обработки</span></p>
+<p class="rvps8"><span class="rvts5">После нажатия на значок лупы откроется модуль объекта бизнес-процесса и создастся процедура "ФормированиеЧекаОбработка". </span></p>
+<p class="rvps13"><img 574="" 73="" alt="" style="padding : 1px;" src="05_data/img43.png"></p>
+<p class="rvps8"><span class="rvts5">Прежде чем формировать чек, изменим
+ логику первой процедуры, избавившись от случайности и реализовав 
+возможность всегда продавать товарные позиции. Благодаря этим изменениям
+ будет проще проверить функционал. </span></p>
+<p class="rvps8"><span class="rvts5">Закомментируем первые две строки программного кода. Это можно сделать с помощью команды </span><span class="rvts10">"Добавить комментарий"</span><span class="rvts5">. </span></p>
+<p class="rvps8"><span class="rvts5">Выделим первые две строки и нажмем на кнопку "Добавить комментарий" (рис. 5.37).&nbsp; </span></p>
+<p class="rvps9"><img 480="" 276="" alt="" style="padding : 1px;" src="05_data/img44.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.37. Комментирование первых двух строк процедуры</span></p>
+<p class="rvps8"><span class="rvts5">Поскольку программная логика 
+опирается на анализ числового ответа, определим фиксированное значение 
+для переменной "ЧисловойОтвет". </span></p>
+<p class="rvps13"><img 479="" 182="" alt="" style="padding : 1px;" src="05_data/img45.png"></p>
+<p class="rvps8"><span class="rvts5">Поскольку переменная 
+"ЧисловойОтвет" определяется впервые, если смотреть на модуль сверху 
+вниз, подсказка работать не будет. Поэтому при написании данной 
+переменной необходимо убедиться, что она написана один в один (рис. 
+5.38).</span></p>
+<p class="rvps9"><img 392="" 149="" alt="" style="padding : 1px;" src="05_data/img46.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.38. Проверка имени переменной</span></p>
+<p class="rvps9"><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Перейдем к написанию процедуры 
+"ФормированиеЧекаОбработка". Поскольку чек выписывается покупателю, 
+можно обратиться к реквизиту "Итог" и указать, что покупка прошла 
+успешно. </span></p>
+<p><img 489="" 44="" alt="" style="padding : 1px;" src="05_data/img47.png"></p>
+<p class="rvps8"><span class="rvts5">Далее необходимо программно создать
+ "Заказ клиента" и заполнить его полями. Чтобы программно создать 
+экземпляр документа, потребуется сначала обратиться к механизму, который
+ определяет элемент. Необходимо указать, с какой именно веткой 
+конфигурации будет идти работа, далее выбрать конкретный объект и только
+ потом указать, что именно нужно сделать. </span></p>
+<p><img 454="" 66="" alt="" style="padding : 1px;" src="05_data/img48.png"></p>
+<p class="rvps13"><span class="rvts5">Далее задача сводится к тому, чтобы заполнить документ значениями. </span></p>
+<p><img 619="" 167="" alt="" style="padding : 1px;" src="05_data/img49.png"></p>
+<p class="rvps8"><span class="rvts5">С помощью клавиши Tab можно 
+сдвигать символы, присваивая и выравнивая их относительно друг друга. 
+Это нужно для красоты кода и удобства его анализа. </span></p>
+<p class="rvps13"><span class="rvts5">После того, как содержимое документа было настроено программно, его необходимо записать.</span></p>
+<p><img 372="" 140="" alt="" style="padding : 1px;" src="05_data/img50.png"></p>
+<p class="rvps8"><span class="rvts5">Помимо того, что был реализован 
+алгоритм программного создания документа, также были внесены изменения в
+ реквизит "Итог" бизнес-процесса. Эти изменения необходимо 
+зафиксировать. </span></p>
+<p><img 577="" 131="" alt="" style="padding : 1px;" src="05_data/img51.png"></p>
+<p class="rvps8"><span class="rvts5">Обновим конфигурацию базы данных и запустим пользовательский режим, чтобы проверить результат. </span></p>
+<p class="rvps8"><span class="rvts5">В качестве эксперимента удалим все 
+этапы заказов. Для этого необходимо выделить все этапы, например, через 
+сочетание клавиш Ctrl + A и нажать сочетание клавиш Shift + Delete, либо
+ через кнопку "Еще" и "Удалить" (рис. 5.39). </span></p>
+<p class="rvps9"><img 502="" 153="" alt="" style="padding : 1px;" src="05_data/img52.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.39. Удаление этапов заказа</span></p>
+<p class="rvps13"><span class="rvts5">Аналогичным образом удалим все "Заказы" (рис. 5.40). </span></p>
+<p class="rvps9"><img 497="" 134="" alt="" style="padding : 1px;" src="05_data/img53.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.40. Удаление заказов</span></p>
+<p class="rvps8"><span class="rvts5">Теперь можно проверить работу описанного ранее механизма. Создадим новый заказ. В качестве товара укажем "Мятный шарик" по цене </span>–<span class="rvts5"> 200, количество </span>–<span class="rvts5"> 2, сумма </span>–<span class="rvts5"> 400 (рис. 5.41). </span></p>
+<p class="rvps8"><span class="rvts5">В данный момент вся информация 
+вносится вручную, но в дальнейшем система будет все рассчитывать 
+автоматически, а также получать актуальную цену на товар. </span></p>
+<p class="rvps8"><span class="rvts5">После заполнения всех необходимых полей нажимаем на кнопку "Стартовать и закрыть" (рис. 5.42). </span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><img 299="" 235="" alt="" style="padding : 1px;" src="05_data/img54.png"></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps9"><img 300="" 273="" alt="" style="padding : 1px;" src="05_data/img55.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.41. Создание нового заказа</span></p>
+</td>
+<td 316="" valign="top" style="padding: 0px 7px;"><p class="rvps10"><span class="rvts9">Рис. 5.42. Старт нового бизнес-процесса</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="rvps8"><span class="rvts5">После старта бизнес-процесса 
+появляется задача, которую можно найти в списке "Этапы заказа". Выполним
+ данный этап заказа (рис. 5.43). </span></p>
+<p class="rvps9"><img 229="" 109="" alt="" style="padding : 1px;" src="05_data/img56.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.43. Выполнение этапа "Поступил новый товар"</span></p>
+<p class="rvps8"><span class="rvts5">Если вернуться к бизнес-процессу и обновить список, то можно увидеть, что заказ был отправлен на упаковку (рис. 5.44).</span></p>
+<p class="rvps9"><img 327="" 72="" alt="" style="padding : 1px;" src="05_data/img57.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.44. Изменения в бизнес-процессе</span></p>
+<p class="rvps8"><span class="rvts5">Выполним следующий этап из списка "Этапы заказов" и отправим заказ покупателю (рис. 5.45).</span></p>
+<p class="rvps9"><img 229="" 109="" alt="" style="padding : 1px;" src="05_data/img58.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.45. Выполнение этапа "Отправка заказа"</span></p>
+<p class="rvps8"><span class="rvts5">После выполнения данного этапа 
+бизнес-процесс завершается. Если вернуться обратно к списку заказов и 
+обновить его, то в "Итоге" заказа будет указана информация об успешном 
+совершении покупки (рис. 5.46).</span></p>
+<p class="rvps9"><img 356="" 64="" alt="" style="padding : 1px;" src="05_data/img59.png"></p>
+<p class="rvps10"><span class="rvts9">Рис. 5.46. Изменения в итоге заказа </span></p>
+<p class="rvps8"><span class="rvts5">Поскольку продажа была 
+зафиксирована программно, система так же программно среагировала на то, 
+что товарную позицию из заказа нужно списать. Проверим информацию в 
+регистре накопления "Остатки товаров". </span></p>
+<p class="rvps8"><span class="rvts5">Откроем таблицу "Остатки товаров" через функции для технического специалиста (рис. 5.47). </span></p>
+<p class="rvps9"><img 350="" 146="" alt="" style="padding : 1px;" src="05_data/img60.png"></p>
+<p class="rvps12"><span class="rvts9">Рис. 5.47. Таблица "Остатки товаров"</span></p>
+<p><span class="rvts11"><br></span></p>
+<p class="rvps8"><span class="rvts5">Действительно, информация о списании "Мятного шарика" в количестве двух штук отобразилась в регистре. </span></p>
+<p class="rvps19"><span class="rvts13">На этом пятое занятие окончено!</span></p>
+<p class="rvps8"><span class="rvts4">На этом занятии </span><span class="rvts5">была
+ реализована возможность автоматически фиксировать заказы клиентов, как 
+только они возникают в системе, а также регистрацию списания и 
+поступления товаров на склад магазина. </span></p>
+<p class="rvps8"><span class="rvts4">На следующем занятии</span><span class="rvts5"> мы приступим к реализации контроля остатков товаров на складе. </span></p>
+<p><span class="rvts14"><br></span></p>
+<div><table border="0" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tbody><tr valign="top">
+<td colspan="2" 647="" 44="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts15">Это нужно запомнить</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td 184="" 67="" valign="middle" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps14"><img 156="" alt="" style="padding : 1px;" src="05_data/img61.png"></p>
+</td>
+<td 449="" 67="" valign="top" style="padding: 0px 7px; background-color: #e7e6e6;"><p class="rvps7"><span class="rvts4">Регистр накопления</span><span class="rvts5"> </span>–<span class="rvts5"> это механизм, позволяющий накапливать числовые значения. </span></p>
+<p class="rvps8"><span class="rvts5">Регистр накопления вида </span><span class="rvts4">"остатки"</span><span class="rvts5"> позволяет фиксировать данные и о поступлении (со знаком плюс), и о расходе (со знаком минус).</span></p>
+<p class="rvps13"><span class="rvts4">Ресурс</span><span class="rvts5"> </span>–<span class="rvts5">
+ это числовое значение, которое увеличивается, если происходит 
+пополнение товаров, и уменьшается, если происходит продажа товара.</span></p>
+<p class="rvps8"><span class="rvts4">Измерение</span><span class="rvts5"> </span>–<span class="rvts5"> это то, в разрезе чего мы храним и вычисляем ресурсы. </span></p>
+<p class="rvps8"><span class="rvts4">Точка обработки</span><span class="rvts5"> нужна, чтобы определить события, обработать программные действия.</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><span class="rvts11"><br></span></p>
+<h2 class="rvps20"><a name="_Toc121319145"></a>
+<span class="rvts0"><span class="rvts7">Контрольные вопросы</span></span></h2>
+<ol class="list0">
+<li value="1" style="margin-left: 0px" class="rvps22"><span class="rvts6">Откуда попадают данные в регистр накопления?</span></li>
+<li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts6">В какой момент данные попадают в регистр накопления? </span></li>
+<li value="3" style="margin-left: 0px" class="rvps22"><span class="rvts6">Какой тип данных может быть у ресурса регистра накопления?</span></li>
+<li value="4" style="margin-left: 0px" class="rvps24"><span class="rvts6">С помощью какой точки на карте маршрута можно определить событие и описать его автоматическую обработку?&nbsp; </span></li>
+</ol>
+<h2 class="rvps25"><a name="_Toc121319146"></a>
+<span class="rvts0"><span class="rvts16">Домашнее задание! </span></span></h2>
+<p class="rvps8"><span class="rvts5">Нужно доработать бизнес</span><span class="rvts11">-</span><span class="rvts5">процесс
+ поступления заказов от покупателей таким образом, чтобы он подходил 
+именно для вашего магазина. Например, можно добавить дополнительную 
+проверку условия или добавить еще одну точку действия или обработки. </span></p>
+<ol class="list0">
+<li value="5" style="margin-left: 0px; page-break-before: always;" class="rvps22"><span class="rvts17"></span></li>
+</ol>
+<p><span class="rvts11"><br></span></p>
+
+</body></html>
