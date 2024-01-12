@@ -5,8 +5,12 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      name: '@electron-forge/maker-squirrel',
-      config: {},
+      name: '@electron-forge/maker-wix',
+      config: {
+        ui: {
+          chooseDirectory: 'true'
+        }
+      },
     },
     {
       name: '@electron-forge/maker-zip',
