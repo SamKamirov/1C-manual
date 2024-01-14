@@ -1334,3 +1334,7 @@ html body div { height: 100vh !important; width: 100vw !important; }
 .gwt-Frame { width: 100%; height: 95%; }
 
 html body div { height: 100vh !important; width: 100vw !important; }
+
+.gwt-Frame { width: 100vw; height: 95%; overflow-x: scroll }
+
+html body div { height: 100vh !important; width: 100vw !important; }

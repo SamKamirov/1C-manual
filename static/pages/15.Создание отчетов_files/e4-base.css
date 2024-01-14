@@ -57,12 +57,6 @@ html.gxt-strict body.ext-linux #e4-CommonToolbar-briefcase .x-btn-large .x-btn-t
     overflow: auto;
 }
 
-.iframe-container iframe {
-    height: 100%;
-    width: 100%;
-}
-
-
 label, .text-label {
     font-size: 12px;
     font-family: tahoma, arial, helvetica, sans-serif;
@@ -1323,5 +1317,9 @@ html body div { height: 100vh !important; width: 100vw !important; }
 html body div { height: 100vh !important; width: 100vw !important; }
 
 .gwt-Frame { width: 100%; height: 95%; }
+
+html body div { height: 100vh !important; width: 100vw !important; }
+
+.gwt-Frame { width: 100vw; height: 95%; overflow-x: scroll }
 
 html body div { height: 100vh !important; width: 100vw !important; }

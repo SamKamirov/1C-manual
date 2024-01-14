@@ -87,8 +87,7 @@ body {
 }
 
 .side-view {
-    height: 100vh;
-    object-fit: fill;
+    height: 100%;
 }
 
 .hidden {
@@ -98,14 +97,7 @@ body {
 .side-view-container .iframe-container iframe {
     height: 100%;
     width: 100vw;
-}
-
-.gwt-Frame p img {
-    width: 100%;
-}
-
-.gwt-Frame:last-child {
-    background-color: red;
+    overflow-x: scroll;
 }
 
 .module-title {
